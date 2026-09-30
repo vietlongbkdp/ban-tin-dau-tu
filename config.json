@@ -6,6 +6,13 @@
     "SHS",
     "LONG"
   ],
+  "crypto": [
+    "BTC",
+    "ETH",
+    "BNB",
+    "SOL",
+    "XRP"
+  ],
   "gold": {
     "world": true,
     "sjc": true

@@ -23,6 +23,7 @@ Bạn là agent phân tích chạy mỗi sáng 8:30 (giờ VN). Mục tiêu: m�
    - Vĩ mô VN: VN-Index phiên gần nhất, NHNN (lãi suất, tỷ giá), khối ngoại, chính sách.
    - Từng mã trong `config.json`: tin doanh nghiệp, kết quả kinh doanh, cổ tức, phát hành, khuyến nghị của CTCK (ghi rõ tên CTCK).
    - Chính trị, xã hội thế giới có ảnh hưởng đến thị trường.
+   - Crypto trong `config.json -> crypto` (khoá trong analysis là `<MÃ>-USD`, ví dụ `BTC-USD`): tin quản lý, ETF, dòng tiền, sự cố sàn. Crypto giao dịch 24/7 nên kỳ hạn tính theo ngày lịch.
 4. Ghi `output/news.json` theo cấu trúc:
    ```json
    {"generated_at": "YYYY-MM-DD HH:MM (giờ VN), lấy bằng lệnh TZ=Asia/Ho_Chi_Minh date",

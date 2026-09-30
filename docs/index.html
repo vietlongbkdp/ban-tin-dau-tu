@@ -215,11 +215,30 @@ code{background:var(--surface-2);border-radius:5px;padding:1px 5px;font-size:12.
 .board th,.board td{padding:10px 12px;text-align:right}
 .board th:first-child,.board td:first-child{text-align:left}
 .board td{font-variant-numeric:tabular-nums;font-weight:600}
-.board td.sym{font-weight:800}
+.board td.sym{font-weight:800;position:sticky;left:0;background:var(--surface);z-index:1}
+.board th:first-child{position:sticky;left:0;background:var(--surface);z-index:1}
+.board tr{border-left:3px solid transparent}
+.board tr.r-up td.sym{box-shadow:inset 3px 0 0 var(--up)} .board tr.r-down td.sym{box-shadow:inset 3px 0 0 var(--down)}
+.board tr.r-ref td.sym{box-shadow:inset 3px 0 0 var(--ref)} .board tr.r-ceil td.sym{box-shadow:inset 3px 0 0 var(--ceil)} .board tr.r-floor td.sym{box-shadow:inset 3px 0 0 var(--floor)}
+.board .price{font-size:15.5px;font-weight:800}
+.tk{display:inline-block;width:12px;font-size:11px;margin-left:4px}
+.pctpill{display:inline-block;min-width:66px;text-align:center;border-radius:7px;padding:3px 8px;font-weight:800;font-size:13px;color:#fff}
+.pctpill.up{background:var(--up)} .pctpill.down{background:var(--down)} .pctpill.ref{background:var(--ref)}
+.pctpill.ceil{background:var(--ceil)} .pctpill.floor{background:var(--floor)} .pctpill.na{background:var(--line);color:var(--muted)}
+:root[data-theme="dark"] .pctpill{color:#0b0f19}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])) .pctpill{color:#0b0f19}}
+.spark{display:block}
+.rng{position:relative;width:110px;height:8px;border-radius:4px;background:linear-gradient(90deg,var(--floor),var(--ref) 50%,var(--ceil));opacity:.85;margin-left:auto}
+.rng i{position:absolute;top:-4px;width:4px;height:16px;border-radius:2px;background:var(--text);box-shadow:0 0 0 2px var(--surface)}
+.rng.day{background:linear-gradient(90deg,var(--down),var(--line) 50%,var(--up))}
+.board-tabs{display:flex;gap:6px;margin:12px 0 10px;flex-wrap:wrap}
+.board-tabs button{border:1px solid var(--line);background:var(--surface);color:var(--text-2);border-radius:999px;padding:6px 14px;font-weight:700;font-size:13.5px}
+.board-tabs button.on{background:var(--brand-1);border-color:var(--brand-1);color:#fff}
+.board.hide{display:none}
 .board tr:last-child td{border-bottom:0}
-.flash-up{animation:fu 1s} .flash-down{animation:fd 1s}
-@keyframes fu{0%{background:color-mix(in srgb,var(--up) 30%,transparent)}100%{background:transparent}}
-@keyframes fd{0%{background:color-mix(in srgb,var(--down) 30%,transparent)}100%{background:transparent}}
+.flash-up{animation:fu 1.1s ease-out} .flash-down{animation:fd 1.1s ease-out}
+@keyframes fu{0%{background:color-mix(in srgb,var(--up) 40%,transparent)}100%{background:transparent}}
+@keyframes fd{0%{background:color-mix(in srgb,var(--down) 40%,transparent)}100%{background:transparent}}
 footer{margin-top:34px;font-size:13px;color:var(--muted)}
 .skeleton{height:120px;border-radius:16px;background:linear-gradient(90deg,var(--surface) 0%,var(--surface-2) 50%,var(--surface) 100%);background-size:200% 100%;animation:sh 1.2s infinite}
 @keyframes sh{to{background-position:-200% 0}}
@@ -255,10 +274,19 @@ footer{margin-top:34px;font-size:13px;color:var(--muted)}
 <main class="wrap">
   <div class="kpis" id="kpis"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
   <div class="section-h"><h3>Bảng giá trực tiếp</h3><span class="livehd"><span class="pulse off" id="livePulse"></span><span id="liveStatus">Đang kết nối…</span></span></div>
-  <div class="board"><div class="tw"><table>
-    <thead><tr><th>Mã</th><th>Giá</th><th>+/−</th><th>%</th><th>Tham chiếu</th><th>Trần</th><th>Sàn</th><th>Cao</th><th>Thấp</th></tr></thead>
+  <div class="board-tabs" role="tablist">
+    <button class="on" data-b="bVN">📈 Cổ phiếu VN</button><button data-b="bCR">₿ Crypto</button><button data-b="bGD">🥇 Vàng</button>
+  </div>
+  <div class="board" id="bVN"><div class="tw"><table>
+    <thead><tr><th>Mã</th><th>Giá</th><th>+/−</th><th>%</th><th>Trong phiên</th><th>Sàn ← → Trần</th><th>TC</th><th>Trần</th><th>Sàn</th><th>Cao</th><th>Thấp</th></tr></thead>
     <tbody id="boardBody"></tbody></table></div></div>
-  <p class="muted small">Cổ phiếu VN (nghìn đồng) và VN-Index: bảng giá VPS, cập nhật mỗi 5 giây trong phiên. Vàng giao ngay XAU: Coinbase (dự phòng gold-api.com); thẻ phân tích vàng bên dưới dùng lịch sử hợp đồng tương lai COMEX GC=F, thường cao hơn giá giao ngay vài chục USD. Vàng SJC: PNJ. Tỷ giá: open.er-api.com (1 lần/ngày). <b>Quan điểm và xác suất bên dưới vẫn tính theo lượt chạy gần nhất</b>, không đổi theo từng tick giá.</p>
+  <div class="board hide" id="bCR"><div class="tw"><table>
+    <thead><tr><th>Coin</th><th>Giá (USD)</th><th>Quy đổi VND</th><th>24h</th><th>24 giờ qua</th><th>Thấp ← → Cao 24h</th><th>Cao 24h</th><th>Thấp 24h</th><th>KL 24h (USD)</th></tr></thead>
+    <tbody id="cryptoBody"></tbody></table></div></div>
+  <div class="board hide" id="bGD"><div class="tw"><table>
+    <thead><tr><th>Loại</th><th>Giá</th><th>Thay đổi từ lúc mở trang</th><th>Trong phiên</th><th>Ghi chú</th></tr></thead>
+    <tbody id="goldBody"></tbody></table></div></div>
+  <p class="muted small">Cổ phiếu VN (nghìn đồng) và VN-Index: bảng giá VPS, <b>2 giây/lần</b> trong phiên; biểu đồ trong phiên lấy dữ liệu 1 phút của VNDirect rồi nối giá trực tiếp. Crypto: <b>Binance WebSocket</b> (sàn đẩy giá ~1 giây/lần; dự phòng Coinbase). Vàng giao ngay XAU: Coinbase 3 giây/lần (dự phòng gold-api.com); thẻ phân tích vàng dùng lịch sử hợp đồng tương lai COMEX GC=F. Vàng SJC: PNJ. Tỷ giá: open.er-api.com. <b>Quan điểm và xác suất bên dưới vẫn tính theo lượt chạy gần nhất</b>, không đổi theo từng tick giá.</p>
 
   <div class="section-h"><h3>Quan điểm theo từng mã</h3><span class="muted small">Kỳ hạn quan điểm: <b id="stHz">1 tháng</b> · Thanh ngang là xác suất tăng, vạch đứng là tỷ lệ nền</span></div>
   <div class="grid" id="cards"></div>
@@ -298,6 +326,10 @@ footer{margin-top:34px;font-size:13px;color:var(--muted)}
     <div class="addrow"><input class="in" id="tkIn" placeholder="VD: FPT, MWG, AAPL.US" autocomplete="off" autocapitalize="characters"><button class="b2 primary" id="tkAdd">Thêm</button></div>
     <div class="muted small" style="margin-top:6px">Mã HOSE/HNX/UPCoM gõ trực tiếp (FPT). Cổ phiếu Mỹ thêm đuôi <code>.US</code> (AAPL.US). Có thể nhập nhiều mã cách nhau bằng dấu phẩy. Tối đa 15 mã.</div>
     <div class="tags" id="tkTags"></div>
+    <label class="fl" for="crIn">Crypto</label>
+    <div class="addrow"><input class="in" id="crIn" placeholder="VD: BTC, ETH, SOL, DOGE" autocomplete="off" autocapitalize="characters"><button class="b2 primary" id="crAdd">Thêm</button></div>
+    <div class="muted small" style="margin-top:6px">Mã coin niêm yết cặp USDT trên Binance. Tối đa 10 coin.</div>
+    <div class="tags" id="crTags"></div>
     <label class="fl">Vàng</label>
     <label class="switch"><span><b>Vàng thế giới</b><br><span class="muted small">XAU/USD và quy đổi VND/lượng</span></span><input type="checkbox" id="gWorld"></label>
     <label class="switch"><span><b>Vàng miếng SJC</b><br><span class="muted small">Giá mua/bán và chênh lệch với thế giới</span></span><input type="checkbox" id="gSjc"></label>
@@ -549,9 +581,28 @@ $("tokSave").onclick = async () => {
 // watchlist
 const TK_RE = /^[A-Z0-9]{1,10}(\.US)?$/;
 function drawTags() {
-  $("tkTags").innerHTML = STATE.wl.stocks.map((s, i) => `<span class="tag">${esc(s)}<button data-i="${i}" aria-label="Xoá ${esc(s)}">×</button></span>`).join("") || `<span class="muted small">Chưa có mã nào.</span>`;
-  $("tkTags").querySelectorAll("button").forEach(b => b.onclick = () => { STATE.wl.stocks.splice(+b.dataset.i, 1); drawTags(); });
+  for (const [el, list] of [["tkTags", STATE.wl.stocks], ["crTags", STATE.wl.crypto]]) {
+    $(el).innerHTML = list.map((s, i) => `<span class="tag">${esc(s)}<button data-i="${i}" aria-label="Xoá ${esc(s)}">×</button></span>`).join("") || `<span class="muted small">Chưa có mã nào.</span>`;
+    $(el).querySelectorAll("button").forEach(b => b.onclick = () => { list.splice(+b.dataset.i, 1); drawTags(); });
+  }
 }
+async function checkCrypto(c) {
+  try { await getJSON(`https://api.binance.com/api/v3/ticker/price?symbol=${c}USDT`); return true; }
+  catch (e) { if (e.message === "400") return false; }
+  try { await getJSON(`https://api.coinbase.com/v2/prices/${c}-USD/spot`); return true; } catch { return false; }
+}
+async function addCrypto() {
+  const raw = $("crIn").value.toUpperCase().split(/[\s,;]+/).filter(Boolean), bad = [];
+  $("crIn").value = "";
+  for (const c of raw) {
+    if (!/^[A-Z0-9]{2,10}$/.test(c) || !(await checkCrypto(c))) { bad.push(c); continue; }
+    if (!STATE.wl.crypto.includes(c) && STATE.wl.crypto.length < 10) STATE.wl.crypto.push(c);
+  }
+  drawTags();
+  if (bad.length) say("wMsg", `Không tìm thấy coin: ${bad.join(", ")}.`, "bad");
+}
+$("crAdd").onclick = addCrypto;
+$("crIn").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); addCrypto(); } });
 async function checkVN(list) {
   // Trả về tập mã có thật trên HOSE/HNX/UPCoM; null nếu không kiểm tra được
   if (!list.length) return new Set();
@@ -581,12 +632,12 @@ $("tkIn").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventD
 $("btnWatch").onclick = async () => {
   $("wMsg").className = "msg"; openD("dWatch");
   const fromData = STATE.bundle?.analysis?.watchlist || {stocks:[], gold:{world:true, sjc:true}};
-  STATE.wl = JSON.parse(JSON.stringify(fromData)); STATE.cfg = null;
+  STATE.wl = JSON.parse(JSON.stringify(fromData)); STATE.wl.crypto ||= []; STATE.cfg = null;
   if (token()) {
     try {
       const j = await (await gh("/contents/config.json?ref=main")).json();
       STATE.sha = j.sha; STATE.cfg = JSON.parse(b64dec(j.content));
-      STATE.wl = {stocks:[...STATE.cfg.stocks], gold:{world:true, sjc:true, ...(STATE.cfg.gold || {})}};
+      STATE.wl = {stocks:[...STATE.cfg.stocks], crypto:[...(STATE.cfg.crypto || [])], gold:{world:true, sjc:true, ...(STATE.cfg.gold || {})}};
     } catch (e) { say("wMsg", "Không đọc được config.json: " + e.message, "bad"); }
   } else say("wMsg", "Cần thiết lập token GitHub (nút ⚙) để lưu thay đổi.", "info");
   $("gWorld").checked = !!STATE.wl.gold.world; $("gSjc").checked = !!STATE.wl.gold.sjc; drawTags();
@@ -598,11 +649,12 @@ async function saveWatch() {
   if (!token()) { say("wMsg", "Cần thiết lập token GitHub trước (nút ⚙).", "bad"); return false; }
   if (!STATE.cfg) { say("wMsg", "Chưa đọc được cấu hình hiện tại, hãy đóng và mở lại.", "bad"); return false; }
   if ($("tkIn").value.trim()) await addTickers();
+  if ($("crIn").value.trim()) await addCrypto();
   STATE.wl.gold = {world:$("gWorld").checked, sjc:$("gSjc").checked};
-  const cfg = {...STATE.cfg, stocks:STATE.wl.stocks, gold:STATE.wl.gold};
+  const cfg = {...STATE.cfg, stocks:STATE.wl.stocks, crypto:STATE.wl.crypto, gold:STATE.wl.gold};
   try {
     const r = await (await gh("/contents/config.json", {method:"PUT", body:JSON.stringify({
-      message:`Cập nhật danh mục: ${cfg.stocks.join(", ") || "(trống)"}${cfg.gold.world ? " + vàng TG" : ""}${cfg.gold.sjc ? " + SJC" : ""}`,
+      message:`Cập nhật danh mục: ${cfg.stocks.join(", ") || "(trống)"}${cfg.crypto.length ? " | crypto " + cfg.crypto.join(", ") : ""}${cfg.gold.world ? " + vàng TG" : ""}${cfg.gold.sjc ? " + SJC" : ""}`,
       content:b64enc(JSON.stringify(cfg, null, 2) + "\n"), sha:STATE.sha, branch:"main"})})).json();
     STATE.sha = r.content.sha; STATE.cfg = cfg;
     say("wMsg", "✓ Đã lưu. Danh mục mới được dùng từ lượt chạy tiếp theo.", "ok"); return true;
@@ -655,41 +707,112 @@ async function runNow() {
 }
 
 // ---------- live prices ----------
-const LIVE = {stocks:{}, index:null, xau:null, fx:null, sjc:null, ok:{}, err:{}};
+const LIVE = {stocks:{}, index:null, xau:null, fx:null, sjc:null, crypto:{}, spark:{}, ok:{}, err:{}, xau0:null};
 const OZ_LUONG = 37.5 / 31.1034768;
 function vnNow() { const d = new Date(Date.now() + 7 * 3600e3); return {day:d.getUTCDay(), min:d.getUTCHours() * 60 + d.getUTCMinutes()}; }
 function inSession() { const {day, min} = vnNow(); return day >= 1 && day <= 5 && ((min >= 540 && min <= 690) || (min >= 780 && min <= 905)); }
 async function getJSON(u) { const r = await fetch(u, {cache:"no-store"}); if (!r.ok) throw new Error(r.status); return r.json(); }
-function vnSyms() { return (STATE.bundle?.analysis?.watchlist?.stocks || []).filter(s => !s.endsWith(".US")); }
+const WL = () => STATE.bundle?.analysis?.watchlist || {};
+function vnSyms() { return (WL().stocks || []).filter(s => !s.endsWith(".US")); }
+function cryptoSyms() { return (WL().crypto || []).map(c => c.toUpperCase()); }
+const liveOn = () => STATE.isLatest !== false;
 
+// --- sparkline: lịch sử trong phiên / 24h + tick trực tiếp ---
+function pushSpark(key, v, max = 400) { if (v == null) return; const a = LIVE.spark[key] ||= []; if (a[a.length - 1] !== v) { a.push(v); if (a.length > max) a.shift(); } }
+function sparkSvg(arr, ref, w = 120, h = 30) {
+  if (!arr || arr.length < 2) return `<span class="muted small">–</span>`;
+  const lo = Math.min(...arr, ref ?? Infinity), hi = Math.max(...arr, ref ?? -Infinity), sp = hi - lo || 1;
+  const X = i => (i / (arr.length - 1) * (w - 2) + 1).toFixed(1), Y = v => (h - 2 - (v - lo) / sp * (h - 4)).toFixed(1);
+  const up = arr[arr.length - 1] >= (ref ?? arr[0]), col = up ? "var(--up)" : "var(--down)";
+  const pts = arr.map((v, i) => `${X(i)},${Y(v)}`).join(" ");
+  const base = ref != null ? `<line x1="1" x2="${w - 1}" y1="${Y(ref)}" y2="${Y(ref)}" stroke="var(--ref)" stroke-width="1" stroke-dasharray="3 3"/>` : "";
+  return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true">${base}
+    <polygon points="1,${h - 1} ${pts} ${w - 1},${h - 1}" fill="${col}" opacity=".12"/><polyline points="${pts}" fill="none" stroke="${col}" stroke-width="1.8" stroke-linejoin="round"/>
+    <circle cx="${X(arr.length - 1)}" cy="${Y(arr[arr.length - 1])}" r="2.6" fill="${col}"/></svg>`;
+}
+function rangeBar(v, lo, hi, cls = "") {
+  if (v == null || !(hi > lo)) return "–";
+  const p = Math.max(0, Math.min(1, (v - lo) / (hi - lo)));
+  return `<div class="rng ${cls}" role="img" aria-label="Vị trí ${Math.round(p * 100)}%"><i style="left:calc(${(p * 100).toFixed(1)}% - 2px)"></i></div>`;
+}
+
+// --- nạp lịch sử trong phiên (VNDirect 1 phút) cho biểu đồ mini ---
+const sparkLoaded = new Set();
+async function loadIntraday(sym) {
+  if (sparkLoaded.has(sym)) return; sparkLoaded.add(sym);
+  try {
+    const now = Math.floor(Date.now() / 1000), j = await getJSON(`https://dchart-api.vndirect.com.vn/dchart/history?symbol=${sym}&resolution=1&from=${now - 5 * 86400}&to=${now}`);
+    if (!j.t?.length) return;
+    const day = new Date((j.t[j.t.length - 1] + 7 * 3600) * 1000).toISOString().slice(0, 10);
+    const arr = j.c.filter((_, i) => new Date((j.t[i] + 7 * 3600) * 1000).toISOString().slice(0, 10) === day);
+    LIVE.spark[sym] = [...arr, ...(LIVE.spark[sym] || []).slice(-1)];
+  } catch { sparkLoaded.delete(sym); }
+}
+async function loadCryptoHist(c) {
+  const key = "C:" + c; if (sparkLoaded.has(key)) return; sparkLoaded.add(key);
+  try { const k = await getJSON(`https://api.binance.com/api/v3/klines?symbol=${c}USDT&interval=15m&limit=96`); LIVE.spark[key] = k.map(x => +x[4]); }
+  catch { sparkLoaded.delete(key); }
+}
+
+// --- nguồn giá ---
 async function pollVN() {
   try {
     const syms = vnSyms();
-    if (syms.length) for (const d of await getJSON(`https://bgapidatafeed.vps.com.vn/getliststockdata/${syms.join(",")}`))
-      LIVE.stocks[d.sym] = {last:+d.lastPrice || null, ref:+d.r, ceil:+d.c, floor:+d.f, high:+d.highPrice || null, low:+d.lowPrice || null};
+    if (syms.length) for (const d of await getJSON(`https://bgapidatafeed.vps.com.vn/getliststockdata/${syms.join(",")}`)) {
+      const o = LIVE.stocks[d.sym], last = +d.lastPrice || null;
+      LIVE.stocks[d.sym] = {last, ref:+d.r, ceil:+d.c, floor:+d.f, high:+d.highPrice || null, low:+d.lowPrice || null,
+        tick: o && last != null && o.last != null && last !== o.last ? (last > o.last ? 1 : -1) : (o?.tick || 0)};
+      pushSpark(d.sym, last);
+    }
     const ix = (await getJSON("https://bgapidatafeed.vps.com.vn/getlistindexdetail/10"))[0];
-    if (ix) LIVE.index = {last:+ix.cIndex, ref:+ix.oIndex, time:ix.time};
+    if (ix) { const o = LIVE.index; LIVE.index = {last:+ix.cIndex, ref:+ix.oIndex, time:ix.time, tick: o && +ix.cIndex !== o.last ? (+ix.cIndex > o.last ? 1 : -1) : (o?.tick || 0)}; pushSpark("VNINDEX", +ix.cIndex); }
     LIVE.ok.vn = new Date(); delete LIVE.err.vn;
   } catch { LIVE.err.vn = "bảng giá VPS"; }
 }
 async function pollGold() {
-  if (!STATE.bundle?.analysis?.watchlist?.gold) return;
-  // Giá giao ngay XAU: Coinbase (khớp Swissquote/báo chí), dự phòng gold-api.com
-  try { const j = await getJSON("https://api.coinbase.com/v2/prices/XAU-USD/spot"); LIVE.xau = {price:+j.data.amount, at:new Date().toISOString(), src:"Coinbase"}; }
-  catch {
-    try { const g = await getJSON("https://api.gold-api.com/price/XAU"); LIVE.xau = {price:+g.price, at:g.updatedAt, src:"gold-api.com"}; }
-    catch { LIVE.err.gold = "vàng giao ngay"; return; }
-  }
-  LIVE.ok.gold = new Date(); delete LIVE.err.gold;
+  const g = WL().gold; if (!g || !(g.world || g.sjc)) return;
+  let x = null;
+  try { const j = await getJSON("https://api.coinbase.com/v2/prices/XAU-USD/spot"); x = {price:+j.data.amount, at:new Date().toISOString(), src:"Coinbase"}; }
+  catch { try { const j = await getJSON("https://api.gold-api.com/price/XAU"); x = {price:+j.price, at:j.updatedAt, src:"gold-api.com"}; } catch {} }
+  if (!x) { LIVE.err.gold = "vàng giao ngay"; return; }
+  x.tick = LIVE.xau && x.price !== LIVE.xau.price ? (x.price > LIVE.xau.price ? 1 : -1) : (LIVE.xau?.tick || 0);
+  LIVE.xau = x; LIVE.xau0 ??= x.price; pushSpark("XAU", x.price); LIVE.ok.gold = new Date(); delete LIVE.err.gold;
 }
 async function pollSjc() {
-  if (!STATE.bundle?.analysis?.watchlist?.gold?.sjc) return;
+  if (!WL().gold?.sjc) return;
   try { const j = await getJSON("https://edge-api.pnj.io/ecom-frontend/v1/get-gold-price?zone=00"); const r = j.data.find(x => x.masp === "SJC");
-    LIVE.sjc = {buy:r.giamua / 100, sell:r.giaban / 100, at:j.updateDate}; delete LIVE.err.sjc; }
+    LIVE.sjc = {buy:r.giamua / 100, sell:r.giaban / 100, at:j.updateDate}; pushSpark("SJC", r.giaban / 100); delete LIVE.err.sjc; }
   catch { LIVE.err.sjc = "giá SJC"; }
 }
 async function pollFx() { try { const j = await getJSON("https://open.er-api.com/v6/latest/USD"); LIVE.fx = +j.rates.VND; } catch {} }
 
+// --- crypto: Binance WebSocket, dự phòng Coinbase ---
+let ws = null, wsKey = "", wsFails = 0, cbTimer = null;
+function onCrypto(c, t) {
+  const o = LIVE.crypto[c];
+  t.tick = o && t.last !== o.last ? (t.last > o.last ? 1 : -1) : (o?.tick || 0);
+  LIVE.crypto[c] = {...o, ...t}; pushSpark("C:" + c, t.last, 200); LIVE.ok.crypto = new Date(); delete LIVE.err.crypto; scheduleRender();
+}
+function startCrypto() {
+  const list = cryptoSyms(), key = list.join(",");
+  if (key === wsKey && (ws || cbTimer)) return;
+  wsKey = key; if (ws) { ws.onclose = null; ws.close(); ws = null; } clearInterval(cbTimer); cbTimer = null;
+  if (!list.length || !liveOn()) return;
+  list.forEach(loadCryptoHist);
+  if (wsFails >= 3) { startCoinbase(list); return; }
+  ws = new WebSocket(`wss://stream.binance.com:9443/stream?streams=${list.map(c => c.toLowerCase() + "usdt@miniTicker").join("/")}`);
+  ws.onmessage = e => { const d = JSON.parse(e.data).data; if (!d) return;
+    onCrypto(d.s.replace(/USDT$/, ""), {last:+d.c, open:+d.o, high:+d.h, low:+d.l, qv:+d.q, src:"Binance"}); wsFails = 0; };
+  ws.onerror = () => { LIVE.err.crypto = "Binance"; };
+  ws.onclose = () => { ws = null; wsFails++; if (wsKey === key) setTimeout(() => { wsKey = ""; startCrypto(); }, Math.min(15000, 1000 * 2 ** wsFails)); };
+}
+function startCoinbase(list) {
+  const tick = async () => { for (const c of list) { try { const j = await getJSON(`https://api.coinbase.com/v2/prices/${c}-USD/spot`);
+      const a = STATE.bundle?.analysis?.assets?.[c + "-USD"]; onCrypto(c, {last:+j.data.amount, open:a ? a.close : null, src:"Coinbase"}); } catch { LIVE.err.crypto = "crypto"; } } };
+  tick(); cbTimer = setInterval(tick, 3000);
+}
+
+// --- vẽ ---
 const prev = {};
 function flash(el, key, val) {
   if (!el || val == null) return;
@@ -702,69 +825,114 @@ function colorCls(p, s) {
   if (s.floor && p <= s.floor) return "floor";
   return p > s.ref ? "up" : p < s.ref ? "down" : "ref";
 }
+const tickHtml = t => t > 0 ? `<span class="tk up">▲</span>` : t < 0 ? `<span class="tk down">▼</span>` : `<span class="tk"></span>`;
+const pill = (x, cls) => x == null ? `<span class="pctpill na">–</span>` : `<span class="pctpill ${cls}">${x > 0 ? "▲ " : x < 0 ? "▼ " : ""}${pct(x)}</span>`;
+const fmtBig = v => v >= 1e9 ? nf(v / 1e9, 2) + " tỷ" : v >= 1e6 ? nf(v / 1e6, 1) + " tr" : nf(v, 0);
 function setCard(key, price, ref, d = 2) {
-  if (!STATE.isLatest || price == null || !ref) return;
+  if (!liveOn() || price == null || !ref) return;
   const px = $("px-" + key), ch = $("chg-" + key); if (!px) return;
   const c = price / ref - 1; px.textContent = nf(price, d); flash(px, "card-" + key, price);
   ch.className = `${c >= 0 ? "up" : "down"} small`; ch.style.fontWeight = 700; ch.textContent = `${c >= 0 ? "▲" : "▼"} ${pct(c)} · trực tiếp`;
 }
+
+let renderQueued = false, lastRender = 0;
+function scheduleRender() {
+  if (renderQueued) return; renderQueued = true;
+  setTimeout(() => { renderQueued = false; lastRender = Date.now(); renderLive(); }, Math.max(0, 400 - (Date.now() - lastRender)));
+}
+
 function renderLive() {
-  const an = STATE.bundle?.analysis || {}, assets = an.assets || {};
-  const live = STATE.isLatest !== false;
-  const ix = live ? LIVE.index : null, xau = live ? LIVE.xau : null, fx = (live && LIVE.fx) || an.fx?.usdvnd, sjc = (live && LIVE.sjc) || an.sjc;
-  const k = [], vni = assets.VNINDEX, gw = assets.GOLD_USD;
+  const an = STATE.bundle?.analysis || {}, assets = an.assets || {}, live = liveOn();
+  if (live) { vnSyms().concat("VNINDEX").forEach(x => sparkLoaded.has(x) || loadIntraday(x)); if (cryptoSyms().join(",") !== wsKey) startCrypto(); }
+  const ix = live ? LIVE.index : null, xau = live ? LIVE.xau : null, fx = (live && LIVE.fx) || an.fx?.usdvnd, sjc = (live && LIVE.sjc) || an.sjc, spot = an.gold_spot;
+  // ô số liệu
+  const k = [], vni = assets.VNINDEX;
   if (ix || vni) k.push(kpi("VN-Index", nf(ix ? ix.last : vni.close), ix ? ix.last / ix.ref - 1 : vni.change_1d, ix ? `Trực tiếp · ${ix.time}` : `Phiên ${vni.last_date}`));
-  const spot = an.gold_spot;
   if (xau) k.push(kpi("Vàng giao ngay XAU (USD/oz)", nf(xau.price, 2), null, `Trực tiếp · ${xau.src} · ${new Date(xau.at).toLocaleTimeString("vi-VN")}`));
   else if (spot) k.push(kpi("Vàng giao ngay XAU (USD/oz)", nf(spot.price, 2), null, `Lúc chạy ${spot.at} · ${spot.source}`));
-  else if (gw) k.push(kpi("Vàng tương lai COMEX GC=F (USD/oz)", nf(gw.close, 1), gw.change_1d, `Không có giá giao ngay · phiên ${gw.last_date}`));
-  if (sjc) {
-    const sp = xau?.price || spot?.price, world = sp && fx ? sp * fx * OZ_LUONG / 1e6 : an.sjc?.world_equiv, prem = world ? sjc.sell / world - 1 : null;
-    k.push(kpi("Vàng SJC mua / bán (tr/lượng)", `${nf(sjc.buy, 1)} / ${nf(sjc.sell, 1)}`, null,
-      (prem != null ? `Đắt hơn thế giới ${pct(prem, false)}` : "") + (live && LIVE.sjc ? " · trực tiếp" : "")));
-  }
+  const btc = live && LIVE.crypto.BTC;
+  if (btc) k.push(kpi("Bitcoin (USD)", nf(btc.last, 0), btc.open ? btc.last / btc.open - 1 : null, `Trực tiếp · ${btc.src} · 24h`));
+  if (sjc) { const sp = xau?.price || spot?.price, world = sp && fx ? sp * fx * OZ_LUONG / 1e6 : an.sjc?.world_equiv, prem = world ? sjc.sell / world - 1 : null;
+    k.push(kpi("Vàng SJC mua / bán (tr/lượng)", `${nf(sjc.buy, 1)} / ${nf(sjc.sell, 1)}`, null, (prem != null ? `Đắt hơn thế giới ${pct(prem, false)}` : "") + (live && LIVE.sjc ? " · trực tiếp" : ""))); }
   if (fx) k.push(kpi("USD/VND", nf(fx, 0), null, live && LIVE.fx ? "open.er-api.com · theo ngày" : `Ngày ${an.fx?.date || "–"}`));
   $("kpis").innerHTML = k.join("");
 
+  // bảng cổ phiếu VN
   const rows = [];
+  if (ix) { const d = ix.last - ix.ref, c = d > 0 ? "up" : d < 0 ? "down" : "ref";
+    rows.push(`<tr class="r-${c}"><td class="sym ${c}">VN-Index</td><td class="price ${c}" data-k="VNINDEX">${nf(ix.last)}${tickHtml(ix.tick)}</td><td class="${c}">${d > 0 ? "+" : ""}${nf(d)}</td><td>${pill(d / ix.ref, c)}</td>
+      <td>${sparkSvg(LIVE.spark.VNINDEX, ix.ref)}</td><td class="muted small">chỉ số</td><td class="ref">${nf(ix.ref)}</td><td colspan="4" class="muted small" style="text-align:left">Cập nhật ${esc(ix.time)}</td></tr>`); }
   for (const sym of vnSyms()) {
     const s = live ? LIVE.stocks[sym] : null, a = assets[sym];
-    if (!s) { rows.push(`<tr><td class="sym">${esc(sym)}</td><td colspan="8" class="muted" style="text-align:left">${a ? nf(a.close) + " (phiên " + esc(a.last_date) + ")" : ""}${live ? " · đang tải giá trực tiếp…" : ""}</td></tr>`); continue; }
+    if (!s) { rows.push(`<tr><td class="sym">${esc(sym)}</td><td colspan="10" class="muted" style="text-align:left">${a ? nf(a.close) + " (phiên " + esc(a.last_date) + ")" : "không có dữ liệu"}${live ? " · đang tải giá trực tiếp…" : ""}</td></tr>`); continue; }
     const d = (s.last ?? s.ref) - s.ref, cls = colorCls(s.last, s);
-    rows.push(`<tr><td class="sym ${cls}">${esc(sym)}</td><td class="${cls}" data-k="${esc(sym)}">${s.last ? nf(s.last) : `<span class="muted">chưa khớp</span>`}</td>
-      <td class="${cls}">${s.last ? (d > 0 ? "+" : "") + nf(d) : "–"}</td><td class="${cls}">${s.last ? pct(d / s.ref) : "–"}</td>
+    rows.push(`<tr class="r-${cls}"><td class="sym ${cls}">${esc(sym)}</td><td class="price ${cls}" data-k="${esc(sym)}">${s.last ? nf(s.last) + tickHtml(s.tick) : `<span class="muted">chưa khớp</span>`}</td>
+      <td class="${cls}">${s.last ? (d > 0 ? "+" : "") + nf(d) : "–"}</td><td>${s.last ? pill(d / s.ref, cls) : pill(null)}</td>
+      <td>${sparkSvg(LIVE.spark[sym], s.ref)}</td><td>${rangeBar(s.last ?? s.ref, s.floor, s.ceil)}</td>
       <td class="ref">${nf(s.ref)}</td><td class="ceil">${nf(s.ceil)}</td><td class="floor">${nf(s.floor)}</td>
       <td class="${colorCls(s.high, s)}">${nf(s.high)}</td><td class="${colorCls(s.low, s)}">${nf(s.low)}</td></tr>`);
     setCard(sym, s.last, s.ref);
   }
-  for (const sym of (an.watchlist?.stocks || []).filter(s => s.endsWith(".US")))
-    rows.push(`<tr><td class="sym">${esc(sym)}</td><td colspan="8" class="muted" style="text-align:left">${assets[sym] ? nf(assets[sym].close) + " USD · " : ""}cổ phiếu Mỹ chỉ cập nhật theo lượt chạy</td></tr>`);
-  $("boardBody").innerHTML = rows.join("") || `<tr><td colspan="9" class="muted" style="text-align:left">Chưa có mã cổ phiếu VN trong danh mục.</td></tr>`;
-  $("boardBody").querySelectorAll("td[data-k]").forEach(td => flash(td, "b-" + td.dataset.k, LIVE.stocks[td.dataset.k]?.last));
+  for (const sym of (WL().stocks || []).filter(s => s.endsWith(".US")))
+    rows.push(`<tr><td class="sym">${esc(sym)}</td><td colspan="10" class="muted" style="text-align:left">${assets[sym] ? nf(assets[sym].close) + " USD · " : ""}cổ phiếu Mỹ chỉ cập nhật theo lượt chạy</td></tr>`);
+  $("boardBody").innerHTML = rows.join("") || `<tr><td colspan="11" class="muted" style="text-align:left">Chưa có mã cổ phiếu VN trong danh mục.</td></tr>`;
+  $("boardBody").querySelectorAll("td[data-k]").forEach(td => flash(td, "b-" + td.dataset.k, td.dataset.k === "VNINDEX" ? ix?.last : LIVE.stocks[td.dataset.k]?.last));
   if (ix) setCard("VNINDEX", ix.last, ix.ref);
 
-  const errs = Object.values(LIVE.err), sess = inSession(), last = LIVE.ok.vn || LIVE.ok.gold;
-  $("livePulse").className = "pulse" + (!live ? " off" : errs.length ? " err" : sess ? "" : " off");
+  // bảng crypto
+  const cr = [];
+  for (const c of cryptoSyms()) {
+    const t = live ? LIVE.crypto[c] : null, a = assets[c + "-USD"];
+    if (!t) { cr.push(`<tr><td class="sym">${esc(c)}</td><td colspan="8" class="muted" style="text-align:left">${a ? nf(a.close, a.close < 10 ? 4 : 2) + " USD (lúc chạy)" : ""}${live ? " · đang kết nối…" : ""}</td></tr>`); continue; }
+    const ch = t.open ? t.last / t.open - 1 : null, cls = ch == null ? "" : ch > 0 ? "up" : ch < 0 ? "down" : "ref", dg = t.last < 10 ? 4 : 2;
+    cr.push(`<tr class="r-${cls}"><td class="sym ${cls}">${esc(c)}</td><td class="price ${cls}" data-c="${esc(c)}">${nf(t.last, dg)}${tickHtml(t.tick)}</td>
+      <td>${fx ? nf(t.last * fx, 0) + " ₫" : "–"}</td><td>${pill(ch, cls)}</td><td>${sparkSvg(LIVE.spark["C:" + c], t.open)}</td>
+      <td>${t.high ? rangeBar(t.last, t.low, t.high, "day") : "–"}</td><td>${t.high ? nf(t.high, dg) : "–"}</td><td>${t.low ? nf(t.low, dg) : "–"}</td><td>${t.qv ? fmtBig(t.qv) : "–"}</td></tr>`);
+    setCard(c + "-USD", t.last, t.open, dg);
+  }
+  $("cryptoBody").innerHTML = cr.join("") || `<tr><td colspan="9" class="muted" style="text-align:left">Chưa có coin nào. Thêm trong ☰ Danh mục.</td></tr>`;
+  $("cryptoBody").querySelectorAll("td[data-c]").forEach(td => flash(td, "c-" + td.dataset.c, LIVE.crypto[td.dataset.c]?.last));
+
+  // bảng vàng
+  const gd = [];
+  if (xau) { const d = LIVE.xau0 ? xau.price / LIVE.xau0 - 1 : null, cls = d > 0 ? "up" : d < 0 ? "down" : "ref";
+    gd.push(`<tr class="r-${cls}"><td class="sym">XAU giao ngay</td><td class="price ${cls}" data-g="XAU">${nf(xau.price, 2)} USD${tickHtml(xau.tick)}</td><td>${pill(d, cls)}</td><td>${sparkSvg(LIVE.spark.XAU, LIVE.xau0)}</td><td class="muted small" style="text-align:left">${esc(xau.src)}, 3 giây/lần</td></tr>`);
+    if (fx) gd.push(`<tr><td class="sym">XAU quy đổi</td><td class="price">${nf(xau.price * fx * OZ_LUONG / 1e6, 2)} tr/lượng</td><td></td><td></td><td class="muted small" style="text-align:left">× ${nf(fx, 0)} ₫/USD × 1,2057 oz/lượng</td></tr>`); }
+  if (sjc) gd.push(`<tr><td class="sym">SJC</td><td class="price">${nf(sjc.buy, 1)} / ${nf(sjc.sell, 1)} tr</td><td></td><td>${sparkSvg(LIVE.spark.SJC)}</td><td class="muted small" style="text-align:left">Mua / bán · PNJ ${esc(sjc.at || sjc.updated || "")}</td></tr>`);
+  $("goldBody").innerHTML = gd.join("") || `<tr><td colspan="5" class="muted" style="text-align:left">Chưa bật theo dõi vàng.</td></tr>`;
+  $("goldBody").querySelectorAll("td[data-g]").forEach(td => flash(td, "g-XAU", xau?.price));
+
+  // trạng thái
+  const errs = Object.values(LIVE.err), sess = inSession(), last = [LIVE.ok.vn, LIVE.ok.gold, LIVE.ok.crypto].filter(Boolean).sort((a, b) => b - a)[0];
+  $("livePulse").className = "pulse" + (!live ? " off" : errs.length ? " err" : "");
   $("liveStatus").textContent = !live ? "Đang xem báo cáo cũ, tắt cập nhật trực tiếp" :
-    (errs.length ? `Lỗi kết nối: ${errs.join(", ")} · ` : "") + (sess ? "Trong phiên · " : "Ngoài giờ giao dịch · ") +
-    (last ? `cập nhật ${last.toLocaleTimeString("vi-VN")}` : "đang kết nối…");
+    (errs.length ? `Lỗi: ${errs.join(", ")} · ` : "") + (sess ? "HOSE trong phiên" : "HOSE ngoài giờ") + " · crypto 24/7" +
+    (last ? ` · ${last.toLocaleTimeString("vi-VN")}` : " · đang kết nối…");
 }
-async function liveLoop() {
-  if (!document.hidden && STATE.bundle && STATE.isLatest !== false) { await Promise.all([pollVN(), pollGold()]); renderLive(); }
-  setTimeout(liveLoop, inSession() ? 5000 : 60000);
+
+// --- vòng lặp ---
+function loop(fn, ms) { const run = async () => { if (!document.hidden && STATE.bundle && liveOn()) { await fn(); scheduleRender(); } setTimeout(run, ms()); }; run(); }
+function startLive() {
+  vnSyms().concat("VNINDEX").forEach(loadIntraday);
+  loop(pollVN, () => inSession() ? 2000 : 30000);
+  loop(pollGold, () => 3000);
+  loop(async () => { await Promise.all([pollSjc(), LIVE.fx ? null : pollFx()]); }, () => 60000);
+  startCrypto();
 }
-async function slowLoop() {
-  if (!document.hidden && STATE.bundle && STATE.isLatest !== false) { await Promise.all([pollSjc(), LIVE.fx ? null : pollFx()]); renderLive(); }
-  setTimeout(slowLoop, 60000);
-}
-document.addEventListener("visibilitychange", () => { if (!document.hidden && STATE.bundle && STATE.isLatest !== false) Promise.all([pollVN(), pollGold(), pollSjc(), LIVE.fx ? null : pollFx()]).then(renderLive); });
+document.addEventListener("visibilitychange", () => { if (!document.hidden && STATE.bundle && liveOn()) { startCrypto(); Promise.all([pollVN(), pollGold(), pollSjc()]).then(scheduleRender); } });
+document.querySelectorAll(".board-tabs button").forEach(b => b.onclick = () => {
+  document.querySelectorAll(".board-tabs button").forEach(x => x.classList.toggle("on", x === b));
+  ["bVN", "bCR", "bGD"].forEach(id => $(id).classList.toggle("hide", id !== b.dataset.b));
+  store.set("btdt.board", b.dataset.b);
+});
+{ const saved = store.get("btdt.board"); if (saved) document.querySelector(`.board-tabs button[data-b="${saved}"]`)?.click(); }
 
 // ---------- boot ----------
 (async () => {
   loadDates();
   try { render(await loadBundle("", false)); }
   catch (e) { $("cards").innerHTML = `<div class="panel err">${esc(e.message)}</div>`; }
-  liveLoop(); slowLoop();
+  startLive();
 })();
 })();
 </script>

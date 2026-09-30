@@ -27,6 +27,12 @@ def parse_symbol(raw):
     return s
 
 
+def parse_crypto(raw):
+    """'btc' -> 'BTC' (phân tích bằng lịch sử Yahoo Finance BTC-USD)."""
+    s = raw.strip().upper()
+    return s if re.fullmatch(r"[A-Z0-9]{2,10}", s) else None
+
+
 def main():
     manual = "--manual" in sys.argv
     cfg = json.load(open(os.path.join(ROOT, "config.json"), encoding="utf-8"))
@@ -34,7 +40,7 @@ def main():
     gold = cfg.get("gold", {"world": True, "sjc": True})
     out = {"generated_at": datetime.now(data.VN_TZ).strftime("%Y-%m-%d %H:%M (giờ VN)"),
            "run_kind": "manual" if manual else "scheduled",
-           "watchlist": {"stocks": cfg["stocks"], "gold": gold},
+           "watchlist": {"stocks": cfg["stocks"], "crypto": cfg.get("crypto", []), "gold": gold},
            "assets": {}, "errors": []}
     series = {}
 
@@ -60,6 +66,13 @@ def main():
             run_asset(s, f"Cổ phiếu Mỹ {t}", "stock", lambda t=t: data.yf_history(t, years))
         else:
             run_asset(s, f"Cổ phiếu {s}", "stock", lambda s=s: data.vn_history(s, years))
+
+    for raw in cfg.get("crypto", []):
+        c = parse_crypto(raw)
+        if not c:
+            out["errors"].append(f"Mã crypto không hợp lệ: {raw!r}")
+            continue
+        run_asset(f"{c}-USD", f"Crypto {c} (USD)", "crypto", lambda c=c: data.yf_history(f"{c}-USD", years))
 
     if gold.get("world") or gold.get("sjc"):
         run_asset("GOLD_USD", "Vàng tương lai COMEX GC=F (USD/oz)", "gold", lambda: data.yf_history(cfg["gold_world"], years))
