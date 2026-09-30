@@ -3,7 +3,8 @@
     "FPT",
     "VCB",
     "HPG",
-    "SHS"
+    "SHS",
+    "LONG"
   ],
   "gold": {
     "world": true,
