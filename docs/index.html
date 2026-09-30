@@ -200,6 +200,26 @@ code{background:var(--surface-2);border-radius:5px;padding:1px 5px;font-size:12.
 .step.done{color:var(--text)} .step.done .ic{background:var(--pos);border-color:var(--pos);color:#fff}
 .step.fail .ic{background:var(--neg);border-color:var(--neg);color:#fff}
 @keyframes spin{to{transform:rotate(360deg)}}
+/* live board */
+:root{--ceil:#a21caf;--floor:#0891b2;--ref:#b45309}
+:root[data-theme="dark"]{--ceil:#e879f9;--floor:#22d3ee;--ref:#fbbf24}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])){--ceil:#e879f9;--floor:#22d3ee;--ref:#fbbf24}}
+.ceil{color:var(--ceil)} .floor{color:var(--floor)} .ref{color:var(--ref)}
+.livehd{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);font-weight:600}
+.pulse{width:9px;height:9px;border-radius:50%;background:var(--up);animation:pl 1.6s infinite}
+.pulse.off{background:var(--muted);animation:none} .pulse.err{background:var(--down);animation:none}
+@keyframes pl{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--up) 60%,transparent)}100%{box-shadow:0 0 0 10px transparent}}
+.board{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.board .tw{margin:0}
+.board table{min-width:640px;font-size:14px}
+.board th,.board td{padding:10px 12px;text-align:right}
+.board th:first-child,.board td:first-child{text-align:left}
+.board td{font-variant-numeric:tabular-nums;font-weight:600}
+.board td.sym{font-weight:800}
+.board tr:last-child td{border-bottom:0}
+.flash-up{animation:fu 1s} .flash-down{animation:fd 1s}
+@keyframes fu{0%{background:color-mix(in srgb,var(--up) 30%,transparent)}100%{background:transparent}}
+@keyframes fd{0%{background:color-mix(in srgb,var(--down) 30%,transparent)}100%{background:transparent}}
 footer{margin-top:34px;font-size:13px;color:var(--muted)}
 .skeleton{height:120px;border-radius:16px;background:linear-gradient(90deg,var(--surface) 0%,var(--surface-2) 50%,var(--surface) 100%);background-size:200% 100%;animation:sh 1.2s infinite}
 @keyframes sh{to{background-position:-200% 0}}
@@ -234,6 +254,11 @@ footer{margin-top:34px;font-size:13px;color:var(--muted)}
 
 <main class="wrap">
   <div class="kpis" id="kpis"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+  <div class="section-h"><h3>Bảng giá trực tiếp</h3><span class="livehd"><span class="pulse off" id="livePulse"></span><span id="liveStatus">Đang kết nối…</span></span></div>
+  <div class="board"><div class="tw"><table>
+    <thead><tr><th>Mã</th><th>Giá</th><th>+/−</th><th>%</th><th>Tham chiếu</th><th>Trần</th><th>Sàn</th><th>Cao</th><th>Thấp</th></tr></thead>
+    <tbody id="boardBody"></tbody></table></div></div>
+  <p class="muted small">Cổ phiếu VN (nghìn đồng) và VN-Index: bảng giá VPS, cập nhật mỗi 5 giây trong phiên. Vàng thế giới: gold-api.com (giá giao ngay XAU). Vàng SJC: PNJ. Tỷ giá: open.er-api.com (1 lần/ngày). <b>Quan điểm và xác suất bên dưới vẫn tính theo lượt chạy gần nhất</b>, không đổi theo từng tick giá.</p>
 
   <div class="section-h"><h3>Quan điểm theo từng mã</h3><span class="muted small">Kỳ hạn quan điểm: <b id="stHz">1 tháng</b> · Thanh ngang là xác suất tăng, vạch đứng là tỷ lệ nền</span></div>
   <div class="grid" id="cards"></div>
@@ -365,11 +390,11 @@ async function loadDates() {
     const sel = $("dateSel"); sel.innerHTML = `<option value="">Mới nhất</option>` + d.map(x => `<option value="${esc(x)}">${esc(x.split("-").reverse().join("/"))}</option>`).join("");
   } catch { $("dateSel").style.display = "none"; }
 }
-$("dateSel").onchange = async e => { try { render(await loadBundle(e.target.value)); } catch (err) { alert(err.message); } };
+$("dateSel").onchange = async e => { try { render(await loadBundle(e.target.value), !e.target.value); } catch (err) { alert(err.message); } };
 
 // ---------- render ----------
-function render(bundle) {
-  STATE.bundle = bundle;
+function render(bundle, isLatest = true) {
+  STATE.bundle = bundle; STATE.isLatest = isLatest;
   const an = bundle.analysis || {}, news = bundle.news || {};
   const assets = an.assets || {}, st = an.stances || {};
   STATE.charts.forEach(c => c.destroy()); STATE.charts = [];
@@ -386,15 +411,8 @@ function render(bundle) {
     return `<a class="chip" href="#card-${esc(k)}"><span class="dot" style="background:var(--${c})"></span>${esc(shortName(k, st[k].name))}: ${ICON[c]} ${esc(st[k].view)}</a>`;
   }).join("");
 
-  // KPIs
-  const k = [];
-  const vni = assets.VNINDEX; if (vni) k.push(kpi("VN-Index", nf(vni.close), vni.change_1d, `Phiên ${vni.last_date}`));
-  const gw = assets.GOLD_USD; if (gw) k.push(kpi("Vàng thế giới (USD/oz)", nf(gw.close, 1), gw.change_1d, `Phiên ${gw.last_date}`));
-  const sjc = an.sjc; if (sjc) k.push(kpi("Vàng SJC bán ra (tr/lượng)", nf(sjc.sell, 1), null, sjc.premium_pct != null ? `Đắt hơn thế giới ${pct(sjc.premium_pct, false)}` : `Cập nhật ${sjc.updated}`));
-  if (an.fx) k.push(kpi("USD/VND", nf(an.fx.usdvnd, 0), null, `Ngày ${an.fx.date}`));
-  $("kpis").innerHTML = k.join("");
-
   // cards
+  const sjc = an.sjc;
   $("stHz").textContent = Object.values(st).find(s => s.horizon && s.horizon !== "vàng miếng")?.horizon || "1 tháng";
   $("cards").innerHTML = order.map(key => key === "SJC" ? sjcCard(st.SJC, sjc, news) : assetCard(key, assets[key], st[key], news)).join("") || `<div class="panel">Không có dữ liệu.</div>`;
   order.forEach(key => { if (assets[key]?.chart) drawChart(key, assets[key].chart); });
@@ -406,6 +424,7 @@ function render(bundle) {
   $("summary").innerHTML = news.summary ? esc(news.summary) : `<span class="muted">Chưa có phần tổng hợp tin tức.</span>`;
   $("news").innerHTML = (news.items || []).map(n => `<div class="ni"><a href="${esc(safeUrl(n.url))}" target="_blank" rel="noopener">${esc(n.title)}</a>
     <div class="meta">${esc(n.source)} · ${esc(n.date)}</div>${n.impact ? `<div class="imp">${esc(n.impact)}</div>` : ""}</div>`).join("") || `<div class="panel muted">Không có tin.</div>`;
+  renderLive();
   const errs = [...(an.errors || []), ...(news.errors || [])];
   $("errBox").innerHTML = errs.length ? `<div class="section-h"><h3>Cảnh báo dữ liệu</h3></div><div class="panel err small"><ul class="reasons">${errs.map(e => `<li>${esc(e)}</li>`).join("")}</ul></div>` : "";
 }
@@ -437,7 +456,7 @@ function assetCard(key, a, s, news) {
   const stop = s.horizon && a.horizons[s.horizon] ? a.horizons[s.horizon].stop_ref : null;
   return `<article class="card" id="card-${esc(key)}"><div class="accent ${c}"></div><div class="body">
     <div class="ch"><div><div class="name">${esc(a.name)}</div><div class="sym">${esc(key)} · phiên ${esc(a.last_date)}</div></div>
-      <div class="px"><b>${nf(a.close)}</b><span class="${a.change_1d >= 0 ? "up" : "down"} small" style="font-weight:700">${a.change_1d >= 0 ? "▲" : "▼"} ${pct(a.change_1d)}</span></div></div>
+      <div class="px"><b id="px-${esc(key)}">${nf(a.close)}</b><span id="chg-${esc(key)}" class="${a.change_1d >= 0 ? "up" : "down"} small" style="font-weight:700">${a.change_1d >= 0 ? "▲" : "▼"} ${pct(a.change_1d)}</span></div></div>
     <div class="row"><span class="badge ${c}">${ICON[c]} ${esc(s.view)}</span>${confHtml(s.confidence)}</div>
     <div class="chartbox"><canvas id="ch-${esc(key)}" aria-label="Biểu đồ giá 180 phiên ${esc(a.name)}"></canvas></div>
     <div class="legend"><span style="--c:var(--price)">Giá</span><span style="--c:var(--s1)">MA50</span><span class="dash" style="--c:var(--s2)">MA200</span></div>
@@ -618,11 +637,112 @@ async function runNow() {
   btn.disabled = false;
 }
 
+// ---------- live prices ----------
+const LIVE = {stocks:{}, index:null, xau:null, fx:null, sjc:null, ok:{}, err:{}};
+const OZ_LUONG = 37.5 / 31.1034768;
+function vnNow() { const d = new Date(Date.now() + 7 * 3600e3); return {day:d.getUTCDay(), min:d.getUTCHours() * 60 + d.getUTCMinutes()}; }
+function inSession() { const {day, min} = vnNow(); return day >= 1 && day <= 5 && ((min >= 540 && min <= 690) || (min >= 780 && min <= 905)); }
+async function getJSON(u) { const r = await fetch(u, {cache:"no-store"}); if (!r.ok) throw new Error(r.status); return r.json(); }
+function vnSyms() { return (STATE.bundle?.analysis?.watchlist?.stocks || []).filter(s => !s.endsWith(".US")); }
+
+async function pollVN() {
+  try {
+    const syms = vnSyms();
+    if (syms.length) for (const d of await getJSON(`https://bgapidatafeed.vps.com.vn/getliststockdata/${syms.join(",")}`))
+      LIVE.stocks[d.sym] = {last:+d.lastPrice || null, ref:+d.r, ceil:+d.c, floor:+d.f, high:+d.highPrice || null, low:+d.lowPrice || null};
+    const ix = (await getJSON("https://bgapidatafeed.vps.com.vn/getlistindexdetail/10"))[0];
+    if (ix) LIVE.index = {last:+ix.cIndex, ref:+ix.oIndex, time:ix.time};
+    LIVE.ok.vn = new Date(); delete LIVE.err.vn;
+  } catch { LIVE.err.vn = "bảng giá VPS"; }
+}
+async function pollGold() {
+  if (!STATE.bundle?.analysis?.watchlist?.gold) return;
+  try { const g = await getJSON("https://api.gold-api.com/price/XAU"); LIVE.xau = {price:+g.price, at:g.updatedAt}; LIVE.ok.gold = new Date(); delete LIVE.err.gold; }
+  catch { LIVE.err.gold = "vàng thế giới"; }
+}
+async function pollSjc() {
+  if (!STATE.bundle?.analysis?.watchlist?.gold?.sjc) return;
+  try { const j = await getJSON("https://edge-api.pnj.io/ecom-frontend/v1/get-gold-price?zone=00"); const r = j.data.find(x => x.masp === "SJC");
+    LIVE.sjc = {buy:r.giamua / 100, sell:r.giaban / 100, at:j.updateDate}; delete LIVE.err.sjc; }
+  catch { LIVE.err.sjc = "giá SJC"; }
+}
+async function pollFx() { try { const j = await getJSON("https://open.er-api.com/v6/latest/USD"); LIVE.fx = +j.rates.VND; } catch {} }
+
+const prev = {};
+function flash(el, key, val) {
+  if (!el || val == null) return;
+  if (prev[key] != null && prev[key] !== val) { el.classList.remove("flash-up", "flash-down"); void el.offsetWidth; el.classList.add(val > prev[key] ? "flash-up" : "flash-down"); }
+  prev[key] = val;
+}
+function colorCls(p, s) {
+  if (p == null) return "";
+  if (s.ceil && p >= s.ceil) return "ceil";
+  if (s.floor && p <= s.floor) return "floor";
+  return p > s.ref ? "up" : p < s.ref ? "down" : "ref";
+}
+function setCard(key, price, ref, d = 2) {
+  if (!STATE.isLatest || price == null || !ref) return;
+  const px = $("px-" + key), ch = $("chg-" + key); if (!px) return;
+  const c = price / ref - 1; px.textContent = nf(price, d); flash(px, "card-" + key, price);
+  ch.className = `${c >= 0 ? "up" : "down"} small`; ch.style.fontWeight = 700; ch.textContent = `${c >= 0 ? "▲" : "▼"} ${pct(c)} · trực tiếp`;
+}
+function renderLive() {
+  const an = STATE.bundle?.analysis || {}, assets = an.assets || {};
+  const live = STATE.isLatest !== false;
+  const ix = live ? LIVE.index : null, xau = live ? LIVE.xau : null, fx = (live && LIVE.fx) || an.fx?.usdvnd, sjc = (live && LIVE.sjc) || an.sjc;
+  const k = [], vni = assets.VNINDEX, gw = assets.GOLD_USD;
+  if (ix || vni) k.push(kpi("VN-Index", nf(ix ? ix.last : vni.close), ix ? ix.last / ix.ref - 1 : vni.change_1d, ix ? `Trực tiếp · ${ix.time}` : `Phiên ${vni.last_date}`));
+  if (xau || gw) k.push(kpi("Vàng thế giới (USD/oz)", nf(xau ? xau.price : gw.close, 1), xau ? null : gw.change_1d,
+    xau ? `Giao ngay · ${new Date(xau.at).toLocaleTimeString("vi-VN")}` : `Phiên ${gw.last_date}`));
+  if (sjc) {
+    const world = xau && fx ? xau.price * fx * OZ_LUONG / 1e6 : an.sjc?.world_equiv, prem = world ? sjc.sell / world - 1 : null;
+    k.push(kpi("Vàng SJC mua / bán (tr/lượng)", `${nf(sjc.buy, 1)} / ${nf(sjc.sell, 1)}`, null,
+      (prem != null ? `Đắt hơn thế giới ${pct(prem, false)}` : "") + (live && LIVE.sjc ? " · trực tiếp" : "")));
+  }
+  if (fx) k.push(kpi("USD/VND", nf(fx, 0), null, live && LIVE.fx ? "open.er-api.com · theo ngày" : `Ngày ${an.fx?.date || "–"}`));
+  $("kpis").innerHTML = k.join("");
+
+  const rows = [];
+  for (const sym of vnSyms()) {
+    const s = live ? LIVE.stocks[sym] : null, a = assets[sym];
+    if (!s) { rows.push(`<tr><td class="sym">${esc(sym)}</td><td colspan="8" class="muted" style="text-align:left">${a ? nf(a.close) + " (phiên " + esc(a.last_date) + ")" : ""}${live ? " · đang tải giá trực tiếp…" : ""}</td></tr>`); continue; }
+    const d = (s.last ?? s.ref) - s.ref, cls = colorCls(s.last, s);
+    rows.push(`<tr><td class="sym ${cls}">${esc(sym)}</td><td class="${cls}" data-k="${esc(sym)}">${s.last ? nf(s.last) : `<span class="muted">chưa khớp</span>`}</td>
+      <td class="${cls}">${s.last ? (d > 0 ? "+" : "") + nf(d) : "–"}</td><td class="${cls}">${s.last ? pct(d / s.ref) : "–"}</td>
+      <td class="ref">${nf(s.ref)}</td><td class="ceil">${nf(s.ceil)}</td><td class="floor">${nf(s.floor)}</td>
+      <td class="${colorCls(s.high, s)}">${nf(s.high)}</td><td class="${colorCls(s.low, s)}">${nf(s.low)}</td></tr>`);
+    setCard(sym, s.last, s.ref);
+  }
+  for (const sym of (an.watchlist?.stocks || []).filter(s => s.endsWith(".US")))
+    rows.push(`<tr><td class="sym">${esc(sym)}</td><td colspan="8" class="muted" style="text-align:left">${assets[sym] ? nf(assets[sym].close) + " USD · " : ""}cổ phiếu Mỹ chỉ cập nhật theo lượt chạy</td></tr>`);
+  $("boardBody").innerHTML = rows.join("") || `<tr><td colspan="9" class="muted" style="text-align:left">Chưa có mã cổ phiếu VN trong danh mục.</td></tr>`;
+  $("boardBody").querySelectorAll("td[data-k]").forEach(td => flash(td, "b-" + td.dataset.k, LIVE.stocks[td.dataset.k]?.last));
+  if (ix) setCard("VNINDEX", ix.last, ix.ref);
+  if (xau && gw) setCard("GOLD_USD", xau.price, gw.close / (1 + gw.change_1d), 1);
+  if (xau && fx && assets.GOLD_VND) setCard("GOLD_VND", xau.price * fx * OZ_LUONG / 1e6, assets.GOLD_VND.close / (1 + assets.GOLD_VND.change_1d));
+
+  const errs = Object.values(LIVE.err), sess = inSession(), last = LIVE.ok.vn || LIVE.ok.gold;
+  $("livePulse").className = "pulse" + (!live ? " off" : errs.length ? " err" : sess ? "" : " off");
+  $("liveStatus").textContent = !live ? "Đang xem báo cáo cũ, tắt cập nhật trực tiếp" :
+    (errs.length ? `Lỗi kết nối: ${errs.join(", ")} · ` : "") + (sess ? "Trong phiên · " : "Ngoài giờ giao dịch · ") +
+    (last ? `cập nhật ${last.toLocaleTimeString("vi-VN")}` : "đang kết nối…");
+}
+async function liveLoop() {
+  if (!document.hidden && STATE.bundle && STATE.isLatest !== false) { await Promise.all([pollVN(), pollGold()]); renderLive(); }
+  setTimeout(liveLoop, inSession() ? 5000 : 60000);
+}
+async function slowLoop() {
+  if (!document.hidden && STATE.bundle && STATE.isLatest !== false) { await Promise.all([pollSjc(), LIVE.fx ? null : pollFx()]); renderLive(); }
+  setTimeout(slowLoop, 60000);
+}
+document.addEventListener("visibilitychange", () => { if (!document.hidden && STATE.bundle && STATE.isLatest !== false) Promise.all([pollVN(), pollGold(), pollSjc(), LIVE.fx ? null : pollFx()]).then(renderLive); });
+
 // ---------- boot ----------
 (async () => {
   loadDates();
   try { render(await loadBundle("", false)); }
-  catch (e) { $("cards").innerHTML = `<div class="panel err">${esc(e.message)}</div>`; $("kpis").innerHTML = ""; }
+  catch (e) { $("cards").innerHTML = `<div class="panel err">${esc(e.message)}</div>`; }
+  liveLoop(); slowLoop();
 })();
 })();
 </script>
