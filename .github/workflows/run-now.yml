@@ -1,0 +1,64 @@
+name: Chạy ngay
+
+# Kích hoạt từ nút "Chạy ngay" trên trang báo cáo (hoặc tab Actions trên GitHub).
+# Bước 1 tính số liệu ngay (~1-2 phút). Bước 2 gọi agent Claude viết tin tức và khuyến nghị (thêm vài phút).
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ban-tin
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  ROUTINE_FIRE_URL: https://api.anthropic.com/v1/claude_code/routines/trig_01QXsXSNc6kNBCovTcoKyTxU/fire
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Cài thư viện
+        run: pip install -r requirements.txt
+
+      - name: Tính số liệu
+        run: |
+          python run.py --manual || echo "::warning::Một số nguồn dữ liệu lỗi, xem analysis.json"
+          python render.py
+
+      - name: Đẩy kết quả lên
+        run: |
+          git config user.name "longnv"
+          git config user.email "vietlongbkdp@gmail.com"
+          git add -A output docs data
+          git diff --cached --quiet && exit 0
+          git commit -m "Số liệu chạy tay $(TZ=Asia/Ho_Chi_Minh date '+%d/%m/%Y %H:%M')"
+          for i in 1 2 3; do
+            git push origin HEAD:main && exit 0
+            git pull --rebase -X theirs origin main
+          done
+          exit 1
+
+      - name: Gọi agent Claude viết tin tức và khuyến nghị
+        env:
+          TOKEN: ${{ secrets.CLAUDE_ROUTINE_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::warning::Chưa có secret CLAUDE_ROUTINE_TOKEN nên chỉ cập nhật số liệu, không có phần tin tức."
+            exit 0
+          fi
+          curl -sS --fail-with-body -X POST "$ROUTINE_FIRE_URL" \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "anthropic-beta: experimental-cc-routine-2026-04-01" \
+            -H "anthropic-version: 2023-06-01" \
+            -H "Content-Type: application/json" \
+            -d '{"text": "MANUAL_RUN"}'
