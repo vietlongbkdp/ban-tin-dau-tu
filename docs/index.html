@@ -552,14 +552,28 @@ function drawTags() {
   $("tkTags").innerHTML = STATE.wl.stocks.map((s, i) => `<span class="tag">${esc(s)}<button data-i="${i}" aria-label="Xoá ${esc(s)}">×</button></span>`).join("") || `<span class="muted small">Chưa có mã nào.</span>`;
   $("tkTags").querySelectorAll("button").forEach(b => b.onclick = () => { STATE.wl.stocks.splice(+b.dataset.i, 1); drawTags(); });
 }
-function addTickers() {
-  const raw = $("tkIn").value.toUpperCase().split(/[\s,;]+/).filter(Boolean), bad = [];
+async function checkVN(list) {
+  // Trả về tập mã có thật trên HOSE/HNX/UPCoM; null nếu không kiểm tra được
+  if (!list.length) return new Set();
+  try { return new Set((await getJSON(`https://bgapidatafeed.vps.com.vn/getliststockdata/${list.join(",")}`)).map(d => d.sym)); }
+  catch { return null; }
+}
+async function addTickers() {
+  const raw = $("tkIn").value.toUpperCase().split(/[\s,;]+/).filter(Boolean), bad = [], fresh = [];
+  $("tkIn").value = "";
   for (const t of raw) {
     if (!TK_RE.test(t)) { bad.push(t); continue; }
-    if (!STATE.wl.stocks.includes(t) && STATE.wl.stocks.length < 15) STATE.wl.stocks.push(t);
+    if (!STATE.wl.stocks.includes(t) && !fresh.includes(t)) fresh.push(t);
   }
-  $("tkIn").value = ""; drawTags();
-  if (bad.length) say("wMsg", `Bỏ qua mã không hợp lệ: ${bad.join(", ")}`, "bad");
+  const vn = fresh.filter(t => !t.endsWith(".US")), ok = await checkVN(vn);
+  const missing = ok ? vn.filter(t => !ok.has(t)) : [];
+  for (const t of fresh) if (!missing.includes(t) && STATE.wl.stocks.length < 15) STATE.wl.stocks.push(t);
+  drawTags();
+  const msgs = [];
+  if (bad.length) msgs.push(`Sai định dạng: ${bad.join(", ")}`);
+  if (missing.length) msgs.push(`Không tìm thấy trên HOSE/HNX/UPCoM: ${missing.join(", ")}`);
+  if (!ok && vn.length) msgs.push("Không kiểm tra được mã lúc này (mất kết nối bảng giá), đã thêm tạm");
+  if (msgs.length) say("wMsg", msgs.join(". ") + ".", "bad");
 }
 $("tkAdd").onclick = addTickers;
 $("tkIn").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); addTickers(); } });
@@ -576,11 +590,14 @@ $("btnWatch").onclick = async () => {
     } catch (e) { say("wMsg", "Không đọc được config.json: " + e.message, "bad"); }
   } else say("wMsg", "Cần thiết lập token GitHub (nút ⚙) để lưu thay đổi.", "info");
   $("gWorld").checked = !!STATE.wl.gold.world; $("gSjc").checked = !!STATE.wl.gold.sjc; drawTags();
+  const vn = STATE.wl.stocks.filter(t => !t.endsWith(".US")), ok = await checkVN(vn);
+  const missing = ok ? vn.filter(t => !ok.has(t)) : [];
+  if (missing.length) say("wMsg", `Mã không tồn tại trên sàn, nên xoá: ${missing.join(", ")}`, "bad");
 };
 async function saveWatch() {
   if (!token()) { say("wMsg", "Cần thiết lập token GitHub trước (nút ⚙).", "bad"); return false; }
   if (!STATE.cfg) { say("wMsg", "Chưa đọc được cấu hình hiện tại, hãy đóng và mở lại.", "bad"); return false; }
-  addTickers();
+  if ($("tkIn").value.trim()) await addTickers();
   STATE.wl.gold = {world:$("gWorld").checked, sjc:$("gSjc").checked};
   const cfg = {...STATE.cfg, stocks:STATE.wl.stocks, gold:STATE.wl.gold};
   try {
