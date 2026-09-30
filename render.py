@@ -9,7 +9,7 @@ import os
 from datetime import datetime
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-VERDICT_CLASS = {"Tích cực": "pos", "Tiêu cực": "neg", "Trung lập": "neu", "Không có lợi thế thống kê": "none"}
+VERDICT_CLASS = {"Tích cực": "pos", "Tiêu cực": "neg", "Thận trọng": "neg", "Trung lập": "neu", "Không có lợi thế thống kê": "none"}
 SIG_TEXT = {1: "tăng", -1: "giảm", 0: "trung tính"}
 
 
@@ -78,6 +78,39 @@ def asset_card(key, a, commentary):
 </section>"""
 
 
+def reco_section(an, news):
+    st = an.get("stances", {})
+    if not st:
+        return ""
+    best = an.get("best_pick")
+    notes = news.get("stance_notes", {})
+    if best:
+        head = f"Mã có lợi thế thống kê tốt nhất hôm nay: <b>{e(st[best]['name'])}</b>"
+    else:
+        head = ("Hôm nay <b>không có mã nào đủ điều kiện Tích cực</b>. Phương án khớp nhất với dữ liệu: "
+                "chưa mở vị thế mới dựa trên tín hiệu kỹ thuật, tiếp tục theo dõi.")
+    order = sorted(st, key=lambda k: (-st[k]["sign"], -st[k]["edge"]))
+    cards = []
+    for k in order:
+        s = st[k]
+        lv = s.get("live") or {}
+        track = (f"Quan điểm này đã chấm {lv['n']} lần, đúng {pct(lv.get('hit_rate'), False)}" if lv.get("n")
+                 else "Chưa có lịch sử chấm điểm")
+        note = notes.get(k)
+        cards.append(f"""<div class="reco">
+<div class="rh"><b>{e(s['name'])}</b><span class="tag {VERDICT_CLASS.get(s['view'], 'none')}">{e(s['view'])}</span></div>
+<div class="muted small">Kỳ hạn {e(s['horizon'])} · Tin cậy: {e(s['confidence'])} · {track}</div>
+<p><b>Hành động gợi ý chung:</b> {e(s['action'])}</p>
+<ul class="small">{''.join(f'<li>{e(r)}</li>' for r in s['reasons'])}</ul>
+{f'<p class="small"><b>Tin tức cần lưu ý:</b> {e(note)}</p>' if note else ''}
+<p class="small muted"><b>Điều kiện đổi quan điểm:</b> {e(s['change_if'])}</p></div>""")
+    return f"""<section class="card"><h2>Khuyến nghị hôm nay</h2>
+<p class="big">{head}</p>
+{f'<p>{e(news["recommendation"])}</p>' if news.get("recommendation") else ''}
+<div class="recos">{''.join(cards)}</div>
+<p class="muted small">Quan điểm do quy tắc cố định sinh ra: chỉ tín hiệu đã qua kiểm định mới được chuyển sang Tích cực hoặc Thận trọng; tin tức chỉ được nêu để theo dõi, không được đổi quan điểm. Đây là nhận định chung cho mọi nhà đầu tư, không tính đến vốn, mục tiêu hay khả năng chịu rủi ro của riêng bạn.</p></section>"""
+
+
 def build(an, news):
     commentary = news.get("commentary", {})
     order = [k for k in ["GOLD_VND", "GOLD_USD", "VNINDEX"] if k in an["assets"]] + \
@@ -130,7 +163,9 @@ tr.note td{{font-size:12.5px;color:var(--neu);border-bottom:1px solid var(--line
 .tag{{padding:2px 8px;border-radius:99px;font-size:12px;font-weight:600;white-space:nowrap;border:1px solid currentColor}}
 .tag.pos{{color:var(--pos)}}.tag.neg{{color:var(--neg)}}.tag.neu{{color:var(--neu)}}.tag.none{{color:var(--muted)}}
 .sigs{{font-size:13px;color:var(--muted)}}.comm{{margin-top:12px;padding:12px;background:var(--bg);border-radius:8px}}.comm p{{margin:0}}
-.warn{{border-left:4px solid var(--neu)}}ul{{padding-left:20px}}li{{margin:6px 0}}
+.warn{{border-left:4px solid var(--neu)}}.big{{font-size:17px}}
+.recos{{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}}.reco{{border:1px solid var(--line);border-radius:10px;padding:12px}}
+.rh{{display:flex;justify-content:space-between;align-items:center;gap:8px}}.reco p{{margin:8px 0}}.reco ul{{margin:6px 0}}ul{{padding-left:20px}}li{{margin:6px 0}}
 </style></head><body><main>
 <h1>Bản tin đầu tư</h1>
 <div class="muted">Tạo lúc {e(an['generated_at'])}</div>
@@ -139,6 +174,7 @@ tr.note td{{font-size:12.5px;color:var(--neu);border-bottom:1px solid var(--line
 "Xác suất tăng" là tỷ lệ các lần trong lịch sử có trạng thái chỉ báo tương tự hôm nay mà giá cao hơn sau kỳ hạn. Đây không phải dự báo chắc chắn.
 "Nền" là tỷ lệ tăng chung của mọi ngày trong lịch sử. Tín hiệu chỉ có ý nghĩa khi khác rõ so với nền và qua được kiểm định 250 phiên gần nhất.</section>
 
+{reco_section(an, news)}
 <section class="card"><h2>Tóm tắt hôm nay</h2><p>{e(summary) or '<span class="muted">Chưa có phần tổng hợp tin tức.</span>'}</p></section>
 {sjc_html}
 {cards}

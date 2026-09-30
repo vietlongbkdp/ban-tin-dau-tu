@@ -198,3 +198,80 @@ def verdict(hz):
     if no_edge:
         note = "Cảnh báo: trong kiểm định 250 phiên gần nhất, mô hình không đoán đúng hướng tốt hơn cách đoán đơn giản theo tỷ lệ nền, nên độ tin cậy thấp."
     return lab, note
+
+
+SJC_PREMIUM_LIMIT = 0.05  # SJC đắt hơn thế giới quá 5% thì rủi ro chênh lệch thu hẹp là đáng kể
+
+
+def _validated(hz):
+    wf = hz["walk_forward"]
+    return (any(v for v in hz["weights"].values()) and wf is not None and wf["model_hit"] is not None
+            and wf["model_hit"] > wf["naive_hit"])
+
+
+def stance(a, label):
+    """Quan điểm chung theo quy tắc cố định, không phụ thuộc hoàn cảnh cá nhân.
+    Chỉ tín hiệu đã qua kiểm định mới được đẩy quan điểm khỏi Trung lập."""
+    hz = a["horizons"][label]
+    st, lv = hz["stats"], hz.get("live", {})
+    ok = _validated(hz)
+    p, base = hz["prob_up_final"], st["base_prob_up"]
+    if ok and hz["verdict"] == "Tích cực":
+        view, sign = "Tích cực", 1
+    elif ok and hz["verdict"] == "Tiêu cực":
+        view, sign = "Thận trọng", -1
+    else:
+        view, sign = "Trung lập", 0
+    if ok and lv.get("n", 0) >= 20 and (lv.get("skill") or 0) > 0:
+        conf = "Cao"
+    elif ok:
+        conf = "Trung bình"
+    else:
+        conf = "Thấp"
+    c, stop = a["close"], hz["stop_ref"]
+    trend = "trên" if c > a["sma200"] else "dưới"
+    reasons = [
+        f"Kiểm định {label}: xác suất tăng {p:.0%} so với nền {base:.0%}; trung vị {st['median']:+.1%}, "
+        f"khoảng 10–90% từ {st['p10']:+.1%} đến {st['p90']:+.1%} (n={st['n']}). "
+        + ("Tín hiệu đã qua kiểm định 250 phiên." if ok else "Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào."),
+        f"Giá {c:,.2f} đang {trend} MA200 ({a['sma200']:,.2f}); RSI {a['rsi']:.0f}. Đây là mô tả trạng thái, không phải dự báo.",
+        f"Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là {st['avg_max_drawdown']:+.1%}, tệ nhất {st['worst_drawdown']:+.1%}. "
+        f"Mức cắt lỗ tham khảo {stop:,.2f} ({stop / c - 1:+.1%}).",
+    ]
+    if sign > 0:
+        action = f"Có thể cân nhắc mua từng phần, không dồn một lần; đặt cắt lỗ quanh {stop:,.2f}."
+    elif sign < 0:
+        action = f"Không mở vị thế mới. Nếu đang nắm giữ, cân nhắc giảm tỷ trọng khi giá thủng {a['support_20']:,.2f}."
+    else:
+        action = (f"Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ {stop:,.2f}. "
+                  f"Đường MA200 hiện ở {a['sma200']:,.2f}.")
+    change_if = (f"Xem lại khi giá đóng cửa vượt kháng cự {a['resist_20']:,.2f} hoặc thủng hỗ trợ {a['support_20']:,.2f}, "
+                 "hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.")
+    return {"view": view, "sign": sign, "confidence": conf, "horizon": label, "action": action,
+            "reasons": reasons, "change_if": change_if, "edge": p - base if ok else 0.0}
+
+
+def sjc_stance(sjc):
+    prem, spread = sjc.get("premium_pct"), (sjc["sell"] - sjc["buy"]) / sjc["sell"]
+    if prem is None:
+        return None
+    reasons = [
+        f"Giá bán SJC {sjc['sell']:,.1f} tr/lượng, đắt hơn vàng thế giới quy đổi {prem:+.1%} ({sjc['premium']:,.1f} tr).",
+        f"Chênh mua–bán {spread:.1%}: mua xong bán lại ngay sẽ lỗ khoảng mức này.",
+    ]
+    if prem > SJC_PREMIUM_LIMIT:
+        return {"view": "Thận trọng", "sign": -1, "confidence": "Trung bình", "horizon": "vàng miếng",
+                "action": (f"Nếu muốn nắm giữ vàng, lưu ý giá SJC đang cao hơn thế giới {prem:.1%}. Chênh lệch này thu hẹp "
+                           "thì SJC có thể giảm dù vàng thế giới đứng yên. Có thể cân nhắc vàng nhẫn 9999 hoặc chờ chênh lệch giảm."),
+                "reasons": reasons + [f"Ngưỡng cảnh báo của hệ thống: chênh lệch trên {SJC_PREMIUM_LIMIT:.0%}."],
+                "change_if": f"Chênh lệch với thế giới về dưới {SJC_PREMIUM_LIMIT:.0%}.", "edge": 0.0}
+    return {"view": "Trung lập", "sign": 0, "confidence": "Thấp", "horizon": "vàng miếng",
+            "action": "Chênh lệch với thế giới ở mức chấp nhận được; xu hướng vàng miếng theo vàng thế giới quy đổi.",
+            "reasons": reasons, "change_if": f"Chênh lệch vượt {SJC_PREMIUM_LIMIT:.0%}.", "edge": 0.0}
+
+
+def best_pick(stances):
+    pos = [(k, s) for k, s in stances.items() if s["sign"] > 0]
+    if not pos:
+        return None
+    return max(pos, key=lambda kv: kv[1]["edge"])[0]

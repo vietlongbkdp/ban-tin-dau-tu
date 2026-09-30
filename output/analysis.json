@@ -1,21 +1,21 @@
 {
- "generated_at": "2026-09-30 09:20 (giờ VN)",
+ "generated_at": "2026-09-30 09:32 (giờ VN)",
  "assets": {
   "VNINDEX": {
    "source": "VNDirect dchart",
    "last_date": "2026-09-30",
    "first_date": "2017-08-24",
    "n_days": 2270,
-   "close": 1779.69,
-   "change_1d": 0.0011025296304838506,
-   "change_20d": -0.02861712114926962,
-   "rsi": 45.32380856472161,
-   "sma20": 1807.4454999999998,
-   "sma50": 1773.0582000000002,
-   "sma200": 1795.775,
-   "macd_hist": -5.660991160439775,
-   "bb_up": 1851.039449109495,
-   "bb_lo": 1763.8515508905045,
+   "close": 1784.19,
+   "change_1d": 0.003633847659655798,
+   "change_20d": -0.026160950156103202,
+   "rsi": 46.71221488666207,
+   "sma20": 1807.6704999999997,
+   "sma50": 1773.1482,
+   "sma200": 1795.7975,
+   "macd_hist": -5.373811673260283,
+   "bb_up": 1850.7041267416562,
+   "bb_lo": 1764.6368732583433,
    "atr": 30.446428571428605,
    "support_20": 1763.62,
    "resist_20": 1874.48,
@@ -62,7 +62,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 1718.797142857143,
+     "stop_ref": 1723.297142857143,
      "live": {
       "n": 0
      },
@@ -100,7 +100,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 1718.797142857143,
+     "stop_ref": 1723.297142857143,
      "live": {
       "n": 0
      },
@@ -138,7 +138,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 1718.797142857143,
+     "stop_ref": 1723.297142857143,
      "live": {
       "n": 0
      },
@@ -511,7 +511,7 @@
      1785.11,
      1780.68,
      1777.73,
-     1779.69
+     1784.19
     ],
     "sma50": [
      1693.97,
@@ -693,7 +693,7 @@
      1773.77,
      1773.74,
      1773.21,
-     1773.06
+     1773.15
     ],
     "sma200": [
      1522.08,
@@ -875,7 +875,7 @@
      1795.14,
      1795.38,
      1795.58,
-     1795.78
+     1795.8
     ]
    },
    "name": "VN-Index",
@@ -886,16 +886,16 @@
    "last_date": "2026-09-30",
    "first_date": "2016-10-03",
    "n_days": 2494,
-   "close": 63.5,
-   "change_1d": 0.004746835443038,
-   "change_20d": -0.04577284885643018,
-   "rsi": 42.33778819620463,
-   "sma20": 65.70725000000002,
-   "sma50": 63.79964,
-   "sma200": 71.735095,
-   "macd_hist": -0.46799214552634694,
-   "bb_up": 68.13626365080172,
-   "bb_lo": 63.278236349198316,
+   "close": 63.8,
+   "change_1d": 0.009493670886075778,
+   "change_20d": -0.04126468908724801,
+   "rsi": 43.902700560281424,
+   "sma20": 65.72225,
+   "sma50": 63.80564,
+   "sma200": 71.736595,
+   "macd_hist": -0.44884684638104216,
+   "bb_up": 68.09697036026671,
+   "bb_lo": 63.347529639733295,
    "atr": 1.4253571428571423,
    "support_20": 63.0,
    "resist_20": 68.001,
@@ -942,7 +942,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 60.64928571428572,
+     "stop_ref": 60.949285714285715,
      "live": {
       "n": 0
      },
@@ -980,7 +980,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 60.64928571428572,
+     "stop_ref": 60.949285714285715,
      "live": {
       "n": 0
      },
@@ -1018,7 +1018,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 60.64928571428572,
+     "stop_ref": 60.949285714285715,
      "live": {
       "n": 0
      },
@@ -1391,7 +1391,7 @@
      64.7,
      63.7,
      63.2,
-     63.5
+     63.8
     ],
     "sma50": [
      87.09,
@@ -1573,7 +1573,7 @@
      63.66,
      63.72,
      63.75,
-     63.8
+     63.81
     ],
     "sma200": [
      89.18,
@@ -1766,17 +1766,17 @@
    "last_date": "2026-09-30",
    "first_date": "2016-10-03",
    "n_days": 2494,
-   "close": 58.2,
-   "change_1d": 0.0034482758620690834,
-   "change_20d": -0.03161397670549082,
-   "rsi": 45.88042407788253,
-   "sma20": 58.69,
-   "sma50": 58.262119999999996,
-   "sma200": 60.669195,
-   "macd_hist": -0.12512030256202072,
-   "bb_up": 59.941357157985315,
-   "bb_lo": 57.43864284201468,
-   "atr": 0.8928571428571429,
+   "close": 58.4,
+   "change_1d": 0.006896551724137945,
+   "change_20d": -0.02828618968386032,
+   "rsi": 47.51538536562247,
+   "sma20": 58.7,
+   "sma50": 58.26612,
+   "sma200": 60.67019500000001,
+   "macd_hist": -0.11235676979849747,
+   "bb_up": 59.937994983409205,
+   "bb_lo": 57.4620050165908,
+   "atr": 0.9000000000000001,
    "support_20": 57.6,
    "resist_20": 61.0,
    "support_60": 52.6,
@@ -1784,7 +1784,7 @@
    "high_52w": 78.146,
    "low_52w": 52.6,
    "signals_today": {
-    "trend": -1,
+    "trend": 0,
     "macd": -1,
     "rsi": 0,
     "boll": 0,
@@ -1822,7 +1822,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 56.41428571428572,
+     "stop_ref": 56.6,
      "live": {
       "n": 0
      },
@@ -1860,7 +1860,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 56.41428571428572,
+     "stop_ref": 56.6,
      "live": {
       "n": 0
      },
@@ -1898,7 +1898,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 56.41428571428572,
+     "stop_ref": 56.6,
      "live": {
       "n": 0
      },
@@ -2271,7 +2271,7 @@
      58.0,
      58.3,
      58.0,
-     58.2
+     58.4
     ],
     "sma50": [
      57.96,
@@ -2453,7 +2453,7 @@
      58.28,
      58.28,
      58.26,
-     58.26
+     58.27
     ],
     "sma200": [
      59.35,
@@ -2646,16 +2646,16 @@
    "last_date": "2026-09-30",
    "first_date": "2016-10-03",
    "n_days": 2494,
-   "close": 20.35,
-   "change_1d": 0.0024630541871921707,
-   "change_20d": -0.07918552036199089,
-   "rsi": 36.96652941010485,
-   "sma20": 21.165,
-   "sma50": 21.398000000000003,
-   "sma200": 23.349975,
-   "macd_hist": -0.09687344094020156,
-   "bb_up": 22.23028968138381,
-   "bb_lo": 20.09971031861619,
+   "close": 20.4,
+   "change_1d": 0.004926108374384119,
+   "change_20d": -0.0769230769230771,
+   "rsi": 37.877470715691906,
+   "sma20": 21.1675,
+   "sma50": 21.399,
+   "sma200": 23.350225000000002,
+   "macd_hist": -0.09368255774931933,
+   "bb_up": 22.22494229654671,
+   "bb_lo": 20.11005770345329,
    "atr": 0.3714285714285714,
    "support_20": 20.15,
    "resist_20": 22.2,
@@ -2680,11 +2680,11 @@
       "macd": 0.0,
       "rsi": 0.0,
       "boll": 0.0,
-      "mom20": 0.1112,
+      "mom20": 0.1111,
       "mom60": 0.0,
       "volume": 0.0
      },
-     "score": -0.1112,
+     "score": -0.1111,
      "stats": {
       "n": 1006,
       "prob_up": 0.4691848906560636,
@@ -2702,7 +2702,7 @@
       "active_days": 241,
       "test_days": 250
      },
-     "stop_ref": 19.607142857142858,
+     "stop_ref": 19.657142857142855,
      "live": {
       "n": 0
      },
@@ -2740,7 +2740,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 19.607142857142858,
+     "stop_ref": 19.657142857142855,
      "live": {
       "n": 0
      },
@@ -2778,7 +2778,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 19.607142857142858,
+     "stop_ref": 19.657142857142855,
      "live": {
       "n": 0
      },
@@ -3151,7 +3151,7 @@
      20.65,
      20.2,
      20.3,
-     20.35
+     20.4
     ],
     "sma50": [
      23.82,
@@ -3526,16 +3526,16 @@
    "last_date": "2026-09-29",
    "first_date": "2016-09-29",
    "n_days": 2513,
-   "close": 4208.60009765625,
-   "change_1d": 0.009644035182396093,
-   "change_20d": -0.06089476789997772,
-   "rsi": 37.054976496380554,
-   "sma20": 4375.75498046875,
-   "sma50": 4361.393994140625,
-   "sma200": 4555.635999755859,
-   "macd_hist": -27.716767128252442,
-   "bb_up": 4548.176613192289,
-   "bb_lo": 4203.333347745211,
+   "close": 4210.5,
+   "change_1d": 0.010099822148200932,
+   "change_20d": -0.06047082450072516,
+   "rsi": 37.23624519647549,
+   "sma20": 4375.8499755859375,
+   "sma50": 4361.4319921875,
+   "sma200": 4555.645499267578,
+   "macd_hist": -27.59551979919231,
+   "bb_up": 4547.885507740574,
+   "bb_lo": 4203.814443431301,
    "atr": 96.085693359375,
    "support_20": 4143.10009765625,
    "resist_20": 4558.5,
@@ -3582,7 +3582,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 4016.4287109375,
+     "stop_ref": 4018.32861328125,
      "live": {
       "n": 0
      },
@@ -3620,7 +3620,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 4016.4287109375,
+     "stop_ref": 4018.32861328125,
      "live": {
       "n": 0
      },
@@ -3658,7 +3658,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 4016.4287109375,
+     "stop_ref": 4018.32861328125,
      "live": {
       "n": 0
      },
@@ -4031,7 +4031,7 @@
      4298.0,
      4321.2,
      4168.4,
-     4208.6
+     4210.5
     ],
     "sma50": [
      4249.67,
@@ -4213,7 +4213,7 @@
      4347.97,
      4354.55,
      4357.54,
-     4361.39
+     4361.43
     ],
     "sma200": [
      3677.41,
@@ -4395,7 +4395,7 @@
      4555.54,
      4556.06,
      4555.72,
-     4555.64
+     4555.65
     ]
    },
    "name": "Vàng thế giới (USD/oz)",
@@ -4406,16 +4406,16 @@
    "last_date": "2026-09-29",
    "first_date": "2016-09-30",
    "n_days": 2512,
-   "close": 131.76959681887777,
-   "change_1d": 0.009449678511266768,
-   "change_20d": -0.06453303519733489,
-   "rsi": 36.32197278016544,
-   "sma20": 137.1544086933307,
-   "sma50": 137.3402564207922,
-   "sma200": 143.92807867039622,
-   "macd_hist": -0.8323335545799269,
-   "bb_up": 142.76315578404643,
-   "bb_lo": 131.54566160261498,
+   "close": 131.8290820063563,
+   "change_1d": 0.009905377737992938,
+   "change_20d": -0.06411073423319269,
+   "rsi": 36.50342651907196,
+   "sma20": 137.15738295270464,
+   "sma50": 137.34144612454176,
+   "sma200": 143.9283760963336,
+   "macd_hist": -0.8285373488832735,
+   "bb_up": 142.75415715767087,
+   "bb_lo": 131.5606087477384,
    "atr": 3.0092969788158848,
    "support_20": 129.74379354978183,
    "resist_20": 143.27991662012525,
@@ -4462,7 +4462,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 125.75100286124601,
+     "stop_ref": 125.81048804872452,
      "live": {
       "n": 0
      },
@@ -4500,7 +4500,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 125.75100286124601,
+     "stop_ref": 125.81048804872452,
      "live": {
       "n": 0
      },
@@ -4538,7 +4538,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 125.75100286124601,
+     "stop_ref": 125.81048804872452,
      "live": {
       "n": 0
      },
@@ -4911,7 +4911,7 @@
      134.77,
      135.4,
      130.54,
-     131.77
+     131.83
     ],
     "sma50": [
      134.78,
@@ -5293,9 +5293,117 @@
   "sell": 143.5,
   "updated": "30/09/2026 08:37:24",
   "source": "PNJ edge-api (bảng giá vàng miếng SJC)",
-  "world_equiv": 131.76959681887777,
-  "premium": 11.730403181122227,
-  "premium_pct": 0.08902207690022834,
+  "world_equiv": 131.8290820063563,
+  "premium": 11.670917993643712,
+  "premium_pct": 0.08853067787486357,
   "history_days": 1
- }
+ },
+ "stances": {
+  "VNINDEX": {
+   "view": "Trung lập",
+   "sign": 0,
+   "confidence": "Thấp",
+   "horizon": "1 tháng",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 1,723.30. Đường MA200 hiện ở 1,795.80.",
+   "reasons": [
+    "Kiểm định 1 tháng: xác suất tăng 60% so với nền 60%; trung vị +1.1%, khoảng 10–90% từ -6.3% đến +7.8% (n=2051). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
+    "Giá 1,784.19 đang dưới MA200 (1,795.80); RSI 47. Đây là mô tả trạng thái, không phải dự báo.",
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -3.4%, tệ nhất -27.5%. Mức cắt lỗ tham khảo 1,723.30 (-3.4%)."
+   ],
+   "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 1,874.48 hoặc thủng hỗ trợ 1,763.62, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
+   "edge": 0.0,
+   "name": "VN-Index",
+   "live": {
+    "n": 0
+   }
+  },
+  "FPT": {
+   "view": "Trung lập",
+   "sign": 0,
+   "confidence": "Thấp",
+   "horizon": "1 tháng",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 60.95. Đường MA200 hiện ở 71.74.",
+   "reasons": [
+    "Kiểm định 1 tháng: xác suất tăng 61% so với nền 61%; trung vị +2.0%, khoảng 10–90% từ -7.6% đến +11.1% (n=2275). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
+    "Giá 63.80 đang dưới MA200 (71.74); RSI 44. Đây là mô tả trạng thái, không phải dự báo.",
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -3.9%, tệ nhất -27.7%. Mức cắt lỗ tham khảo 60.95 (-4.5%)."
+   ],
+   "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 68.00 hoặc thủng hỗ trợ 63.00, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
+   "edge": 0.0,
+   "name": "Cổ phiếu FPT",
+   "live": {
+    "n": 0
+   }
+  },
+  "VCB": {
+   "view": "Trung lập",
+   "sign": 0,
+   "confidence": "Thấp",
+   "horizon": "1 tháng",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 56.60. Đường MA200 hiện ở 60.67.",
+   "reasons": [
+    "Kiểm định 1 tháng: xác suất tăng 56% so với nền 56%; trung vị +0.9%, khoảng 10–90% từ -7.1% đến +10.4% (n=2275). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
+    "Giá 58.40 đang dưới MA200 (60.67); RSI 48. Đây là mô tả trạng thái, không phải dự báo.",
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -3.9%, tệ nhất -34.4%. Mức cắt lỗ tham khảo 56.60 (-3.1%)."
+   ],
+   "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 61.00 hoặc thủng hỗ trợ 57.60, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
+   "edge": 0.0,
+   "name": "Cổ phiếu VCB",
+   "live": {
+    "n": 0
+   }
+  },
+  "HPG": {
+   "view": "Trung lập",
+   "sign": 0,
+   "confidence": "Thấp",
+   "horizon": "1 tháng",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 19.66. Đường MA200 hiện ở 23.35.",
+   "reasons": [
+    "Kiểm định 1 tháng: xác suất tăng 56% so với nền 56%; trung vị +1.3%, khoảng 10–90% từ -9.9% đến +14.3% (n=2275). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
+    "Giá 20.40 đang dưới MA200 (23.35); RSI 38. Đây là mô tả trạng thái, không phải dự báo.",
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -5.2%, tệ nhất -38.0%. Mức cắt lỗ tham khảo 19.66 (-3.6%)."
+   ],
+   "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 22.20 hoặc thủng hỗ trợ 20.15, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
+   "edge": 0.0,
+   "name": "Cổ phiếu HPG",
+   "live": {
+    "n": 0
+   }
+  },
+  "GOLD_VND": {
+   "view": "Trung lập",
+   "sign": 0,
+   "confidence": "Thấp",
+   "horizon": "1 tháng",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 125.81. Đường MA200 hiện ở 143.93.",
+   "reasons": [
+    "Kiểm định 1 tháng: xác suất tăng 59% so với nền 59%; trung vị +0.8%, khoảng 10–90% từ -3.6% đến +7.1% (n=2293). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
+    "Giá 131.83 đang dưới MA200 (143.93); RSI 37. Đây là mô tả trạng thái, không phải dự báo.",
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -2.2%, tệ nhất -16.7%. Mức cắt lỗ tham khảo 125.81 (-4.6%)."
+   ],
+   "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 143.28 hoặc thủng hỗ trợ 129.74, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
+   "edge": 0.0,
+   "name": "Vàng thế giới quy đổi (triệu VND/lượng)",
+   "live": {
+    "n": 0
+   }
+  },
+  "SJC": {
+   "view": "Thận trọng",
+   "sign": -1,
+   "confidence": "Trung bình",
+   "horizon": "vàng miếng",
+   "action": "Nếu muốn nắm giữ vàng, lưu ý giá SJC đang cao hơn thế giới 8.9%. Chênh lệch này thu hẹp thì SJC có thể giảm dù vàng thế giới đứng yên. Có thể cân nhắc vàng nhẫn 9999 hoặc chờ chênh lệch giảm.",
+   "reasons": [
+    "Giá bán SJC 143.5 tr/lượng, đắt hơn vàng thế giới quy đổi +8.9% (11.7 tr).",
+    "Chênh mua–bán 2.1%: mua xong bán lại ngay sẽ lỗ khoảng mức này.",
+    "Ngưỡng cảnh báo của hệ thống: chênh lệch trên 5%."
+   ],
+   "change_if": "Chênh lệch với thế giới về dưới 5%.",
+   "edge": 0.0,
+   "name": "Vàng miếng SJC"
+  }
+ },
+ "best_pick": null
 }

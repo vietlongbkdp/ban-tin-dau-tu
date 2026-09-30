@@ -4,5 +4,6 @@
   "gold_world": "GC=F",
   "fx": "VND=X",
   "horizons": {"1 tuần": 5, "1 tháng": 20, "3 tháng": 60},
+  "stance_horizon": "1 tháng",
   "history_years": 10
 }

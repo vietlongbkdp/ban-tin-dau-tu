@@ -1,16 +1,76 @@
 {
  "summary": "Bối cảnh chính là Fed tăng lãi suất lần đầu kể từ 2023 (16/9, lên 3,75–4%) và thị trường đang đặt khoảng 70% khả năng tăng tiếp vào tháng 10. Lợi suất trái phiếu Mỹ ở vùng cao nhiều năm gây áp lực lên vàng: vàng thế giới mất khoảng 7% trong tháng 9 và vừa chạm đáy 7 tuần trước khi hồi lên gần 4.200 USD/oz. Trong nước, VN-Index giảm nhẹ về 1.777,73 điểm (29/9) với thanh khoản giảm khoảng 18–20%, đang giằng co giữa hỗ trợ EMA200 quanh 1.760 và kháng cự 1.800. Về mặt kỹ thuật, cả 3 cổ phiếu theo dõi và vàng đều đang dưới MA50/MA200. Kiểm định thống kê không tìm thấy chỉ báo nào đủ tin cậy để dự báo hướng giá; con số đáng chú ý nhất là giá vàng miếng SJC đang đắt hơn vàng thế giới quy đổi khoảng 8,9%.",
  "items": [
-  {"title": "Gold Trades Near Seven-Week Low as Rate-Hike Pressure Mounts", "source": "Bloomberg", "date": "29/09/2026", "url": "https://www.bloomberg.com/news/articles/2026-09-29/gold-trades-near-seven-week-low-as-rate-hike-pressure-mounts", "impact": "Vàng: áp lực từ kỳ vọng Fed tăng lãi suất tiếp"},
-  {"title": "Gold Holds Near Seven-Week Low as Treasury Yields and Fed Rate Expectations Rise", "source": "Yahoo Finance", "date": "29/09/2026", "url": "https://finance.yahoo.com/markets/commodities/articles/gold-holds-near-seven-week-093150030.html", "impact": "Vàng: giảm khoảng 7% trong tháng 9; khoảng 70% khả năng Fed tăng lãi suất tháng 10"},
-  {"title": "Gold falls more than 1% after Fed hikes interest rates", "source": "CNBC", "date": "16/09/2026", "url": "https://www.cnbc.com/2026/09/16/gold-gains-with-fed-rate-decision-in-spotlight.html", "impact": "Vĩ mô: Fed tăng lãi suất lần đầu từ 2023"},
-  {"title": "Giá vàng hôm nay 30/9/2026: Bật tăng sau hai phiên lao dốc, SJC nhích lên", "source": "VietNamNet", "date": "30/09/2026", "url": "https://vietnamnet.vn/gia-vang-hom-nay-30-9-2026-bat-tang-sau-hai-phien-lao-doc-sjc-nhich-len-2560117.html", "impact": "Vàng trong nước"},
-  {"title": "Giá vàng hôm nay ngày 30/9: Giá vàng thế giới quay đầu tăng trở lại", "source": "VnExpress", "date": "30/09/2026", "url": "https://vnexpress.net/gia-vang-the-gioi-tang-tro-lai-5126457.html", "impact": "Vàng thế giới hồi lên 4.181 USD/oz"},
-  {"title": "Chứng khoán ngày 29/9: Áp lực bán gia tăng, VN-Index tiếp tục giảm điểm", "source": "Thời báo Tài chính Việt Nam", "date": "29/09/2026", "url": "https://thoibaotaichinhvietnam.vn/chung-khoan-ngay-29-9-ap-luc-ban-gia-tang-vn-index-tiep-tuc-giam-diem-204555.html", "impact": "VN-Index −2,95 điểm; ngân hàng, bất động sản gây áp lực"},
-  {"title": "VN-Index giảm nhẹ, nhà đầu tư thận trọng trước kháng cự 1800 điểm", "source": "VnEconomy (qua Báo Mới)", "date": "29/09/2026", "url": "https://baomoi.com/vn-index-giam-nhe-nha-dau-tu-than-trong-truoc-khang-cu-1800-diem-c56160558.epi", "impact": "VN-Index: kháng cự 1.800, hỗ trợ EMA200 khoảng 1.760"},
-  {"title": "Vietstock Daily 30/09/2026: Giằng co trong thận trọng", "source": "Vietstock", "date": "30/09/2026", "url": "https://vietstock.vn/2026/09/vietstock-daily-30092026-giang-co-trong-than-trong-1636-1497002.htm", "impact": "Nhận định kỹ thuật VN-Index"},
-  {"title": "VCB: Lợi nhuận lập đỉnh, 4 CTCK đồng loạt gọi tên tháng 9 — nhưng đừng vội mừng vì tiền ETF", "source": "Elibook", "date": "10/09/2026", "url": "https://elibook.vn/2026/09/10/vcb-loi-nhuan-lap-dinh-4-ctck-dong-loat-goi-ten-thang-9-nhung-dung-voi-mung-vi-tien-etf/", "impact": "VCB: vào rổ FTSE Global All Cap từ 21/9/2026"},
-  {"title": "Báo cáo công ty HPG", "source": "SSI Research", "date": "2026", "url": "https://www.ssi.com.vn/khach-hang-ca-nhan/bao-cao-cong-ty?keyword=HPG&page=1", "impact": "HPG: SSI giữ khuyến nghị MUA, giá mục tiêu cuối 2026 là 36.000đ (theo kết quả tìm kiếm, chưa đọc trực tiếp báo cáo)"}
+  {
+   "title": "Gold Trades Near Seven-Week Low as Rate-Hike Pressure Mounts",
+   "source": "Bloomberg",
+   "date": "29/09/2026",
+   "url": "https://www.bloomberg.com/news/articles/2026-09-29/gold-trades-near-seven-week-low-as-rate-hike-pressure-mounts",
+   "impact": "Vàng: áp lực từ kỳ vọng Fed tăng lãi suất tiếp"
+  },
+  {
+   "title": "Gold Holds Near Seven-Week Low as Treasury Yields and Fed Rate Expectations Rise",
+   "source": "Yahoo Finance",
+   "date": "29/09/2026",
+   "url": "https://finance.yahoo.com/markets/commodities/articles/gold-holds-near-seven-week-093150030.html",
+   "impact": "Vàng: giảm khoảng 7% trong tháng 9; khoảng 70% khả năng Fed tăng lãi suất tháng 10"
+  },
+  {
+   "title": "Gold falls more than 1% after Fed hikes interest rates",
+   "source": "CNBC",
+   "date": "16/09/2026",
+   "url": "https://www.cnbc.com/2026/09/16/gold-gains-with-fed-rate-decision-in-spotlight.html",
+   "impact": "Vĩ mô: Fed tăng lãi suất lần đầu từ 2023"
+  },
+  {
+   "title": "Giá vàng hôm nay 30/9/2026: Bật tăng sau hai phiên lao dốc, SJC nhích lên",
+   "source": "VietNamNet",
+   "date": "30/09/2026",
+   "url": "https://vietnamnet.vn/gia-vang-hom-nay-30-9-2026-bat-tang-sau-hai-phien-lao-doc-sjc-nhich-len-2560117.html",
+   "impact": "Vàng trong nước"
+  },
+  {
+   "title": "Giá vàng hôm nay ngày 30/9: Giá vàng thế giới quay đầu tăng trở lại",
+   "source": "VnExpress",
+   "date": "30/09/2026",
+   "url": "https://vnexpress.net/gia-vang-the-gioi-tang-tro-lai-5126457.html",
+   "impact": "Vàng thế giới hồi lên 4.181 USD/oz"
+  },
+  {
+   "title": "Chứng khoán ngày 29/9: Áp lực bán gia tăng, VN-Index tiếp tục giảm điểm",
+   "source": "Thời báo Tài chính Việt Nam",
+   "date": "29/09/2026",
+   "url": "https://thoibaotaichinhvietnam.vn/chung-khoan-ngay-29-9-ap-luc-ban-gia-tang-vn-index-tiep-tuc-giam-diem-204555.html",
+   "impact": "VN-Index −2,95 điểm; ngân hàng, bất động sản gây áp lực"
+  },
+  {
+   "title": "VN-Index giảm nhẹ, nhà đầu tư thận trọng trước kháng cự 1800 điểm",
+   "source": "VnEconomy (qua Báo Mới)",
+   "date": "29/09/2026",
+   "url": "https://baomoi.com/vn-index-giam-nhe-nha-dau-tu-than-trong-truoc-khang-cu-1800-diem-c56160558.epi",
+   "impact": "VN-Index: kháng cự 1.800, hỗ trợ EMA200 khoảng 1.760"
+  },
+  {
+   "title": "Vietstock Daily 30/09/2026: Giằng co trong thận trọng",
+   "source": "Vietstock",
+   "date": "30/09/2026",
+   "url": "https://vietstock.vn/2026/09/vietstock-daily-30092026-giang-co-trong-than-trong-1636-1497002.htm",
+   "impact": "Nhận định kỹ thuật VN-Index"
+  },
+  {
+   "title": "VCB: Lợi nhuận lập đỉnh, 4 CTCK đồng loạt gọi tên tháng 9 — nhưng đừng vội mừng vì tiền ETF",
+   "source": "Elibook",
+   "date": "10/09/2026",
+   "url": "https://elibook.vn/2026/09/10/vcb-loi-nhuan-lap-dinh-4-ctck-dong-loat-goi-ten-thang-9-nhung-dung-voi-mung-vi-tien-etf/",
+   "impact": "VCB: vào rổ FTSE Global All Cap từ 21/9/2026"
+  },
+  {
+   "title": "Báo cáo công ty HPG",
+   "source": "SSI Research",
+   "date": "2026",
+   "url": "https://www.ssi.com.vn/khach-hang-ca-nhan/bao-cao-cong-ty?keyword=HPG&page=1",
+   "impact": "HPG: SSI giữ khuyến nghị MUA, giá mục tiêu cuối 2026 là 36.000đ (theo kết quả tìm kiếm, chưa đọc trực tiếp báo cáo)"
+  }
  ],
  "commentary": {
   "GOLD_VND": "Yếu tố chi phối ngắn hạn là lãi suất Mỹ: Fed đã tăng lãi suất và thị trường đặt khoảng 70% khả năng tăng tiếp vào tháng 10, mà lợi suất cao thường bất lợi cho vàng (Yahoo Finance, Bloomberg 29/9). Với người mua vàng miếng SJC, rủi ro lớn hơn là chênh lệch khoảng 8,9% so với giá thế giới, cộng thêm chênh mua–bán khoảng 2%.",
@@ -20,5 +80,16 @@
   "HPG": "SSI giữ khuyến nghị MUA với giá mục tiêu 36.000đ cho cuối 2026 (theo kết quả tìm kiếm). Giá hiện khoảng 20.350đ và RSI 37, vùng yếu nhưng chưa quá bán. Đây là mã duy nhất có một chỉ báo đạt ý nghĩa thống kê (động lượng 20 phiên, kỳ hạn 1 tuần), nhưng kiểm định gần đây cũng chỉ đúng 44%.",
   "FPT": "Không tìm thấy tin doanh nghiệp đáng kể nào trong tuần. Kỳ công bố kết quả tiếp theo dự kiến vào tháng 12. Giá khoảng 63.500đ, gần vùng thấp của biên độ 52 tuần."
  },
- "errors": ["Giá SJC: PNJ niêm yết bán 143,5 tr/lượng (08:37), trong khi một số báo đầu giờ ghi 142,5 tr/lượng. Báo cáo dùng số của PNJ vì có thời điểm cập nhật cụ thể."]
+ "errors": [
+  "Giá SJC: PNJ niêm yết bán 143,5 tr/lượng (08:37), trong khi một số báo đầu giờ ghi 142,5 tr/lượng. Báo cáo dùng số của PNJ vì có thời điểm cập nhật cụ thể."
+ ],
+ "recommendation": "Hôm nay không có mã nào trong danh mục có tín hiệu qua được kiểm định thống kê, nên dữ liệu không ủng hộ việc mở vị thế mới dựa trên phân tích kỹ thuật. Rủi ro rõ ràng nhất là vàng miếng SJC, đang đắt hơn vàng thế giới khoảng 8,9%. Sự kiện cần theo dõi: cuộc họp Fed tháng 10, thị trường đang đặt khoảng 70% khả năng tăng lãi suất tiếp, điều này thường bất lợi cho vàng (Yahoo Finance, Bloomberg 29/9); và phản ứng của VN-Index quanh vùng 1.760–1.800 (Vietstock 30/9).",
+ "stance_notes": {
+  "SJC": "Vàng thế giới vừa hồi lên khoảng 4.181 USD/oz sau khi chạm đáy 7 tuần (VnExpress 30/9). Chênh lệch SJC so với thế giới vẫn là yếu tố rủi ro chính.",
+  "GOLD_VND": "Kỳ vọng Fed tăng lãi suất tháng 10 (khoảng 70%) và lợi suất trái phiếu Mỹ ở vùng cao nhiều năm đang gây áp lực lên vàng (Yahoo Finance, Bloomberg 29/9).",
+  "VNINDEX": "Thanh khoản giảm khoảng 18–20% phiên 29/9. Hỗ trợ EMA200 quanh 1.760, kháng cự 1.800 (TCTC, VnEconomy).",
+  "VCB": "Kế hoạch chào bán riêng lẻ tối đa 543 triệu cổ phiếu có thể gây pha loãng; đã vào rổ FTSE từ 21/9 (Elibook).",
+  "HPG": "SSI giữ khuyến nghị MUA, giá mục tiêu 36.000đ cho cuối 2026 (theo kết quả tìm kiếm, chưa đọc trực tiếp báo cáo).",
+  "FPT": "Không có tin doanh nghiệp đáng kể trong tuần; kết quả kinh doanh tiếp theo dự kiến vào tháng 12."
+ }
 }

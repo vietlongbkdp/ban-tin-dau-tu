@@ -73,6 +73,28 @@ def main():
             hz["calibration_note"] = note
             hz["verdict"], hz["verdict_note"] = analyze.verdict(hz)
             j = journal.record(j, a["last_date"], key, label, hz["days"], p_adj, st["base_prob_up"], a["close"])
+
+    # Quan điểm hằng ngày theo quy tắc cố định; cũng được ghi nhật ký để chấm điểm khi đến hạn
+    sh = cfg["stance_horizon"]
+    stances = {}
+    for key, a in out["assets"].items():
+        if key == "GOLD_USD":
+            continue  # đã có bản quy đổi VND
+        s = analyze.stance(a, sh)
+        s["name"] = a["name"]
+        stances[key] = s
+        hz = a["horizons"][sh]
+        j = journal.record(j, a["last_date"], key, f"Quan điểm ({sh})", hz["days"],
+                           {1: 1.0, -1: 0.0, 0: 0.5}[s["sign"]], hz["stats"]["base_prob_up"], a["close"])
+    if out.get("sjc", {}).get("premium_pct") is not None:
+        s = analyze.sjc_stance(out["sjc"])
+        s["name"] = "Vàng miếng SJC"
+        stances["SJC"] = s
+    for key, s in stances.items():
+        if key in out["assets"]:
+            s["live"] = journal.live_skill(j, key, f"Quan điểm ({sh})")
+    out["stances"] = stances
+    out["best_pick"] = analyze.best_pick(stances)
     journal.save(j)
 
     os.makedirs(os.path.join(ROOT, "output"), exist_ok=True)
