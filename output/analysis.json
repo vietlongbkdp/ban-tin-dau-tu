@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-30 14:53 (giờ VN)",
+ "generated_at": "2026-09-30 14:54 (giờ VN)",
  "run_kind": "manual",
  "watchlist": {
   "stocks": [
@@ -6177,7 +6177,7 @@
   }
  },
  "errors": [
-  "Cổ phiếu LONG: Không lấy được LONG: VNDirect dchart: Expecting value: line 1 column 1 (char 0); VPS histdatafeed: HTTPSConnectionPool(host='histdatafeed.vps.com.vn', port=443): Max retries exceeded with url: /tradingview/history?symbol=LONG&resolution=D&from=1475394813&to=1790754813 (Caused by ConnectTimeoutError(<HTTPSConnection(host='histdatafeed.vps.com.vn', port=443) at 0x7fdf187e7410>, 'Connection to histdatafeed.vps.com.vn timed out. (connect timeout=30)'))"
+  "Cổ phiếu LONG: Không lấy được LONG: VNDirect dchart: Expecting value: line 1 column 1 (char 0); VPS histdatafeed: Expecting value: line 1 column 1 (char 0)"
  ],
  "fx": {
   "usdvnd": 25970.0,
