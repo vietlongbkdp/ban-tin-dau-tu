@@ -1,90 +1,38 @@
-{
- "summary": "VN-Index đóng cửa 1.778,14 điểm ngày 30/09/2026, dưới MA200 (1.795,77) và giảm 2,9% trong 20 phiên; thanh khoản thấp, thị trường giằng co quanh vùng 1.770 điểm (Doanh nhân/Pháp luật; analysis.json). Khối ngoại bán ròng khoảng 222 tỷ đồng tính đến 10h30 (Vietstock/Investing.com). Vàng thế giới hồi phục sau hai phiên giảm mạnh, quanh 4.175 USD/ounce lúc sáng; dữ liệu hệ thống ghi giá đóng 4.201 USD (Yahoo Finance). Lợi suất trái phiếu Mỹ 10 năm vượt 5% (VTV; VietnamPlus). Vàng SJC niêm yết 140,5–143,5 triệu đồng/lượng, cao hơn vàng thế giới quy đổi 9,1% (PNJ; analysis.json). Cả 4 mã/chỉ số và vàng quy đổi đều ở quan điểm Trung lập, SJC ở mức Thận trọng; không có cơ hội đủ điều kiện (best_pick = null).",
- "items": [
-  {
-   "title": "Giá vàng hôm nay 30/9/2026: Vàng thế giới bật tăng, SJC có thể đi lên?",
-   "source": "Báo Lào Cai",
-   "date": "30/09/2026",
-   "url": "https://baolaocai.vn/gia-vang-hom-nay-3092026-vang-the-gioi-bat-tang-sjc-co-the-di-len-post910711.html",
-   "impact": "GOLD_VND/SJC: vàng thế giới hồi phục sau hai phiên giảm, SJC niêm yết 140,5–143,5 triệu đồng/lượng"
-  },
-  {
-   "title": "Kỳ vọng Fed tiếp tục nâng lãi suất kìm hãm đà tăng của vàng",
-   "source": "VietnamPlus",
-   "date": "30/09/2026",
-   "url": "https://www.vietnamplus.vn/ky-vong-fed-tiep-tuc-nang-lai-suat-kim-ham-da-tang-cua-vang-post1139096.vnp",
-   "impact": "GOLD_VND: kỳ vọng Fed tăng lãi suất và lợi suất trái phiếu Mỹ trên 5% gây áp lực lên vàng"
-  },
-  {
-   "title": "70% khả năng Fed tăng lãi suất trong tháng 10",
-   "source": "Báo Dân trí",
-   "date": "26/09/2026",
-   "url": "https://dantri.com.vn/kinh-doanh/70-kha-nang-fed-tang-lai-suat-trong-thang-10-vi-sao-thi-truong-tin-chac-den-vay-20260926082711526.htm",
-   "impact": "Vàng, VN-Index: lãi suất Mỹ cao là rủi ro cho vàng và dòng vốn ngoại"
-  },
-  {
-   "title": "Kỳ vọng Fed tăng lãi suất tháng 10 giảm mạnh sau dữ liệu yếu và bình luận ôn hòa",
-   "source": "Investing.com",
-   "date": "30/09/2026",
-   "url": "https://vn.investing.com/news/economy-news/ky-vong-fed-tang-lai-suat-thang-10-giam-manh-sau-du-lieu-yeu-va-binh-luan-on-hoa-2723606",
-   "impact": "Vàng: xác suất Fed tăng lãi suất tháng 10 theo CME FedWatch giảm còn 49,4% từ 74,6%"
-  },
-  {
-   "title": "Nhịp đập Thị trường 30/09: khối ngoại xả ròng gần 222 tỷ, VN-Index tiếp tục giằng co",
-   "source": "Vietstock qua Investing.com",
-   "date": "30/09/2026",
-   "url": "https://vn.investing.com/news/stock-market-news/nhip-dap-thi-truong-3009-gvr-dan-song-nguyen-vat-lieu-khoi-ngoai-xa-rong-gan-222-ty-vnindex-tiep-tuc-giang-co-2723613",
-   "impact": "VNINDEX, FPT, VCB, HPG: khối ngoại bán ròng gây áp lực tâm lý"
-  },
-  {
-   "title": "Chứng khoán 30/9: Giằng co với thanh khoản thấp, VN-Index kết thúc tháng 9 khá êm đềm",
-   "source": "Doanh nhân/Báo Pháp luật",
-   "date": "30/09/2026",
-   "url": "https://doanhnhan.baophapluat.vn/chung-khoan-309-giang-co-voi-thanh-khoan-thap-vn-index-ket-thuc-thang-9-kha-em-dem-43492.html",
-   "impact": "VNINDEX: thanh khoản thấp, giằng co"
-  },
-  {
-   "title": "Nhận định phiên giao dịch ngày 30/9: Chờ đợi kết quả kinh doanh quý III",
-   "source": "Tự Đông Hoá Ngày Nay",
-   "date": "30/09/2026",
-   "url": "https://tudonghoangaynay.vn/nhan-dinh-phien-giao-dich-ngay-309-cho-doi-ket-qua-kinh-doanh-quy-iii-23829.html",
-   "impact": "VNINDEX, cổ phiếu: thị trường chờ báo cáo kinh doanh quý III"
-  },
-  {
-   "title": "Lãi suất ngân hàng hôm nay 30/9/2026: Chứng chỉ tiền gửi Big4 cao nhất 7,5%/năm",
-   "source": "VietNamNet",
-   "date": "30/09/2026",
-   "url": "https://vietnamnet.vn/lai-suat-ngan-hang-hom-nay-30-9-2026-chung-chi-tien-gui-big4-cao-nhat-7-5-nam-2560175.html",
-   "impact": "VCB, VNINDEX: mặt bằng lãi suất huy động cao"
-  },
-  {
-   "title": "Sáng 30/9: Tỷ giá trung tâm giảm 3 đồng",
-   "source": "Thời báo Ngân hàng",
-   "date": "30/09/2026",
-   "url": "https://thoibaonganhang.vn/sang-309-ty-gia-trung-tam-giam-3-dong-188263.html",
-   "impact": "VND/USD: tỷ giá trung tâm giảm 3 đồng, USD thế giới vẫn ở vùng cao"
-  }
- ],
- "commentary": {
-  "VNINDEX": "Chỉ số đóng cửa 1.778,14, dưới MA200 (1.795,77), RSI 44,8, MACD histogram âm; giằng co thanh khoản thấp và khối ngoại bán ròng khoảng 222 tỷ đến 10h30 (Vietstock). Hỗ trợ 1.763,62, kháng cự 1.874,48.",
-  "FPT": "Giá 63,40 dưới MA200 (71,73), RSI 41,8, sát hỗ trợ 63,00. Thị trường chờ báo cáo kinh doanh quý III (Tự Đông Hoá Ngày Nay); không tìm thấy tin riêng của FPT trong 48 giờ có nguồn xác thực.",
-  "VCB": "Giá 58,40 dưới MA200 (60,67), RSI 47,5, hỗ trợ 57,60. Mặt bằng lãi suất huy động cao (VietNamNet) là yếu tố cần theo dõi với nhóm ngân hàng; không tìm thấy tin riêng của VCB trong 48 giờ.",
-  "HPG": "Giá 20,35, giảm 7,9% trong 20 phiên, RSI 37, sát hỗ trợ 20,15; chỉ báo 1 tuần Trung lập với xác suất tăng 47%. Nhóm nguyên vật liệu có lúc dẫn sóng phiên 30/9 (Vietstock); không tìm thấy tin riêng của HPG trong 48 giờ.",
-  "GOLD_VND": "Vàng quy đổi 131,54 triệu đồng/lượng, RSI 35,8, dưới MA200 (143,90). Vàng thế giới hồi phục sau hai phiên giảm nhưng chịu áp lực từ lợi suất Mỹ trên 5% và kỳ vọng Fed (VietnamPlus, VTV)."
- },
- "recommendation": "Hôm nay best_pick là null: không mã nào có lợi thế thống kê đủ điều kiện, phương án khớp dữ liệu nhất là chờ. VN-Index, FPT, VCB, HPG và vàng thế giới quy đổi đều ở quan điểm Trung lập (độ tin cậy thấp); giá đều dưới MA200. SJC ở mức Thận trọng vì chênh lệch 9,1% so với thế giới, vượt ngưỡng cảnh báo 5%, và chênh mua–bán 2,1%. Sự kiện cần theo dõi: cuộc họp Fed cuối tháng 10 (kỳ vọng tăng lãi suất dao động 49–70% tùy nguồn, Investing.com/Dân trí) và mùa báo cáo kinh doanh quý III (Tự Đông Hoá Ngày Nay).",
- "stance_notes": {
-  "VNINDEX": "Đóng cửa vượt 1.874,48 hoặc thủng 1.763,62 sẽ đổi bức tranh; khối ngoại bán ròng tiếp diễn là yếu tố theo dõi (Vietstock).",
-  "FPT": "Kết quả kinh doanh quý III sắp công bố có thể tác động giá (Tự Đông Hoá Ngày Nay); giá đang sát hỗ trợ 63,00.",
-  "VCB": "Lãi suất huy động cao và lãi suất liên ngân hàng biến động là yếu tố theo dõi với ngân hàng (VietNamNet, Doanh Nhân VN).",
-  "HPG": "Giá sát hỗ trợ 20,15; nhóm nguyên vật liệu hồi phục ngắn hạn (Vietstock) chưa đổi được quan điểm.",
-  "GOLD_VND": "Diễn biến kỳ vọng Fed và lợi suất Mỹ trên 5% quyết định áp lực lên vàng (Investing.com, VietnamPlus).",
-  "SJC": "Chênh lệch với thế giới thu hẹp dưới 5% mới đổi quan điểm; SJC tăng 1 triệu đồng/lượng sáng 30/9 (Báo Lào Cai)."
- },
- "errors": [
-  "Mâu thuẫn về xác suất Fed tăng lãi suất tháng 10: Dân trí/VTV nêu khoảng 70% (26/09), Investing.com nêu 49,4% theo CME FedWatch sau dữ liệu yếu (30/09), một nguồn khác nêu 68%.",
-  "Giá vàng thế giới: bài báo nêu ~4.175 USD/ounce lúc sáng, analysis.json (Yahoo Finance) ghi giá đóng 4.201 USD; lệch do thời điểm.",
-  "Không tìm được tin doanh nghiệp riêng của FPT, VCB, HPG trong 48 giờ; các khuyến nghị CTCK tìm thấy không rõ ngày và giá mục tiêu không khớp mặt bằng giá hiện tại nên không dùng.",
-  "Không tìm được thông tin xác thực về chính trị, xã hội thế giới có ảnh hưởng trong 48 giờ ngoài chính sách Fed."
- ]
-}
+{"generated_at": "2026-09-30 14:50 (giờ VN)",
+"summary": "VN-Index đóng cửa phiên 30/09 ở 1.768,62 điểm, giảm 0,5% trong ngày và giảm 3,5% trong 20 phiên, vẫn dưới đường trung bình 200 ngày (1.795,72); báo chí mô tả thị trường giằng co quanh vùng 1.770 điểm với thanh khoản thấp (Vietstock, Điện tử & Ứng dụng). Khối ngoại bán ròng khoảng 222 tỷ đồng tính đến 10h30 (Vietstock). Vàng thế giới hồi phục sau hai phiên giảm mạnh, quanh 4.182 USD/ounce theo báo chí và 4.228,30 USD theo dữ liệu hợp đồng tương lai, giảm 3,8% trong 20 phiên; lợi suất trái phiếu Mỹ 10 năm quanh 5,25% và thị trường định giá khoảng 68-70% khả năng Fed tăng lãi suất trong tháng 10 (VnExpress, Thời báo Tài chính Việt Nam). Vàng miếng SJC niêm yết 141,1 - 144,1 triệu đồng/lượng, cao hơn vàng thế giới quy đổi (132,39 triệu đồng/lượng) khoảng 8,8%, tức 11,7 triệu đồng. Cả bốn cổ phiếu theo dõi (FPT, VCB, HPG, SHS) đều đang nằm dưới đường trung bình 200 ngày; SHS yếu nhất với mức giảm 17,7% trong 20 phiên, chỉ số RSI 26. Tỷ giá USD/VND ở mức 25.970 (Yahoo Finance).",
+"items": [
+{"title": "Giá vàng hôm nay 30/9: Vàng thế giới tăng hơn 40 USD, vàng trong nước trái chiều", "source": "Thời báo Tài chính Việt Nam", "date": "30/09/2026", "url": "https://thoibaotaichinhvietnam.vn/gia-vang-hom-nay-ngay-30-9-vang-the-gioi-tang-hon-40-usd-vang-trong-nuoc-trai-chieu-204576.html", "impact": "Vàng thế giới: hồi phục lên khoảng 4.182 USD/ounce, nhưng vẫn chịu sức ép từ dầu cao, lợi suất trái phiếu Mỹ và kỳ vọng Fed tăng lãi suất"},
+{"title": "Giá vàng hôm nay ngày 30/9: Giá vàng thế giới quay đầu tăng trở lại", "source": "VnExpress", "date": "30/09/2026", "url": "https://vnexpress.net/gia-vang-the-gioi-tang-tro-lai-5126457.html", "impact": "Vàng thế giới quy đổi, vàng miếng SJC: giá thế giới tương đương khoảng 131,9 triệu đồng/lượng theo tỷ giá Vietcombank"},
+{"title": "Giá vàng hôm nay 30/09/2026: SJC 140,5 - 143,5 triệu đồng/lượng, tăng 1 triệu", "source": "Báo Đà Nẵng", "date": "30/09/2026", "url": "https://baodanang.vn/gia-vang-hom-nay-30092026-sjc-1405-1435-trieu-dongluong-tang-1-trieu-3353622.html", "impact": "Vàng miếng SJC: giá niêm yết tăng 1 triệu đồng/lượng so với hôm trước, chênh lệch với thế giới vẫn rất lớn"},
+{"title": "Nhịp đập Thị trường 30/09: GVR dẫn sóng nguyên vật liệu, khối ngoại xả ròng gần 222 tỷ, VN-Index tiếp tục giằng co", "source": "Vietstock (Investing.com)", "date": "30/09/2026", "url": "https://vn.investing.com/news/stock-market-news/nhip-dap-thi-truong-3009-gvr-dan-song-nguyen-vat-lieu-khoi-ngoai-xa-rong-gan-222-ty-vnindex-tiep-tuc-giang-co-2723613", "impact": "VN-Index: khối ngoại bán ròng khoảng 222 tỷ đồng tính đến 10h30, thị trường giằng co"},
+{"title": "Nhận định chứng khoán 30/9: Giằng co quanh vùng 1.770 điểm", "source": "Điện tử & Ứng dụng", "date": "30/09/2026", "url": "https://dientuungdung.vn/nhan-dinh-chung-khoan-309-giang-co-quanh-vung-1770-diem-18539.html", "impact": "VN-Index: vùng 1.770 điểm là vùng giằng co, khớp với mức hỗ trợ 1.758 và kháng cự 1.874 trong dữ liệu"},
+{"title": "VN-Index giảm phiên thứ hai liên tiếp", "source": "VTV", "date": "29/09/2026", "url": "https://vtv.vn/vn-index-giam-phien-thu-hai-lien-tiep-100260929190215404.htm", "impact": "VN-Index: đà giảm ngắn hạn, tâm lý thận trọng trước mùa báo cáo kết quả kinh doanh quý III"}
+],
+"commentary": {
+"VNINDEX": "VN-Index đóng cửa 1.768,62 điểm, dưới đường trung bình 200 ngày (1.795,72), chỉ số RSI 42 và động lượng 20 - 60 phiên đều âm. Báo chí cũng mô tả thị trường giằng co với thanh khoản thấp và khối ngoại bán ròng (Vietstock, VTV). Vùng hỗ trợ gần là 1.758,31 và kháng cự 1.874,48.",
+"FPT": "FPT đóng cửa 63,00, giảm 5,3% trong 20 phiên và nằm dưới đường trung bình 200 ngày (71,73); giá đang sát vùng hỗ trợ 63,00. Kiểm định thống kê 1 tháng chưa cho tín hiệu nào đủ ý nghĩa. Có một khuyến nghị mua của KBSV với giá mục tiêu 86.000 đồng (Smartly) nhưng chưa xác định được ngày phát hành nên chỉ để tham khảo.",
+"VCB": "VCB đóng cửa 58,00, đứng yên trong ngày, dưới đường trung bình 200 ngày (60,67) và RSI 44. Khối ngoại nằm trong nhóm bán mạnh trong phiên theo báo chí (Vietnambiz/Vietstock tổng hợp). Kiểm định thống kê 1 tháng chưa có tín hiệu nổi bật.",
+"HPG": "HPG đóng cửa 20,15, giảm 8,8% trong 20 phiên, RSI 34, đang nằm sát đáy 52 tuần (20,10). Khối ngoại bán ròng HPG nhiều trong phiên theo báo chí. Nhóm nguyên vật liệu được nhắc đến là điểm sáng của thị trường (Vietstock), nhưng dữ liệu kỹ thuật chưa xác nhận xu hướng tăng.",
+"SHS": "SHS đóng cửa 13,00, giảm 17,7% trong 20 phiên, RSI 26 thuộc vùng quá bán và giá sát đáy 52 tuần (12,70). Quá bán chưa phải tín hiệu đảo chiều theo kiểm định; biên độ dao động 1 tháng rất rộng (từ -14,1% đến +20,8%).",
+"GOLD_USD": "Vàng thế giới ở 4.228,30 USD/ounce theo dữ liệu hợp đồng tương lai (báo chí ghi khoảng 4.182 USD cùng ngày do khác thời điểm), thấp hơn đường trung bình 200 ngày (4.555) và giảm 3,8% trong 20 phiên. Lợi suất trái phiếu Mỹ quanh 5,25% và kỳ vọng Fed tăng lãi suất đang đè lên giá (VnExpress, Thời báo Tài chính Việt Nam).",
+"GOLD_VND": "Vàng thế giới quy đổi ở 132,39 triệu đồng/lượng, dưới đường trung bình 200 ngày (143,90), giảm 4,2% trong 20 phiên. Vùng hỗ trợ 129,74 và kháng cự 143,28 triệu đồng. Tỷ giá USD/VND 25.970 (Yahoo Finance).",
+"SJC": "Vàng miếng SJC bán ra 144,1 triệu đồng/lượng, cao hơn vàng thế giới quy đổi 8,8% (11,7 triệu đồng). Giá niêm yết tăng 1 - 1,6 triệu đồng so với hôm trước (Báo Đà Nẵng, PNJ). Chênh lệch lớn là rủi ro: nếu thu hẹp, giá SJC có thể giảm dù vàng thế giới đứng yên."
+},
+"recommendation": "Hôm nay không có cơ hội nào vượt qua kiểm định thống kê, nên phương án khớp dữ liệu nhất là chờ. VN-Index, FPT, VCB, HPG, SHS và vàng thế giới đều giữ quan điểm trung lập với độ tin cậy thấp, đồng thời đều đang nằm dưới đường trung bình 200 ngày. Vàng miếng SJC ở trạng thái thận trọng vì giá cao hơn thế giới 8,8%; chênh lệch cần về dưới 5% thì bức tranh mới cải thiện. Cần theo dõi quyết định lãi suất Fed tháng 10, khi thị trường định giá khoảng 68% khả năng tăng lãi suất (CME FedWatch theo VnExpress), và mùa báo cáo kết quả kinh doanh quý III của doanh nghiệp (Tự động hóa ngày nay).",
+"stance_notes": {
+"VNINDEX": "Giữ trên hỗ trợ 1.758 hay thủng xuống dưới sẽ quyết định xu hướng; kết quả kinh doanh quý III và dòng tiền khối ngoại là yếu tố cần theo dõi (Vietstock).",
+"FPT": "Kết quả kinh doanh quý III và các báo cáo khuyến nghị của công ty chứng khoán có thể thay đổi bức tranh; giá đang sát hỗ trợ 63,00 (Smartly - KBSV, chưa rõ ngày).",
+"VCB": "Khối ngoại bán ròng VCB và kết quả kinh doanh quý III là yếu tố cần theo dõi (Vietstock).",
+"HPG": "Dòng vốn ngoại bán ròng và nhóm nguyên vật liệu hồi phục là hai yếu tố có thể làm thay đổi bức tranh (Vietstock).",
+"SHS": "Thanh khoản thị trường thấp và kết quả kinh doanh quý III của nhóm chứng khoán là yếu tố cần theo dõi; giá sát đáy 52 tuần 12,70.",
+"GOLD_USD": "Quyết định lãi suất Fed tháng 10 và lợi suất trái phiếu Mỹ quanh 5,25% là yếu tố chính (VnExpress).",
+"GOLD_VND": "Biến động tỷ giá USD/VND và giá vàng thế giới quyết định giá quy đổi; hỗ trợ 129,74 triệu đồng.",
+"SJC": "Chênh lệch với thế giới thu hẹp dưới 5% sẽ thay đổi quan điểm; hiện 8,8% (PNJ, Báo Đà Nẵng)."
+},
+"errors": [
+"Mâu thuẫn giá vàng thế giới: dữ liệu hợp đồng tương lai 4.228,30 USD/ounce, báo chí ghi 4.182 USD/ounce (khác thời điểm lấy giá). Bản tin dùng số từ dữ liệu định lượng.",
+"Mâu thuẫn VN-Index: một kết quả tìm kiếm ghi VN-Index 1.342,06 điểm (+0,21%) và khối ngoại bán ròng 178 tỷ đồng, không khớp dữ liệu VNDirect (1.768,62 điểm, -0,5%) và các bài cùng ngày (vùng 1.770 điểm). Không dùng số 1.342,06; bản tin dùng dữ liệu VNDirect.",
+"Khuyến nghị công ty chứng khoán tìm được (VCBS về SHS, HPG; KBSV về FPT) có giá mục tiêu lệch xa giá hiện tại (ví dụ HPG vùng mua 27.000 đồng so với giá 20,15) và không rõ ngày phát hành, nên không đưa vào nhận định.",
+"Không tìm thấy tin doanh nghiệp riêng trong 48 giờ gần nhất cho FPT, VCB, HPG, SHS.",
+"Không tìm thấy tin chính trị, xã hội thế giới đáng kể cho ngày hôm nay ngoài giá dầu cao và kỳ vọng Fed tăng lãi suất."
+]}
