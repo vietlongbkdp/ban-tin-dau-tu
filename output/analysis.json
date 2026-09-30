@@ -1,12 +1,13 @@
 {
- "generated_at": "2026-09-30 14:48 (giờ VN)",
+ "generated_at": "2026-09-30 14:53 (giờ VN)",
  "run_kind": "manual",
  "watchlist": {
   "stocks": [
    "FPT",
    "VCB",
    "HPG",
-   "SHS"
+   "SHS",
+   "LONG"
   ],
   "gold": {
    "world": true,
@@ -4419,16 +4420,16 @@
    "last_date": "2026-09-30",
    "first_date": "2016-09-30",
    "n_days": 2513,
-   "close": 4228.2998046875,
-   "change_1d": 0.011627534776179393,
-   "change_20d": -0.03823585237699478,
-   "rsi": 39.2204998206476,
-   "sma20": 4365.90498046875,
-   "sma50": 4363.853994140625,
-   "sma200": 4555.067999267578,
-   "macd_hist": -26.357744324796492,
-   "bb_up": 4555.689835001484,
-   "bb_lo": 4176.120125936016,
+   "close": 4224.10009765625,
+   "change_1d": 0.0106227481084753,
+   "change_20d": -0.03919111284568222,
+   "rsi": 38.814307312594075,
+   "sma20": 4365.694995117187,
+   "sma50": 4363.77,
+   "sma200": 4555.047000732422,
+   "macd_hist": -26.62575981624961,
+   "bb_up": 4556.129092466692,
+   "bb_lo": 4175.260897767683,
    "atr": 92.50711495535714,
    "support_20": 4143.10009765625,
    "resist_20": 4558.5,
@@ -4475,7 +4476,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 4043.285574776786,
+     "stop_ref": 4039.085867745536,
      "live": {
       "n": 0
      },
@@ -4500,7 +4501,7 @@
       "n": 2294,
       "prob_up": 0.574106364428945,
       "median": 0.0073765831826256845,
-      "p10": -0.038370597260094216,
+      "p10": -0.038411241176513636,
       "p90": 0.06776427135598534,
       "avg_max_drawdown": -0.0216137880233395,
       "worst_drawdown": -0.17608635359831637,
@@ -4513,7 +4514,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 4043.285574776786,
+     "stop_ref": 4039.085867745536,
      "live": {
       "n": 0
      },
@@ -4551,7 +4552,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 4043.285574776786,
+     "stop_ref": 4039.085867745536,
      "live": {
       "n": 0
      },
@@ -4924,7 +4925,7 @@
      4321.2,
      4168.4,
      4179.7,
-     4228.3
+     4224.1
     ],
     "sma50": [
      4261.34,
@@ -5106,7 +5107,7 @@
      4354.55,
      4357.54,
      4360.82,
-     4363.85
+     4363.77
     ],
     "sma200": [
      3684.98,
@@ -5288,7 +5289,7 @@
      4556.06,
      4555.72,
      4555.49,
-     4555.07
+     4555.05
     ]
    },
    "name": "Vàng thế giới (USD/oz)",
@@ -5299,16 +5300,16 @@
    "last_date": "2026-09-30",
    "first_date": "2016-09-30",
    "n_days": 2513,
-   "close": 132.39148468090357,
-   "change_1d": 0.011666489974099248,
-   "change_20d": -0.04192501289722106,
-   "rsi": 38.50609287463127,
-   "sma20": 136.81949631001888,
-   "sma50": 137.38582747406957,
-   "sma200": 143.90028432605806,
-   "macd_hist": -0.7939660860369373,
-   "bb_up": 142.96457595436826,
-   "bb_lo": 130.6744166656695,
+   "close": 132.25998845907094,
+   "change_1d": 0.010661664614621591,
+   "change_20d": -0.042876609152373124,
+   "rsi": 38.09942305851823,
+   "sma20": 136.81292149892724,
+   "sma50": 137.38319754963294,
+   "sma200": 143.8996268449489,
+   "macd_hist": -0.8023578677151477,
+   "bb_up": 142.97819740961134,
+   "bb_lo": 130.64764558824314,
    "atr": 2.9001133659490432,
    "support_20": 129.74379354978183,
    "resist_20": 143.27991662012525,
@@ -5355,7 +5356,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 126.59125794900548,
+     "stop_ref": 126.45976172717285,
      "live": {
       "n": 0
      },
@@ -5393,7 +5394,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 126.59125794900548,
+     "stop_ref": 126.45976172717285,
      "live": {
       "n": 0
      },
@@ -5431,7 +5432,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 126.59125794900548,
+     "stop_ref": 126.45976172717285,
      "live": {
       "n": 0
      },
@@ -5804,7 +5805,7 @@
      135.4,
      130.54,
      130.86,
-     132.39
+     132.26
     ],
     "sma50": [
      135.15,
@@ -5986,7 +5987,7 @@
      137.18,
      137.25,
      137.32,
-     137.39
+     137.38
     ],
     "sma200": [
      116.37,
@@ -6175,7 +6176,9 @@
    "kind": "gold"
   }
  },
- "errors": [],
+ "errors": [
+  "Cổ phiếu LONG: Không lấy được LONG: VNDirect dchart: Expecting value: line 1 column 1 (char 0); VPS histdatafeed: HTTPSConnectionPool(host='histdatafeed.vps.com.vn', port=443): Max retries exceeded with url: /tradingview/history?symbol=LONG&resolution=D&from=1475394813&to=1790754813 (Caused by ConnectTimeoutError(<HTTPSConnection(host='histdatafeed.vps.com.vn', port=443) at 0x7fdf187e7410>, 'Connection to histdatafeed.vps.com.vn timed out. (connect timeout=30)'))"
+ ],
  "fx": {
   "usdvnd": 25970.0,
   "date": "2026-09-30",
@@ -6186,9 +6189,9 @@
   "sell": 144.1,
   "updated": "30/09/2026 14:24:07",
   "source": "PNJ edge-api (bảng giá vàng miếng SJC)",
-  "world_equiv": 132.39148468090357,
-  "premium": 11.70851531909642,
-  "premium_pct": 0.0884385830955583,
+  "world_equiv": 132.25998845907094,
+  "premium": 11.840011540929055,
+  "premium_pct": 0.08952073623228118,
   "history_days": 1,
   "history": [
    {
@@ -6295,11 +6298,11 @@
    "sign": 0,
    "confidence": "Thấp",
    "horizon": "1 tháng",
-   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 126.59. Đường MA200 hiện ở 143.90.",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 126.46. Đường MA200 hiện ở 143.90.",
    "reasons": [
     "Kiểm định 1 tháng: xác suất tăng 59% so với nền 59%; trung vị +0.8%, khoảng 10–90% từ -3.6% đến +7.1% (n=2294). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
-    "Giá 132.39 đang dưới MA200 (143.90); RSI 39. Đây là mô tả trạng thái, không phải dự báo.",
-    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -2.2%, tệ nhất -16.7%. Mức cắt lỗ tham khảo 126.59 (-4.4%)."
+    "Giá 132.26 đang dưới MA200 (143.90); RSI 38. Đây là mô tả trạng thái, không phải dự báo.",
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -2.2%, tệ nhất -16.7%. Mức cắt lỗ tham khảo 126.46 (-4.4%)."
    ],
    "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 143.28 hoặc thủng hỗ trợ 129.74, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
    "edge": 0.0,
@@ -6313,9 +6316,9 @@
    "sign": -1,
    "confidence": "Trung bình",
    "horizon": "vàng miếng",
-   "action": "Nếu muốn nắm giữ vàng, lưu ý giá SJC đang cao hơn thế giới 8.8%. Chênh lệch này thu hẹp thì SJC có thể giảm dù vàng thế giới đứng yên. Có thể cân nhắc vàng nhẫn 9999 hoặc chờ chênh lệch giảm.",
+   "action": "Nếu muốn nắm giữ vàng, lưu ý giá SJC đang cao hơn thế giới 9.0%. Chênh lệch này thu hẹp thì SJC có thể giảm dù vàng thế giới đứng yên. Có thể cân nhắc vàng nhẫn 9999 hoặc chờ chênh lệch giảm.",
    "reasons": [
-    "Giá bán SJC 144.1 tr/lượng, đắt hơn vàng thế giới quy đổi +8.8% (11.7 tr).",
+    "Giá bán SJC 144.1 tr/lượng, đắt hơn vàng thế giới quy đổi +9.0% (11.8 tr).",
     "Chênh mua–bán 2.1%: mua xong bán lại ngay sẽ lỗ khoảng mức này.",
     "Ngưỡng cảnh báo của hệ thống: chênh lệch trên 5%."
    ],
