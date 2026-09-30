@@ -1,5 +1,6 @@
 {
   "stocks": ["FPT", "VCB", "HPG"],
+  "gold": {"world": true, "sjc": true},
   "index": "VNINDEX",
   "gold_world": "GC=F",
   "fx": "VND=X",

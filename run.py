@@ -1,6 +1,12 @@
-"""Chạy toàn bộ phần định lượng: lấy dữ liệu -> phân tích -> nhật ký -> output/analysis.json."""
+"""Chạy toàn bộ phần định lượng: lấy dữ liệu -> phân tích -> nhật ký -> output/analysis.json.
+
+python run.py            lượt chạy định kỳ (ghi dự báo mới vào nhật ký)
+python run.py --manual   lượt chạy tay giữa phiên: vẫn chấm điểm nhật ký nhưng không ghi dự báo mới,
+                         vì giá giữa phiên chưa phải giá đóng cửa
+"""
 import json
 import os
+import re
 import sys
 import traceback
 from datetime import datetime
@@ -13,10 +19,23 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 OZ_PER_LUONG = 37.5 / 31.1034768
 
 
+def parse_symbol(raw):
+    """'FPT' -> cổ phiếu VN; 'AAPL.US' -> cổ phiếu Mỹ qua Yahoo Finance."""
+    s = raw.strip().upper()
+    if not re.fullmatch(r"[A-Z0-9]{1,10}(\.US)?", s):
+        return None
+    return s
+
+
 def main():
+    manual = "--manual" in sys.argv
     cfg = json.load(open(os.path.join(ROOT, "config.json"), encoding="utf-8"))
     years, horizons = cfg["history_years"], cfg["horizons"]
-    out = {"generated_at": datetime.now(data.VN_TZ).strftime("%Y-%m-%d %H:%M (giờ VN)"), "assets": {}, "errors": []}
+    gold = cfg.get("gold", {"world": True, "sjc": True})
+    out = {"generated_at": datetime.now(data.VN_TZ).strftime("%Y-%m-%d %H:%M (giờ VN)"),
+           "run_kind": "manual" if manual else "scheduled",
+           "watchlist": {"stocks": cfg["stocks"], "gold": gold},
+           "assets": {}, "errors": []}
     series = {}
 
     def run_asset(key, name, kind, loader):
@@ -31,38 +50,50 @@ def main():
             traceback.print_exc()
 
     run_asset(cfg["index"], "VN-Index", "index", lambda: data.vn_history(cfg["index"], years))
-    for s in cfg["stocks"]:
-        run_asset(s, f"Cổ phiếu {s}", "stock", lambda s=s: data.vn_history(s, years))
-    run_asset("GOLD_USD", "Vàng thế giới (USD/oz)", "gold", lambda: data.yf_history(cfg["gold_world"], years))
+    for raw in cfg["stocks"]:
+        s = parse_symbol(raw)
+        if not s:
+            out["errors"].append(f"Mã không hợp lệ: {raw!r}")
+            continue
+        if s.endswith(".US"):
+            t = s[:-3]
+            run_asset(s, f"Cổ phiếu Mỹ {t}", "stock", lambda t=t: data.yf_history(t, years))
+        else:
+            run_asset(s, f"Cổ phiếu {s}", "stock", lambda s=s: data.vn_history(s, years))
 
-    # Vàng thế giới quy đổi VND/lượng: đại diện xu hướng cho giá vàng trong nước
-    try:
-        g, fx = series["GOLD_USD"], data.yf_history(cfg["fx"], years)
-        f = fx["close"].reindex(g.index).ffill()
-        gv = g.mul(f, axis=0).mul(OZ_PER_LUONG / 1e6).dropna()
-        gv["volume"] = g["volume"].reindex(gv.index)
-        gv.attrs["source"] = "Tính từ Yahoo Finance GC=F × VND=X (triệu VND/lượng)"
-        out["fx"] = {"usdvnd": float(fx["close"].iloc[-1]), "date": str(fx.index[-1].date()), "source": fx.attrs["source"]}
-        run_asset("GOLD_VND", "Vàng thế giới quy đổi (triệu VND/lượng)", "gold", lambda: gv)
-    except Exception as e:
-        out["errors"].append(f"Vàng quy đổi VND: {e}")
+    if gold.get("world") or gold.get("sjc"):
+        run_asset("GOLD_USD", "Vàng thế giới (USD/oz)", "gold", lambda: data.yf_history(cfg["gold_world"], years))
+        # Vàng thế giới quy đổi VND/lượng: đại diện xu hướng cho giá vàng trong nước
+        try:
+            g, fx = series["GOLD_USD"], data.yf_history(cfg["fx"], years)
+            f = fx["close"].reindex(g.index).ffill()
+            gv = g.mul(f, axis=0).mul(OZ_PER_LUONG / 1e6).dropna()
+            gv["volume"] = g["volume"].reindex(gv.index)
+            gv.attrs["source"] = "Tính từ Yahoo Finance GC=F × VND=X (triệu VND/lượng)"
+            out["fx"] = {"usdvnd": float(fx["close"].iloc[-1]), "date": str(fx.index[-1].date()), "source": fx.attrs["source"]}
+            run_asset("GOLD_VND", "Vàng thế giới quy đổi (triệu VND/lượng)", "gold", lambda: gv)
+        except Exception as e:
+            out["errors"].append(f"Vàng quy đổi VND: {e}")
 
-    try:
-        snap = data.sjc_snapshot()
-        hist = data.append_sjc_history(snap)
-        if "GOLD_VND" in out["assets"]:
-            world = out["assets"]["GOLD_VND"]["close"]
-            snap["world_equiv"] = world
-            snap["premium"] = snap["sell"] - world
-            snap["premium_pct"] = snap["sell"] / world - 1
-        snap["history_days"] = len(hist)
-        out["sjc"] = snap
-    except Exception as e:
-        out["errors"].append(f"Giá SJC: {e}")
+    if gold.get("sjc"):
+        try:
+            snap = data.sjc_snapshot()
+            hist = data.append_sjc_history(snap)
+            if "GOLD_VND" in out["assets"]:
+                world = out["assets"]["GOLD_VND"]["close"]
+                snap["world_equiv"] = world
+                snap["premium"] = snap["sell"] - world
+                snap["premium_pct"] = snap["sell"] / world - 1
+            snap["history_days"] = len(hist)
+            snap["history"] = hist.to_dict(orient="records")[-120:]
+            out["sjc"] = snap
+        except Exception as e:
+            out["errors"].append(f"Giá SJC: {e}")
 
-    # Nhật ký dự báo: chấm điểm dự báo cũ, hiệu chỉnh, ghi dự báo mới
+    # Nhật ký dự báo: chấm điểm dự báo cũ, hiệu chỉnh, ghi dự báo mới (chỉ ở lượt chạy định kỳ)
     j = journal.load()
     j = journal.evaluate(j, {k: v["close"] for k, v in series.items()})
+    sh = cfg["stance_horizon"]
     for key, a in out["assets"].items():
         for label, hz in a["horizons"].items():
             st = hz["stats"]
@@ -72,20 +103,21 @@ def main():
             hz["prob_up_final"] = p_adj
             hz["calibration_note"] = note
             hz["verdict"], hz["verdict_note"] = analyze.verdict(hz)
-            j = journal.record(j, a["last_date"], key, label, hz["days"], p_adj, st["base_prob_up"], a["close"])
+            if not manual:
+                j = journal.record(j, a["last_date"], key, label, hz["days"], p_adj, st["base_prob_up"], a["close"])
 
     # Quan điểm hằng ngày theo quy tắc cố định; cũng được ghi nhật ký để chấm điểm khi đến hạn
-    sh = cfg["stance_horizon"]
     stances = {}
     for key, a in out["assets"].items():
-        if key == "GOLD_USD":
-            continue  # đã có bản quy đổi VND
+        if key == "GOLD_USD" or (a["kind"] == "gold" and not gold.get("world")):
+            continue  # vàng thế giới đã có bản quy đổi VND; tắt 'world' thì chỉ giữ SJC
         s = analyze.stance(a, sh)
         s["name"] = a["name"]
         stances[key] = s
-        hz = a["horizons"][sh]
-        j = journal.record(j, a["last_date"], key, f"Quan điểm ({sh})", hz["days"],
-                           {1: 1.0, -1: 0.0, 0: 0.5}[s["sign"]], hz["stats"]["base_prob_up"], a["close"])
+        if not manual:
+            hz = a["horizons"][sh]
+            j = journal.record(j, a["last_date"], key, f"Quan điểm ({sh})", hz["days"],
+                               {1: 1.0, -1: 0.0, 0: 0.5}[s["sign"]], hz["stats"]["base_prob_up"], a["close"])
     if out.get("sjc", {}).get("premium_pct") is not None:
         s = analyze.sjc_stance(out["sjc"])
         s["name"] = "Vàng miếng SJC"
@@ -95,12 +127,15 @@ def main():
             s["live"] = journal.live_skill(j, key, f"Quan điểm ({sh})")
     out["stances"] = stances
     out["best_pick"] = analyze.best_pick(stances)
+    if not gold.get("world"):
+        out["assets"].pop("GOLD_USD", None)
+        out["assets"].pop("GOLD_VND", None)
     journal.save(j)
 
     os.makedirs(os.path.join(ROOT, "output"), exist_ok=True)
     with open(os.path.join(ROOT, "output", "analysis.json"), "w", encoding="utf-8") as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1, default=float)
-    print(f"OK: {len(out['assets'])} tài sản, lỗi: {out['errors']}")
+    print(f"OK ({out['run_kind']}): {len(out['assets'])} tài sản, lỗi: {out['errors']}")
     return 0 if out["assets"] else 1
 
 
