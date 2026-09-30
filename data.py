@@ -83,3 +83,27 @@ def append_sjc_history(snap):
         w.writeheader()
         w.writerows(rows)
     return pd.DataFrame(rows)
+
+
+def gold_spot():
+    """Giá vàng giao ngay XAU/USD hiện tại. Thử lần lượt nhiều nguồn độc lập."""
+    errors = []
+    try:
+        q = requests.get("https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAU/USD",
+                         headers=UA, timeout=20).json()[0]["spreadProfilePrices"][0]
+        return {"price": (q["bid"] + q["ask"]) / 2, "source": "Swissquote (giữa giá mua/bán)",
+                "at": datetime.now(VN_TZ).strftime("%H:%M %d/%m")}
+    except Exception as e:
+        errors.append(f"Swissquote: {e}")
+    try:
+        j = requests.get("https://api.coinbase.com/v2/prices/XAU-USD/spot", headers=UA, timeout=20).json()
+        return {"price": float(j["data"]["amount"]), "source": "Coinbase XAU-USD spot",
+                "at": datetime.now(VN_TZ).strftime("%H:%M %d/%m")}
+    except Exception as e:
+        errors.append(f"Coinbase: {e}")
+    try:
+        j = requests.get("https://api.gold-api.com/price/XAU", headers=UA, timeout=20).json()
+        return {"price": float(j["price"]), "source": "gold-api.com", "at": j.get("updatedAt")}
+    except Exception as e:
+        errors.append(f"gold-api: {e}")
+    raise RuntimeError("Không lấy được giá vàng giao ngay: " + "; ".join(errors))

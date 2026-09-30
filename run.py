@@ -62,25 +62,39 @@ def main():
             run_asset(s, f"Cổ phiếu {s}", "stock", lambda s=s: data.vn_history(s, years))
 
     if gold.get("world") or gold.get("sjc"):
-        run_asset("GOLD_USD", "Vàng thế giới (USD/oz)", "gold", lambda: data.yf_history(cfg["gold_world"], years))
+        run_asset("GOLD_USD", "Vàng tương lai COMEX GC=F (USD/oz)", "gold", lambda: data.yf_history(cfg["gold_world"], years))
         # Vàng thế giới quy đổi VND/lượng: đại diện xu hướng cho giá vàng trong nước
         try:
             g, fx = series["GOLD_USD"], data.yf_history(cfg["fx"], years)
             f = fx["close"].reindex(g.index).ffill()
             gv = g.mul(f, axis=0).mul(OZ_PER_LUONG / 1e6).dropna()
             gv["volume"] = g["volume"].reindex(gv.index)
-            gv.attrs["source"] = "Tính từ Yahoo Finance GC=F × VND=X (triệu VND/lượng)"
+            gv.attrs["source"] = "Yahoo Finance: hợp đồng tương lai GC=F × tỷ giá VND=X (triệu VND/lượng)"
             out["fx"] = {"usdvnd": float(fx["close"].iloc[-1]), "date": str(fx.index[-1].date()), "source": fx.attrs["source"]}
-            run_asset("GOLD_VND", "Vàng thế giới quy đổi (triệu VND/lượng)", "gold", lambda: gv)
+            run_asset("GOLD_VND", "Vàng thế giới quy đổi VND (theo GC=F, triệu/lượng)", "gold", lambda: gv)
         except Exception as e:
             out["errors"].append(f"Vàng quy đổi VND: {e}")
+
+    if gold.get("world") or gold.get("sjc"):
+        try:
+            out["gold_spot"] = data.gold_spot()
+        except Exception as e:
+            out["errors"].append(str(e))
 
     if gold.get("sjc"):
         try:
             snap = data.sjc_snapshot()
             hist = data.append_sjc_history(snap)
-            if "GOLD_VND" in out["assets"]:
+            # Chênh lệch SJC tính theo giá giao ngay (như báo chí), chỉ dùng GC=F khi không có giá giao ngay
+            if out.get("gold_spot") and out.get("fx"):
+                world = out["gold_spot"]["price"] * out["fx"]["usdvnd"] * OZ_PER_LUONG / 1e6
+                snap["world_basis"] = f"giá giao ngay {out['gold_spot']['source']} × tỷ giá Yahoo VND=X"
+            elif "GOLD_VND" in out["assets"]:
                 world = out["assets"]["GOLD_VND"]["close"]
+                snap["world_basis"] = "hợp đồng tương lai GC=F (không lấy được giá giao ngay)"
+            else:
+                world = None
+            if world:
                 snap["world_equiv"] = world
                 snap["premium"] = snap["sell"] - world
                 snap["premium_pct"] = snap["sell"] / world - 1

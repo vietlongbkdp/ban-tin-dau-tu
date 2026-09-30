@@ -258,7 +258,7 @@ footer{margin-top:34px;font-size:13px;color:var(--muted)}
   <div class="board"><div class="tw"><table>
     <thead><tr><th>Mã</th><th>Giá</th><th>+/−</th><th>%</th><th>Tham chiếu</th><th>Trần</th><th>Sàn</th><th>Cao</th><th>Thấp</th></tr></thead>
     <tbody id="boardBody"></tbody></table></div></div>
-  <p class="muted small">Cổ phiếu VN (nghìn đồng) và VN-Index: bảng giá VPS, cập nhật mỗi 5 giây trong phiên. Vàng thế giới: gold-api.com (giá giao ngay XAU). Vàng SJC: PNJ. Tỷ giá: open.er-api.com (1 lần/ngày). <b>Quan điểm và xác suất bên dưới vẫn tính theo lượt chạy gần nhất</b>, không đổi theo từng tick giá.</p>
+  <p class="muted small">Cổ phiếu VN (nghìn đồng) và VN-Index: bảng giá VPS, cập nhật mỗi 5 giây trong phiên. Vàng giao ngay XAU: Coinbase (dự phòng gold-api.com); thẻ phân tích vàng bên dưới dùng lịch sử hợp đồng tương lai COMEX GC=F, thường cao hơn giá giao ngay vài chục USD. Vàng SJC: PNJ. Tỷ giá: open.er-api.com (1 lần/ngày). <b>Quan điểm và xác suất bên dưới vẫn tính theo lượt chạy gần nhất</b>, không đổi theo từng tick giá.</p>
 
   <div class="section-h"><h3>Quan điểm theo từng mã</h3><span class="muted small">Kỳ hạn quan điểm: <b id="stHz">1 tháng</b> · Thanh ngang là xác suất tăng, vạch đứng là tỷ lệ nền</span></div>
   <div class="grid" id="cards"></div>
@@ -275,7 +275,7 @@ footer{margin-top:34px;font-size:13px;color:var(--muted)}
   <div class="panel warn small">
     <p style="margin-top:0">Đây là phân tích thống kê tự động và nhận định chung cho mọi nhà đầu tư, <b>không phải lời khuyên đầu tư cá nhân</b>. Hệ thống không tính đến số vốn, mục tiêu hay mức chịu rủi ro của bạn.</p>
     <p><b>Xác suất tăng</b> là tỷ lệ các lần trong lịch sử có trạng thái chỉ báo tương tự hôm nay mà giá cao hơn sau kỳ hạn. <b>Nền</b> là tỷ lệ tăng chung của mọi ngày. Quan điểm chỉ rời khỏi <i>Trung lập</i> khi có chỉ báo đạt ý nghĩa thống kê (|t| ≥ 2) <b>và</b> đoán đúng hướng tốt hơn tỷ lệ nền trong kiểm định 250 phiên gần nhất. Mọi quan điểm được ghi vào nhật ký và chấm điểm khi đến hạn.</p>
-    <p style="margin-bottom:0">Nguồn giá: VNDirect/VPS (cổ phiếu VN, VN-Index), Yahoo Finance (vàng GC=F, USD/VND, cổ phiếu Mỹ), PNJ (vàng miếng SJC). Tin tức do agent Claude tổng hợp, mỗi tin có link nguồn.</p>
+    <p style="margin-bottom:0">Nguồn giá: VNDirect/VPS (cổ phiếu VN, VN-Index), Yahoo Finance (lịch sử vàng tương lai GC=F dùng cho phân tích xu hướng, USD/VND, cổ phiếu Mỹ), Swissquote/Coinbase (vàng giao ngay XAU, dùng để tính chênh lệch SJC), PNJ (vàng miếng SJC). Tin tức do agent Claude tổng hợp, mỗi tin có link nguồn.</p>
   </div>
   <footer>Mã nguồn: <a id="repoLink" href="#" target="_blank" rel="noopener">GitHub</a></footer>
 </main>
@@ -491,7 +491,7 @@ function sjcCard(s, sjc, news) {
     <div style="margin-top:14px;font-weight:700;font-size:13.5px">SJC đắt hơn vàng thế giới: <span class="${sjc.premium_pct > 0.05 ? "down" : "up"}">${pct(sjc.premium_pct)} (${nf(sjc.premium,1)} tr)</span></div>
     <div class="gauge" role="img" aria-label="Chênh lệch ${pct(sjc.premium_pct,false)}, ngưỡng cảnh báo 5%"><span class="thr" style="left:${(0.05/max*100).toFixed(1)}%">ngưỡng 5%</span><div class="needle" style="left:calc(${(p/max*100).toFixed(1)}% - 2px)"></div></div>
     <div class="scale"><span>0%</span><span>5%</span><span>10%</span><span>15%+</span></div>
-    <div class="lv"><div><span>Thế giới quy đổi</span><b>${nf(sjc.world_equiv,1)} tr</b></div><div><span>Chênh mua–bán</span><b>${nf(sjc.sell - sjc.buy,1)} tr (${pct((sjc.sell - sjc.buy)/sjc.sell,false)})</b></div></div>
+    <div class="lv"><div><span>Thế giới quy đổi${sjc.world_basis ? " (" + esc(sjc.world_basis) + ")" : ""}</span><b>${nf(sjc.world_equiv,1)} tr</b></div><div><span>Chênh mua–bán</span><b>${nf(sjc.sell - sjc.buy,1)} tr (${pct((sjc.sell - sjc.buy)/sjc.sell,false)})</b></div></div>
     ${sjc.history?.length > 1 ? `<div class="chartbox"><canvas id="ch-SJC" aria-label="Lịch sử giá bán SJC"></canvas></div>` : `<p class="muted small">Đã lưu ${sjc.history_days || 1} ngày giá SJC; biểu đồ xuất hiện từ ngày thứ 2.</p>`}
     <div class="action"><b>Gợi ý chung:</b> ${esc(s.action)}</div>
     ${note ? `<p class="note">📰 ${esc(note)}</p>` : ""}
@@ -674,8 +674,13 @@ async function pollVN() {
 }
 async function pollGold() {
   if (!STATE.bundle?.analysis?.watchlist?.gold) return;
-  try { const g = await getJSON("https://api.gold-api.com/price/XAU"); LIVE.xau = {price:+g.price, at:g.updatedAt}; LIVE.ok.gold = new Date(); delete LIVE.err.gold; }
-  catch { LIVE.err.gold = "vàng thế giới"; }
+  // Giá giao ngay XAU: Coinbase (khớp Swissquote/báo chí), dự phòng gold-api.com
+  try { const j = await getJSON("https://api.coinbase.com/v2/prices/XAU-USD/spot"); LIVE.xau = {price:+j.data.amount, at:new Date().toISOString(), src:"Coinbase"}; }
+  catch {
+    try { const g = await getJSON("https://api.gold-api.com/price/XAU"); LIVE.xau = {price:+g.price, at:g.updatedAt, src:"gold-api.com"}; }
+    catch { LIVE.err.gold = "vàng giao ngay"; return; }
+  }
+  LIVE.ok.gold = new Date(); delete LIVE.err.gold;
 }
 async function pollSjc() {
   if (!STATE.bundle?.analysis?.watchlist?.gold?.sjc) return;
@@ -709,10 +714,12 @@ function renderLive() {
   const ix = live ? LIVE.index : null, xau = live ? LIVE.xau : null, fx = (live && LIVE.fx) || an.fx?.usdvnd, sjc = (live && LIVE.sjc) || an.sjc;
   const k = [], vni = assets.VNINDEX, gw = assets.GOLD_USD;
   if (ix || vni) k.push(kpi("VN-Index", nf(ix ? ix.last : vni.close), ix ? ix.last / ix.ref - 1 : vni.change_1d, ix ? `Trực tiếp · ${ix.time}` : `Phiên ${vni.last_date}`));
-  if (xau || gw) k.push(kpi("Vàng thế giới (USD/oz)", nf(xau ? xau.price : gw.close, 1), xau ? null : gw.change_1d,
-    xau ? `Giao ngay · ${new Date(xau.at).toLocaleTimeString("vi-VN")}` : `Phiên ${gw.last_date}`));
+  const spot = an.gold_spot;
+  if (xau) k.push(kpi("Vàng giao ngay XAU (USD/oz)", nf(xau.price, 2), null, `Trực tiếp · ${xau.src} · ${new Date(xau.at).toLocaleTimeString("vi-VN")}`));
+  else if (spot) k.push(kpi("Vàng giao ngay XAU (USD/oz)", nf(spot.price, 2), null, `Lúc chạy ${spot.at} · ${spot.source}`));
+  else if (gw) k.push(kpi("Vàng tương lai COMEX GC=F (USD/oz)", nf(gw.close, 1), gw.change_1d, `Không có giá giao ngay · phiên ${gw.last_date}`));
   if (sjc) {
-    const world = xau && fx ? xau.price * fx * OZ_LUONG / 1e6 : an.sjc?.world_equiv, prem = world ? sjc.sell / world - 1 : null;
+    const sp = xau?.price || spot?.price, world = sp && fx ? sp * fx * OZ_LUONG / 1e6 : an.sjc?.world_equiv, prem = world ? sjc.sell / world - 1 : null;
     k.push(kpi("Vàng SJC mua / bán (tr/lượng)", `${nf(sjc.buy, 1)} / ${nf(sjc.sell, 1)}`, null,
       (prem != null ? `Đắt hơn thế giới ${pct(prem, false)}` : "") + (live && LIVE.sjc ? " · trực tiếp" : "")));
   }
@@ -735,8 +742,6 @@ function renderLive() {
   $("boardBody").innerHTML = rows.join("") || `<tr><td colspan="9" class="muted" style="text-align:left">Chưa có mã cổ phiếu VN trong danh mục.</td></tr>`;
   $("boardBody").querySelectorAll("td[data-k]").forEach(td => flash(td, "b-" + td.dataset.k, LIVE.stocks[td.dataset.k]?.last));
   if (ix) setCard("VNINDEX", ix.last, ix.ref);
-  if (xau && gw) setCard("GOLD_USD", xau.price, gw.close / (1 + gw.change_1d), 1);
-  if (xau && fx && assets.GOLD_VND) setCard("GOLD_VND", xau.price * fx * OZ_LUONG / 1e6, assets.GOLD_VND.close / (1 + assets.GOLD_VND.change_1d));
 
   const errs = Object.values(LIVE.err), sess = inSession(), last = LIVE.ok.vn || LIVE.ok.gold;
   $("livePulse").className = "pulse" + (!live ? " off" : errs.length ? " err" : sess ? "" : " off");
