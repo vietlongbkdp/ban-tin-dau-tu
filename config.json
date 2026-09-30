@@ -3,15 +3,10 @@
     "FPT",
     "VCB",
     "HPG",
-    "SHS",
-    "LONG"
+    "SHS"
   ],
   "crypto": [
-    "BTC",
-    "ETH",
-    "BNB",
-    "SOL",
-    "XRP"
+    "BTC"
   ],
   "gold": {
     "world": true,
