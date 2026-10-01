@@ -365,6 +365,54 @@ footer{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
   .stance-sum{padding:12px}
 }
 @media (max-width:330px){ .kpis{grid-template-columns:1fr} .chips{grid-template-columns:repeat(2,minmax(0,1fr))} }
+
+/* ===== lướt sóng ===== */
+.sw-banner{display:flex;gap:14px;align-items:flex-start;border-radius:16px;padding:16px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow)}
+.sw-banner .big{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;flex:none}
+.sw-banner.ok .big{background:var(--pos-bg);color:var(--pos)} .sw-banner.no .big{background:var(--neu-bg);color:var(--neu)}
+.sw-banner h4{margin:0 0 4px;font-size:16px}
+.sw-banner p{margin:0;color:var(--text-2);font-size:14px;line-height:1.6}
+.sw-setups{margin-top:12px}
+.sw-setups table{min-width:640px;font-size:13px}
+.sw-setups td,.sw-setups th{white-space:normal;vertical-align:middle}
+.okmark{display:inline-flex;align-items:center;gap:4px;font-weight:800;border-radius:999px;padding:3px 10px;font-size:12px}
+.okmark.y{background:var(--pos-bg);color:var(--pos-ink)} .okmark.n{background:var(--neg-bg);color:var(--neg-ink)}
+.sw-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr));gap:14px;margin-top:14px}
+.swc{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:14px;display:flex;flex-direction:column;gap:10px;position:relative;overflow:hidden}
+.swc::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--pos)}
+.swc.watch::before{background:var(--none)}
+.swc .top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.swc .rank{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-weight:800;background:var(--pos-bg);color:var(--pos-ink);flex:none}
+.swc.watch .rank{background:var(--none-bg);color:var(--none-ink)}
+.swc .sym{font-size:18px;font-weight:800;line-height:1.1}
+.swc .stp{font-size:12px;color:var(--muted);margin-top:2px}
+.swc .lp{text-align:right}
+.swc .lp b{font-size:18px;display:block}
+.lv3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.lv3 div{border-radius:10px;padding:7px 8px;background:var(--surface-2)}
+.lv3 span{display:block;font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+.lv3 b{font-size:15px;font-variant-numeric:tabular-nums}
+.lv3 small{display:block;font-size:11.5px;font-weight:700}
+.lv3 .buy{background:color-mix(in srgb,var(--s1) 12%,transparent)} .lv3 .sl{background:var(--neg-bg)} .lv3 .tp{background:var(--pos-bg)}
+.lv3 .sl small{color:var(--neg-ink)} .lv3 .tp small{color:var(--pos-ink)}
+.zone{position:relative;height:10px;border-radius:5px;background:linear-gradient(90deg,var(--neg) 0 37.5%,color-mix(in srgb,var(--s1) 55%,transparent) 37.5% 50%,var(--pos) 50% 100%);opacity:.85}
+.zone i{position:absolute;top:-4px;width:4px;height:18px;border-radius:2px;background:var(--text);box-shadow:0 0 0 2px var(--surface)}
+.zlab{display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}
+.chips2{display:flex;flex-wrap:wrap;gap:6px}
+.chips2 span{font-size:12px;border-radius:8px;padding:3px 8px;background:var(--surface-2);color:var(--text-2);display:inline-flex;align-items:center;gap:4px}
+.swnote{font-size:13px;color:var(--text-2);display:flex;gap:8px}
+.swnote .i{flex:none;margin-top:1px;color:var(--muted)}
+.livestat{font-size:12.5px;font-weight:700;border-radius:8px;padding:4px 8px;display:inline-flex;align-items:center;gap:6px}
+.livestat.in{background:color-mix(in srgb,var(--s1) 14%,transparent);color:var(--s1)} .livestat.hi{background:var(--neu-bg);color:var(--neu-ink)} .livestat.lo{background:var(--neg-bg);color:var(--neg-ink)}
+.sw-sub{display:flex;align-items:center;gap:8px;margin:22px 0 2px;font-size:15px;font-weight:800}
+.sw-rules{margin-top:14px}
+@media (max-width:600px){
+  .sw-setups table{min-width:0} .sw-setups thead{display:none}
+  .sw-setups tr,.sw-setups td{display:block} .sw-setups tr{padding:10px 14px;border-bottom:1px solid var(--line)}
+  .sw-setups td{border:0;padding:3px 0;text-align:left !important}
+  .sw-setups td[data-l]::before{content:attr(data-l);display:block;font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
+}
+.sw-rules ul{margin:6px 0 0;padding-left:18px} .sw-rules li{margin:4px 0}
 </style>
 </head>
 <body>
@@ -412,6 +460,9 @@ footer{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
     <thead><tr><th>Loại</th><th>Giá</th><th>Thay đổi từ lúc mở trang</th><th>Trong phiên</th><th>Ghi chú</th></tr></thead>
     <tbody id="goldBody"></tbody></table></div></div>
   <p class="muted small">Cổ phiếu VN (nghìn đồng) và VN-Index: bảng giá VPS, <b>2 giây/lần</b> trong phiên; biểu đồ trong phiên lấy dữ liệu 1 phút của VNDirect rồi nối giá trực tiếp. Crypto: <b>Binance WebSocket</b> (sàn đẩy giá ~1 giây/lần; dự phòng Coinbase). Vàng giao ngay XAU: Coinbase 3 giây/lần (dự phòng gold-api.com); thẻ phân tích vàng dùng lịch sử hợp đồng tương lai COMEX GC=F. Vàng SJC: PNJ. Tỷ giá: open.er-api.com. <b>Quan điểm và xác suất bên dưới vẫn tính theo lượt chạy gần nhất</b>, không đổi theo từng tick giá.</p>
+
+  <div class="section-h"><h3><span class="hic"><svg class="i" aria-hidden="true"><use href="#i-zap"/></svg></span>Lướt sóng ngắn hạn · Top 5 bộ lọc</h3><span class="muted small aside" id="swAt"></span></div>
+  <div id="swing"></div>
 
   <div class="section-h"><h3><span class="hic"><svg class="i " aria-hidden="true"><use href="#i-target"/></svg></span>Quan điểm theo từng mã</h3><span class="muted small aside"><svg class="i sm" aria-hidden="true"><use href="#i-info"/></svg>Kỳ hạn quan điểm: <b id="stHz">1 tháng</b> · Thanh ngang là xác suất tăng, vạch đứng là tỷ lệ nền</span></div>
   <div class="grid" id="cards"></div>
@@ -587,6 +638,7 @@ function render(bundle, isLatest = true) {
   $("summary").innerHTML = ic("sparkles") + (news.summary ? `<div>${esc(news.summary)}</div>` : `<span class="muted">Chưa có phần tổng hợp tin tức.</span>`);
   $("news").innerHTML = (news.items || []).map(n => `<div class="ni"><div class="src">${ic("news","sm")}${esc(n.source)} · ${esc(n.date)}</div>
     <a href="${esc(safeUrl(n.url))}" target="_blank" rel="noopener">${esc(n.title)}${ic("link","sm")}</a>${n.impact ? `<div class="imp">${ic("target","sm")} ${esc(n.impact)}</div>` : ""}</div>`).join("") || `<div class="panel muted">Không có tin.</div>`;
+  renderSwing(an, news);
   renderLive();
   const errs = [...(an.errors || []), ...(news.errors || [])];
   $("errBox").innerHTML = errs.length ? `<div class="section-h"><h3><span class="hic">${ic("alert")}</span>Cảnh báo dữ liệu</h3></div><div class="panel err small">${ic("alert")}<ul class="reasons" style="margin:0">${errs.map(e => `<li>${esc(e)}</li>`).join("")}</ul></div>` : "";
@@ -843,6 +895,77 @@ async function runNow() {
   btn.disabled = false;
 }
 
+
+// ---------- lướt sóng ----------
+const SETUP_VI = {breakout:"Bứt phá đỉnh 20 phiên", pullback:"Điều chỉnh về MA20", rsi2:"Quá bán ngắn hạn (RSI2)"};
+function swStat(st) {
+  if (!st?.n) return `<span class="muted">không có lệnh</span>`;
+  return `${nf(st.n,0)} lệnh · thắng ${pct(st.win,false,0)} · <b class="${st.avg >= 0 ? "up" : "down"}">${pct(st.avg,true,2)}/lệnh</b>`;
+}
+function swLive(p) {
+  const s = LIVE.stocks[p.sym]; if (!s || !s.last) return "";
+  const v = s.last;
+  if (v < p.stop) return `<span class="livestat lo">${ic("alert","sm")} Giá ${nf(v)} dưới mức cắt lỗ</span>`;
+  if (v > p.buy_max) return `<span class="livestat hi">${ic("up","sm")} Giá ${nf(v)} vượt vùng mua, không mua đuổi</span>`;
+  return `<span class="livestat in">${ic("check","sm")} Giá ${nf(v)} trong vùng mua</span>`;
+}
+function swCard(p, i, watch, notes, setups) {
+  const st = setups[p.setup]?.out_of_sample, pos = Math.max(0, Math.min(1, (p.close - p.stop) / (p.target - p.stop)));
+  const note = notes?.[p.sym];
+  return `<div class="swc ${watch ? "watch" : ""}" data-sw="${esc(p.sym)}">
+    <div class="top"><div style="display:flex;gap:10px;align-items:center;min-width:0"><span class="rank">${i + 1}</span>
+      <div style="min-width:0"><div class="sym">${esc(p.sym)}</div><div class="stp">${esc(SETUP_VI[p.setup] || p.setup)}</div></div></div>
+      <div class="lp"><b>${nf(p.close)}</b><span class="muted small">đóng cửa ${esc(p.date.slice(8,10))}/${esc(p.date.slice(5,7))}</span></div></div>
+    ${watch ? `<span class="livestat hi">${ic("alert","sm")} Chiến lược chưa đạt chuẩn: 2 năm gần nhất ${st?.n ? pct(st.avg,true,2) + "/lệnh" : "không đủ dữ liệu"}</span>` : ""}
+    <div class="lv3">
+      <div class="buy"><span>Mua tối đa</span><b>${nf(p.buy_max)}</b><small>quanh giá mở cửa</small></div>
+      <div class="sl"><span>Cắt lỗ</span><b>${nf(p.stop)}</b><small>${pct(p.stop_pct,true,1)}</small></div>
+      <div class="tp"><span>Chốt lời</span><b>${nf(p.target)}</b><small>${pct(p.target_pct,true,1)}</small></div>
+    </div>
+    <div><div class="zone" role="img" aria-label="Vị trí giá giữa cắt lỗ và chốt lời"><i style="left:calc(${(pos*100).toFixed(1)}% - 2px)"></i></div>
+      <div class="zlab"><span>Cắt lỗ</span><span>Mua</span><span>Chốt lời</span></div></div>
+    <div data-swlive="${esc(p.sym)}">${swLive(p)}</div>
+    <div class="chips2"><span>${ic("clock","sm")} Giữ tối đa 10 phiên</span><span>${ic("target","sm")} R:R 1:${nf(2.5/1.5,1)}</span>
+      <span title="Lợi suất 60 phiên so với VN-Index">${ic("trend","sm")} Mạnh hơn VN-Index ${pct(p.rs60,true,1)}</span>
+      <span>${ic("activity","sm")} KL ${nf(p.vol_ratio,1)}× TB20</span><span>${ic("dollar","sm")} ${nf(p.value20_bn,0)} tỷ/phiên</span></div>
+    ${sparkSvg(p.spark, null, 260, 40).replace('class="spark"','class="spark" style="width:100%"')}
+    ${note ? `<div class="swnote">${ic("news","sm")}<span>${esc(note)}</span></div>` : ""}
+  </div>`;
+}
+function renderSwing(an, news) {
+  const sw = an.swing; if (!sw) { $("swing").innerHTML = `<div class="panel muted">Chưa có dữ liệu bộ lọc lướt sóng.</div>`; return; }
+  const valid = Object.entries(sw.setups).filter(([, v]) => v.valid).map(([k]) => SETUP_VI[k] || k);
+  $("swAt").innerHTML = `${ic("info","sm")} Quét ${nf(sw.n_loaded || 0,0)}/${nf(sw.n_universe || 0,0)} mã VN100 · tính lại mỗi sáng`;
+  const banner = sw.picks.length
+    ? `<div class="sw-banner ok"><span class="big">${ic("check","lg")}</span><div><h4>${sw.picks.length} mã đạt chuẩn hôm nay</h4><p>${esc(news.swing_summary || `Chiến lược đạt chuẩn: ${valid.join(", ")}.`)}</p></div></div>`
+    : `<div class="sw-banner no"><span class="big">${ic("alert","lg")}</span><div><h4>Hôm nay không có mã đạt chuẩn</h4><p>${esc(news.swing_summary || "")} ${news.swing_summary ? "" : "Không chiến lược nào có lãi sau phí ở cả 8 năm trước lẫn 2 năm gần nhất, nên bộ lọc không chọn mã. Danh sách theo dõi bên dưới chỉ để tham khảo."}</p></div></div>`;
+  const setupRows = Object.entries(sw.setups).map(([k, v]) => `<tr><td><b>${esc(SETUP_VI[k] || k)}</b><br><span class="muted">${esc(v.desc)}</span></td>
+    <td data-l="Trong mẫu (trước đó)">${swStat(v.in_sample)}</td><td data-l="Ngoài mẫu (2 năm gần nhất)">${swStat(v.out_of_sample)}</td>
+    <td data-l="Trạng thái">${v.valid ? `<span class="okmark y">${ic("check","sm")} Đạt</span>` : `<span class="okmark n">${ic("x","sm")} Chưa đạt</span>`}</td></tr>`).join("");
+  const picks = sw.picks.map((p, i) => swCard(p, i, false, news.swing_notes, sw.setups)).join("");
+  const watch = (sw.watch || []).map((p, i) => swCard(p, i, true, news.swing_notes, sw.setups)).join("");
+  const lv = sw.live || {};
+  const liveRows = (lv.recent || []).map(r => `<tr><td>${esc(r.date)}</td><td><b>${esc(r.sym)}</b></td><td>${esc(SETUP_VI[r.setup] || r.setup)}</td><td>${esc(r.status)}</td>
+    <td>${r.entry ? nf(+r.entry) : "–"}</td><td>${r.exit ? nf(+r.exit) : "–"}</td><td class="${+r.ret >= 0 ? "up" : "down"}">${r.ret !== "" ? pct(+r.ret,true,2) : "–"}</td></tr>`).join("");
+  const P = sw.params;
+  $("swing").innerHTML = banner + `
+    <div class="board sw-setups"><div class="tw"><table><thead><tr><th>Chiến lược</th><th>Trong mẫu (trước đó)</th><th>Ngoài mẫu (2 năm gần nhất)</th><th>Trạng thái</th></tr></thead><tbody>${setupRows}</tbody></table></div></div>
+    ${picks ? `<div class="sw-sub">${ic("check")} Top ${sw.picks.length} mã đạt chuẩn</div><div class="sw-grid">${picks}</div>` : ""}
+    ${watch ? `<div class="sw-sub">${ic("alert")} Danh sách theo dõi · chiến lược chưa đạt chuẩn, chỉ tham khảo</div><div class="sw-grid">${watch}</div>` : ""}
+    <div class="sw-sub">${ic("calendar")} Kết quả thực tế của các mã đã chọn</div>
+    <div class="board"><div class="tw"><table><thead><tr><th>Ngày chọn</th><th>Mã</th><th>Chiến lược</th><th>Trạng thái</th><th>Giá mua</th><th>Giá bán</th><th>Lãi/lỗ sau phí</th></tr></thead>
+      <tbody>${liveRows || `<tr><td colspan="7" class="muted">Chưa có mã nào được chọn. Nhật ký bắt đầu khi có mã đạt chuẩn ở lượt chạy 8:30 sáng.</td></tr>`}</tbody></table></div></div>
+    ${lv.n ? `<p class="small muted">Đã đóng ${lv.n} lệnh · thắng ${pct(lv.win,false,0)} · trung bình ${pct(lv.avg,true,2)}/lệnh · đang mở ${lv.open}</p>` : ""}
+    <div class="panel small sw-rules">${ic("info")} <b>Cách đọc và quy tắc mô phỏng</b><ul>
+      <li><b>Mua:</b> quanh giá mở cửa phiên kế tiếp, <b>không mua</b> nếu giá mở cửa cao hơn "Mua tối đa" (= đóng cửa + ${P.chase_atr}×ATR).</li>
+      <li><b>Cắt lỗ / chốt lời:</b> giá mua − ${P.stop_atr}×ATR / giá mua + ${P.target_atr}×ATR (ATR 14 phiên). Các mức trên thẻ tính từ giá đóng cửa; nếu khớp giá khác, dời theo cùng khoảng cách.</li>
+      <li><b>T+2:</b> chỉ bán được từ phiên thứ 2 sau ngày mua; nắm giữ tối đa ${P.max_hold} phiên rồi bán ở giá đóng cửa.</li>
+      <li><b>Chi phí:</b> đã trừ ${pct(P.cost,false,1)} mỗi lệnh khứ hồi (phí mua, phí bán, thuế bán). Thanh khoản tối thiểu ${nf(P.min_value/1e9,0)} tỷ đồng/phiên.</li>
+      <li><b>Đạt chuẩn</b> khi chiến lược có lãi trung bình sau phí ở cả giai đoạn trước lẫn ${P.oos_bars} phiên gần nhất. Kiểm định dùng danh sách VN100 hiện tại nên có thiên lệch "mã sống sót": kết quả thật thường kém hơn một chút.</li>
+      <li><b>Quản lý vốn (nguyên tắc chung):</b> nhiều nhà giao dịch giới hạn mức lỗ mỗi lệnh khoảng 1–2% phần vốn dành cho lướt sóng. Ví dụ cắt lỗ cách giá mua 4% thì khối lượng lệnh ≈ 25–50% phần vốn đó.</li>
+    </ul></div>`;
+}
+
 // ---------- live prices ----------
 const LIVE = {stocks:{}, index:null, xau:null, fx:null, sjc:null, crypto:{}, spark:{}, ok:{}, err:{}, xau0:null};
 const OZ_LUONG = 37.5 / 31.1034768;
@@ -894,7 +1017,8 @@ async function loadCryptoHist(c) {
 // --- nguồn giá ---
 async function pollVN() {
   try {
-    const syms = vnSyms();
+    const sw = STATE.bundle?.analysis?.swing, swSyms = sw ? [...sw.picks, ...(sw.watch || [])].map(p => p.sym) : [];
+    const syms = [...new Set([...vnSyms(), ...swSyms])];
     if (syms.length) for (const d of await getJSON(`https://bgapidatafeed.vps.com.vn/getliststockdata/${syms.join(",")}`)) {
       const o = LIVE.stocks[d.sym], last = +d.lastPrice || null;
       LIVE.stocks[d.sym] = {last, ref:+d.r, ceil:+d.c, floor:+d.f, high:+d.highPrice || null, low:+d.lowPrice || null,
@@ -1039,6 +1163,10 @@ function renderLive() {
   $("goldBody").innerHTML = gd.join("") || `<tr><td colspan="5" class="muted" style="text-align:left">Chưa bật theo dõi vàng.</td></tr>`;
   $("goldBody").querySelectorAll("td[data-g]").forEach(td => flash(td, "g-XAU", xau?.price));
 
+  // nhãn giá trực tiếp trên thẻ lướt sóng
+  if (live && an.swing) for (const p of [...an.swing.picks, ...(an.swing.watch || [])]) {
+    const el = document.querySelector(`[data-swlive="${p.sym}"]`); if (el) el.innerHTML = swLive(p);
+  }
   // trạng thái
   const errs = Object.values(LIVE.err), sess = inSession(), last = [LIVE.ok.vn, LIVE.ok.gold, LIVE.ok.crypto].filter(Boolean).sort((a, b) => b - a)[0];
   $("livePulse").className = "pulse" + (!live ? " off" : errs.length ? " err" : "");

@@ -23,6 +23,7 @@ Bạn là agent phân tích chạy mỗi sáng 8:30 (giờ VN). Mục tiêu: m�
    - Vĩ mô VN: VN-Index phiên gần nhất, NHNN (lãi suất, tỷ giá), khối ngoại, chính sách.
    - Từng mã trong `config.json`: tin doanh nghiệp, kết quả kinh doanh, cổ tức, phát hành, khuyến nghị của CTCK (ghi rõ tên CTCK).
    - Chính trị, xã hội thế giới có ảnh hưởng đến thị trường.
+   - Bộ lọc lướt sóng `analysis.json -> swing`: với MỖI mã trong `picks` và `watch`, tìm tin 7 ngày gần nhất (kết quả kinh doanh, ngày giao dịch không hưởng quyền, phát hành, tin xấu, khối ngoại). KHÔNG được thêm, bớt hay đổi thứ tự mã, mức giá, trạng thái đạt chuẩn.
    - Crypto trong `config.json -> crypto` (khoá trong analysis là `<MÃ>-USD`, ví dụ `BTC-USD`): tin quản lý, ETF, dòng tiền, sự cố sàn. Crypto giao dịch 24/7 nên kỳ hạn tính theo ngày lịch.
 4. Ghi `output/news.json` theo cấu trúc:
    ```json
@@ -32,6 +33,8 @@ Bạn là agent phân tích chạy mỗi sáng 8:30 (giờ VN). Mục tiêu: m�
     "commentary": {"<MỌI mã trong analysis.json -> assets, ví dụ GOLD_VND, VNINDEX, FPT>": "2-4 câu nối tin tức với số liệu kỹ thuật"},
     "recommendation": "3-5 câu khuyến nghị tổng hợp, BÁM SÁT stances và best_pick. Nếu best_pick là null thì nói rõ hôm nay không có cơ hội đủ điều kiện, phương án khớp dữ liệu nhất là chờ. Nêu 1-2 sự kiện sắp tới cần theo dõi (có nguồn).",
     "stance_notes": {"<mã trong stances, gồm cả SJC>": "1-2 câu: tin tức nào có thể làm thay đổi bức tranh, kèm nguồn"},
+    "swing_notes": {"<mã trong swing.picks và swing.watch>": "1-2 câu: sự kiện/tin tức sắp tới hoặc rủi ro cần biết khi lướt sóng mã này, kèm nguồn; không có tin thì ghi 'Không tìm thấy tin đáng chú ý trong 7 ngày'"},
+    "swing_summary": "2-3 câu: tình trạng bộ lọc hôm nay (bao nhiêu mã đạt chuẩn, chiến lược nào đang có/không có lãi sau phí ở 2 năm gần nhất). Không khuyên mua mã chưa đạt chuẩn.",
     "errors": ["mâu thuẫn hoặc thiếu dữ liệu"]}
    ```
    Viết bằng tiếng Việt. Trong mỗi nhận định, nêu tên nguồn trong ngoặc.

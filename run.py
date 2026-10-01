@@ -159,6 +159,15 @@ def main():
         out["assets"].pop("GOLD_VND", None)
     journal.save(j)
 
+    # Bộ lọc lướt sóng ngắn hạn (VN100). Chỉ ghi lệnh mới vào nhật ký ở lượt chạy định kỳ.
+    try:
+        import swing
+        ix = series.get(cfg["index"])
+        out["swing"], _ = swing.run(ix["close"] if ix is not None else None, record=not manual)
+    except Exception as e:
+        out["errors"].append(f"Bộ lọc lướt sóng: {e}")
+        traceback.print_exc()
+
     os.makedirs(os.path.join(ROOT, "output"), exist_ok=True)
     with open(os.path.join(ROOT, "output", "analysis.json"), "w", encoding="utf-8") as fh:
         json.dump(out, fh, ensure_ascii=False, indent=1, default=float)

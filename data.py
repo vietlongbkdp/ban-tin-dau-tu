@@ -16,6 +16,9 @@ def _ohlcv_from_tv(j, source):
     df = pd.DataFrame({"open": j["o"], "high": j["h"], "low": j["l"], "close": j["c"], "volume": j["v"]},
                       index=pd.to_datetime(j["t"], unit="s").normalize())
     df = df[~df.index.duplicated(keep="last")].astype(float)
+    # Trước giờ mở cửa nguồn có thể trả nến phiên hôm nay với khối lượng 0: bỏ để không làm sai chỉ báo
+    while len(df) and df["volume"].iat[-1] == 0:
+        df = df.iloc[:-1]
     df.attrs["source"] = source
     return df
 
