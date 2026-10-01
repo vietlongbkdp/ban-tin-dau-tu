@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-01 07:55 (giờ VN)",
+ "generated_at": "2026-10-01 07:56 (giờ VN)",
  "run_kind": "manual",
  "watchlist": {
   "stocks": [
@@ -5303,16 +5303,16 @@
    "last_date": "2026-10-01",
    "first_date": "2016-10-01",
    "n_days": 3652,
-   "close": 83473.9375,
-   "change_1d": -0.001775745909977977,
-   "change_20d": 0.09019174101494576,
-   "rsi": 60.56314723100437,
-   "sma20": 81296.29296875,
-   "sma50": 77270.386796875,
-   "sma200": 71262.34078125,
-   "macd_hist": -129.869112598436,
-   "bb_up": 88679.86984444158,
-   "bb_lo": 73912.71609305842,
+   "close": 83477.3515625,
+   "change_1d": -0.0017349187956169354,
+   "change_20d": 0.0902363295757862,
+   "rsi": 60.57889406633829,
+   "sma20": 81296.463671875,
+   "sma50": 77270.455078125,
+   "sma200": 71262.3578515625,
+   "macd_hist": -129.65123510555713,
+   "bb_up": 88680.25268392196,
+   "bb_lo": 73912.67465982803,
    "atr": 2186.828125,
    "support_20": 74944.59375,
    "resist_20": 87363.7578125,
@@ -5348,7 +5348,7 @@
       "median": 0.01072435283834694,
       "p10": -0.07181461788306012,
       "p90": 0.1417108767898322,
-      "avg_max_drawdown": -0.023950839113203674,
+      "avg_max_drawdown": -0.02395080378562874,
       "worst_drawdown": -0.27736566704999643,
       "base_prob_up": 0.535092807424594,
       "base_median": 0.0036709863929432762
@@ -5359,7 +5359,7 @@
       "active_days": 250,
       "test_days": 250
      },
-     "stop_ref": 79100.28125,
+     "stop_ref": 79103.6953125,
      "live": {
       "n": 0
      },
@@ -5397,7 +5397,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 79100.28125,
+     "stop_ref": 79103.6953125,
      "live": {
       "n": 0
      },
@@ -5435,7 +5435,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 79100.28125,
+     "stop_ref": 79103.6953125,
      "live": {
       "n": 0
      },
@@ -5808,7 +5808,7 @@
      84458.09,
      83502.61,
      83622.43,
-     83473.94
+     83477.35
     ],
     "sma50": [
      68639.07,
@@ -5990,7 +5990,7 @@
      76104.55,
      76477.71,
      76871.95,
-     77270.39
+     77270.46
     ],
     "sma200": [
      89617.0,
@@ -6172,7 +6172,7 @@
      71072.73,
      71137.77,
      71201.04,
-     71262.34
+     71262.36
     ]
    },
    "name": "Crypto BTC (USD)",
@@ -6183,16 +6183,16 @@
    "last_date": "2026-09-30",
    "first_date": "2016-09-30",
    "n_days": 2513,
-   "close": 4174.0,
-   "change_1d": -0.0013637809044038107,
-   "change_20d": -0.05058682269217296,
-   "rsi": 33.83240374127679,
-   "sma20": 4363.189990234375,
-   "sma50": 4362.767998046875,
-   "sma200": 4554.796500244141,
-   "macd_hist": -29.82303100570845,
-   "bb_up": 4562.574198015824,
-   "bb_lo": 4163.805782452926,
+   "close": 4175.60009765625,
+   "change_1d": -0.0009809549643891025,
+   "change_20d": -0.05022286634338935,
+   "rsi": 33.92445281768421,
+   "sma20": 4363.269995117187,
+   "sma50": 4362.8,
+   "sma200": 4554.804500732422,
+   "macd_hist": -29.720916511406372,
+   "bb_up": 4562.335593066038,
+   "bb_lo": 4164.204397168336,
    "atr": 90.25711495535714,
    "support_20": 4143.10009765625,
    "resist_20": 4558.5,
@@ -6239,7 +6239,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 3993.485770089286,
+     "stop_ref": 3995.085867745536,
      "live": {
       "n": 0
      },
@@ -6277,7 +6277,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 3993.485770089286,
+     "stop_ref": 3995.085867745536,
      "live": {
       "n": 0
      },
@@ -6315,7 +6315,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 3993.485770089286,
+     "stop_ref": 3995.085867745536,
      "live": {
       "n": 0
      },
@@ -6688,7 +6688,7 @@
      4321.2,
      4168.4,
      4179.7,
-     4174.0
+     4175.6
     ],
     "sma50": [
      4261.34,
@@ -6870,7 +6870,7 @@
      4354.55,
      4357.54,
      4360.82,
-     4362.77
+     4362.8
     ],
     "sma200": [
      3684.98,
@@ -7063,16 +7063,16 @@
    "last_date": "2026-09-30",
    "first_date": "2016-10-03",
    "n_days": 2512,
-   "close": 130.69131390481724,
-   "change_1d": -0.0013253259689385288,
-   "change_20d": -0.05422860703167376,
-   "rsi": 33.11748692799405,
-   "sma20": 136.73448777121456,
-   "sma50": 137.35182405854783,
-   "sma200": 143.89178347217762,
-   "macd_hist": -0.902467013057833,
-   "bb_up": 143.17731032672603,
-   "bb_lo": 130.2916652157031,
+   "close": 130.7414142558166,
+   "change_1d": -0.0009424852872725875,
+   "change_20d": -0.053866046756341435,
+   "rsi": 33.20663317658311,
+   "sma20": 136.73699278876452,
+   "sma50": 137.35282606556785,
+   "sma200": 143.89203397393263,
+   "macd_hist": -0.8992697257006173,
+   "bb_up": 143.16995357174176,
+   "bb_lo": 130.3040320057873,
    "atr": 2.8293040995224947,
    "support_20": 129.74379354978183,
    "resist_20": 143.27991662012525,
@@ -7119,7 +7119,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 125.03270570577224,
+     "stop_ref": 125.08280605677162,
      "live": {
       "n": 0
      },
@@ -7157,7 +7157,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 125.03270570577224,
+     "stop_ref": 125.08280605677162,
      "live": {
       "n": 0
      },
@@ -7195,7 +7195,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 125.03270570577224,
+     "stop_ref": 125.08280605677162,
      "live": {
       "n": 0
      },
@@ -7568,7 +7568,7 @@
      135.4,
      130.54,
      130.86,
-     130.69
+     130.74
     ],
     "sma50": [
      135.15,
@@ -7946,7 +7946,7 @@
   "source": "Yahoo Finance (VND=X)"
  },
  "gold_spot": {
-  "price": 4142.96,
+  "price": 4142.764999999999,
   "source": "Swissquote (giữa giá mua/bán)",
   "at": "07:56 01/10"
  },
@@ -7956,9 +7956,9 @@
   "updated": "01/10/2026 07:52:13",
   "source": "PNJ edge-api (bảng giá vàng miếng SJC)",
   "world_basis": "giá giao ngay Swissquote (giữa giá mua/bán) × tỷ giá Yahoo VND=X",
-  "world_equiv": 129.71942641473447,
-  "premium": 14.380573585265523,
-  "premium_pct": 0.11085905929994211,
+  "world_equiv": 129.71332080711312,
+  "premium": 14.386679192886874,
+  "premium_pct": 0.11091134744965947,
   "history_days": 2,
   "history": [
    {
@@ -8089,11 +8089,11 @@
    "sign": 0,
    "confidence": "Thấp",
    "horizon": "1 tháng",
-   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 79,100.28. Đường MA200 hiện ở 71,262.34.",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 79,103.70. Đường MA200 hiện ở 71,262.36.",
    "reasons": [
     "Kiểm định 1 tháng: xác suất tăng 56% so với nền 54%; trung vị +2.7%, khoảng 10–90% từ -12.6% đến +37.9% (n=1207). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
-    "Giá 83,473.94 đang trên MA200 (71,262.34); RSI 61. Đây là mô tả trạng thái, không phải dự báo.",
-    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -6.8%, tệ nhất -49.9%. Mức cắt lỗ tham khảo 79,100.28 (-5.2%)."
+    "Giá 83,477.35 đang trên MA200 (71,262.36); RSI 61. Đây là mô tả trạng thái, không phải dự báo.",
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -6.8%, tệ nhất -49.9%. Mức cắt lỗ tham khảo 79,103.70 (-5.2%)."
    ],
    "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 87,363.76 hoặc thủng hỗ trợ 74,944.59, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
    "edge": 0.0,
@@ -8107,11 +8107,11 @@
    "sign": 0,
    "confidence": "Thấp",
    "horizon": "1 tháng",
-   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 125.03. Đường MA200 hiện ở 143.89.",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 125.08. Đường MA200 hiện ở 143.89.",
    "reasons": [
     "Kiểm định 1 tháng: xác suất tăng 59% so với nền 59%; trung vị +0.8%, khoảng 10–90% từ -3.6% đến +7.1% (n=2293). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
-    "Giá 130.69 đang dưới MA200 (143.89); RSI 33. Đây là mô tả trạng thái, không phải dự báo.",
-    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -2.2%, tệ nhất -16.7%. Mức cắt lỗ tham khảo 125.03 (-4.3%)."
+    "Giá 130.74 đang dưới MA200 (143.89); RSI 33. Đây là mô tả trạng thái, không phải dự báo.",
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -2.2%, tệ nhất -16.7%. Mức cắt lỗ tham khảo 125.08 (-4.3%)."
    ],
    "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 143.28 hoặc thủng hỗ trợ 129.74, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
    "edge": 0.0,
