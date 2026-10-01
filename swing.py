@@ -125,9 +125,17 @@ def stats(rets):
 
 
 def fetch_all(syms, years=10):
+    from datetime import datetime
+    now = datetime.now(data.VN_TZ)
+    today = pd.Timestamp(now.date())
+
     def one(s):
         try:
-            return s, data.vn_history(s, years)
+            df = data.vn_history(s, years)
+            # Trong phiên (trước 15:00) nến hôm nay chưa đóng: chỉ lọc trên các phiên đã đóng cửa
+            if now.hour < 15 and len(df) and df.index[-1] >= today:
+                df = df[df.index < today]
+            return s, df
         except Exception:
             return s, None
     with ThreadPoolExecutor(8) as ex:
