@@ -2,7 +2,13 @@
  "version": 1,
  "created": "2026-10-01T03:17:01.178Z",
  "initial_cash": 100000000,
- "cash_flows": [],
+ "cash_flows": [
+  {
+   "time": "2026-10-01T13:38:54.393Z",
+   "amount": 500000000,
+   "note": "Nạp tiền"
+  }
+ ],
  "orders": [
   {
    "id": "muoyrygq8g3n",
