@@ -24,6 +24,18 @@
    "fill_price": 224100,
    "fill_time": "2026-10-01T03:17:59.738Z",
    "fill_date": "2026-10-01"
+  },
+  {
+   "id": "mupkzzi2zuog",
+   "time": "2026-10-01T13:40:05.882Z",
+   "vn_date": "2026-10-01",
+   "side": "buy",
+   "sym": "SHS",
+   "qty": 10000,
+   "type": "limit",
+   "limit": 13300,
+   "valid_date": "2026-10-02",
+   "status": "pending"
   }
  ]
 }
