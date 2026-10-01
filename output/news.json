@@ -1,37 +1,90 @@
-{"generated_at": "2026-10-01 08:00 (giờ VN)",
-"summary": "VN-Index đóng cửa phiên 30/9 ở 1.768,72 điểm, giảm 9,11 điểm (-0,51%), khối ngoại bán ròng phiên thứ sáu liên tiếp, riêng sàn HOSE hơn 889 tỷ đồng (Vietstock, Nhân Dân). Chỉ số đang dưới đường trung bình 200 phiên (1.795,72) và chưa có tín hiệu thống kê đáng tin cậy nào cho kỳ 1 tháng. Vàng thế giới giao ngay khoảng 4.143 USD/ounce lúc 07:56, giá vàng miếng SJC bán ra 144,1 triệu đồng/lượng, cao hơn vàng thế giới quy đổi khoảng 14,4 triệu đồng (11,1%), vượt xa ngưỡng cảnh báo 5%. Số liệu PCE tháng 8 của Mỹ tăng 0,3%, thấp hơn dự báo 0,4%, làm giảm khả năng Fed tăng lãi suất vào tháng 10 (Vietnamnet/Investing). Bitcoin quanh 83.477 USD, tăng 9,0% trong 20 ngày, dòng tiền vào ETF Bitcoin giao ngay 66,19 triệu USD ngày 29/9 (KuCoin). Toàn bộ các mã theo dõi hôm nay ở trạng thái trung lập, riêng vàng miếng SJC ở trạng thái thận trọng.",
-"items": [
-{"title": "Chứng khoán ngày 30/9: VN-Index giảm 9,11 điểm, khối lượng khớp lệnh tăng 15,6%", "source": "Nhân Dân", "date": "30/09/2026", "url": "https://nhandan.vn/infographic-chung-khoan-ngay-309-vn-index-giam-911-diem-khoi-luong-giao-dich-khop-lenh-tang-156-so-phien-truoc-post992112.html", "impact": "VN-Index và cổ phiếu: chỉ số giảm nhẹ, thanh khoản tăng"},
-{"title": "Theo dấu dòng tiền cá mập 30/09: Khối ngoại bán ròng phiên thứ sáu liên tiếp", "source": "Vietstock", "date": "30/09/2026", "url": "https://vietstock.vn/2026/09/theo-dau-dong-tien-ca-map-3009-khoi-ngoai-ban-rong-phien-thu-sau-lien-tiep-tu-doanh-van-gom-manh-vpb-830-1497606.htm", "impact": "VN-Index, VIN: khối ngoại bán ròng nhiều ở VHM, TCB, VIC, áp lực lên nhóm vốn hoá lớn"},
-{"title": "Giá vàng hôm nay 1/10: Giá thế giới giảm gần 20 USD/ounce", "source": "Viettimes", "date": "01/10/2026", "url": "https://viettimes.vn/gia-vang-the-gioi-hom-nay-110-di-xuong-post206475.html", "impact": "Vàng thế giới: dao động mạnh quanh vùng 4.150-4.200 USD/ounce"},
-{"title": "Giá vàng trong nước ngược chiều thế giới, chênh lệch lên 13 triệu đồng", "source": "Dân trí", "date": "01/10/2026", "url": "https://dantri.com.vn/kinh-doanh/gia-vang-trong-nuoc-nguoc-chieu-the-gioi-chenh-lech-len-13-trieu-dong-20261001053342113.htm", "impact": "Vàng miếng SJC: chênh lệch với thế giới rộng, rủi ro thu hẹp chênh lệch"},
-{"title": "Giá vàng hôm nay 1/10: Thế giới lao dốc, SJC chịu áp lực giảm sâu", "source": "Vietnamnet", "date": "01/10/2026", "url": "https://vietnamnet.vn/gia-vang-hom-nay-1-10-the-gioi-lao-doc-sjc-chiu-ap-luc-giam-sau-2560472.html", "impact": "Vàng thế giới, SJC: PCE tháng 8 của Mỹ tăng 0,3% thấp hơn dự báo 0,4%, giảm khả năng Fed tăng lãi suất tháng 10"},
-{"title": "Tuần 21-25/09: NHNN đảo chiều bơm ròng hơn 34.000 tỷ", "source": "Vietstock", "date": "25/09/2026", "url": "https://vietstock.vn/2026/09/tuan-21-2509-nhnn-dao-chieu-bom-rong-hon-34000-ty-757-1496294.htm", "impact": "VN-Index, ngân hàng (VCB): thanh khoản hệ thống được hỗ trợ; lãi suất liên ngân hàng qua đêm quanh 1,1%"},
-{"title": "Bitcoin Spot ETFs See $66.19M Inflow on September 29", "source": "KuCoin", "date": "30/09/2026", "url": "https://www.kucoin.com/news/flash/bitcoin-spot-etfs-see-66-19m-inflow-on-september-29", "impact": "Bitcoin: ETF giao ngay có dòng tiền vào 8 ngày liên tiếp nhưng giá chưa vượt vùng 87.000 USD"},
-{"title": "Khuyến nghị mua cổ phiếu SHS, PVT, HPG với giá mục tiêu hấp dẫn", "source": "BNews", "date": "09/2026", "url": "https://bnews.vn/khuyen-nghi-mua-co-phieu-shs-pvt-hpg-voi-gia-muc-tieu-hap-dan/431424.html", "impact": "SHS, HPG: các công ty chứng khoán nêu triển vọng tích cực, trong khi dữ liệu giá vẫn dưới MA200"},
-{"title": "Chính thức: Lộ diện danh mục các mã FTSE sẽ mua từ tháng 9/2026, gọi tên VIC, VHM, VCB, HPG...", "source": "Người Quan Sát", "date": "09/2026", "url": "https://nguoiquansat.vn/chinh-thuc-lo-dien-danh-muc-cac-ma-ftse-se-mua-tu-thang-9-2026-goi-ten-vic-vhm-vcb-hpg-311887.html", "impact": "VIN, VCB, HPG, FPT: dòng vốn từ quỹ mô phỏng chỉ số FTSE, riêng VIC có áp lực bán do quỹ Xtrackers giảm tỷ trọng"}
-],
-"commentary": {
-"VNINDEX": "VN-Index đóng cửa 1.768,62 điểm, dưới đường trung bình 200 phiên (1.795,72), RSI 42, giảm 3,5% trong 20 phiên. Khối ngoại bán ròng sáu phiên liên tiếp (Vietstock). Hỗ trợ gần nhất 1.758,31, kháng cự 1.874,48; thủng hỗ trợ sẽ làm bức tranh xấu đi.",
-"FPT": "FPT đóng cửa 63,00, dưới MA200 (71,73), giảm 5,3% trong 20 phiên, RSI 40. Một số công ty chứng khoán như KBSV (giá mục tiêu 86.000 đồng) và Shinhan (92.400 đồng) vẫn khuyến nghị mua (Smartly/DNSE), nhưng dữ liệu giá hiện chưa xác nhận xu hướng tăng. Mức 63,00 vừa là hỗ trợ gần.",
-"VCB": "VCB đóng cửa 58,00, dưới MA200 (60,67), RSI 44. BSC đánh giá chất lượng tài sản thuộc nhóm tốt, giá mục tiêu 77.800 đồng (Smartly). Hỗ trợ 57,60, kháng cự 61,00.",
-"HPG": "HPG đóng cửa 20,15, giảm 8,8% trong 20 phiên, RSI 34, đang ở sát đáy 52 tuần (20,10). Chứng khoán Yuanta duy trì khuyến nghị mua với giá mục tiêu 33.200 đồng (BNews), tuy nhiên giá đang yếu so với các đường trung bình.",
-"SHS": "SHS đóng cửa 13,00, giảm 17,7% trong 20 phiên, RSI 26 (vùng quá bán), sát hỗ trợ 12,70 và đáy 52 tuần. Các công ty chứng khoán đồng loạt khuyến nghị mua (BNews) nhưng biến động của mã này rất lớn, kịch bản xấu từng ghi nhận là giảm tới 46%.",
-"VIN": "VIN đóng cửa 16,10, tăng 16,7% trong 20 phiên và trên MA200 (15,19), RSI 55. Khối ngoại bán ròng VIC hơn 82 tỷ đồng ngày 30/9 và quỹ Xtrackers giảm tỷ trọng VIC (Vietstock, Người Quan Sát). Mức cắt lỗ tham khảo rất gần giá (-0,8%).",
-"BTC-USD": "Bitcoin ở 83.477 USD, trên MA200 (71.262), tăng 9,0% trong 20 ngày, RSI 61. ETF giao ngay hút ròng 66,19 triệu USD ngày 29/9, chuỗi 8 ngày vào ròng, nhưng giá chưa vượt được vùng 87.000 USD (KuCoin). Kháng cự 87.363,76, hỗ trợ 74.944,59.",
-"GOLD_VND": "Vàng thế giới quy đổi theo hợp đồng tương lai ở 130,74 triệu đồng/lượng, dưới MA200 (143,89), RSI 33, giảm 5,4% trong 20 phiên. Giá giao ngay khoảng 4.143 USD/ounce lúc 07:56, hợp đồng tương lai GC=F đóng cửa 4.175,60 USD. PCE hạ nhiệt làm giảm kỳ vọng Fed tăng lãi suất (Vietnamnet).",
-"SJC": "Vàng miếng SJC bán 144,1 triệu đồng/lượng, mua 141,1, cao hơn vàng thế giới quy đổi 14,4 triệu đồng (11,1%) (PNJ). Báo Dân trí cũng ghi nhận chênh lệch mở rộng do giá trong nước đi ngược chiều thế giới. Chênh mua - bán 2,1%."
-},
-"recommendation": "Hôm nay không có mã nào đạt điều kiện nổi bật: VN-Index, năm cổ phiếu theo dõi, Bitcoin và vàng thế giới đều ở trạng thái trung lập với độ tin cậy thấp, vàng miếng SJC ở trạng thái thận trọng vì chênh lệch 11,1% so với thế giới. Phương án khớp dữ liệu nhất là chờ thêm tín hiệu. Cần theo dõi: vùng hỗ trợ 1.758,31 của VN-Index, diễn biến khối ngoại sau chuỗi sáu phiên bán ròng (Vietstock), và việc chênh lệch SJC có thu hẹp về dưới 5% hay không. Về vĩ mô, kỳ họp Fed tháng 10 là sự kiện cần theo dõi sau số liệu PCE (Vietnamnet).",
-"stance_notes": {
-"VNINDEX": "Khối ngoại bán ròng kéo dài hoặc thủng 1.758,31 là yếu tố xấu; dòng vốn FTSE và thanh khoản NHNN bơm ròng là yếu tố hỗ trợ (Vietstock).",
-"FPT": "Khuyến nghị mua của KBSV và Shinhan cùng dòng vốn quỹ FTSE có thể cải thiện bức tranh nếu giá lấy lại MA200 (Smartly, DNSE).",
-"VCB": "Dòng vốn FTSE và đánh giá chất lượng tài sản của BSC có thể hỗ trợ; khối ngoại bán ròng toàn thị trường là rủi ro (Smartly, Vietstock).",
-"HPG": "Nhu cầu thép và khuyến nghị của Yuanta là yếu tố tích cực, nhưng giá thủng hỗ trợ 20,15 sẽ xác nhận đà giảm (BNews).",
-"SHS": "Các công ty chứng khoán khuyến nghị mua, song giá đang ở vùng quá bán và sát đáy 52 tuần nên biến động rất mạnh (BNews).",
-"VIN": "Áp lực bán từ khối ngoại và quỹ Xtrackers có thể làm giá quay lại vùng hỗ trợ 15,70 (Vietstock, Người Quan Sát).",
-"BTC-USD": "Dòng tiền ETF và việc vượt kháng cự 87.363,76 hay thủng 74.944,59 sẽ quyết định xu hướng (KuCoin).",
-"GOLD_VND": "Kỳ vọng lãi suất Fed sau số liệu PCE và biến động quanh mốc 4.200 USD/ounce là yếu tố chính (Vietnamnet, Viettimes).",
-"SJC": "Chênh lệch với thế giới thu hẹp, do giá thế giới tăng hoặc giá trong nước giảm, sẽ thay đổi bức tranh (Dân trí)."
-},
-"errors": ["Mâu thuẫn giá vàng thế giới ngày 1/10: một bài báo ghi 4.181,49 USD/ounce (tăng 1,27%), bài khác ghi giảm gần 20 USD xuống 4.154 USD/ounce (Vietnamnet/Viettimes), do thời điểm cập nhật khác nhau; bản tin dùng giá giao ngay Swissquote lúc 07:56 là khoảng 4.143 USD.", "Lịch sử giá SJC mới có 2 ngày nên chưa đủ để đánh giá xu hướng chênh lệch.", "Chưa kiểm tra được ngày chính xác của một số bài khuyến nghị cổ phiếu (BNews, Smartly), ghi chung tháng 9/2026."]}
+{
+ "generated_at": "2026-10-01 08:40 (giờ VN)",
+ "summary": "VN-Index đóng cửa phiên 30/9 ở 1.768,62 điểm, giảm 0,5% trong ngày và giảm 3,5% sau 20 phiên, nằm dưới đường trung bình 200 phiên (1.795,72); khối ngoại bán ròng phiên thứ sáu liên tiếp, phiên 30/9 bán ròng 653 tỷ đồng (Vietstock). Vàng thế giới giao ngay khoảng 4.161,8 USD/ounce sáng 1/10 (Swissquote), sau khi giảm gần 6% trong tháng 9 do kỳ vọng Fed duy trì lộ trình tăng lãi suất (Vinanet). Vàng miếng SJC bán ra 144,1 triệu đồng/lượng, cao hơn vàng thế giới quy đổi (130,3 triệu) khoảng 13,8 triệu, tức 10,6%. Bitcoin quanh 83.468 USD, tăng 9,0% sau 20 ngày, nhưng các quỹ ETF bitcoin giao ngay có tuần rút ròng 463 triệu USD đầu tháng 9 (KuCoin/SoSoValue). Tỷ giá trung tâm 25.627 đồng/USD ngày 30/9 (Thời báo Ngân hàng). Cả sáu cổ phiếu và chỉ số theo dõi, cùng vàng thế giới và Bitcoin, đều ở trạng thái trung lập; riêng vàng miếng SJC ở mức thận trọng vì chênh lệch giá quá cao.",
+ "items": [
+  {
+   "title": "Giá vàng thế giới hôm nay 30/9: Giảm gần 6% trong tháng do kỳ vọng Fed tăng lãi suất",
+   "source": "Vinanet",
+   "date": "30/09/2026",
+   "url": "https://vinanet.vn/kimloai/gia-vang-the-gioi-hom-nay-309-giam-gan-6-trong-thang-do-ky-vong-fed-tang-lai-suat-815901.html",
+   "impact": "Vàng thế giới và vàng miếng SJC: kỳ vọng Fed tăng lãi suất gây áp lực giảm giá"
+  },
+  {
+   "title": "Nhịp đập Thị trường 30/09: Khối ngoại kéo dài chuỗi bán ròng nhóm VN30",
+   "source": "Vietstock",
+   "date": "30/09/2026",
+   "url": "https://vietstock.vn/2026/09/nhip-dap-thi-truong-3009-khoi-ngoai-keo-dai-chuoi-ban-rong-nhom-vn30-thi-truong-tiep-tuc-phan-hoa-1636-1497234.amp",
+   "impact": "VN-Index, cổ phiếu vốn hóa lớn: khối ngoại bán ròng 653 tỷ đồng, phiên thứ sáu liên tiếp"
+  },
+  {
+   "title": "Sáng 30/9: Tỷ giá trung tâm giảm 3 đồng",
+   "source": "Thời báo Ngân hàng",
+   "date": "30/09/2026",
+   "url": "https://thoibaonganhang.vn/sang-309-ty-gia-trung-tam-giam-3-dong-188263.html",
+   "impact": "Vàng quy đổi VND, ngân hàng: tỷ giá trung tâm 25.627 đồng/USD"
+  },
+  {
+   "title": "Lãi suất ngân hàng hôm nay 30/9/2026: Chứng chỉ tiền gửi Big4 cao nhất 7,5%/năm",
+   "source": "Vietstock",
+   "date": "30/09/2026",
+   "url": "https://vietstock.vn/2026/09/lai-suat-ngan-hang-hom-nay-3092026-chung-chi-tien-gui-big4-cao-nhat-75nam-757-1497261.htm",
+   "impact": "VCB, VN-Index: mặt bằng lãi suất huy động còn cao"
+  },
+  {
+   "title": "Khuyến nghị mua cổ phiếu SHS, PVT, HPG với giá mục tiêu hấp dẫn",
+   "source": "BNews",
+   "date": "09/2026",
+   "url": "https://bnews.vn/khuyen-nghi-mua-co-phieu-shs-pvt-hpg-voi-gia-muc-tieu-hap-dan/431424.html",
+   "impact": "SHS, HPG: các công ty chứng khoán khuyến nghị mua (giá mục tiêu HPG 32.700 đồng)"
+  },
+  {
+   "title": "Khuyến nghị cổ phiếu: PHR, VCB, CTG, VPB và FPT được đánh giá tích cực",
+   "source": "Smartly",
+   "date": "09/2026",
+   "url": "https://smartly.vn/tin-tuc/khuyen-nghi-co-phieu-phr-vcb-ctg-vpb-va-fpt-duoc-danh-gia-tich-cuc",
+   "impact": "VCB, FPT: BSC khuyến nghị mua VCB giá mục tiêu 77.800 đồng; KBSV khuyến nghị mua FPT giá mục tiêu 86.000 đồng"
+  },
+  {
+   "title": "Chứng khoán tháng 9: Tâm điểm nâng hạng và kỳ vọng đón dòng vốn ngoại",
+   "source": "Báo SGGP",
+   "date": "09/2026",
+   "url": "https://www.sggp.org.vn/chung-khoan-thang-9-tam-diem-nang-hang-va-ky-vong-don-dong-von-ngoai-post869745.html",
+   "impact": "VIC, HPG, FPT: nâng hạng FTSE có thể kéo dòng vốn ngoại (VIC khoảng 1,34 tỷ USD, HPG 275,3 triệu USD, FPT 185,5 triệu USD)"
+  },
+  {
+   "title": "Các quỹ ETF bitcoin spot ghi nhận dòng tiền ròng ra 463 triệu USD",
+   "source": "KuCoin (dữ liệu SoSoValue)",
+   "date": "09/2026",
+   "url": "https://www.kucoin.com/vi/news/insight/BTC/6aa7f3547d10fa0007cd720f",
+   "impact": "Bitcoin: rút ròng tuần 7-11/9, chấm dứt chuỗi ba tuần hút ròng"
+  }
+ ],
+ "commentary": {
+  "VNINDEX": "VN-Index 1.768,62 điểm, dưới đường trung bình 200 phiên (1.795,72) và RSI 42; khối ngoại bán ròng sáu phiên liền (Vietstock). Kiểm định thống kê chưa tìm được tín hiệu đủ tin cậy nên quan điểm trung lập. Hỗ trợ gần 1.758,31, kháng cự 1.874,48.",
+  "FPT": "FPT đóng cửa 63,00, dưới đường trung bình 200 phiên (71,73), giảm 5,3% sau 20 phiên và đang đúng mốc hỗ trợ 63,00. KBSV khuyến nghị mua với giá mục tiêu 86.000 đồng (Smartly), nhưng dữ liệu giá chưa cho tín hiệu thống kê rõ ràng.",
+  "VCB": "VCB đóng cửa 58,00, dưới đường trung bình 200 phiên (60,67), RSI 44. BSC khuyến nghị mua, giá mục tiêu 77.800 đồng (Smartly). Lãi suất huy động còn cao (Vietstock) là yếu tố cần theo dõi với biên lợi nhuận ngân hàng.",
+  "HPG": "HPG đóng cửa 20,15, giảm 8,8% sau 20 phiên và sát đáy 52 tuần (20,10); RSI 34. Các công ty chứng khoán khuyến nghị mua, giá mục tiêu 32.700 đồng (BNews), song giá hiện chưa có tín hiệu đảo chiều được kiểm định.",
+  "SHS": "SHS đóng cửa 13,00, giảm 17,7% sau 20 phiên, RSI 26 (vùng bán quá mức) và gần đáy 52 tuần (12,70). Các công ty chứng khoán đồng loạt khuyến nghị mua (BNews), nhưng thống kê lịch sử cho xác suất tăng 1 tháng chỉ 49%.",
+  "VIN": "VIN đóng cửa 16,10, tăng 16,7% sau 20 phiên và trên đường trung bình 200 phiên (15,19), là mã duy nhất giữ xu hướng tăng; tuy vậy kiểm định chưa cho lợi thế thống kê. Mã VIC được nhắc trong nhóm hưởng lợi từ nâng hạng FTSE (Báo SGGP).",
+  "BTC-USD": "Bitcoin 83.468 USD, tăng 9,0% sau 20 ngày, trên đường trung bình 200 ngày (71.262); kháng cự 87.364, hỗ trợ 74.945. Dòng tiền ETF giao ngay rút ròng 463 triệu USD tuần 7-11/9 (KuCoin/SoSoValue) là điểm cần theo dõi.",
+  "GOLD_USD": "Hợp đồng tương lai vàng ở 4.193,3 USD/ounce (đóng cửa 30/9), cao hơn giá giao ngay 4.161,8 USD (Swissquote). Vàng giảm gần 6% trong tháng 9 do kỳ vọng Fed tăng lãi suất (Vinanet); giá dưới đường trung bình 200 phiên (4.554,9).",
+  "GOLD_VND": "Vàng thế giới quy đổi theo hợp đồng tương lai là 131,3 triệu đồng/lượng, thấp hơn đường trung bình 200 phiên (143,9), giảm 5,0% sau 20 phiên. Tỷ giá trung tâm 25.627 đồng/USD (Thời báo Ngân hàng).",
+  "SJC": "Vàng miếng SJC bán 144,1, mua 141,1 triệu đồng/lượng (PNJ), cao hơn vàng thế giới quy đổi 13,8 triệu (10,6%). Nếu chênh lệch thu hẹp, giá SJC có thể giảm dù vàng thế giới đi ngang."
+ },
+ "recommendation": "Hôm nay không có cơ hội nào đủ điều kiện thống kê; phương án khớp dữ liệu nhất là chờ. VN-Index, FPT, VCB, HPG, SHS, VIN, Bitcoin và vàng thế giới quy đổi đều ở trạng thái trung lập với độ tin cậy thấp, còn vàng miếng SJC ở mức thận trọng vì giá cao hơn thế giới 10,6%. Với VN-Index, cần theo dõi vùng hỗ trợ 1.758,31 và kháng cự 1.874,48, cùng diễn biến bán ròng của khối ngoại (Vietstock). Sự kiện cần theo dõi: dòng vốn ngoại sau nâng hạng FTSE (Báo SGGP) và kỳ vọng Fed về lãi suất tác động đến vàng (Vinanet).",
+ "stance_notes": {
+  "VNINDEX": "Khối ngoại bán ròng sáu phiên liên tiếp có thể kéo dài áp lực; ngược lại dòng vốn sau nâng hạng FTSE có thể hỗ trợ (Vietstock, Báo SGGP).",
+  "FPT": "Dòng vốn ngoại từ nâng hạng FTSE ước tính khoảng 185,5 triệu USD có thể hỗ trợ (Báo SGGP); khuyến nghị mua của KBSV là ý kiến CTCK, không thay đổi quan điểm thống kê.",
+  "VCB": "Lãi suất huy động còn cao (Vietstock) và khuyến nghị mua của BSC (Smartly) là hai yếu tố cần theo dõi.",
+  "HPG": "Dòng vốn ngoại ước tính 275,3 triệu USD từ nâng hạng FTSE (Báo SGGP) và khuyến nghị mua của các CTCK (BNews) có thể cải thiện bức tranh nếu giá giữ được đáy 52 tuần.",
+  "SHS": "Các CTCK đồng loạt khuyến nghị mua (BNews); mã đang ở vùng bán quá mức nhưng cần tín hiệu thống kê xác nhận.",
+  "VIN": "VIC có thể thu hút khoảng 1,34 tỷ USD từ nâng hạng FTSE (Báo SGGP); đây là yếu tố hỗ trợ cần theo dõi.",
+  "BTC-USD": "Dòng tiền ETF bitcoin giao ngay rút ròng 463 triệu USD tuần 7-11/9 (KuCoin/SoSoValue) có thể làm thay đổi bức tranh nếu tiếp diễn.",
+  "GOLD_VND": "Quyết định lãi suất của Fed và đồng USD là yếu tố chính; vàng giảm gần 6% trong tháng 9 vì kỳ vọng Fed tăng lãi suất (Vinanet).",
+  "SJC": "Giá vàng trong nước bật tăng nhẹ ngày 30/9 (Thanh Niên); chênh lệch với thế giới về dưới 5% mới giảm mức thận trọng."
+ },
+ "errors": [
+  "Các nguồn có giá vàng thế giới khác nhau theo thời điểm: 4.179,46 USD (13h41 30/9), 4.182 và 4.213 USD (Vinanet và báo khác); bản tin dùng giá giao ngay Swissquote 4.161,8 USD lúc 08:32 ngày 1/10.",
+  "Không tìm thấy tin doanh nghiệp riêng trong 48 giờ qua cho FPT, VCB, HPG, SHS, VIC; các khuyến nghị CTCK trích từ bài tháng 9/2026, không rõ ngày đăng chính xác."
+ ]
+}

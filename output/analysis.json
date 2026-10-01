@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-01 07:56 (giờ VN)",
- "run_kind": "manual",
+ "generated_at": "2026-10-01 08:31 (giờ VN)",
+ "run_kind": "scheduled",
  "watchlist": {
   "stocks": [
    "FPT",
@@ -5303,16 +5303,16 @@
    "last_date": "2026-10-01",
    "first_date": "2016-10-01",
    "n_days": 3652,
-   "close": 83477.3515625,
-   "change_1d": -0.0017349187956169354,
-   "change_20d": 0.0902363295757862,
-   "rsi": 60.57889406633829,
-   "sma20": 81296.463671875,
-   "sma50": 77270.455078125,
-   "sma200": 71262.3578515625,
-   "macd_hist": -129.65123510555713,
-   "bb_up": 88680.25268392196,
-   "bb_lo": 73912.67465982803,
+   "close": 83468.3671875,
+   "change_1d": -0.001842358570251279,
+   "change_20d": 0.09011899125778511,
+   "rsi": 60.53747259330849,
+   "sma20": 81296.014453125,
+   "sma50": 77270.275390625,
+   "sma200": 71262.3129296875,
+   "macd_hist": -130.22459692891562,
+   "bb_up": 88679.24587635028,
+   "bb_lo": 73912.78302989971,
    "atr": 2186.828125,
    "support_20": 74944.59375,
    "resist_20": 87363.7578125,
@@ -5348,7 +5348,7 @@
       "median": 0.01072435283834694,
       "p10": -0.07181461788306012,
       "p90": 0.1417108767898322,
-      "avg_max_drawdown": -0.02395080378562874,
+      "avg_max_drawdown": -0.02395089675293121,
       "worst_drawdown": -0.27736566704999643,
       "base_prob_up": 0.535092807424594,
       "base_median": 0.0036709863929432762
@@ -5359,7 +5359,7 @@
       "active_days": 250,
       "test_days": 250
      },
-     "stop_ref": 79103.6953125,
+     "stop_ref": 79094.7109375,
      "live": {
       "n": 0
      },
@@ -5397,7 +5397,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 79103.6953125,
+     "stop_ref": 79094.7109375,
      "live": {
       "n": 0
      },
@@ -5435,7 +5435,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 79103.6953125,
+     "stop_ref": 79094.7109375,
      "live": {
       "n": 0
      },
@@ -5808,7 +5808,7 @@
      84458.09,
      83502.61,
      83622.43,
-     83477.35
+     83468.37
     ],
     "sma50": [
      68639.07,
@@ -5990,7 +5990,7 @@
      76104.55,
      76477.71,
      76871.95,
-     77270.46
+     77270.28
     ],
     "sma200": [
      89617.0,
@@ -6172,7 +6172,7 @@
      71072.73,
      71137.77,
      71201.04,
-     71262.36
+     71262.31
     ]
    },
    "name": "Crypto BTC (USD)",
@@ -6183,17 +6183,17 @@
    "last_date": "2026-09-30",
    "first_date": "2016-09-30",
    "n_days": 2513,
-   "close": 4175.60009765625,
-   "change_1d": -0.0009809549643891025,
-   "change_20d": -0.05022286634338935,
-   "rsi": 33.92445281768421,
-   "sma20": 4363.269995117187,
-   "sma50": 4362.8,
-   "sma200": 4554.804500732422,
-   "macd_hist": -29.720916511406372,
-   "bb_up": 4562.335593066038,
-   "bb_lo": 4164.204397168336,
-   "atr": 90.25711495535714,
+   "close": 4193.2998046875,
+   "change_1d": 0.0032537284349369866,
+   "change_20d": -0.04619691160214434,
+   "rsi": 35.66085764116701,
+   "sma20": 4364.15498046875,
+   "sma50": 4363.153994140625,
+   "sma200": 4554.8929992675785,
+   "macd_hist": -28.591362558414964,
+   "bb_up": 4559.836243645291,
+   "bb_lo": 4168.47371729221,
+   "atr": 90.48570033482143,
    "support_20": 4143.10009765625,
    "resist_20": 4558.5,
    "support_60": 3963.0,
@@ -6239,7 +6239,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 3995.085867745536,
+     "stop_ref": 4012.3284040178573,
      "live": {
       "n": 0
      },
@@ -6277,7 +6277,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 3995.085867745536,
+     "stop_ref": 4012.3284040178573,
      "live": {
       "n": 0
      },
@@ -6315,7 +6315,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 3995.085867745536,
+     "stop_ref": 4012.3284040178573,
      "live": {
       "n": 0
      },
@@ -6688,7 +6688,7 @@
      4321.2,
      4168.4,
      4179.7,
-     4175.6
+     4193.3
     ],
     "sma50": [
      4261.34,
@@ -6870,7 +6870,7 @@
      4354.55,
      4357.54,
      4360.82,
-     4362.8
+     4363.15
     ],
     "sma200": [
      3684.98,
@@ -7052,7 +7052,7 @@
      4556.06,
      4555.72,
      4555.49,
-     4554.8
+     4554.89
     ]
    },
    "name": "Vàng tương lai COMEX GC=F (USD/oz)",
@@ -7063,17 +7063,17 @@
    "last_date": "2026-09-30",
    "first_date": "2016-10-03",
    "n_days": 2512,
-   "close": 130.7414142558166,
-   "change_1d": -0.0009424852872725875,
-   "change_20d": -0.053866046756341435,
-   "rsi": 33.20663317658311,
-   "sma20": 136.73699278876452,
-   "sma50": 137.35282606556785,
-   "sma200": 143.89203397393263,
-   "macd_hist": -0.8992697257006173,
-   "bb_up": 143.16995357174176,
-   "bb_lo": 130.3040320057873,
-   "atr": 2.8293040995224947,
+   "close": 131.29560638989528,
+   "change_1d": 0.0032923611789177354,
+   "change_20d": -0.04985553487946626,
+   "rsi": 34.94418733598101,
+   "sma20": 136.76470239546845,
+   "sma50": 137.3639099082494,
+   "sma200": 143.89480493460303,
+   "macd_hist": -0.8639024783975744,
+   "bb_up": 143.09284411353624,
+   "bb_lo": 130.43656067740065,
+   "atr": 2.836461292522401,
    "support_20": 129.74379354978183,
    "resist_20": 143.27991662012525,
    "support_60": 125.42735214411786,
@@ -7119,7 +7119,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 125.08280605677162,
+     "stop_ref": 125.62268380485048,
      "live": {
       "n": 0
      },
@@ -7157,7 +7157,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 125.08280605677162,
+     "stop_ref": 125.62268380485048,
      "live": {
       "n": 0
      },
@@ -7195,7 +7195,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 125.08280605677162,
+     "stop_ref": 125.62268380485048,
      "live": {
       "n": 0
      },
@@ -7568,7 +7568,7 @@
      135.4,
      130.54,
      130.86,
-     130.74
+     131.3
     ],
     "sma50": [
      135.15,
@@ -7750,7 +7750,7 @@
      137.18,
      137.25,
      137.32,
-     137.35
+     137.36
     ],
     "sma200": [
      116.37,
@@ -7946,19 +7946,19 @@
   "source": "Yahoo Finance (VND=X)"
  },
  "gold_spot": {
-  "price": 4142.764999999999,
+  "price": 4161.8,
   "source": "Swissquote (giữa giá mua/bán)",
-  "at": "07:56 01/10"
+  "at": "08:32 01/10"
  },
  "sjc": {
   "buy": 141.1,
   "sell": 144.1,
-  "updated": "01/10/2026 07:52:13",
+  "updated": "01/10/2026 08:30:03",
   "source": "PNJ edge-api (bảng giá vàng miếng SJC)",
   "world_basis": "giá giao ngay Swissquote (giữa giá mua/bán) × tỷ giá Yahoo VND=X",
-  "world_equiv": 129.71332080711312,
-  "premium": 14.386679192886874,
-  "premium_pct": 0.11091134744965947,
+  "world_equiv": 130.30932204338006,
+  "premium": 13.79067795661993,
+  "premium_pct": 0.10583032541623538,
   "history_days": 2,
   "history": [
    {
@@ -7971,7 +7971,7 @@
     "date": "2026-10-01",
     "buy": 141.1,
     "sell": 144.1,
-    "updated": "01/10/2026 07:52:13"
+    "updated": "01/10/2026 08:30:03"
    }
   ]
  },
@@ -8089,11 +8089,11 @@
    "sign": 0,
    "confidence": "Thấp",
    "horizon": "1 tháng",
-   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 79,103.70. Đường MA200 hiện ở 71,262.36.",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 79,094.71. Đường MA200 hiện ở 71,262.31.",
    "reasons": [
     "Kiểm định 1 tháng: xác suất tăng 56% so với nền 54%; trung vị +2.7%, khoảng 10–90% từ -12.6% đến +37.9% (n=1207). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
-    "Giá 83,477.35 đang trên MA200 (71,262.36); RSI 61. Đây là mô tả trạng thái, không phải dự báo.",
-    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -6.8%, tệ nhất -49.9%. Mức cắt lỗ tham khảo 79,103.70 (-5.2%)."
+    "Giá 83,468.37 đang trên MA200 (71,262.31); RSI 61. Đây là mô tả trạng thái, không phải dự báo.",
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -6.8%, tệ nhất -49.9%. Mức cắt lỗ tham khảo 79,094.71 (-5.2%)."
    ],
    "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 87,363.76 hoặc thủng hỗ trợ 74,944.59, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
    "edge": 0.0,
@@ -8107,11 +8107,11 @@
    "sign": 0,
    "confidence": "Thấp",
    "horizon": "1 tháng",
-   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 125.08. Đường MA200 hiện ở 143.89.",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 125.62. Đường MA200 hiện ở 143.89.",
    "reasons": [
     "Kiểm định 1 tháng: xác suất tăng 59% so với nền 59%; trung vị +0.8%, khoảng 10–90% từ -3.6% đến +7.1% (n=2293). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
-    "Giá 130.74 đang dưới MA200 (143.89); RSI 33. Đây là mô tả trạng thái, không phải dự báo.",
-    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -2.2%, tệ nhất -16.7%. Mức cắt lỗ tham khảo 125.08 (-4.3%)."
+    "Giá 131.30 đang dưới MA200 (143.89); RSI 35. Đây là mô tả trạng thái, không phải dự báo.",
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -2.2%, tệ nhất -16.7%. Mức cắt lỗ tham khảo 125.62 (-4.3%)."
    ],
    "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 143.28 hoặc thủng hỗ trợ 129.74, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
    "edge": 0.0,
@@ -8125,9 +8125,9 @@
    "sign": -1,
    "confidence": "Trung bình",
    "horizon": "vàng miếng",
-   "action": "Nếu muốn nắm giữ vàng, lưu ý giá SJC đang cao hơn thế giới 11.1%. Chênh lệch này thu hẹp thì SJC có thể giảm dù vàng thế giới đứng yên. Có thể cân nhắc vàng nhẫn 9999 hoặc chờ chênh lệch giảm.",
+   "action": "Nếu muốn nắm giữ vàng, lưu ý giá SJC đang cao hơn thế giới 10.6%. Chênh lệch này thu hẹp thì SJC có thể giảm dù vàng thế giới đứng yên. Có thể cân nhắc vàng nhẫn 9999 hoặc chờ chênh lệch giảm.",
    "reasons": [
-    "Giá bán SJC 144.1 tr/lượng, đắt hơn vàng thế giới quy đổi +11.1% (14.4 tr).",
+    "Giá bán SJC 144.1 tr/lượng, đắt hơn vàng thế giới quy đổi +10.6% (13.8 tr).",
     "Chênh mua–bán 2.1%: mua xong bán lại ngay sẽ lỗ khoảng mức này.",
     "Ngưỡng cảnh báo của hệ thống: chênh lệch trên 5%."
    ],
