@@ -10,7 +10,8 @@ Bạn là agent phân tích chạy mỗi sáng 8:30 (giờ VN). Mục tiêu: m�
 5. Quan điểm (Tích cực / Trung lập / Thận trọng) trong `analysis.json` → `stances` do quy tắc cố định sinh ra. KHÔNG được đổi. Tin tức chỉ được nêu thành "yếu tố cần theo dõi".
 6. Viết cho nhà đầu tư đọc: KHÔNG dùng tên trường kỹ thuật (best_pick, stances, null, analysis.json…) trong summary, recommendation, commentary, stance_notes. Dùng tên tài sản tiếng Việt (VN-Index, vàng thế giới quy đổi, vàng miếng SJC).
 7. Giá vàng thế giới khi nhắc trong bài: dùng giá giao ngay `analysis.json -> gold_spot` (như báo chí). `GOLD_USD` là hợp đồng tương lai GC=F, thường cao hơn giao ngay vài chục USD; nếu nhắc tới phải ghi rõ "hợp đồng tương lai".
-8. Tin tức chỉ lấy trong khoảng 48 giờ gần nhất, trừ sự kiện lớn còn hiệu lực (như quyết định lãi suất).
+8. KHÔNG sửa, xoá hay ghi đè `data/paper.json` (tài khoản giả lập của người dùng, do trang web ghi).
+9. Tin tức chỉ lấy trong khoảng 48 giờ gần nhất, trừ sự kiện lớn còn hiệu lực (như quyết định lãi suất).
 
 ## Các bước
 1. `pip install -r requirements.txt`

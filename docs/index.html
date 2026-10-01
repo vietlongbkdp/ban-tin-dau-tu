@@ -422,6 +422,48 @@ footer{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .why .wr{display:block;font-size:11.5px;color:var(--muted)}
 .why .wfoot{font-size:11.5px;color:var(--muted);margin:8px 0 0}
 .sw-rules ul{margin:6px 0 0;padding-left:18px} .sw-rules li{margin:4px 0}
+
+/* ===== giả lập ===== */
+.views{display:flex;gap:6px;margin-top:14px;flex-wrap:wrap}
+.views button{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08);color:#fff;border-radius:999px;padding:7px 14px;font-weight:700;font-size:13.5px;display:inline-flex;align-items:center;gap:6px}
+.views button.on{background:#fff;color:#211a5a;border-color:#fff}
+body.paper .headline{display:none}
+body.paper .hero{padding-bottom:84px}
+.pp-grid{display:grid;grid-template-columns:minmax(300px,380px) minmax(0,1fr);gap:18px;margin-top:18px;align-items:start}
+.pp-ticket{position:sticky;top:12px}
+.pp-h{margin:0 0 10px;font-size:17px;display:flex;align-items:center;gap:8px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:6px;background:var(--surface-2);border-radius:12px;padding:4px}
+.seg button{border:0;background:transparent;color:var(--text-2);border-radius:9px;padding:9px;font-weight:800;display:inline-flex;gap:6px;align-items:center;justify-content:center}
+.seg button.on{background:var(--surface);color:var(--text);box-shadow:var(--shadow)}
+.seg button[data-side="buy"].on{background:var(--up);color:#fff} .seg button[data-side="sell"].on{background:var(--down);color:#fff}
+.seg.sm button{padding:7px;font-size:13px}
+.qt{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-top:8px}
+.qt div{background:var(--surface-2);border-radius:10px;padding:6px 9px}
+.qt span{display:block;font-size:11px;color:var(--muted);font-weight:700}
+.qt b{font-variant-numeric:tabular-nums} .qt small{margin-left:6px;font-weight:700}
+.qbtn{display:flex;gap:6px;margin-top:6px}
+.b2.sm{padding:5px 10px;font-size:12.5px;display:inline-flex;align-items:center;gap:4px}
+.b2.buy{background:var(--up);border-color:var(--up);color:#fff} .b2.sell{background:var(--down);border-color:var(--down);color:#fff}
+.est{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-top:12px}
+.est div{border:1px dashed var(--line);border-radius:10px;padding:6px 9px}
+.est span{display:block;font-size:11px;color:var(--muted);font-weight:700}
+.est b{font-variant-numeric:tabular-nums}
+.pp-rules{margin-top:10px}
+.pp-acts{display:flex;gap:6px;flex-wrap:wrap}
+.pp-perf{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:14px}
+.pp-chart{position:relative;height:230px}
+.pp-stats{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-top:14px}
+.pp-setup{display:flex;gap:14px;align-items:flex-start;margin-top:18px}
+.pp-setup>.i{color:#d97706;flex:none}
+.pp-setup h4{margin:0 0 4px;font-size:17px}
+.ost{display:inline-block;border-radius:999px;padding:2px 9px;font-size:12px;font-weight:700}
+.ost.filled{background:var(--pos-bg);color:var(--pos-ink)} .ost.pending{background:color-mix(in srgb,var(--s1) 14%,transparent);color:var(--s1)}
+.ost.cancelled,.ost.expired{background:var(--none-bg);color:var(--none-ink)} .ost.rejected{background:var(--neg-bg);color:var(--neg-ink)}
+#ppHold td,#ppOrders td{vertical-align:middle}
+#ppHold small{font-weight:700}
+.swc .pbuy{align-self:flex-start}
+@media (max-width:980px){ .pp-grid{grid-template-columns:1fr} .pp-ticket{position:static} }
+@media (max-width:700px){ .pp-perf{grid-template-columns:1fr} }
 </style>
 </head>
 <body>
@@ -441,6 +483,7 @@ footer{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
         <button class="btn" id="btnSettings" aria-label="Cài đặt"><svg class="i " aria-hidden="true"><use href="#i-sliders"/></svg></button>
       </div>
     </div>
+    <nav class="views" aria-label="Chế độ xem"><button class="on" data-v="news"><svg class="i sm" aria-hidden="true"><use href="#i-news"/></svg> Bản tin</button><button data-v="paper"><svg class="i sm" aria-hidden="true"><use href="#i-coins"/></svg> Giả lập đầu tư</button></nav>
     <div class="headline">
       <div>
         <div class="eyebrow"><svg class="i sm" aria-hidden="true"><use href="#i-target"/></svg> Khuyến nghị hôm nay</div>
@@ -453,7 +496,7 @@ footer{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
   </div>
 </header>
 
-<main class="wrap">
+<main class="wrap" id="viewNews">
   <div class="kpis" id="kpis"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
   <div class="section-h"><h3><span class="hic"><svg class="i " aria-hidden="true"><use href="#i-activity"/></svg></span>Bảng giá trực tiếp</h3><span class="livehd"><span class="pulse off" id="livePulse"></span><span id="liveStatus">Đang kết nối…</span></span></div>
   <div class="board-tabs" role="tablist">
@@ -493,6 +536,52 @@ footer{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
   <footer><svg class="i sm" aria-hidden="true"><use href="#i-github"/></svg> Mã nguồn: <a id="repoLink" href="#" target="_blank" rel="noopener">GitHub</a></footer>
 </main>
 
+
+<main class="wrap" id="viewPaper" hidden>
+  <div class="kpis" id="ppKpis"></div>
+  <div id="ppBody"></div>
+  <div id="ppMain" hidden>
+    <div class="pp-grid">
+      <section class="panel pp-ticket">
+        <h3 class="pp-h"><svg class="i " aria-hidden="true"><use href="#i-zap"/></svg> Đặt lệnh giả lập</h3>
+        <div class="seg"><button data-side="buy" class="on"><svg class="i sm" aria-hidden="true"><use href="#i-up"/></svg> Mua</button><button data-side="sell"><svg class="i sm" aria-hidden="true"><use href="#i-down"/></svg> Bán</button></div>
+        <label class="fl" for="ptSym">Mã cổ phiếu</label>
+        <input class="in" id="ptSym" list="ptList" placeholder="VD: FPT" autocomplete="off" autocapitalize="characters"><datalist id="ptList"></datalist>
+        <div id="ptQuote" class="small"></div>
+        <label class="fl">Loại lệnh</label>
+        <div class="seg sm"><button data-otype="limit" class="on">Giới hạn (LO)</button><button data-otype="market">Thị trường (MP)</button></div>
+        <div id="ptPriceRow"><label class="fl" for="ptPrice">Giá đặt (nghìn đồng)</label><input class="in" id="ptPrice" type="number" inputmode="decimal" step="0.05" min="0"></div>
+        <label class="fl" for="ptQty">Khối lượng (bội số 100)</label>
+        <div class="addrow"><input class="in" id="ptQty" type="number" inputmode="numeric" step="100" min="100" value="100"><button class="b2" id="ptMax">Tối đa</button></div>
+        <div class="qbtn"><button class="b2 sm" data-pctq="0.25">25%</button><button class="b2 sm" data-pctq="0.5">50%</button><button class="b2 sm" data-pctq="0.75">75%</button></div>
+        <div class="est" id="ptEst"></div>
+        <button class="b2 primary buy" id="ptSubmit" style="width:100%;margin-top:12px">Đặt lệnh MUA</button>
+        <div class="msg" id="ptMsg"></div>
+        <p class="muted small" id="ppNote"></p>
+        <details class="pp-rules"><summary><svg class="i sm" aria-hidden="true"><use href="#i-info"/></svg> Quy tắc mô phỏng</summary><ul class="reasons">
+          <li>Lô 100 cổ phiếu; bước giá 10đ (&lt;10.000đ), 50đ (10.000–49.950đ), 100đ (≥50.000đ); giá trong biên độ trần–sàn.</li>
+          <li>Lệnh thị trường chỉ trong giờ 9:00–11:30, 13:00–14:45; mua khớp ở giá bán tốt nhất, bán khớp ở giá mua tốt nhất (bảng giá VPS).</li>
+          <li>Lệnh giới hạn khớp khi giá chạm mức đặt (đối chiếu dữ liệu 1 phút VNDirect); đặt ngoài giờ sẽ chờ phiên kế tiếp; hết hiệu lực cuối phiên.</li>
+          <li>Phí 0,15% mỗi chiều, thuế bán 0,1%. Cổ phiếu mua phiên T bán được từ T+2. Tiền cho lệnh mua chờ khớp được tạm giữ.</li>
+          <li>Giả định khớp toàn bộ khối lượng; không mô phỏng độ sâu sổ lệnh và ngày nghỉ lễ. Lệnh chờ được đối chiếu khi bạn mở trang.</li></ul></details>
+      </section>
+      <section class="pp-side">
+        <div class="section-h" style="margin-top:0"><h3><span class="hic"><svg class="i " aria-hidden="true"><use href="#i-building"/></svg></span>Danh mục nắm giữ</h3>
+          <span class="pp-acts"><button class="b2 sm" id="ppDeposit"><svg class="i sm" aria-hidden="true"><use href="#i-up"/></svg> Nạp tiền</button><button class="b2 sm" id="ppWithdraw"><svg class="i sm" aria-hidden="true"><use href="#i-down"/></svg> Rút tiền</button><button class="b2 sm danger" id="ppReset">Đặt lại</button></span></div>
+        <div class="board"><div class="tw"><table><thead><tr><th>Mã</th><th>KL</th><th>Bán được</th><th>Giá vốn</th><th>Giá TT</th><th>Giá trị</th><th>Lãi/lỗ</th><th>Tỷ trọng</th><th></th></tr></thead><tbody id="ppHold"></tbody></table></div></div>
+        <div class="section-h"><h3><span class="hic"><svg class="i " aria-hidden="true"><use href="#i-chart"/></svg></span>Hiệu quả đầu tư</h3></div>
+        <div class="pp-perf">
+          <div class="panel"><div class="pp-chart"><canvas id="ppNav" aria-label="Hiệu quả danh mục so với VN-Index"></canvas></div><p class="muted small" id="ppNavNote"></p></div>
+          <div class="panel"><div class="pp-chart"><canvas id="ppAlloc" aria-label="Tỷ trọng tài sản"></canvas></div></div>
+        </div>
+        <div class="lv pp-stats" id="ppStats"></div>
+      </section>
+    </div>
+    <div class="section-h"><h3><span class="hic"><svg class="i " aria-hidden="true"><use href="#i-list"/></svg></span>Sổ lệnh</h3></div>
+    <div class="board"><div class="tw"><table><thead><tr><th>Thời gian</th><th>Lệnh</th><th>Mã</th><th>KL</th><th>Giá đặt</th><th>Giá khớp</th><th>Trạng thái</th><th></th></tr></thead><tbody id="ppOrders"></tbody></table></div></div>
+  </div>
+  <footer><svg class="i sm" aria-hidden="true"><use href="#i-github"/></svg> Dữ liệu giả lập: <a id="ppFile" href="#" target="_blank" rel="noopener">data/paper.json</a></footer>
+</main>
 <!-- Tracker -->
 <div class="tracker" id="tracker" role="status" aria-live="polite">
   <h4><span><svg class="i " aria-hidden="true"><use href="#i-zap"/></svg> Đang chạy</span><button class="x" id="trkClose" aria-label="Đóng"><svg class="i sm" aria-hidden="true"><use href="#i-x"/></svg></button></h4>
@@ -647,7 +736,7 @@ function render(bundle, isLatest = true) {
   $("summary").innerHTML = ic("sparkles") + (news.summary ? `<div>${esc(news.summary)}</div>` : `<span class="muted">Chưa có phần tổng hợp tin tức.</span>`);
   $("news").innerHTML = (news.items || []).map(n => `<div class="ni"><div class="src">${ic("news","sm")}${esc(n.source)} · ${esc(n.date)}</div>
     <a href="${esc(safeUrl(n.url))}" target="_blank" rel="noopener">${esc(n.title)}${ic("link","sm")}</a>${n.impact ? `<div class="imp">${ic("target","sm")} ${esc(n.impact)}</div>` : ""}</div>`).join("") || `<div class="panel muted">Không có tin.</div>`;
-  renderSwing(an, news);
+  renderSwing(an, news); fillDatalist(an);
   renderLive();
   const errs = [...(an.errors || []), ...(news.errors || [])];
   $("errBox").innerHTML = errs.length ? `<div class="section-h"><h3><span class="hic">${ic("alert")}</span>Cảnh báo dữ liệu</h3></div><div class="panel err small">${ic("alert")}<ul class="reasons" style="margin:0">${errs.map(e => `<li>${esc(e)}</li>`).join("")}</ul></div>` : "";
@@ -939,6 +1028,7 @@ function swCard(p, i, watch, notes, setups) {
       <span>${ic("activity","sm")} KL ${nf(p.vol_ratio,1)}× TB20</span><span>${ic("dollar","sm")} ${nf(p.value20_bn,0)} tỷ/phiên</span></div>
     ${sparkSvg(p.spark, null, 260, 40).replace('class="spark"','class="spark" style="width:100%"')}
     ${note ? `<div class="swnote">${ic("news","sm")}<span>${esc(note)}</span></div>` : ""}
+    <button class="b2 sm pbuy" data-paperbuy="${esc(p.sym)}" data-price="${Math.min(p.close, p.buy_max).toFixed(2)}">${ic("coins","sm")} Đặt lệnh giả lập</button>
     ${p.why ? `<details class="why" open><summary>${ic("info","sm")} Vì sao mã này có tín hiệu</summary>
       <ul>${p.why.map(w => `<li class="${w.ok === true ? "y" : w.ok === false ? "n" : "m"}"><span class="wi">${ic(w.ok === true ? "check" : w.ok === false ? "x" : "minus","sm")}</span>
         <div><b>${esc(w.label)}</b><span class="wv">${esc(w.value)}</span><span class="wr">Điều kiện: ${esc(w.rule)}</span></div></li>`).join("")}</ul>
@@ -1205,6 +1295,14 @@ document.querySelectorAll(".board-tabs button").forEach(b => b.onclick = () => {
 });
 { const saved = store.get("btdt.board"); if (saved) document.querySelector(`.board-tabs button[data-b="${saved}"]`)?.click(); }
 
+// ---------- tiện ích dùng chung cho paper.js ----------
+window.APP = {$, ic, esc, nf, pct, gh, token, say, b64dec, b64enc, getJSON, cssv, OWNER, REPO};
+if ($("ppFile")) $("ppFile").href = `https://github.com/${OWNER}/${REPO}/blob/main/data/paper.json`;
+function fillDatalist(an) {
+  const sw = an?.swing ? [...an.swing.picks, ...(an.swing.watch || [])].map(p => p.sym) : [];
+  const l = $("ptList"); if (l) l.innerHTML = [...new Set([...(an?.watchlist?.stocks || []).filter(s => !s.endsWith(".US")), ...sw])].map(s => `<option value="${esc(s)}">`).join("");
+}
+
 // ---------- boot ----------
 (async () => {
   loadDates();
@@ -1214,5 +1312,6 @@ document.querySelectorAll(".board-tabs button").forEach(b => b.onclick = () => {
 })();
 })();
 </script>
+<script src="paper.js"></script>
 </body>
 </html>

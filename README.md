@@ -7,6 +7,7 @@ Mỗi sáng 8:30 (giờ VN), một agent Claude trên cloud chạy quy trình tr
 | `config.json` | Danh sách mã theo dõi và các kỳ hạn |
 | `data.py` | Lấy giá: VNDirect/VPS (cổ phiếu VN), Yahoo Finance (vàng, USD/VND), PNJ (vàng SJC) |
 | `analyze.py` | Chỉ báo kỹ thuật, trọng số tự hiệu chỉnh, kiểm định walk-forward |
+| `docs/paper.js` | Giả lập giao dịch cổ phiếu VN (lô 100, bước giá, trần/sàn, phí, thuế, T+2), quản lý danh mục và hiệu quả; dữ liệu ở `data/paper.json` |
 | `swing.py` | Bộ lọc lướt sóng VN100: kiểm định chiến lược (phí, T+2), chọn top 5 mã đạt chuẩn, nhật ký kết quả |
 | `journal.py` | Nhật ký dự báo: chấm điểm khi đến hạn, giảm độ tự tin nếu dự báo kém |
 | `run.py` | Chạy phần định lượng, ghi ra `output/analysis.json` |
