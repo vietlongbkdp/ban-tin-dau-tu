@@ -412,6 +412,15 @@ footer{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
   .sw-setups td{border:0;padding:3px 0;text-align:left !important}
   .sw-setups td[data-l]::before{content:attr(data-l);display:block;font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
 }
+.why{margin-top:0;border-top:1px dashed var(--line);padding-top:10px}
+.why ul{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:6px}
+.why li{display:flex;gap:8px;align-items:flex-start;font-size:13px;background:var(--surface-2);border-radius:10px;padding:7px 9px}
+.why .wi{width:20px;height:20px;border-radius:50%;display:grid;place-items:center;flex:none;margin-top:1px}
+.why li.y .wi{background:var(--pos-bg);color:var(--pos)} .why li.n .wi{background:var(--neg-bg);color:var(--neg)} .why li.m .wi{background:var(--line);color:var(--muted)}
+.why b{display:block;font-size:13px}
+.why .wv{display:block;font-variant-numeric:tabular-nums;color:var(--text)}
+.why .wr{display:block;font-size:11.5px;color:var(--muted)}
+.why .wfoot{font-size:11.5px;color:var(--muted);margin:8px 0 0}
 .sw-rules ul{margin:6px 0 0;padding-left:18px} .sw-rules li{margin:4px 0}
 </style>
 </head>
@@ -930,6 +939,10 @@ function swCard(p, i, watch, notes, setups) {
       <span>${ic("activity","sm")} KL ${nf(p.vol_ratio,1)}× TB20</span><span>${ic("dollar","sm")} ${nf(p.value20_bn,0)} tỷ/phiên</span></div>
     ${sparkSvg(p.spark, null, 260, 40).replace('class="spark"','class="spark" style="width:100%"')}
     ${note ? `<div class="swnote">${ic("news","sm")}<span>${esc(note)}</span></div>` : ""}
+    ${p.why ? `<details class="why" open><summary>${ic("info","sm")} Vì sao mã này có tín hiệu</summary>
+      <ul>${p.why.map(w => `<li class="${w.ok === true ? "y" : w.ok === false ? "n" : "m"}"><span class="wi">${ic(w.ok === true ? "check" : w.ok === false ? "x" : "minus","sm")}</span>
+        <div><b>${esc(w.label)}</b><span class="wv">${esc(w.value)}</span><span class="wr">Điều kiện: ${esc(w.rule)}</span></div></li>`).join("")}</ul>
+      <p class="wfoot">Mua tối đa = đóng cửa + 0,5×ATR · Cắt lỗ = đóng cửa − 1,5×ATR · Chốt lời = đóng cửa + 2,5×ATR</p></details>` : ""}
   </div>`;
 }
 function renderSwing(an, news) {

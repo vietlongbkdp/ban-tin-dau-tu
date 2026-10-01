@@ -73,6 +73,36 @@ def features(df):
     return f
 
 
+def explain(setup, L, ix_ret60):
+    """Các điều kiện của setup, kèm giá trị thực tế và ngưỡng, để hiển thị 'Vì sao mã này có tín hiệu'."""
+    vn = lambda x, d=2: f"{x:,.{d}f}".replace(",", "§").replace(".", ",").replace("§", ".")
+    pc = lambda x: ("+" if x >= 0 else "−") + vn(abs(x) * 100, 1) + "%"
+    liq = {"label": "Thanh khoản TB 20 phiên", "value": f"{vn(L.value20 / 1e9, 0)} tỷ/phiên", "rule": "≥ 10 tỷ", "ok": bool(L.value20 >= MIN_VALUE)}
+    if setup == "rsi2":
+        rows = [
+            {"label": "Xu hướng dài hạn", "value": f"Giá {vn(L.close, 2)} vs MA200 {vn(L.sma200, 2)}", "rule": "Giá > MA200", "ok": bool(L.close > L.sma200)},
+            {"label": "Quá bán ngắn hạn", "value": f"RSI 2 phiên = {vn(L.rsi2, 1)}", "rule": "< 10", "ok": bool(L.rsi2 < 10)},
+            liq]
+    elif setup == "pullback":
+        rows = [
+            {"label": "Xu hướng xếp lớp", "value": f"MA20 {vn(L.sma20, 2)} · MA50 {vn(L.sma50, 2)} · MA200 {vn(L.sma200, 2)}", "rule": "MA20 > MA50 > MA200",
+             "ok": bool(L.sma20 > L.sma50 > L.sma200)},
+            {"label": "Giá về sát MA20", "value": f"{pc(L.close / L.sma20 - 1)} so với MA20", "rule": "−2% đến +1%", "ok": bool(L.sma20 * 0.98 <= L.close <= L.sma20 * 1.01)},
+            {"label": "RSI 14 trung tính", "value": f"{vn(L.rsi, 1)}", "rule": "40 – 55", "ok": bool(40 <= L.rsi <= 55)},
+            {"label": "Phiên giữ được giá", "value": f"Mở {vn(L.open, 2)} → đóng {vn(L.close, 2)}", "rule": "Đóng ≥ mở", "ok": bool(L.close >= L.open)},
+            liq]
+    else:
+        rows = [
+            {"label": "Xu hướng tăng", "value": f"Giá {vn(L.close, 2)} · MA50 {vn(L.sma50, 2)} · MA200 {vn(L.sma200, 2)}", "rule": "Giá > MA50 > MA200",
+             "ok": bool(L.close > L.sma50 > L.sma200)},
+            {"label": "Bứt phá đỉnh 20 phiên", "value": f"Đóng {vn(L.close, 2)} vs đỉnh trước {vn(L.hi20_prev, 2)}", "rule": "Đóng > đỉnh", "ok": bool(L.close > L.hi20_prev)},
+            {"label": "Khối lượng xác nhận", "value": f"{vn(L.vol_ratio, 2)}× TB20", "rule": "≥ 1,5×", "ok": bool(L.vol_ratio >= 1.5)},
+            liq]
+    rows.append({"label": "Sức mạnh so với VN-Index (60 phiên)", "value": f"{pc(L.ret60)} vs {pc(ix_ret60)}", "rule": "dùng để xếp hạng", "ok": None})
+    rows.append({"label": "Biên độ dao động (ATR14)", "value": f"{vn(L.atr, 2)} = {vn(L.atr / L.close * 100, 1)}% giá", "rule": "dùng để tính mức giá", "ok": None})
+    return rows
+
+
 def simulate(f, i):
     """Mô phỏng một lệnh với tín hiệu ở phiên i. Trả về dict hoặc None nếu không khớp / thiếu dữ liệu."""
     n = len(f)
@@ -169,6 +199,11 @@ def run(index_close=None, record=True):
 
     # tín hiệu hôm nay
     cands = []
+    if index_close is not None:
+        from datetime import datetime
+        now = datetime.now(data.VN_TZ)
+        if now.hour < 15 and index_close.index[-1] >= pd.Timestamp(now.date()):
+            index_close = index_close[index_close.index < pd.Timestamp(now.date())]
     ix_ret60 = index_close.pct_change(60).iloc[-1] if index_close is not None else 0.0
     for s, f in feats.items():
         last = f.iloc[-1]
@@ -183,6 +218,7 @@ def run(index_close=None, record=True):
                 "rs60": float(last.ret60 - ix_ret60), "vol_ratio": float(last.vol_ratio), "rsi": float(last.rsi),
                 "value20_bn": float(last.value20 / 1e9), "valid_setup": out["setups"][setup]["valid"],
                 "spark": [round(float(x), 2) for x in f["close"].tail(60)],
+                "why": explain(setup, last, float(ix_ret60)),
             })
     # xếp hạng: setup đã kiểm định trước, rồi sức mạnh tương đối 60 phiên
     cands.sort(key=lambda x: (x["valid_setup"], out["setups"][x["setup"]]["out_of_sample"].get("avg", -1), x["rs60"]), reverse=True)

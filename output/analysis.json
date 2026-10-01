@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-01 09:14 (giờ VN)",
+ "generated_at": "2026-10-01 10:07 (giờ VN)",
  "run_kind": "manual",
  "watchlist": {
   "stocks": [
@@ -20,21 +20,21 @@
  "assets": {
   "VNINDEX": {
    "source": "VNDirect dchart",
-   "last_date": "2026-09-30",
+   "last_date": "2026-10-01",
    "first_date": "2017-08-24",
-   "n_days": 2270,
-   "close": 1768.62,
-   "change_1d": -0.005124512721279451,
-   "change_20d": -0.03465930179245902,
-   "rsi": 42.43234743899934,
-   "sma20": 1806.8919999999998,
-   "sma50": 1772.8368,
-   "sma200": 1795.71965,
-   "macd_hist": -6.367452698901329,
-   "bb_up": 1852.2165102044912,
-   "bb_lo": 1761.5674897955084,
-   "atr": 31.833571428571467,
-   "support_20": 1758.31,
+   "n_days": 2271,
+   "close": 1760.0,
+   "change_1d": -0.004873856453053715,
+   "change_20d": -0.037051627163898204,
+   "rsi": 40.349809255933565,
+   "sma20": 1803.506,
+   "sma50": 1773.1665999999998,
+   "sma200": 1795.7509499999996,
+   "macd_hist": -6.886476052423448,
+   "bb_up": 1852.2669258581104,
+   "bb_lo": 1754.7450741418897,
+   "atr": 30.125000000000018,
+   "support_20": 1755.16,
    "resist_20": 1874.48,
    "support_60": 1651.2,
    "resist_60": 1874.48,
@@ -63,27 +63,27 @@
      },
      "score": 0.0,
      "stats": {
-      "n": 2066,
-      "prob_up": 0.5890609874152952,
-      "median": 0.005082673272092664,
-      "p10": -0.03220540471032579,
-      "p90": 0.032664655737751125,
-      "avg_max_drawdown": -0.011608984036835327,
+      "n": 2067,
+      "prob_up": 0.5887760038703435,
+      "median": 0.005081648966541064,
+      "p10": -0.032200705985940756,
+      "p90": 0.0326548131178309,
+      "avg_max_drawdown": -0.011607480405184818,
       "worst_drawdown": -0.1696197536859838,
-      "base_prob_up": 0.5890609874152952,
-      "base_median": 0.005082673272092664
+      "base_prob_up": 0.5887760038703435,
+      "base_median": 0.005081648966541064
      },
      "walk_forward": {
       "model_hit": null,
-      "naive_hit": 0.532,
+      "naive_hit": 0.528,
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 1704.952857142857,
+     "stop_ref": 1699.75,
      "live": {
       "n": 0
      },
-     "prob_up_final": 0.5890609874152952,
+     "prob_up_final": 0.5887760038703435,
      "calibration_note": "Chưa đủ dữ liệu thực tế để hiệu chỉnh",
      "verdict": "Không có lợi thế thống kê",
      "verdict_note": "Không chỉ báo nào có ý nghĩa thống kê cho kỳ hạn này; kết quả chỉ phản ánh tỷ lệ nền của lịch sử."
@@ -101,15 +101,15 @@
      },
      "score": 0.0,
      "stats": {
-      "n": 2051,
-      "prob_up": 0.5953193564115066,
-      "median": 0.011313714870313518,
-      "p10": -0.06278433991401977,
-      "p90": 0.07804062092186559,
-      "avg_max_drawdown": -0.03360952574260613,
+      "n": 2052,
+      "prob_up": 0.5950292397660819,
+      "median": 0.011306259502036009,
+      "p10": -0.06277206573547177,
+      "p90": 0.07802086478866152,
+      "avg_max_drawdown": -0.03361120317994594,
       "worst_drawdown": -0.27533061439862805,
-      "base_prob_up": 0.5953193564115066,
-      "base_median": 0.011313714870313518
+      "base_prob_up": 0.5950292397660819,
+      "base_median": 0.011306259502036009
      },
      "walk_forward": {
       "model_hit": null,
@@ -117,11 +117,11 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 1704.952857142857,
+     "stop_ref": 1699.75,
      "live": {
       "n": 0
      },
-     "prob_up_final": 0.5953193564115066,
+     "prob_up_final": 0.5950292397660819,
      "calibration_note": "Chưa đủ dữ liệu thực tế để hiệu chỉnh",
      "verdict": "Không có lợi thế thống kê",
      "verdict_note": "Không chỉ báo nào có ý nghĩa thống kê cho kỳ hạn này; kết quả chỉ phản ánh tỷ lệ nền của lịch sử."
@@ -139,27 +139,27 @@
      },
      "score": 0.0,
      "stats": {
-      "n": 2011,
-      "prob_up": 0.6185977125808055,
-      "median": 0.021384047096848713,
-      "p10": -0.09565971025340514,
-      "p90": 0.14525802652839515,
-      "avg_max_drawdown": -0.06437869409731983,
+      "n": 2012,
+      "prob_up": 0.6182902584493042,
+      "median": 0.021318841850460846,
+      "p10": -0.09550072489848423,
+      "p90": 0.14522017772692997,
+      "avg_max_drawdown": -0.06439386962334233,
       "worst_drawdown": -0.33511185524378184,
-      "base_prob_up": 0.6185977125808055,
-      "base_median": 0.021384047096848713
+      "base_prob_up": 0.6182902584493042,
+      "base_median": 0.021318841850460846
      },
      "walk_forward": {
       "model_hit": null,
-      "naive_hit": 0.624,
+      "naive_hit": 0.62,
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 1704.952857142857,
+     "stop_ref": 1699.75,
      "live": {
       "n": 0
      },
-     "prob_up_final": 0.6185977125808055,
+     "prob_up_final": 0.6182902584493042,
      "calibration_note": "Chưa đủ dữ liệu thực tế để hiệu chỉnh",
      "verdict": "Không có lợi thế thống kê",
      "verdict_note": "Không chỉ báo nào có ý nghĩa thống kê cho kỳ hạn này; kết quả chỉ phản ánh tỷ lệ nền của lịch sử."
@@ -167,7 +167,6 @@
    },
    "chart": {
     "dates": [
-     "2026-01-07",
      "2026-01-08",
      "2026-01-09",
      "2026-01-12",
@@ -346,10 +345,10 @@
      "2026-09-25",
      "2026-09-28",
      "2026-09-29",
-     "2026-09-30"
+     "2026-09-30",
+     "2026-10-01"
     ],
     "close": [
-     1861.58,
      1855.56,
      1867.9,
      1877.33,
@@ -528,10 +527,10 @@
      1785.11,
      1780.68,
      1777.73,
-     1768.62
+     1768.62,
+     1760.0
     ],
     "sma50": [
-     1693.97,
      1697.47,
      1701.11,
      1705.26,
@@ -710,10 +709,10 @@
      1773.77,
      1773.74,
      1773.21,
-     1772.84
+     1772.84,
+     1773.17
     ],
     "sma200": [
-     1522.08,
      1524.71,
      1527.39,
      1530.14,
@@ -892,7 +891,8 @@
      1795.14,
      1795.38,
      1795.58,
-     1795.72
+     1795.72,
+     1795.75
     ]
    },
    "name": "VN-Index",
@@ -900,21 +900,21 @@
   },
   "FPT": {
    "source": "VNDirect dchart",
-   "last_date": "2026-09-30",
+   "last_date": "2026-10-01",
    "first_date": "2016-10-03",
-   "n_days": 2494,
-   "close": 63.0,
-   "change_1d": -0.0031645569620253333,
-   "change_20d": -0.053286448471733916,
-   "rsi": 39.919350780705635,
-   "sma20": 65.68225000000001,
-   "sma50": 63.78964,
-   "sma200": 71.732595,
-   "macd_hist": -0.49990097743516926,
-   "bb_up": 68.21499387301743,
-   "bb_lo": 63.14950612698259,
-   "atr": 1.4396428571428568,
-   "support_20": 63.0,
+   "n_days": 2495,
+   "close": 62.9,
+   "change_1d": -0.0015873015873015817,
+   "change_20d": -0.041699041699041706,
+   "rsi": 39.5198805419076,
+   "sma20": 65.5454,
+   "sma50": 63.82762,
+   "sma200": 71.618905,
+   "macd_hist": -0.5120323736531601,
+   "bb_up": 68.36766369762618,
+   "bb_lo": 62.72313630237382,
+   "atr": 1.3442142857142858,
+   "support_20": 62.8,
    "resist_20": 68.001,
    "support_60": 55.91,
    "resist_60": 68.001,
@@ -924,7 +924,7 @@
     "trend": -1,
     "macd": -1,
     "rsi": 0,
-    "boll": 1,
+    "boll": 0,
     "mom20": -1,
     "mom60": -1,
     "volume": 0
@@ -943,15 +943,15 @@
      },
      "score": 0.0,
      "stats": {
-      "n": 2290,
-      "prob_up": 0.5427947598253275,
-      "median": 0.004374185443791312,
-      "p10": -0.04090814253930475,
-      "p90": 0.049627482534209205,
-      "avg_max_drawdown": -0.01493183540652513,
+      "n": 2291,
+      "prob_up": 0.5425578350065473,
+      "median": 0.004296941256289877,
+      "p10": -0.040892501658924885,
+      "p90": 0.049597609248433816,
+      "avg_max_drawdown": -0.014941360334604135,
       "worst_drawdown": -0.153154353474119,
-      "base_prob_up": 0.5427947598253275,
-      "base_median": 0.004374185443791312
+      "base_prob_up": 0.5425578350065473,
+      "base_median": 0.004296941256289877
      },
      "walk_forward": {
       "model_hit": null,
@@ -959,11 +959,11 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 60.120714285714286,
+     "stop_ref": 60.211571428571425,
      "live": {
       "n": 0
      },
-     "prob_up_final": 0.5427947598253275,
+     "prob_up_final": 0.5425578350065473,
      "calibration_note": "Chưa đủ dữ liệu thực tế để hiệu chỉnh",
      "verdict": "Không có lợi thế thống kê",
      "verdict_note": "Không chỉ báo nào có ý nghĩa thống kê cho kỳ hạn này; kết quả chỉ phản ánh tỷ lệ nền của lịch sử."
@@ -981,15 +981,15 @@
      },
      "score": 0.0,
      "stats": {
-      "n": 2275,
-      "prob_up": 0.6118681318681318,
-      "median": 0.020006276478895302,
-      "p10": -0.07574468937506555,
-      "p90": 0.11059864596445831,
-      "avg_max_drawdown": -0.039221767964549265,
+      "n": 2276,
+      "prob_up": 0.6115992970123023,
+      "median": 0.020001568979017725,
+      "p10": -0.07571560606718575,
+      "p90": 0.11055274720187303,
+      "avg_max_drawdown": -0.039222856397648775,
       "worst_drawdown": -0.27725013804527876,
-      "base_prob_up": 0.6118681318681318,
-      "base_median": 0.020006276478895302
+      "base_prob_up": 0.6115992970123023,
+      "base_median": 0.020001568979017725
      },
      "walk_forward": {
       "model_hit": null,
@@ -997,11 +997,11 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 60.120714285714286,
+     "stop_ref": 60.211571428571425,
      "live": {
       "n": 0
      },
-     "prob_up_final": 0.6118681318681318,
+     "prob_up_final": 0.6115992970123023,
      "calibration_note": "Chưa đủ dữ liệu thực tế để hiệu chỉnh",
      "verdict": "Không có lợi thế thống kê",
      "verdict_note": "Không chỉ báo nào có ý nghĩa thống kê cho kỳ hạn này; kết quả chỉ phản ánh tỷ lệ nền của lịch sử."
@@ -1019,15 +1019,15 @@
      },
      "score": 0.0,
      "stats": {
-      "n": 2235,
-      "prob_up": 0.6536912751677852,
-      "median": 0.051714022294862216,
-      "p10": -0.1248028892952272,
-      "p90": 0.2416110037419333,
-      "avg_max_drawdown": -0.0718619207957984,
+      "n": 2236,
+      "prob_up": 0.6533989266547406,
+      "median": 0.051685446706112304,
+      "p10": -0.12474944388371728,
+      "p90": 0.24157345213824855,
+      "avg_max_drawdown": -0.07189594572170109,
       "worst_drawdown": -0.31885629107663116,
-      "base_prob_up": 0.6536912751677852,
-      "base_median": 0.051714022294862216
+      "base_prob_up": 0.6533989266547406,
+      "base_median": 0.051685446706112304
      },
      "walk_forward": {
       "model_hit": null,
@@ -1035,11 +1035,11 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 60.120714285714286,
+     "stop_ref": 60.211571428571425,
      "live": {
       "n": 0
      },
-     "prob_up_final": 0.6536912751677852,
+     "prob_up_final": 0.6533989266547406,
      "calibration_note": "Chưa đủ dữ liệu thực tế để hiệu chỉnh",
      "verdict": "Không có lợi thế thống kê",
      "verdict_note": "Không chỉ báo nào có ý nghĩa thống kê cho kỳ hạn này; kết quả chỉ phản ánh tỷ lệ nền của lịch sử."
@@ -1047,7 +1047,6 @@
    },
    "chart": {
     "dates": [
-     "2026-01-07",
      "2026-01-08",
      "2026-01-09",
      "2026-01-12",
@@ -1226,10 +1225,10 @@
      "2026-09-25",
      "2026-09-28",
      "2026-09-29",
-     "2026-09-30"
+     "2026-09-30",
+     "2026-10-01"
     ],
     "close": [
-     87.43,
      86.53,
      87.34,
      89.22,
@@ -1408,10 +1407,10 @@
      64.7,
      63.7,
      63.2,
-     63.0
+     63.0,
+     62.9
     ],
     "sma50": [
-     87.09,
      87.01,
      86.95,
      86.91,
@@ -1590,10 +1589,10 @@
      63.66,
      63.72,
      63.75,
-     63.79
+     63.79,
+     63.83
     ],
     "sma200": [
-     89.18,
      89.12,
      89.07,
      89.04,
@@ -1772,7 +1771,8 @@
      72.08,
      71.97,
      71.85,
-     71.73
+     71.73,
+     71.62
     ]
    },
    "name": "Cổ phiếu FPT",
@@ -1780,24 +1780,24 @@
   },
   "VCB": {
    "source": "VNDirect dchart",
-   "last_date": "2026-09-30",
+   "last_date": "2026-10-01",
    "first_date": "2016-10-03",
-   "n_days": 2494,
+   "n_days": 2495,
    "close": 58.0,
    "change_1d": 0.0,
-   "change_20d": -0.03494176372712143,
+   "change_20d": -0.011925042589437829,
    "rsi": 44.140325459345554,
-   "sma20": 58.67999999999999,
-   "sma50": 58.25812,
-   "sma200": 60.668195000000004,
-   "macd_hist": -0.137883835325561,
-   "bb_up": 59.95088862404847,
-   "bb_lo": 57.40911137595152,
-   "atr": 0.9000000000000001,
+   "sma20": 58.644999999999996,
+   "sma50": 58.29354,
+   "sma200": 60.671099999999996,
+   "macd_hist": -0.12988523668773327,
+   "bb_up": 59.951622806281016,
+   "bb_lo": 57.338377193718976,
+   "atr": 0.8714285714285721,
    "support_20": 57.6,
    "resist_20": 61.0,
    "support_60": 52.6,
-   "resist_60": 61.981,
+   "resist_60": 61.4,
    "high_52w": 78.146,
    "low_52w": 52.6,
    "signals_today": {
@@ -1823,27 +1823,27 @@
      },
      "score": 0.0,
      "stats": {
-      "n": 2290,
-      "prob_up": 0.5074235807860262,
-      "median": 0.0011196196207781117,
-      "p10": -0.03855047236311885,
-      "p90": 0.04959817315225824,
-      "avg_max_drawdown": -0.014787150498254015,
+      "n": 2291,
+      "prob_up": 0.5072020951549542,
+      "median": 0.0011159959418329812,
+      "p10": -0.038525963149078746,
+      "p90": 0.04958607872951526,
+      "avg_max_drawdown": -0.014781447320557646,
       "worst_drawdown": -0.18981488738067998,
-      "base_prob_up": 0.5074235807860262,
-      "base_median": 0.0011196196207781117
+      "base_prob_up": 0.5072020951549542,
+      "base_median": 0.0011159959418329812
      },
      "walk_forward": {
       "model_hit": null,
-      "naive_hit": 0.42,
+      "naive_hit": 0.416,
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 56.2,
+     "stop_ref": 56.25714285714285,
      "live": {
       "n": 0
      },
-     "prob_up_final": 0.5074235807860262,
+     "prob_up_final": 0.5072020951549542,
      "calibration_note": "Chưa đủ dữ liệu thực tế để hiệu chỉnh",
      "verdict": "Không có lợi thế thống kê",
      "verdict_note": "Không chỉ báo nào có ý nghĩa thống kê cho kỳ hạn này; kết quả chỉ phản ánh tỷ lệ nền của lịch sử."
@@ -1861,15 +1861,15 @@
      },
      "score": 0.0,
      "stats": {
-      "n": 2275,
-      "prob_up": 0.56,
-      "median": 0.008742630410903729,
-      "p10": -0.0707129890295118,
-      "p90": 0.10436277167829898,
-      "avg_max_drawdown": -0.03894873704506263,
+      "n": 2276,
+      "prob_up": 0.5597539543057997,
+      "median": 0.008712037118670413,
+      "p10": -0.07067365528681385,
+      "p90": 0.10435456349897265,
+      "avg_max_drawdown": -0.038936863717094435,
       "worst_drawdown": -0.3440546331012321,
-      "base_prob_up": 0.56,
-      "base_median": 0.008742630410903729
+      "base_prob_up": 0.5597539543057997,
+      "base_median": 0.008712037118670413
      },
      "walk_forward": {
       "model_hit": null,
@@ -1877,11 +1877,11 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 56.2,
+     "stop_ref": 56.25714285714285,
      "live": {
       "n": 0
      },
-     "prob_up_final": 0.56,
+     "prob_up_final": 0.5597539543057997,
      "calibration_note": "Chưa đủ dữ liệu thực tế để hiệu chỉnh",
      "verdict": "Không có lợi thế thống kê",
      "verdict_note": "Không chỉ báo nào có ý nghĩa thống kê cho kỳ hạn này; kết quả chỉ phản ánh tỷ lệ nền của lịch sử."
@@ -1899,27 +1899,27 @@
      },
      "score": 0.0,
      "stats": {
-      "n": 2235,
-      "prob_up": 0.6143176733780761,
-      "median": 0.03270922625761341,
-      "p10": -0.1071164969300198,
-      "p90": 0.20299927993818695,
-      "avg_max_drawdown": -0.06964718688192642,
+      "n": 2236,
+      "prob_up": 0.6140429338103757,
+      "median": 0.03270329158145846,
+      "p10": -0.10705448349625463,
+      "p90": 0.20290721489732755,
+      "avg_max_drawdown": -0.06966535077374209,
       "worst_drawdown": -0.394726437008847,
-      "base_prob_up": 0.6143176733780761,
-      "base_median": 0.03270922625761341
+      "base_prob_up": 0.6140429338103757,
+      "base_median": 0.03270329158145846
      },
      "walk_forward": {
       "model_hit": null,
-      "naive_hit": 0.436,
+      "naive_hit": 0.432,
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 56.2,
+     "stop_ref": 56.25714285714285,
      "live": {
       "n": 0
      },
-     "prob_up_final": 0.6143176733780761,
+     "prob_up_final": 0.6140429338103757,
      "calibration_note": "Chưa đủ dữ liệu thực tế để hiệu chỉnh",
      "verdict": "Không có lợi thế thống kê",
      "verdict_note": "Không chỉ báo nào có ý nghĩa thống kê cho kỳ hạn này; kết quả chỉ phản ánh tỷ lệ nền của lịch sử."
@@ -1927,7 +1927,6 @@
    },
    "chart": {
     "dates": [
-     "2026-01-07",
      "2026-01-08",
      "2026-01-09",
      "2026-01-12",
@@ -2106,10 +2105,10 @@
      "2026-09-25",
      "2026-09-28",
      "2026-09-29",
-     "2026-09-30"
+     "2026-09-30",
+     "2026-10-01"
     ],
     "close": [
-     59.1,
      63.17,
      67.44,
      72.1,
@@ -2288,10 +2287,10 @@
      58.0,
      58.3,
      58.0,
+     58.0,
      58.0
     ],
     "sma50": [
-     57.96,
      58.04,
      58.18,
      58.42,
@@ -2470,10 +2469,10 @@
      58.28,
      58.28,
      58.26,
-     58.26
+     58.26,
+     58.29
     ],
     "sma200": [
-     59.35,
      59.33,
      59.35,
      59.38,
@@ -2652,6 +2651,7 @@
      60.67,
      60.67,
      60.67,
+     60.67,
      60.67
     ]
    },
@@ -2660,26 +2660,26 @@
   },
   "HPG": {
    "source": "VNDirect dchart",
-   "last_date": "2026-09-30",
+   "last_date": "2026-10-01",
    "first_date": "2016-10-03",
-   "n_days": 2494,
-   "close": 20.15,
-   "change_1d": -0.007389162561576512,
-   "change_20d": -0.08823529411764719,
-   "rsi": 34.488708393540975,
-   "sma20": 21.155,
-   "sma50": 21.394000000000002,
-   "sma200": 23.348975,
-   "macd_hist": -0.1096369737037362,
-   "bb_up": 22.255669652625247,
-   "bb_lo": 20.054330347374755,
-   "atr": 0.38214285714285723,
-   "support_20": 20.15,
+   "n_days": 2495,
+   "close": 20.1,
+   "change_1d": -0.002481389578163684,
+   "change_20d": -0.06944444444444442,
+   "rsi": 33.96758903876251,
+   "sma20": 21.08,
+   "sma50": 21.384,
+   "sma200": 23.33007,
+   "macd_hist": -0.10874707968964387,
+   "bb_up": 22.254913210680336,
+   "bb_lo": 19.90508678931966,
+   "atr": 0.35357142857142854,
+   "support_20": 20.05,
    "resist_20": 22.2,
-   "support_60": 20.1,
-   "resist_60": 23.6,
+   "support_60": 20.05,
+   "resist_60": 23.4,
    "high_52w": 26.559,
-   "low_52w": 20.1,
+   "low_52w": 20.05,
    "signals_today": {
     "trend": -1,
     "macd": -1,
@@ -2697,33 +2697,33 @@
       "macd": 0.0,
       "rsi": 0.0,
       "boll": 0.0,
-      "mom20": 0.1112,
+      "mom20": 0.1116,
       "mom60": 0.0,
       "volume": 0.0
      },
-     "score": -0.1112,
+     "score": -0.1116,
      "stats": {
-      "n": 1006,
-      "prob_up": 0.4691848906560636,
-      "median": -0.0022229766190468014,
-      "p10": -0.06379358078698599,
-      "p90": 0.05682217426006597,
-      "avg_max_drawdown": -0.025051311928988833,
+      "n": 1007,
+      "prob_up": 0.46871896722939427,
+      "median": -0.002261079288513823,
+      "p10": -0.06379255303783485,
+      "p90": 0.05679220845972796,
+      "avg_max_drawdown": -0.025059854664068137,
       "worst_drawdown": -0.21838003157063923,
-      "base_prob_up": 0.5187772925764192,
-      "base_median": 0.002099714659625551
+      "base_prob_up": 0.5185508511567001,
+      "base_median": 0.0020947569465836757
      },
      "walk_forward": {
       "model_hit": 0.43983402489626555,
-      "naive_hit": 0.38,
+      "naive_hit": 0.376,
       "active_days": 241,
       "test_days": 250
      },
-     "stop_ref": 19.385714285714283,
+     "stop_ref": 19.392857142857146,
      "live": {
       "n": 0
      },
-     "prob_up_final": 0.4691848906560636,
+     "prob_up_final": 0.46871896722939427,
      "calibration_note": "Chưa đủ dữ liệu thực tế để hiệu chỉnh",
      "verdict": "Trung lập",
      "verdict_note": ""
@@ -2741,27 +2741,27 @@
      },
      "score": 0.0,
      "stats": {
-      "n": 2275,
-      "prob_up": 0.56,
-      "median": 0.012961489869449228,
-      "p10": -0.09917023227465953,
-      "p90": 0.14293497030119068,
-      "avg_max_drawdown": -0.052069276744953596,
+      "n": 2276,
+      "prob_up": 0.5597539543057997,
+      "median": 0.012942100581602833,
+      "p10": -0.09913349772402102,
+      "p90": 0.1427960031368546,
+      "avg_max_drawdown": -0.05207691082566515,
       "worst_drawdown": -0.379511677282378,
-      "base_prob_up": 0.56,
-      "base_median": 0.012961489869449228
+      "base_prob_up": 0.5597539543057997,
+      "base_median": 0.012942100581602833
      },
      "walk_forward": {
       "model_hit": null,
-      "naive_hit": 0.336,
+      "naive_hit": 0.332,
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 19.385714285714283,
+     "stop_ref": 19.392857142857146,
      "live": {
       "n": 0
      },
-     "prob_up_final": 0.56,
+     "prob_up_final": 0.5597539543057997,
      "calibration_note": "Chưa đủ dữ liệu thực tế để hiệu chỉnh",
      "verdict": "Không có lợi thế thống kê",
      "verdict_note": "Không chỉ báo nào có ý nghĩa thống kê cho kỳ hạn này; kết quả chỉ phản ánh tỷ lệ nền của lịch sử."
@@ -2779,27 +2779,27 @@
      },
      "score": 0.0,
      "stats": {
-      "n": 2235,
-      "prob_up": 0.5659955257270693,
-      "median": 0.022211999737135946,
-      "p10": -0.16041757333106924,
-      "p90": 0.3230774082741979,
-      "avg_max_drawdown": -0.10097227469045421,
+      "n": 2236,
+      "prob_up": 0.565742397137746,
+      "median": 0.022208260149360615,
+      "p10": -0.16041076729926146,
+      "p90": 0.3230545445903722,
+      "avg_max_drawdown": -0.10098519859706408,
       "worst_drawdown": -0.5071372643498164,
-      "base_prob_up": 0.5659955257270693,
-      "base_median": 0.022211999737135946
+      "base_prob_up": 0.565742397137746,
+      "base_median": 0.022208260149360615
      },
      "walk_forward": {
       "model_hit": null,
-      "naive_hit": 0.388,
+      "naive_hit": 0.384,
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 19.385714285714283,
+     "stop_ref": 19.392857142857146,
      "live": {
       "n": 0
      },
-     "prob_up_final": 0.5659955257270693,
+     "prob_up_final": 0.565742397137746,
      "calibration_note": "Chưa đủ dữ liệu thực tế để hiệu chỉnh",
      "verdict": "Không có lợi thế thống kê",
      "verdict_note": "Không chỉ báo nào có ý nghĩa thống kê cho kỳ hạn này; kết quả chỉ phản ánh tỷ lệ nền của lịch sử."
@@ -2807,7 +2807,6 @@
    },
    "chart": {
     "dates": [
-     "2026-01-07",
      "2026-01-08",
      "2026-01-09",
      "2026-01-12",
@@ -2986,10 +2985,10 @@
      "2026-09-25",
      "2026-09-28",
      "2026-09-29",
-     "2026-09-30"
+     "2026-09-30",
+     "2026-10-01"
     ],
     "close": [
-     23.75,
      23.57,
      23.39,
      24.55,
@@ -3168,10 +3167,10 @@
      20.65,
      20.2,
      20.3,
-     20.15
+     20.15,
+     20.1
     ],
     "sma50": [
-     23.82,
      23.82,
      23.8,
      23.81,
@@ -3350,10 +3349,10 @@
      21.51,
      21.47,
      21.43,
-     21.39
+     21.39,
+     21.38
     ],
     "sma200": [
-     22.52,
      22.53,
      22.55,
      22.57,
@@ -3532,7 +3531,8 @@
      23.41,
      23.39,
      23.37,
-     23.35
+     23.35,
+     23.33
     ]
    },
    "name": "Cổ phiếu HPG",
@@ -5303,17 +5303,17 @@
    "last_date": "2026-10-01",
    "first_date": "2016-10-01",
    "n_days": 3652,
-   "close": 83547.453125,
-   "change_1d": -0.0008966082757961846,
-   "change_20d": 0.09115187455615503,
-   "rsi": 60.90404666606287,
-   "sma20": 81299.96875,
-   "sma50": 77271.857109375,
-   "sma200": 71262.708359375,
-   "macd_hist": -125.17751715683244,
-   "bb_up": 88688.18200374942,
-   "bb_lo": 73911.75549625058,
-   "atr": 2186.828125,
+   "close": 83420.7890625,
+   "change_1d": -0.002411322246358316,
+   "change_20d": 0.08949760833897913,
+   "rsi": 60.31905972918764,
+   "sma20": 81293.635546875,
+   "sma50": 77269.323828125,
+   "sma200": 71262.0750390625,
+   "macd_hist": -133.26092171524033,
+   "bb_up": 88673.94993522174,
+   "bb_lo": 73913.32115852826,
+   "atr": 2189.305245535714,
    "support_20": 74944.59375,
    "resist_20": 87363.7578125,
    "support_60": 62226.578125,
@@ -5348,7 +5348,7 @@
       "median": 0.01072435283834694,
       "p10": -0.07181461788306012,
       "p90": 0.1417108767898322,
-      "avg_max_drawdown": -0.0239505424262471,
+      "avg_max_drawdown": -0.023951389075428636,
       "worst_drawdown": -0.27736566704999643,
       "base_prob_up": 0.535092807424594,
       "base_median": 0.0036709863929432762
@@ -5359,7 +5359,7 @@
       "active_days": 250,
       "test_days": 250
      },
-     "stop_ref": 79173.796875,
+     "stop_ref": 79042.17857142857,
      "live": {
       "n": 0
      },
@@ -5397,7 +5397,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 79173.796875,
+     "stop_ref": 79042.17857142857,
      "live": {
       "n": 0
      },
@@ -5435,7 +5435,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 79173.796875,
+     "stop_ref": 79042.17857142857,
      "live": {
       "n": 0
      },
@@ -5808,7 +5808,7 @@
      84458.09,
      83502.61,
      83622.43,
-     83547.45
+     83420.79
     ],
     "sma50": [
      68639.07,
@@ -5990,7 +5990,7 @@
      76104.55,
      76477.71,
      76871.95,
-     77271.86
+     77269.32
     ],
     "sma200": [
      89617.0,
@@ -6172,7 +6172,7 @@
      71072.73,
      71137.77,
      71201.04,
-     71262.71
+     71262.08
     ]
    },
    "name": "Crypto BTC (USD)",
@@ -6183,16 +6183,16 @@
    "last_date": "2026-09-30",
    "first_date": "2016-09-30",
    "n_days": 2513,
-   "close": 4185.5,
-   "change_1d": 0.0013876126077188022,
-   "change_20d": -0.04797104608962388,
-   "rsi": 34.810021873375916,
-   "sma20": 4363.764990234375,
-   "sma50": 4362.997998046875,
-   "sma200": 4554.8540002441405,
-   "macd_hist": -29.08912787180581,
-   "bb_up": 4560.905636639892,
-   "bb_lo": 4166.6243438288575,
+   "close": 4190.5,
+   "change_1d": 0.0025838706564675906,
+   "change_20d": -0.046833751914602484,
+   "rsi": 35.358010396404296,
+   "sma20": 4364.014990234375,
+   "sma50": 4363.097998046875,
+   "sma200": 4554.879000244141,
+   "macd_hist": -28.770039552716312,
+   "bb_up": 4560.214225066987,
+   "bb_lo": 4167.8157554017625,
    "atr": 90.48570033482143,
    "support_20": 4143.10009765625,
    "resist_20": 4558.5,
@@ -6239,7 +6239,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 4004.5285993303573,
+     "stop_ref": 4009.5285993303573,
      "live": {
       "n": 0
      },
@@ -6277,7 +6277,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 4004.5285993303573,
+     "stop_ref": 4009.5285993303573,
      "live": {
       "n": 0
      },
@@ -6315,7 +6315,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 4004.5285993303573,
+     "stop_ref": 4009.5285993303573,
      "live": {
       "n": 0
      },
@@ -6688,7 +6688,7 @@
      4321.2,
      4168.4,
      4179.7,
-     4185.5
+     4190.5
     ],
     "sma50": [
      4261.34,
@@ -6870,7 +6870,7 @@
      4354.55,
      4357.54,
      4360.82,
-     4363.0
+     4363.1
     ],
     "sma200": [
      3684.98,
@@ -7052,7 +7052,7 @@
      4556.06,
      4555.72,
      4555.49,
-     4554.85
+     4554.88
     ]
    },
    "name": "Vàng tương lai COMEX GC=F (USD/oz)",
@@ -7063,16 +7063,16 @@
    "last_date": "2026-09-30",
    "first_date": "2016-10-03",
    "n_days": 2512,
-   "close": 131.05138820043425,
-   "change_1d": 0.0014261734923353142,
-   "change_20d": -0.051622864094650334,
-   "rsi": 34.09345182766717,
-   "sma20": 136.7524914859954,
-   "sma50": 137.3590255444602,
-   "sma200": 143.8935838436557,
-   "macd_hist": -0.879487912710772,
-   "bb_up": 143.1258490158439,
-   "bb_lo": 130.3791339561469,
+   "close": 131.20794224200685,
+   "change_1d": 0.002622477605932705,
+   "change_20d": -0.050489932382901004,
+   "rsi": 34.64134743718654,
+   "sma20": 136.76031918807402,
+   "sma50": 137.36215662529165,
+   "sma200": 143.89436661386355,
+   "macd_hist": -0.8694969995163888,
+   "bb_up": 143.10451225033754,
+   "bb_lo": 130.4161261258105,
    "atr": 2.836461292522401,
    "support_20": 129.74379354978183,
    "resist_20": 143.27991662012525,
@@ -7119,7 +7119,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 125.37846561538944,
+     "stop_ref": 125.53501965696205,
      "live": {
       "n": 0
      },
@@ -7157,7 +7157,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 125.37846561538944,
+     "stop_ref": 125.53501965696205,
      "live": {
       "n": 0
      },
@@ -7195,7 +7195,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 125.37846561538944,
+     "stop_ref": 125.53501965696205,
      "live": {
       "n": 0
      },
@@ -7568,7 +7568,7 @@
      135.4,
      130.54,
      130.86,
-     131.05
+     131.21
     ],
     "sma50": [
      135.15,
@@ -7946,19 +7946,19 @@
   "source": "Yahoo Finance (VND=X)"
  },
  "gold_spot": {
-  "price": 4155.264999999999,
+  "price": 4164.415,
   "source": "Swissquote (giữa giá mua/bán)",
-  "at": "09:14 01/10"
+  "at": "10:07 01/10"
  },
  "sjc": {
   "buy": 140.8,
   "sell": 143.8,
-  "updated": "01/10/2026 08:43:36",
+  "updated": "01/10/2026 09:54:36",
   "source": "PNJ edge-api (bảng giá vàng miếng SJC)",
   "world_basis": "giá giao ngay Swissquote (giữa giá mua/bán) × tỷ giá Yahoo VND=X",
-  "world_equiv": 130.0495980263692,
-  "premium": 13.750401973630801,
-  "premium_pct": 0.10573198366090097,
+  "world_equiv": 130.33597057347302,
+  "premium": 13.464029426526992,
+  "premium_pct": 0.1033024833227989,
   "history_days": 2,
   "history": [
    {
@@ -7971,7 +7971,7 @@
     "date": "2026-10-01",
     "buy": 140.8,
     "sell": 143.8,
-    "updated": "01/10/2026 08:43:36"
+    "updated": "01/10/2026 09:54:36"
    }
   ]
  },
@@ -7981,13 +7981,13 @@
    "sign": 0,
    "confidence": "Thấp",
    "horizon": "1 tháng",
-   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 1,704.95. Đường MA200 hiện ở 1,795.72.",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 1,699.75. Đường MA200 hiện ở 1,795.75.",
    "reasons": [
-    "Kiểm định 1 tháng: xác suất tăng 60% so với nền 60%; trung vị +1.1%, khoảng 10–90% từ -6.3% đến +7.8% (n=2051). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
-    "Giá 1,768.62 đang dưới MA200 (1,795.72); RSI 42. Đây là mô tả trạng thái, không phải dự báo.",
-    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -3.4%, tệ nhất -27.5%. Mức cắt lỗ tham khảo 1,704.95 (-3.6%)."
+    "Kiểm định 1 tháng: xác suất tăng 60% so với nền 60%; trung vị +1.1%, khoảng 10–90% từ -6.3% đến +7.8% (n=2052). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
+    "Giá 1,760.00 đang dưới MA200 (1,795.75); RSI 40. Đây là mô tả trạng thái, không phải dự báo.",
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -3.4%, tệ nhất -27.5%. Mức cắt lỗ tham khảo 1,699.75 (-3.4%)."
    ],
-   "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 1,874.48 hoặc thủng hỗ trợ 1,758.31, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
+   "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 1,874.48 hoặc thủng hỗ trợ 1,755.16, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
    "edge": 0.0,
    "name": "VN-Index",
    "live": {
@@ -7999,13 +7999,13 @@
    "sign": 0,
    "confidence": "Thấp",
    "horizon": "1 tháng",
-   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 60.12. Đường MA200 hiện ở 71.73.",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 60.21. Đường MA200 hiện ở 71.62.",
    "reasons": [
-    "Kiểm định 1 tháng: xác suất tăng 61% so với nền 61%; trung vị +2.0%, khoảng 10–90% từ -7.6% đến +11.1% (n=2275). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
-    "Giá 63.00 đang dưới MA200 (71.73); RSI 40. Đây là mô tả trạng thái, không phải dự báo.",
-    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -3.9%, tệ nhất -27.7%. Mức cắt lỗ tham khảo 60.12 (-4.6%)."
+    "Kiểm định 1 tháng: xác suất tăng 61% so với nền 61%; trung vị +2.0%, khoảng 10–90% từ -7.6% đến +11.1% (n=2276). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
+    "Giá 62.90 đang dưới MA200 (71.62); RSI 40. Đây là mô tả trạng thái, không phải dự báo.",
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -3.9%, tệ nhất -27.7%. Mức cắt lỗ tham khảo 60.21 (-4.3%)."
    ],
-   "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 68.00 hoặc thủng hỗ trợ 63.00, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
+   "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 68.00 hoặc thủng hỗ trợ 62.80, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
    "edge": 0.0,
    "name": "Cổ phiếu FPT",
    "live": {
@@ -8017,11 +8017,11 @@
    "sign": 0,
    "confidence": "Thấp",
    "horizon": "1 tháng",
-   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 56.20. Đường MA200 hiện ở 60.67.",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 56.26. Đường MA200 hiện ở 60.67.",
    "reasons": [
-    "Kiểm định 1 tháng: xác suất tăng 56% so với nền 56%; trung vị +0.9%, khoảng 10–90% từ -7.1% đến +10.4% (n=2275). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
+    "Kiểm định 1 tháng: xác suất tăng 56% so với nền 56%; trung vị +0.9%, khoảng 10–90% từ -7.1% đến +10.4% (n=2276). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
     "Giá 58.00 đang dưới MA200 (60.67); RSI 44. Đây là mô tả trạng thái, không phải dự báo.",
-    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -3.9%, tệ nhất -34.4%. Mức cắt lỗ tham khảo 56.20 (-3.1%)."
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -3.9%, tệ nhất -34.4%. Mức cắt lỗ tham khảo 56.26 (-3.0%)."
    ],
    "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 61.00 hoặc thủng hỗ trợ 57.60, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
    "edge": 0.0,
@@ -8035,13 +8035,13 @@
    "sign": 0,
    "confidence": "Thấp",
    "horizon": "1 tháng",
-   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 19.39. Đường MA200 hiện ở 23.35.",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 19.39. Đường MA200 hiện ở 23.33.",
    "reasons": [
-    "Kiểm định 1 tháng: xác suất tăng 56% so với nền 56%; trung vị +1.3%, khoảng 10–90% từ -9.9% đến +14.3% (n=2275). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
-    "Giá 20.15 đang dưới MA200 (23.35); RSI 34. Đây là mô tả trạng thái, không phải dự báo.",
-    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -5.2%, tệ nhất -38.0%. Mức cắt lỗ tham khảo 19.39 (-3.8%)."
+    "Kiểm định 1 tháng: xác suất tăng 56% so với nền 56%; trung vị +1.3%, khoảng 10–90% từ -9.9% đến +14.3% (n=2276). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
+    "Giá 20.10 đang dưới MA200 (23.33); RSI 34. Đây là mô tả trạng thái, không phải dự báo.",
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -5.2%, tệ nhất -38.0%. Mức cắt lỗ tham khảo 19.39 (-3.5%)."
    ],
-   "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 22.20 hoặc thủng hỗ trợ 20.15, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
+   "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 22.20 hoặc thủng hỗ trợ 20.05, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
    "edge": 0.0,
    "name": "Cổ phiếu HPG",
    "live": {
@@ -8089,11 +8089,11 @@
    "sign": 0,
    "confidence": "Thấp",
    "horizon": "1 tháng",
-   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 79,173.80. Đường MA200 hiện ở 71,262.71.",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 79,042.18. Đường MA200 hiện ở 71,262.08.",
    "reasons": [
     "Kiểm định 1 tháng: xác suất tăng 56% so với nền 54%; trung vị +2.7%, khoảng 10–90% từ -12.6% đến +37.9% (n=1207). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
-    "Giá 83,547.45 đang trên MA200 (71,262.71); RSI 61. Đây là mô tả trạng thái, không phải dự báo.",
-    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -6.8%, tệ nhất -49.9%. Mức cắt lỗ tham khảo 79,173.80 (-5.2%)."
+    "Giá 83,420.79 đang trên MA200 (71,262.08); RSI 60. Đây là mô tả trạng thái, không phải dự báo.",
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -6.8%, tệ nhất -49.9%. Mức cắt lỗ tham khảo 79,042.18 (-5.2%)."
    ],
    "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 87,363.76 hoặc thủng hỗ trợ 74,944.59, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
    "edge": 0.0,
@@ -8107,11 +8107,11 @@
    "sign": 0,
    "confidence": "Thấp",
    "horizon": "1 tháng",
-   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 125.38. Đường MA200 hiện ở 143.89.",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 125.54. Đường MA200 hiện ở 143.89.",
    "reasons": [
     "Kiểm định 1 tháng: xác suất tăng 59% so với nền 59%; trung vị +0.8%, khoảng 10–90% từ -3.6% đến +7.1% (n=2293). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
-    "Giá 131.05 đang dưới MA200 (143.89); RSI 34. Đây là mô tả trạng thái, không phải dự báo.",
-    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -2.2%, tệ nhất -16.7%. Mức cắt lỗ tham khảo 125.38 (-4.3%)."
+    "Giá 131.21 đang dưới MA200 (143.89); RSI 35. Đây là mô tả trạng thái, không phải dự báo.",
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -2.2%, tệ nhất -16.7%. Mức cắt lỗ tham khảo 125.54 (-4.3%)."
    ],
    "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 143.28 hoặc thủng hỗ trợ 129.74, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
    "edge": 0.0,
@@ -8125,9 +8125,9 @@
    "sign": -1,
    "confidence": "Trung bình",
    "horizon": "vàng miếng",
-   "action": "Nếu muốn nắm giữ vàng, lưu ý giá SJC đang cao hơn thế giới 10.6%. Chênh lệch này thu hẹp thì SJC có thể giảm dù vàng thế giới đứng yên. Có thể cân nhắc vàng nhẫn 9999 hoặc chờ chênh lệch giảm.",
+   "action": "Nếu muốn nắm giữ vàng, lưu ý giá SJC đang cao hơn thế giới 10.3%. Chênh lệch này thu hẹp thì SJC có thể giảm dù vàng thế giới đứng yên. Có thể cân nhắc vàng nhẫn 9999 hoặc chờ chênh lệch giảm.",
    "reasons": [
-    "Giá bán SJC 143.8 tr/lượng, đắt hơn vàng thế giới quy đổi +10.6% (13.8 tr).",
+    "Giá bán SJC 143.8 tr/lượng, đắt hơn vàng thế giới quy đổi +10.3% (13.5 tr).",
     "Chênh mua–bán 2.1%: mua xong bán lại ngay sẽ lỗ khoảng mức này.",
     "Ngưỡng cảnh báo của hệ thống: chênh lệch trên 5%."
    ],
@@ -8300,6 +8300,38 @@
      62.0,
      60.6,
      59.3
+    ],
+    "why": [
+     {
+      "label": "Xu hướng dài hạn",
+      "value": "Giá 59,30 vs MA200 54,96",
+      "rule": "Giá > MA200",
+      "ok": true
+     },
+     {
+      "label": "Quá bán ngắn hạn",
+      "value": "RSI 2 phiên = 6,5",
+      "rule": "< 10",
+      "ok": true
+     },
+     {
+      "label": "Thanh khoản TB 20 phiên",
+      "value": "119 tỷ/phiên",
+      "rule": "≥ 10 tỷ",
+      "ok": true
+     },
+     {
+      "label": "Sức mạnh so với VN-Index (60 phiên)",
+      "value": "+6,1% vs −5,0%",
+      "rule": "dùng để xếp hạng",
+      "ok": null
+     },
+     {
+      "label": "Biên độ dao động (ATR14)",
+      "value": "1,85 = 3,1% giá",
+      "rule": "dùng để tính mức giá",
+      "ok": null
+     }
     ]
    },
    {
@@ -8379,6 +8411,38 @@
      231.9,
      230.0,
      227.9
+    ],
+    "why": [
+     {
+      "label": "Xu hướng dài hạn",
+      "value": "Giá 227,90 vs MA200 189,46",
+      "rule": "Giá > MA200",
+      "ok": true
+     },
+     {
+      "label": "Quá bán ngắn hạn",
+      "value": "RSI 2 phiên = 9,4",
+      "rule": "< 10",
+      "ok": true
+     },
+     {
+      "label": "Thanh khoản TB 20 phiên",
+      "value": "1.055 tỷ/phiên",
+      "rule": "≥ 10 tỷ",
+      "ok": true
+     },
+     {
+      "label": "Sức mạnh so với VN-Index (60 phiên)",
+      "value": "+3,4% vs −5,0%",
+      "rule": "dùng để xếp hạng",
+      "ok": null
+     },
+     {
+      "label": "Biên độ dao động (ATR14)",
+      "value": "6,49 = 2,8% giá",
+      "rule": "dùng để tính mức giá",
+      "ok": null
+     }
     ]
    },
    {
@@ -8458,6 +8522,38 @@
      77.2,
      75.8,
      74.0
+    ],
+    "why": [
+     {
+      "label": "Xu hướng dài hạn",
+      "value": "Giá 74,00 vs MA200 66,94",
+      "rule": "Giá > MA200",
+      "ok": true
+     },
+     {
+      "label": "Quá bán ngắn hạn",
+      "value": "RSI 2 phiên = 6,9",
+      "rule": "< 10",
+      "ok": true
+     },
+     {
+      "label": "Thanh khoản TB 20 phiên",
+      "value": "225 tỷ/phiên",
+      "rule": "≥ 10 tỷ",
+      "ok": true
+     },
+     {
+      "label": "Sức mạnh so với VN-Index (60 phiên)",
+      "value": "+2,8% vs −5,0%",
+      "rule": "dùng để xếp hạng",
+      "ok": null
+     },
+     {
+      "label": "Biên độ dao động (ATR14)",
+      "value": "1,60 = 2,2% giá",
+      "rule": "dùng để tính mức giá",
+      "ok": null
+     }
     ]
    },
    {
@@ -8537,6 +8633,50 @@
      53.0,
      52.6,
      52.9
+    ],
+    "why": [
+     {
+      "label": "Xu hướng xếp lớp",
+      "value": "MA20 52,42 · MA50 50,75 · MA200 49,10",
+      "rule": "MA20 > MA50 > MA200",
+      "ok": true
+     },
+     {
+      "label": "Giá về sát MA20",
+      "value": "+0,9% so với MA20",
+      "rule": "−2% đến +1%",
+      "ok": true
+     },
+     {
+      "label": "RSI 14 trung tính",
+      "value": "53,9",
+      "rule": "40 – 55",
+      "ok": true
+     },
+     {
+      "label": "Phiên giữ được giá",
+      "value": "Mở 52,60 → đóng 52,90",
+      "rule": "Đóng ≥ mở",
+      "ok": true
+     },
+     {
+      "label": "Thanh khoản TB 20 phiên",
+      "value": "11 tỷ/phiên",
+      "rule": "≥ 10 tỷ",
+      "ok": true
+     },
+     {
+      "label": "Sức mạnh so với VN-Index (60 phiên)",
+      "value": "+8,9% vs −5,0%",
+      "rule": "dùng để xếp hạng",
+      "ok": null
+     },
+     {
+      "label": "Biên độ dao động (ATR14)",
+      "value": "1,49 = 2,8% giá",
+      "rule": "dùng để tính mức giá",
+      "ok": null
+     }
     ]
    },
    {
@@ -8616,6 +8756,50 @@
      27.5,
      27.4,
      27.5
+    ],
+    "why": [
+     {
+      "label": "Xu hướng xếp lớp",
+      "value": "MA20 27,40 · MA50 26,90 · MA200 26,65",
+      "rule": "MA20 > MA50 > MA200",
+      "ok": true
+     },
+     {
+      "label": "Giá về sát MA20",
+      "value": "+0,4% so với MA20",
+      "rule": "−2% đến +1%",
+      "ok": true
+     },
+     {
+      "label": "RSI 14 trung tính",
+      "value": "53,0",
+      "rule": "40 – 55",
+      "ok": true
+     },
+     {
+      "label": "Phiên giữ được giá",
+      "value": "Mở 27,50 → đóng 27,50",
+      "rule": "Đóng ≥ mở",
+      "ok": true
+     },
+     {
+      "label": "Thanh khoản TB 20 phiên",
+      "value": "297 tỷ/phiên",
+      "rule": "≥ 10 tỷ",
+      "ok": true
+     },
+     {
+      "label": "Sức mạnh so với VN-Index (60 phiên)",
+      "value": "+2,0% vs −5,0%",
+      "rule": "dùng để xếp hạng",
+      "ok": null
+     },
+     {
+      "label": "Biên độ dao động (ATR14)",
+      "value": "0,57 = 2,1% giá",
+      "rule": "dùng để tính mức giá",
+      "ok": null
+     }
     ]
    }
   ],
