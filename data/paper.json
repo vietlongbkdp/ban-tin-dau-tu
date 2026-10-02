@@ -85,7 +85,10 @@
    "type": "limit",
    "limit": 20000,
    "valid_date": "2026-10-02",
-   "status": "pending"
+   "status": "filled",
+   "fill_price": 20000,
+   "fill_time": "2026-10-02T06:28:28.403Z",
+   "fill_date": "2026-10-02"
   },
   {
    "id": "muql4zjww7xu",
@@ -97,7 +100,10 @@
    "type": "limit",
    "limit": 19950,
    "valid_date": "2026-10-02",
-   "status": "pending"
+   "status": "filled",
+   "fill_price": 19950,
+   "fill_time": "2026-10-02T06:31:45.404Z",
+   "fill_date": "2026-10-02"
   }
  ]
 }
