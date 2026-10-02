@@ -65,7 +65,10 @@
    "type": "limit",
    "limit": 59000,
    "valid_date": "2026-10-02",
-   "status": "pending"
+   "status": "filled",
+   "fill_price": 59000,
+   "fill_time": "2026-10-02T06:11:36.237Z",
+   "fill_date": "2026-10-02"
   }
  ]
 }
