@@ -109,6 +109,18 @@
    "fill_price": 19950,
    "fill_time": "2026-10-02T06:31:45.404Z",
    "fill_date": "2026-10-02"
+  },
+  {
+   "id": "muwca6plijyv",
+   "time": "2026-10-06T07:10:28.473Z",
+   "vn_date": "2026-10-06",
+   "side": "sell",
+   "sym": "VIC",
+   "qty": 400,
+   "type": "limit",
+   "limit": 232200,
+   "valid_date": "2026-10-06",
+   "status": "pending"
   }
  ]
 }
