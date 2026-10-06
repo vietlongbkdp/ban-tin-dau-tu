@@ -1,104 +1,95 @@
 {
- "generated_at": "2026-10-05 08:50 (giờ VN)",
- "summary": "VN-Index đóng cửa phiên 2/10 ở 1.737,71 điểm (-0,66%), giảm 5 phiên liên tiếp, thấp hơn đường MA200 (1.795,65) và đang giảm 6,2% trong 20 phiên; khối ngoại bán ròng hơn 3.283 tỷ đồng trên HOSE trong phiên (Vietstock). Cả tuần 28/9-2/10, khối ngoại bán ròng khoảng 4.945,7 tỷ đồng (SGGP). Vàng thế giới giao ngay quanh 4.158 USD/ounce (Swissquote), quy đổi khoảng 130,3 triệu đồng/lượng, giảm 6,6% trong 20 phiên của hợp đồng tương lai; báo chí cho biết sức ép đến từ USD mạnh và kỳ vọng lãi suất Mỹ cao (Stockbiz). Vàng miếng SJC bán ra 143,5 triệu đồng/lượng, cao hơn vàng thế giới quy đổi 13,2 triệu đồng (+10,2%). Bitcoin 86.716 USD, tăng 11% trong 20 ngày, RSI 69 gần vùng quá mua. Cả 5 cổ phiếu theo dõi (trừ VIN) đều đang dưới MA200. Hôm nay không có cơ hội đủ điều kiện kiểm định.",
+ "generated_at": "2026-10-06 08:50 (giờ VN)",
+ "summary": "VN-Index đóng cửa phiên 5/10 ở 1.753,20 điểm, tăng 15,49 điểm (+0,89%) nhưng vẫn dưới đường trung bình 200 phiên (1.795,82) và khối ngoại tiếp tục bán ròng khoảng 281,8 tỷ đồng trên HoSE (Nhân Dân, VTV). Vàng thế giới giao ngay quanh 4.131 USD/ounce, chịu sức ép từ USD mạnh và lợi suất trái phiếu Mỹ kỳ hạn 10 năm quanh 5,31%, gần cao nhất từ tháng 4/2002 (Báo Sức Khỏe & Đời Sống). Vàng miếng SJC bán ra 143,5 triệu đồng/lượng, cao hơn vàng thế giới quy đổi (129,5 triệu) khoảng 14,0 triệu, tức 10,8%. Bitcoin ở mức 85.675 USD, tăng 13,3% trong 20 phiên, quỹ ETF Bitcoin ghi nhận dòng vốn vào mạnh trong quý III (KuCoin). Cả sáu cổ phiếu theo dõi và VN-Index đều ở trạng thái trung lập, bộ lọc lướt sóng hôm nay chưa có mã nào đạt chuẩn.",
  "items": [
   {
-   "title": "Nhịp đập Thị trường 02/10: VN-Index tiếp tục lao dốc, khối ngoại thoát hàng PNJ hơn 1.264 tỷ đồng",
-   "source": "Vietstock",
-   "date": "02/10/2026",
-   "url": "https://vietstock.vn/2026/10/nhip-dap-thi-truong-0210-vn-index-tiep-tuc-lao-doc-khoi-ngoai-thoat-hang-pnj-hon-1264-ty-dong-1636-1498135.htm",
-   "impact": "VN-Index: giảm 11,59 điểm (-0,66%) còn 1.737,71; khối ngoại bán ròng hơn 3.283 tỷ đồng trên HOSE, bán ròng 13,6 tỷ trên HNX (có SHS)"
-  },
-  {
-   "title": "Áp lực bán ròng từ khối ngoại kéo VN-Index giảm 5 phiên liên tiếp",
-   "source": "SGGP",
-   "date": "02/10/2026",
-   "url": "https://www.sggp.org.vn/ap-luc-ban-rong-tu-khoi-ngoai-keo-vn-index-giam-5-phien-lien-tiep-post874780.html",
-   "impact": "VN-Index: tuần 28/9-2/10 khối ngoại bán ròng cả 5 phiên trên HOSE, tổng khoảng 4.945,7 tỷ đồng"
-  },
-  {
-   "title": "Giá vàng hướng tới tuần giảm do USD mạnh và kỳ vọng Fed giữ lãi suất cao",
-   "source": "Stockbiz",
-   "date": "03/10/2026",
-   "url": "https://stockbiz.vn/tin-tuc/gia-vang-huong-toi-tuan-giam-do-usd-manh-va-ky-vong-fed-giu-lai-suat-cao/41959475",
-   "impact": "Vàng thế giới: chịu sức ép từ USD mạnh và kỳ vọng lãi suất Mỹ cao; kỳ hạn dài của trái phiếu Mỹ ở vùng cao nhất nhiều năm"
-  },
-  {
-   "title": "Giá vàng hôm nay 5/10: Ngược chiều với giá vàng thế giới",
-   "source": "VietnamFinance",
+   "title": "Chứng khoán ngày 5/10: VN-Index tăng gần 16 điểm, VIC và VHM nâng đỡ thị trường",
+   "source": "Báo Nhân Dân",
    "date": "05/10/2026",
-   "url": "https://vietnamfinance.vn/gia-vang-hom-nay-5-10-nguoc-chieu-voi-gia-vang-the-gioi-d151572.html",
-   "impact": "Vàng miếng SJC: giá trong nước biến động không đồng pha với thế giới"
+   "url": "https://nhandan.vn/chung-khoan-ngay-510-vn-index-tang-gan-16-diem-vic-va-vhm-nang-do-thi-truong-post993013.html",
+   "impact": "VN-Index: tăng 15,49 điểm lên 1.753,20; khối ngoại bán ròng khoảng 281,8 tỷ đồng trên HoSE"
   },
   {
-   "title": "Giá vàng giảm liên tiếp, người mua lỗ hơn 8 triệu đồng/lượng sau 1 tháng",
-   "source": "Báo Nhân Dân (qua Báo Mới)",
-   "date": "04/10/2026",
-   "url": "https://baomoi.com/gia-vang-giam-lien-tiep-nguoi-mua-lo-hon-8-trieu-dong-luong-sau-1-thang-c56195523.epi",
-   "impact": "Vàng miếng SJC: giảm liên tiếp trong một tháng qua"
+   "title": "Giá vàng thế giới sáng 6/10 suy yếu",
+   "source": "Báo Sức Khỏe & Đời Sống",
+   "date": "06/10/2026",
+   "url": "https://baomoi.com/gia-vang-the-gioi-sang-6-10-suy-yeu-c56204438.epi",
+   "impact": "Vàng thế giới: USD mạnh, lợi suất trái phiếu Mỹ 10 năm quanh 5,31% gây sức ép; xác suất Fed tăng lãi suất tháng 10 còn khoảng 22–24%"
   },
   {
-   "title": "Chứng khoán Sài Gòn Hà Nội (SHS) chi gần 450 tỷ đồng trả cổ tức, chuẩn bị tăng vốn vượt mốc 10.000 tỷ",
+   "title": "Giá vàng SJC đi ngang, người mua từ đỉnh đang lỗ 51 triệu đồng/lượng",
+   "source": "Dân Trí",
+   "date": "06/10/2026",
+   "url": "https://dantri.com.vn/kinh-doanh/gia-vang-sjc-di-ngang-nguoi-mua-tu-dinh-dang-lo-51-trieu-dongluong-20261006065735522.htm",
+   "impact": "Vàng miếng SJC: giá đi ngang quanh 143,5 triệu đồng/lượng bán ra"
+  },
+  {
+   "title": "Con trai tỷ phú Trần Đình Long đăng ký mua thêm 50 triệu cổ phiếu HPG, nhóm thép nổi sóng",
+   "source": "CafeF",
+   "date": "05/10/2026",
+   "url": "https://cafef.vn/con-trai-ty-phu-tran-dinh-long-phat-tin-hieu-nhom-co-phieu-thep-dong-loat-noi-song-co-ma-tang-kich-tran-188261005225525586.chn",
+   "impact": "HPG: giao dịch dự kiến 7/10–5/11, trị giá hơn 1.000 tỷ đồng theo giá cuối phiên 2/10; cổ phiếu tăng 2,24% phiên 5/10"
+  },
+  {
+   "title": "Chứng khoán Sài Gòn Hà Nội (SHS) chi gần 450 tỷ đồng trả cổ tức, chuẩn bị tăng vốn",
    "source": "Báo Pháp luật Việt Nam (qua Báo Mới)",
-   "date": "30/09/2026",
+   "date": "01/10/2026",
    "url": "https://baomoi.com/chung-khoan-sai-gon-ha-noi-shs-chi-gan-450-ty-dong-tra-co-tuc-chuan-bi-tang-von-vuot-moc-10-000-ty-c56166406.epi",
-   "impact": "SHS: cổ tức tiền 5%, ngày đăng ký cuối cùng 9/10/2026, thanh toán dự kiến 16/10/2026; kế hoạch cổ phiếu thưởng 5%; dự kiến phát hành 400 tỷ đồng trái phiếu lãi 10,5%/năm"
+   "impact": "SHS: cổ tức tiền mặt 5% (500 đồng/cp), ngày đăng ký cuối cùng 09/10/2026, thanh toán 16/10/2026; kế hoạch thưởng cổ phiếu tỷ lệ 100:5"
   },
   {
-   "title": "Chủ tịch Vietcombank tiết lộ kế hoạch phát hành riêng lẻ 6,5% cổ phiếu để tăng vốn",
-   "source": "Tuổi Trẻ",
-   "date": "24/04/2026",
-   "url": "https://tuoitre.vn/chu-tich-vietcombank-tiet-lo-ke-hoach-phat-hanh-rieng-le-6-5-co-phieu-de-tang-von-20260424092418606.htm",
-   "impact": "VCB: kế hoạch chào bán tối đa 6,5% cổ phiếu (sự kiện cũ nhưng còn hiệu lực)"
+   "title": "Cổ phiếu ngân hàng tháng 9/2026: Vốn hóa 'bốc hơi', dòng tiền phân hóa",
+   "source": "Vietstock",
+   "date": "01/10/2026",
+   "url": "https://vietstock.vn/2026/10/co-phieu-ngan-hang-thang-92026-von-hoa-boc-hoi-dong-tien-phan-hoa-757-1498699.htm",
+   "impact": "VCB: giảm 3,49% trong tháng 9/2026"
   },
   {
-   "title": "Hòa Phát đặt mục tiêu sản lượng thép cao nhất lịch sử",
-   "source": "Vietnambiz",
-   "date": "16/06/2026",
-   "url": "https://vietnambiz.vn/hoa-phat-dat-muc-tieu-san-luong-thep-cao-nhat-lich-su-2026616112833587.htm",
-   "impact": "HPG: mục tiêu sản lượng gần 15 triệu tấn thép năm 2026 (tin cũ, bối cảnh)"
+   "title": "Lãi suất ngân hàng hôm nay 5/10/2026: Ngân hàng đầu tiên tăng lãi suất tháng 10",
+   "source": "VietNamNet",
+   "date": "05/10/2026",
+   "url": "https://vietnamnet.vn/lai-suat-ngan-hang-hom-nay-5-10-2026-ngan-hang-dau-tien-tang-lai-suat-2561678.html",
+   "impact": "Ngân hàng, VN-Index: lãi suất huy động thực tế nhiều nơi 8–9%/năm, xuất hiện ngân hàng đầu tiên tăng lãi suất trong tháng 10"
   },
   {
-   "title": "BSC khuyến nghị mua cổ phiếu FPT với tiềm năng tăng trưởng hấp dẫn năm 2026",
-   "source": "Sức khỏe & Đời sống (BSC)",
-   "date": "18/05/2026",
-   "url": "https://suckhoedoisong.vn/bsc-khuyen-nghi-mua-co-phieu-fpt-16926051823114221.htm",
-   "impact": "FPT: BSC khuyến nghị mua, giá mục tiêu 90.600 đồng (tin cũ, chỉ để tham khảo)"
+   "title": "Bitcoin ETFs See $6.34 Billion Inflows in Q3 2026",
+   "source": "KuCoin",
+   "date": "06/10/2026",
+   "url": "https://www.kucoin.com/news/flash/bitcoin-etfs-see-6-34-billion-inflows-in-q3-2026",
+   "impact": "Bitcoin: quỹ ETF hút ròng 6,34 tỷ USD trong quý III, hỗ trợ giá"
   }
  ],
  "commentary": {
-  "VNINDEX": "VN-Index 1.737,71 điểm, dưới MA20/MA50/MA200 và RSI 36; hỗ trợ gần nhất 1.728,36, kháng cự 1.874,48. Khối ngoại bán ròng mạnh 5 phiên liền (Vietstock, SGGP) trùng với đà giảm kỹ thuật.",
-  "FPT": "FPT đóng cửa 62,10, giảm 6,2% trong 20 phiên, sát hỗ trợ 62,10 và dưới MA200 (71,49). Một số CTCK (BSC, ACBS, KBSV, HSC) từng khuyến nghị mua nhưng đó là báo cáo cũ; không có tin mới trong 48 giờ.",
-  "VCB": "VCB đóng cửa 57,10, dưới MA200 (60,67), RSI 38. Kế hoạch chào bán riêng lẻ tối đa 6,5% cổ phiếu vẫn là yếu tố cần theo dõi (Tuổi Trẻ).",
-  "HPG": "HPG đóng cửa 20,05, giảm 7,6% trong 20 phiên, gần đáy 52 tuần 19,60 và RSI 33. Mục tiêu sản lượng thép năm 2026 gần 15 triệu tấn của công ty là bối cảnh dài hạn (Vietnambiz).",
-  "SHS": "SHS đóng cửa 13,00, giảm 15% trong 20 phiên, RSI 30, sát đáy 52 tuần 12,70. Ngày đăng ký cuối cùng nhận cổ tức tiền 5% là 9/10/2026 (Báo Pháp luật Việt Nam); khối ngoại bán ròng SHS khoảng 2,6 tỷ đồng ở phiên 2/10 (Vietstock).",
-  "VIN": "VIN đóng cửa 16,10, là mã duy nhất trên MA200 (15,19) và RSI 55, tăng 2,5% trong 20 phiên. Chưa tìm thấy tin riêng cho mã này; tin về Vingroup chủ yếu là hoạt động của VinFast, Vinmec.",
-  "BTC-USD": "Bitcoin 86.716 USD, tăng 11% trong 20 ngày, gần kháng cự 87.364 và RSI 69. Không tìm thấy tin ETF hay quản lý mới trong 48 giờ.",
-  "GOLD_USD": "Hợp đồng tương lai vàng GC=F ở 4.182 USD, cao hơn giá giao ngay (4.158 USD); dưới MA200 (4.553), RSI 37; áp lực từ USD mạnh và kỳ vọng Fed giữ lãi suất cao (Stockbiz).",
-  "GOLD_VND": "Vàng thế giới quy đổi (theo hợp đồng tương lai) 131,0 triệu đồng/lượng, dưới MA200 (143,8); hỗ trợ 129,7. Theo giá giao ngay, quy đổi khoảng 130,3 triệu đồng/lượng."
+  "VNINDEX": "VN-Index hồi 0,89% phiên 5/10 lên 1.753,20 nhưng thanh khoản giảm và khối ngoại vẫn bán ròng (Nhân Dân). Chỉ số còn dưới đường MA200 (1.795,82), RSI 41; vùng hỗ trợ gần là 1.728,36, kháng cự 1.848,17. Lãi suất huy động đang nhích lên là yếu tố cần theo dõi (VietNamNet).",
+  "FPT": "FPT đóng cửa 61,90, giảm 6,0% trong 20 phiên và nằm dưới MA200 (71,37), RSI 36. Khối ngoại vẫn là lực bán chính ở cổ phiếu này dù có tín hiệu dòng vốn ngoại quay lại (tổng hợp từ các trang tài chính). Giá đang đúng vùng hỗ trợ 61,90.",
+  "VCB": "VCB đóng cửa 57,00, dưới MA200 (60,66), RSI 37; cổ phiếu giảm 3,49% trong tháng 9 (Vietstock). Giá sát hỗ trợ 56,90, thủng mức này sẽ làm bức tranh xấu hơn.",
+  "HPG": "HPG tăng 2,24% lên 20,50 phiên 5/10 kèm khối lượng lớn, sau tin người nhà Chủ tịch đăng ký mua thêm 50 triệu cổ phiếu (CafeF); SSI giữ khuyến nghị mua, giá mục tiêu cuối 2026 là 36.000 đồng. Tuy vậy giá vẫn dưới MA200 (23,30) nên chưa có tín hiệu xu hướng rõ.",
+  "SHS": "SHS đóng cửa 12,70, giảm 15,3% trong 20 phiên, RSI 27,6 (quá bán) và sát đáy 52 tuần 12,60. Ngày chốt quyền cổ tức 5% là 9/10 (Báo Pháp luật Việt Nam), giá có thể điều chỉnh kỹ thuật khi giao dịch không hưởng quyền.",
+  "VIN": "VIN tăng 4,97% phiên gần nhất lên 16,90, đúng ngưỡng kháng cự 20 phiên, RSI 70 (vùng mua quá mức) và giá trên MA200 (15,19). Không tìm thấy tin doanh nghiệp riêng cho mã này trong 7 ngày; thị trường chung được VIC và VHM nâng đỡ (Nhân Dân).",
+  "BTC-USD": "Bitcoin ở 85.674,96 USD, tăng 13,3% trong 20 phiên, gần kháng cự 87.363,76 và trên MA200 (71.580,43). Quỹ ETF Bitcoin hút ròng 6,34 tỷ USD trong quý III (KuCoin) nhưng giá đã đi một đoạn dài nên rủi ro điều chỉnh vẫn lớn.",
+  "GOLD_USD": "Hợp đồng tương lai vàng (GC=F) đóng 4.162,20 USD, giảm 7,0% trong 20 phiên; giá giao ngay sáng nay khoảng 4.131 USD/ounce. Lợi suất trái phiếu Mỹ và USD mạnh tiếp tục đè lên giá vàng (Báo Sức Khỏe & Đời Sống).",
+  "GOLD_VND": "Vàng thế giới quy đổi (theo hợp đồng tương lai) 130,39 triệu đồng/lượng, giảm 7,3% trong 20 phiên, dưới MA200 (143,79). Hỗ trợ gần 129,74 triệu, kháng cự 140,79 triệu."
  },
- "recommendation": "Hôm nay chưa có cơ hội đủ điều kiện kiểm định thống kê; phương án khớp dữ liệu nhất là chờ. VN-Index, vàng thế giới quy đổi, FPT, VCB, HPG, SHS, VIN và Bitcoin đều ở trạng thái trung lập, độ tin cậy thấp. Riêng vàng miếng SJC ở trạng thái thận trọng vì đắt hơn vàng thế giới quy đổi 10,2%; chênh lệch thu hẹp có thể kéo giá SJC giảm dù vàng thế giới đứng yên. Cần theo dõi: mốc hỗ trợ 1.728,36 của VN-Index, dòng tiền khối ngoại, và ngày chốt cổ tức SHS 9/10/2026 (Báo Pháp luật Việt Nam).",
+ "recommendation": "Hôm nay không có cơ hội nào đủ điều kiện thống kê: VN-Index, năm cổ phiếu theo dõi, Bitcoin và vàng thế giới quy đổi đều ở trạng thái trung lập, độ tin cậy thấp, nên phương án khớp dữ liệu nhất là chờ. Riêng vàng miếng SJC ở trạng thái thận trọng vì giá bán cao hơn vàng thế giới quy đổi 10,8%; nếu chênh lệch thu hẹp, giá trong nước có thể giảm dù vàng thế giới đứng yên. Sự kiện cần theo dõi: ngày chốt quyền cổ tức của SHS 9/10 (Báo Pháp luật Việt Nam) và diễn biến kỳ vọng Fed, khi xác suất tăng lãi suất tháng 10 còn khoảng 22–24% nhưng tháng 12 chưa bị loại trừ (Báo Sức Khỏe & Đời Sống).",
  "stance_notes": {
-  "VNINDEX": "Khối ngoại tiếp tục bán ròng hoặc quay lại mua ròng có thể đổi bức tranh (Vietstock, SGGP).",
-  "FPT": "Tin kết quả kinh doanh quý 3 hoặc báo cáo CTCK mới có thể đổi bức tranh; chưa thấy tin mới trong 48 giờ.",
-  "VCB": "Việc chào bán riêng lẻ 6,5% cổ phiếu có thể ảnh hưởng giá (Tuổi Trẻ).",
-  "HPG": "Sản lượng thép và giá thép quý 3 là yếu tố cần theo dõi (Vietnambiz).",
-  "SHS": "Ngày chốt cổ tức 9/10 và kế hoạch phát hành trái phiếu 400 tỷ đồng lãi 10,5%/năm là yếu tố cần theo dõi (Báo Pháp luật Việt Nam).",
-  "VIN": "Kết quả kinh doanh Vingroup dự kiến công bố 26/10/2026 (theo tổng hợp tìm kiếm, chưa kiểm chứng bằng bài gốc).",
-  "BTC-USD": "Dòng tiền ETF và quyết định lãi suất Fed có thể đổi bức tranh; chưa tìm thấy tin mới.",
-  "GOLD_VND": "Quyết định lãi suất Fed tháng 10 và đà USD mạnh là yếu tố chính (Stockbiz).",
-  "SJC": "Chênh lệch SJC so với thế giới thu hẹp hay nới rộng sẽ quyết định rủi ro; giá vàng trong nước đã giảm liên tiếp một tháng (Báo Nhân Dân)."
+  "VNINDEX": "Khối ngoại bán ròng liên tục và lãi suất huy động tăng có thể kìm đà hồi (Nhân Dân, VietNamNet); chỉ số cần vượt 1.848,17 để cải thiện bức tranh.",
+  "FPT": "Khối ngoại bán ròng là rủi ro chính; các CTCK vẫn có khuyến nghị mua với giá mục tiêu 78.000–103.800 đồng (tổng hợp Simplize).",
+  "VCB": "Không tìm thấy tin doanh nghiệp mới trong 48 giờ; cổ phiếu ngân hàng phân hóa dòng tiền (Vietstock).",
+  "HPG": "Việc người nhà Chủ tịch mua vào và SSI giữ khuyến nghị mua là yếu tố tích cực cần theo dõi (CafeF), nhưng chưa thay đổi xu hướng giá.",
+  "SHS": "Chốt quyền cổ tức 9/10, thanh toán 16/10 và kế hoạch thưởng cổ phiếu 100:5 có thể ảnh hưởng giá (Báo Pháp luật Việt Nam).",
+  "VIN": "Không tìm thấy tin riêng; giá chạm kháng cự và RSI 70 nên cần theo dõi khả năng chững lại.",
+  "BTC-USD": "Dòng tiền ETF đổi chiều (vào hoặc ra) là yếu tố có thể làm thay đổi bức tranh (KuCoin).",
+  "GOLD_VND": "Lợi suất trái phiếu Mỹ và kỳ vọng Fed là yếu tố quyết định hướng vàng thế giới (Báo Sức Khỏe & Đời Sống).",
+  "SJC": "Chênh lệch SJC so với thế giới quy đổi vẫn ở 10,8%; giá SJC đang đi ngang quanh 143,5 triệu đồng/lượng (Dân Trí)."
  },
  "swing_notes": {
-  "SBT": "SBT: lãnh đạo đăng ký mua cổ phiếu, nhưng một công ty đầu tư cũng đăng ký bán hơn 43,8 triệu cổ phiếu; công ty chi 200 tỷ đồng mua lại trái phiếu trước hạn (Báo Mới, tổng hợp). Cần theo dõi áp lực bán.",
-  "SSB": "Không tìm thấy tin đáng chú ý trong 7 ngày",
-  "STB": "STB: thông qua phương án phát hành 20.000 tỷ đồng trái phiếu riêng lẻ năm 2026 (Báo Mới, tổng hợp); một số CTCK khuyến nghị mua."
+  "VPI": "Không tìm thấy tin đáng chú ý trong 7 ngày.",
+  "STB": "STB giảm 5% phiên 2/10 rồi hồi 1,9% phiên 5/10 (tổng hợp từ Vietstock, Nhân Dân); không tìm thấy tin doanh nghiệp quan trọng khác.",
+  "SBT": "Khối ngoại có phiên mua ròng mạnh mã này trong tháng 10 (tổng hợp từ DNSE); không tìm thấy tin doanh nghiệp quan trọng khác."
  },
- "swing_summary": "Hôm nay có 0 mã đạt chuẩn lướt sóng; 3 mã (SBT, SSB, STB) chỉ ở diện theo dõi vì chiến lược quá bán RSI2 chưa qua kiểm định. Cả 3 chiến lược (bứt phá, điều chỉnh về MA20, quá bán RSI2) đều lỗ hoặc hoà vốn sau phí ở 2 năm gần nhất (hệ số lãi/lỗ dưới 1), nên không khuyến nghị mua mã chưa đạt chuẩn.",
+ "swing_summary": "Hôm nay quét 100 mã trong rổ VN100, không có mã nào đạt chuẩn lướt sóng; chỉ có 3 mã trong danh sách theo dõi (VPI, STB, SBT) và đều chưa đạt chuẩn. Ở 2 năm gần nhất, cả ba chiến lược (bứt phá, điều chỉnh về MA20, quá bán RSI 2 phiên) đều không có lãi sau phí: lợi nhuận trung bình mỗi lệnh -0,7%, -0,7% và -0,4%.",
  "errors": [
-  "Giá mục tiêu CTCK cho FPT lấy từ báo cáo cũ (tháng 5/2026), không phải tin trong 48 giờ.",
-  "Không tìm thấy tin mới cho Bitcoin (ETF, quản lý) trong 48 giờ; kết quả tìm kiếm chỉ trả về tháng 5/2026.",
-  "Không tìm thấy tin về SSB; lịch công bố kết quả Vingroup 26/10 chưa kiểm chứng bằng bài gốc.",
-  "Tin tìm kiếm về SBT/STB chỉ có tóm tắt, chưa xác minh ngày đăng."
+  "Không tìm thấy bài báo riêng về kết quả kinh doanh hay khuyến nghị CTCK mới cho VCB, VIN trong 48 giờ gần nhất.",
+  "Nguồn tin về VPI, SBT trong kết quả tìm kiếm có tên công ty không khớp mã nên chỉ dùng dữ liệu giá và khối ngoại, không dùng tên công ty."
  ]
 }
