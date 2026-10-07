@@ -150,7 +150,10 @@
    "type": "limit",
    "limit": 67700,
    "valid_date": "2026-10-07",
-   "status": "pending"
+   "status": "filled",
+   "fill_price": 67700,
+   "fill_time": "2026-10-07T03:12:00.000Z",
+   "fill_date": "2026-10-07"
   },
   {
    "id": "muxj6w7aag2k",
