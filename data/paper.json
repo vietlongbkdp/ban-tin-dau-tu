@@ -185,7 +185,8 @@
    "type": "limit",
    "limit": 14400,
    "valid_date": "2026-10-07",
-   "status": "pending"
+   "status": "expired",
+   "reason": "Hết hiệu lực cuối phiên, chưa khớp"
   }
  ]
 }
