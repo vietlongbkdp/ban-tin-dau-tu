@@ -139,6 +139,18 @@
    "fill_price": 20400,
    "fill_time": "2026-10-07T03:08:21.203Z",
    "fill_date": "2026-10-07"
+  },
+  {
+   "id": "muxj57n1b6dt",
+   "time": "2026-10-07T03:10:19.885Z",
+   "vn_date": "2026-10-07",
+   "side": "buy",
+   "sym": "STB",
+   "qty": 3000,
+   "type": "limit",
+   "limit": 67700,
+   "valid_date": "2026-10-07",
+   "status": "pending"
   }
  ]
 }
