@@ -1,70 +1,35 @@
-{
- "generated_at": "2026-10-11 08:55 (giờ VN)",
- "summary": "VN-Index đóng cửa phiên 9/10 ở 1.735,09 điểm, nằm dưới đường trung bình 200 phiên (1.797,40) và đã giảm 3,3% trong 20 phiên; Vietstock ghi nhận tuần 5–9/10 là tuần điều chỉnh với vùng hỗ trợ 1.715–1.750 điểm đang được thử. Khối ngoại bán ròng mạnh trong tuần, phần lớn do một giao dịch thỏa thuận cổ phiếu MCH ngày 9/10 (theo các báo tổng hợp tuần). Cả 5 cổ phiếu theo dõi, VN-Index, Bitcoin và vàng thế giới quy đổi đều ở quan điểm Trung lập, độ tin cậy Thấp, vì không có tín hiệu nào qua kiểm định thống kê. Vàng thế giới giao ngay quanh 4.194,6 USD/ounce sáng 11/10, vàng miếng SJC bán ra 144,8 triệu đồng/lượng, cao hơn vàng thế giới quy đổi khoảng 10,6% (13,9 triệu) nên quan điểm với SJC là Thận trọng. Bitcoin ở 82.965 USD, trên đường trung bình 200 ngày. Bộ lọc lướt sóng hôm nay không có mã nào đạt chuẩn.",
- "items": [
-  {
-   "title": "Tuần 05-09/10: VIC và VHM kéo VN-Index theo hai hướng trái ngược",
-   "source": "Vietstock",
-   "date": "09/10/2026",
-   "url": "https://vietstock.vn/2026/10/tuan-05-0910-vic-va-vhm-keo-vn-index-theo-hai-huong-trai-nguoc-830-1501155.htm",
-   "impact": "VN-Index: áp lực điều chỉnh tăng trong 3 phiên cuối tuần, vùng hỗ trợ 1.715–1.750 điểm quyết định xu hướng; VIN chịu ảnh hưởng nhóm Vingroup"
-  },
-  {
-   "title": "Thị trường tuần 5-9/10/2026: Áp lực nhóm vốn hóa lớn, VN-Index tiếp tục suy yếu",
-   "source": "Báo Nhân Dân",
-   "date": "09/10/2026",
-   "url": "https://nhandan.vn/infographic-thi-truong-tuan-5-9102026-ap-luc-nhom-von-hoa-lon-vn-index-tiep-tuc-suy-yeu-post994125.html",
-   "impact": "VN-Index, cổ phiếu vốn hóa lớn (FPT, VCB, HPG): sức ép giảm điểm tuần qua"
-  },
-  {
-   "title": "Giá vàng hôm nay 11/10: Vàng thế giới phục hồi mạnh, giá SJC không đổi",
-   "source": "Báo Văn hóa",
-   "date": "11/10/2026",
-   "url": "https://baovanhoa.vn/kinh-te/gia-vang-hom-nay-1110-vang-the-gioi-phuc-hoi-manh-gia-sjc-khong-doi-273463.html",
-   "impact": "Vàng thế giới và SJC: vàng thế giới hồi mạnh cuối tuần, SJC đứng giá 141,8 mua – 144,8 bán"
-  },
-  {
-   "title": "Giá vàng hôm nay (11/10): Trong nước hơn thế giới gần 14 triệu đồng/lượng",
-   "source": "Dân Việt",
-   "date": "11/10/2026",
-   "url": "https://danviet.vn/gia-vang-hom-nay-11-10-trong-nuoc-hon-the-gioi-gan-14-trieu-dong-luong-d1466282.html",
-   "impact": "Vàng miếng SJC: chênh lệch với vàng thế giới gần 14 triệu đồng/lượng, rủi ro thu hẹp chênh lệch"
-  }
- ],
- "commentary": {
-  "VNINDEX": "VN-Index đóng cửa 1.735,09 điểm, RSI 37, dưới MA200 (1.797,40) và sát hỗ trợ 1.724,17. Vietstock cho rằng việc thử vùng 1.715–1.750 sẽ quyết định xu hướng; dữ liệu kỹ thuật chưa cho lợi thế rõ ràng nào (Vietstock).",
-  "FPT": "FPT đóng cửa 57,90, giảm 3,0% trong phiên cuối, RSI 24 (quá bán) và thấp hơn nhiều so với MA200 (70,87). Không tìm thấy tin doanh nghiệp mới trong 48 giờ gần nhất; tin gần nhất tìm được là kết quả nửa đầu năm 2026 (MBS), nên chưa có chất xúc tác rõ để đảo chiều.",
-  "VCB": "VCB đóng cửa 56,70, RSI 37, dưới MA200 (60,67). Không tìm thấy tin doanh nghiệp hay khuyến nghị CTCK mới trong 48 giờ gần nhất.",
-  "HPG": "HPG đóng cửa 20,10, RSI 37, dưới MA200 (23,23). Tài chính Ngược Đời ghi nhận cổ phiếu giảm 2,91% trong tuần 5/10 khi khối ngoại bán ròng.",
-  "SHS": "SHS đóng cửa 11,70, giảm 14,8% trong 20 phiên, RSI 27 và thấp hơn nhiều so với MA200 (16,59). Biên dao động 10–90% của kỳ 1 tháng rất rộng (-14,3% đến +20,8%). Không tìm thấy tin doanh nghiệp mới.",
-  "VIN": "VIN đóng cửa 16,90, không đổi trong phiên, RSI 70 (vùng nóng) nhưng vẫn trên MA200 (15,20). Vietstock nêu tuần qua nhóm Vingroup và Vinhomes kéo VN-Index theo hai hướng trái ngược; không tìm thấy tin riêng về VIN.",
-  "BTC-USD": "Bitcoin ở 82.965 USD, RSI 52, trên MA200 (71.918). Theo các báo cáo tuần cuối tháng 9, quỹ ETF Bitcoin giao ngay Mỹ hút ròng 2,39 tỷ USD trong tuần 21–25/9; chưa tìm thấy số liệu tuần này.",
-  "GOLD_USD": "Hợp đồng tương lai vàng (GC=F) ở 4.216,3 USD/ounce, cao hơn giá giao ngay (4.194,6 USD) vài chục USD; RSI 44, giảm 4,4% trong 20 phiên. Vàng thế giới hồi mạnh cuối tuần (Báo Văn hóa).",
-  "GOLD_VND": "Vàng thế giới quy đổi theo hợp đồng tương lai là 131,6 triệu đồng/lượng, RSI 41, dưới MA200 (143,62). Theo giá giao ngay quy đổi thì khoảng 130,9 triệu. Chưa tìm thấy tin về Fed và lợi suất trái phiếu Mỹ trong 48 giờ gần nhất."
- },
- "recommendation": "Hôm nay không có cơ hội nào đủ điều kiện kiểm định thống kê; phương án khớp dữ liệu nhất là chờ. Cả VN-Index, 5 cổ phiếu, Bitcoin và vàng thế giới quy đổi đều ở quan điểm Trung lập với độ tin cậy Thấp. Riêng vàng miếng SJC ở quan điểm Thận trọng vì giá bán 144,8 triệu đồng/lượng đang cao hơn vàng thế giới quy đổi khoảng 10,6%, vượt ngưỡng cảnh báo 5%, và chênh mua–bán 2,1% nghĩa là mua xong bán lại ngay sẽ lỗ khoảng mức này. Cần theo dõi VN-Index quanh vùng hỗ trợ 1.715–1.750 điểm (Vietstock) và diễn biến chênh lệch giá SJC so với thế giới (Dân Việt).",
- "stance_notes": {
-  "VNINDEX": "Thủng vùng hỗ trợ 1.715–1.750 điểm hoặc khối ngoại tiếp tục bán ròng có thể làm bức tranh xấu đi (Vietstock).",
-  "FPT": "Kết quả kinh doanh quý III và nhịp bán của khối ngoại là các yếu tố cần theo dõi; chưa tìm thấy tin mới trong 48 giờ.",
-  "VCB": "Không tìm thấy tin mới trong 48 giờ; theo dõi diễn biến lãi suất và tỷ giá của Ngân hàng Nhà nước.",
-  "HPG": "Khối ngoại bán ròng HPG trong tuần 5/10 là yếu tố cần theo dõi (Tài chính Ngược Đời).",
-  "SHS": "Không tìm thấy tin mới; biên dao động giá lớn là rủi ro chính.",
-  "VIN": "RSI 70 cho thấy giá đã tăng nóng; diễn biến nhóm Vingroup là yếu tố chi phối (Vietstock).",
-  "BTC-USD": "Dòng tiền ETF Bitcoin và biến động rộng của giá là yếu tố cần theo dõi; chưa có số liệu ETF tuần này.",
-  "GOLD_VND": "Fed, lợi suất trái phiếu Mỹ và đồng USD là yếu tố chính; chưa tìm thấy tin mới trong 48 giờ.",
-  "SJC": "Chênh lệch giá SJC so với thế giới gần 14 triệu đồng/lượng; nếu thu hẹp thì giá SJC có thể giảm dù vàng thế giới đứng yên (Dân Việt)."
- },
- "swing_notes": {
-  "VPI": "Không tìm thấy tin đáng chú ý trong 7 ngày.",
-  "HDB": "HDB tăng 2,34% trong tuần dù khối ngoại bán ròng lớn, tự doanh là lực mua chính (tổng hợp thị trường tuần 5–9/10); mã mới bứt phá nên cần chú ý nguy cơ khối ngoại tiếp tục bán.",
-  "SBT": "Không tìm thấy tin đáng chú ý trong 7 ngày."
- },
- "swing_summary": "Hôm nay không có mã nào đạt chuẩn lướt sóng; 3 mã theo dõi (VPI, HDB, SBT) đều chưa đạt điều kiện. Ở 2 năm gần nhất, cả ba chiến lược (bứt phá, điều chỉnh về MA20, quá bán ngắn hạn) đều không có lãi sau phí (lợi nhuận trung bình ngoài mẫu lần lượt -0,71%, -0,71%, -0,40% mỗi lệnh), nên không chiến lược nào được xem là hợp lệ.",
- "errors": [
-  "Không tìm thấy tin về Fed, lợi suất trái phiếu Mỹ và USD trong 48 giờ gần nhất; bài gần nhất tìm được là đầu tháng 9/2026.",
-  "Số điểm đóng cửa VN-Index tuần 5–9/10 mâu thuẫn giữa các nguồn: dữ liệu VNDirect 1.735,09 (dùng trong bản tin) so với một báo ghi 1.737,71; số khối ngoại bán ròng tuần cũng chưa được đối chiếu chéo.",
-  "Không tìm thấy tin doanh nghiệp mới trong 48 giờ cho FPT, VCB, SHS, VIN, VPI, SBT; tin HDB chỉ là tổng hợp thị trường, không có nguồn riêng.",
-  "Chưa tìm thấy số liệu dòng tiền ETF Bitcoin của tuần này; số liệu mới nhất là tuần 21–25/9.",
-  "Giá SJC giữa các nguồn chênh nhẹ (một kết quả tìm kiếm ghi 14,0/14,3 theo bảng cũ ngày 9/10); bản tin dùng PNJ/SJC 141,8–144,8 khớp với báo 11/10."
- ]
-}
+{"generated_at":"2026-10-12 08:55 (giờ VN)",
+"summary":"VN-Index đóng cửa phiên 09/10 ở 1,735.09 điểm (-0.2% so với phiên trước), dưới đường MA200 ở 1,797.40 và giảm 3.3% trong 20 phiên; khối ngoại bán ròng khoảng 9,272.67 tỷ đồng trong phiên này, phần lớn do một giao dịch thỏa thuận lớn ở MCH (Tạp chí Kinh tế Tài chính). Vàng thế giới giao ngay khoảng 4,207 USD/ounce (Swissquote, 08:50 ngày 12/10); thị trường lo Fed có thể tăng lãi suất thêm khi Thống đốc Waller cảnh báo ngày 09/10 (tygiausd.org). Vàng miếng SJC bán ra 144.8 triệu đồng/lượng, cao hơn vàng thế giới quy đổi khoảng 13.5 triệu (10.3%). Cả 5 cổ phiếu theo dõi và BTC đều ở trạng thái trung lập; BTC giao dịch khoảng 83,397 USD. Hôm nay không có cơ hội nào vượt qua kiểm định thống kê, và bộ lọc lướt sóng chưa có mã đạt chuẩn.",
+"items":[
+{"title":"Phiên 09/10: VN-Index giảm 0,22%, khối ngoại bán ròng hơn 9.272 tỷ đồng chủ yếu do giao dịch lớn ở MCH","source":"Tạp chí Kinh tế Tài chính","date":"09/10/2026","url":"https://tapchikinhtetaichinh.vn/dong-tien-soi-dong-vn-index-thu-hep-da-giam-cuoi-phien-169149.html","impact":"VN-Index, FPT: khối ngoại bán ròng, trong đó FPT nằm trong nhóm bị bán ròng nhiều"},
+{"title":"Thống đốc Fed cảnh báo có thể tăng lãi suất nhiều lần, giá vàng chịu áp lực","source":"tygiausd.org","date":"09/10/2026","url":"https://tygiausd.org/ChiTiet/28889-thong-doc-fed-canh-bao-tang-lai-suat-nhieu-lan-gia-vang-chiu-ap-luc","impact":"Vàng thế giới, BTC: kỳ vọng lãi suất cao hơn gây sức ép lên vàng và tài sản rủi ro"},
+{"title":"Người liên quan nội bộ Hòa Phát đăng ký mua 50 triệu cổ phiếu HPG từ 07/10 đến 05/11/2026","source":"Tạp chí Kinh tế Tài chính","date":"07/10/2026","url":"https://tapchikinhtetaichinh.vn/su-kien-chung-khoan-ngay-7-10-168855.html","impact":"HPG: thông tin tích cực về cầu nội bộ, chưa phải tín hiệu kỹ thuật"}
+],
+"commentary":{
+"VNINDEX":"VN-Index 1,735.09 điểm, RSI 37, dưới MA200 (1,797.40); hỗ trợ gần nhất 1,724.17, kháng cự 1,841.20. Khối ngoại bán ròng mạnh phiên 09/10 nhưng chủ yếu do giao dịch thỏa thuận ở MCH (Tạp chí Kinh tế Tài chính).",
+"FPT":"FPT 57.90, RSI 24 (quá bán), giảm 12.4% trong 20 phiên và nằm trong nhóm bị khối ngoại bán ròng phiên 09/10 (Tạp chí Kinh tế Tài chính). Không tìm thấy tin doanh nghiệp mới trong 48 giờ.",
+"VCB":"VCB 56.70, RSI 37, dưới MA200 (60.67); hỗ trợ 56.00. Không tìm thấy tin đáng chú ý trong 48 giờ.",
+"HPG":"HPG 20.10, RSI 37, sát đáy 52 tuần 19.60. Có đăng ký mua 50 triệu cổ phiếu của người liên quan nội bộ từ 07/10 đến 05/11 (Tạp chí Kinh tế Tài chính).",
+"SHS":"SHS 11.70, RSI 27, giảm 14.8% trong 20 phiên, gần đáy 52 tuần 10.80. Không tìm thấy tin mới trong 48 giờ.",
+"VIN":"VIN 16.90, RSI 70, trên MA200 (15.20) và chạm kháng cự 16.90. Không tìm thấy tin mới trong 48 giờ.",
+"BTC-USD":"BTC 83,397 USD, trên MA200 (71,979), hỗ trợ 80,337, kháng cự 87,265. Không tìm thấy tin tháng 10 về dòng tiền ETF; kỳ vọng Fed thắt chặt là yếu tố rủi ro (tygiausd.org).",
+"GOLD_USD":"Hợp đồng tương lai GC=F đóng 4,228.80 USD/ounce (phiên 11/10), cao hơn giá giao ngay 4,207 USD khoảng 21 USD; dưới MA200 (4,546.63).",
+"GOLD_VND":"Vàng thế giới quy đổi theo hợp đồng tương lai là 131.94 triệu đồng/lượng, dưới MA200 (143.56); quy đổi theo giá giao ngay là 131.27 triệu. Lãi suất Fed có thể tăng là yếu tố bất lợi (tygiausd.org).",
+"SJC":"SJC bán ra 144.8 triệu, mua vào 141.8 triệu đồng/lượng (PNJ, 08:16 ngày 12/10); chênh với thế giới 10.3% và chênh mua-bán 2.1%."},
+"recommendation":"Hôm nay không có cơ hội nào đủ điều kiện sau kiểm định thống kê; phương án khớp dữ liệu nhất là chờ. VN-Index, các cổ phiếu theo dõi, BTC và vàng thế giới đều ở trạng thái trung lập, độ tin cậy thấp. Riêng vàng miếng SJC ở mức thận trọng vì đang đắt hơn vàng thế giới quy đổi 10.3% và chênh mua-bán 2.1%. Cần theo dõi phát biểu của các quan chức Fed và khả năng tăng lãi suất vào tháng 12 (tygiausd.org).",
+"stance_notes":{
+"VNINDEX":"Khối ngoại bán ròng mạnh và việc có giữ được hỗ trợ 1,724.17 là yếu tố cần theo dõi (Tạp chí Kinh tế Tài chính).",
+"FPT":"Dòng bán ròng của khối ngoại có thể tiếp tục gây áp lực (Tạp chí Kinh tế Tài chính).",
+"VCB":"Không tìm thấy tin làm thay đổi bức tranh.",
+"HPG":"Việc người liên quan nội bộ mua vào có thể hỗ trợ tâm lý (Tạp chí Kinh tế Tài chính).",
+"SHS":"Không tìm thấy tin làm thay đổi bức tranh.",
+"VIN":"Không tìm thấy tin làm thay đổi bức tranh.",
+"BTC-USD":"Kỳ vọng Fed thắt chặt có thể gây sức ép lên tài sản rủi ro (tygiausd.org).",
+"GOLD_VND":"Nếu Fed tiếp tục nghiêng về tăng lãi suất, vàng có thể chịu áp lực (tygiausd.org).",
+"SJC":"Chênh lệch với thế giới thu hẹp thì SJC có thể giảm dù vàng thế giới đứng yên (số liệu PNJ)."},
+"swing_notes":{
+"VPI":"Không tìm thấy tin đáng chú ý trong 7 ngày.",
+"HDB":"Không tìm thấy tin trong 7 ngày; HDB nằm trong nhóm bị khối ngoại bán ròng phiên 09/10 (Tạp chí Kinh tế Tài chính).",
+"SBT":"Không tìm thấy tin đáng chú ý trong 7 ngày."},
+"swing_summary":"Hôm nay có 3 mã ứng viên nhưng chưa mã nào đạt chuẩn. Cả 3 chiến lược (bứt phá, điều chỉnh về MA20, quá bán ngắn hạn) đều không có lãi sau phí ở giai đoạn kiểm tra 2 năm gần nhất, nên không có mã nào để lướt sóng.",
+"errors":["Tìm kiếm không tìm thấy bài về giá vàng thế giới ngày 11/10, tin doanh nghiệp FPT/VCB/SHS/VIN và dòng tiền ETF Bitcoin tháng 10/2026.","Một bài VnEconomy tiêu đề phiên 9/10 ghi VN-Index 987,83 điểm, mâu thuẫn với dữ liệu 1,735.09; không dùng.","Các nguồn mâu thuẫn về mức lãi suất Fed hiện tại (3,5–3,75% theo bài tháng 8 và 3,75–4% theo bài ngày 09/10); không dùng con số cụ thể."]}
