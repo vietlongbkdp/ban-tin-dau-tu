@@ -1,90 +1,49 @@
 {
- "generated_at": "2026-10-13 08:55 (giờ VN)",
- "summary": "VN-Index đóng cửa phiên 12/10 ở 1.720,98 điểm, giảm 0,81% (nhóm Vingroup kéo chỉ số xuống, khối ngoại vẫn bán ròng theo Thời báo Tài chính Việt Nam); chỉ số đang dưới đường trung bình 200 phiên (1.797,64) và sát vùng hỗ trợ 1.716,85. Vàng thế giới giao ngay khoảng 4.152,63 USD/ounce sáng nay (Swissquote), thấp hơn mức 4.176,7 USD chiều 12/10 (Thanh Niên); quy đổi khoảng 129,8 triệu đồng/lượng. Vàng miếng SJC bán ra 143,5 triệu đồng/lượng (PNJ), cao hơn vàng thế giới quy đổi 10,5% (13,7 triệu đồng) và đã vượt xa ngưỡng cảnh báo 5%. Bitcoin ở 82.254 USD, giảm 1,7% trong ngày và 4,5% trong 20 ngày; dòng vốn vào quỹ ETF Bitcoin Mỹ vẫn dương đầu tháng 10 (CoinDesk qua KuCoin). Cả sáu mã/chỉ số cổ phiếu đều ở trạng thái Trung lập vì chưa có tín hiệu qua kiểm định thống kê; bộ lọc lướt sóng hôm nay không có mã nào đạt chuẩn.",
+ "generated_at": "2026-10-14 08:49 (giờ VN)",
+ "summary": "VN-Index đóng cửa 1,719.42 điểm ngày 13/10, dưới MA200 (1,797.85), RSI 34, giảm 5.1% trong 20 phiên. FPT (RSI 20), SHS (RSI 27) đang quá bán, cùng giảm trên 14% trong 20 phiên; VIN là mã duy nhất trên MA200 với RSI 70. Vàng giao ngay 4,146.62 USD/ounce (Swissquote), tương đương khoảng 129.65 triệu đồng/lượng, trong khi vàng miếng SJC bán ra 143.3 triệu đồng/lượng, cao hơn 10.5% (13.6 triệu đồng). Bitcoin 83,250 USD, trên MA200. Tất cả quan điểm hôm nay là Trung lập (độ tin cậy thấp), riêng SJC là Thận trọng. Tìm kiếm không cho ra tin tức xác minh được trong 48 giờ nên bản tin chỉ dựa trên số liệu.",
  "items": [
   {
-   "title": "Chứng khoán ngày 12/10: VN-Index giảm điểm, dòng tiền tìm đến ngân hàng và thép",
-   "source": "Thời báo Tài chính Việt Nam",
-   "date": "12/10/2026",
-   "url": "https://thoibaotaichinhvietnam.vn/chung-khoan-ngay-12-10-vn-index-giam-diem-dong-tien-tim-den-ngan-hang-va-thep-205238.html",
-   "impact": "VN-Index, VIN/VIC: VN-Index giảm 14,11 điểm (0,81%) xuống 1.720,9; VIC giảm 2,88%, khối ngoại vẫn bán ròng, thanh khoản thấp"
-  },
-  {
-   "title": "Nhận định chứng khoán tuần 12-16/10: VN-Index thử thách vùng hỗ trợ 1.715 điểm",
-   "source": "Điện tử Ứng dụng",
-   "date": "12/10/2026",
-   "url": "https://dientuungdung.vn/nhan-dinh-chung-khoan-tuan-12-1610-vn-index-thu-thach-vung-ho-tro-1715-diem-18782.html",
-   "impact": "VN-Index: vùng 1.715-1.730 là hỗ trợ gần; mất 1.715 thì rủi ro điều chỉnh mở rộng"
-  },
-  {
-   "title": "Giá vàng giảm chiều 12.10, chênh thế giới gần 13 triệu/lượng",
-   "source": "Thanh Niên",
-   "date": "12/10/2026",
-   "url": "https://thanhnien.vn/gia-vang-giam-chieu-1210-chenh-the-gioi-gan-13-trieu-luong-185261012143238401.htm",
-   "impact": "Vàng thế giới, SJC: giá giao ngay 4.176,7 USD/ounce lúc 16h07, giảm 17 USD; chênh SJC so với thế giới gần 13 triệu đồng/lượng"
-  },
-  {
-   "title": "Giá vàng hôm nay 12/10: Thế giới nhích tăng, SJC giữ mức 144,8 triệu đồng/lượng",
-   "source": "Viettimes",
-   "date": "12/10/2026",
-   "url": "https://viettimes.vn/gia-vang-hom-nay-1210-the-gioi-nhich-tang-sjc-giu-muc-1448-trieu-dongluong-post206880.html",
-   "impact": "Vàng miếng SJC: niêm yết 141,8-144,8 triệu đồng/lượng ngày 12/10, sáng 13/10 PNJ ghi 140,5-143,5"
-  },
-  {
-   "title": "Giá vàng hôm nay 13/9/2026: Thế giới hạ, vàng SJC tăng hay giảm?",
-   "source": "Báo Lào Cai",
-   "date": "13/09/2026",
-   "url": "https://baolaocai.vn/gia-vang-hom-nay-1392026-the-gioi-ha-vang-sjc-tang-hay-giam-post909291.html",
-   "impact": "Vàng: bối cảnh giữa tháng 9, vàng giảm tuần thứ ba liên tiếp trong lúc lợi suất trái phiếu Mỹ cao (tin cũ hơn 48 giờ, nêu làm bối cảnh)"
-  },
-  {
-   "title": "Bitcoin ETFs see $118.8M net inflow on October 6, 2026",
-   "source": "KuCoin (dẫn CoinDesk)",
-   "date": "06/10/2026",
-   "url": "https://www.kucoin.com/news/flash/bitcoin-etfs-see-118-8m-net-inflow-on-october-6-2026",
-   "impact": "Bitcoin: dòng vốn ròng vào ETF Mỹ ngày 6/10 là 118,8 triệu USD, lũy kế đầu tháng 321,4 triệu USD (tin cũ hơn 48 giờ, còn là diễn biến tháng này)"
-  },
-  {
-   "title": "Tuần đầu nâng hạng, dòng tiền ETF sẽ chọn cổ phiếu nào",
-   "source": "Tạp chí Kinh tế Tài chính",
-   "date": "09/2026",
-   "url": "https://tapchikinhtetaichinh.vn/tuan-dau-nang-hang-dong-tien-etf-se-chon-co-phieu-nao-166904.html",
-   "impact": "VIN/VIC, FPT, HPG, VCB: nâng hạng FTSE hiệu lực 21/9/2026, giải ngân theo nhiều đợt; các báo cáo mâu thuẫn về chiều dòng tiền với VIC (tin cũ hơn 48 giờ)"
+   "title": "Dòng tiền các quỹ ETF Bitcoin giao ngay tại Mỹ (thu về khoảng 4,6 tỷ USD từ 19/8)",
+   "source": "Bitcoin.com News (tiếng Việt)",
+   "date": "",
+   "url": "https://news.bitcoin.com/vi/bitcoin-etf/",
+   "impact": "BTC: dòng tiền ETF tích cực cuối tháng 9, chưa có số liệu tháng 10"
   }
  ],
  "commentary": {
-  "VNINDEX": "VN-Index giảm 0,81% xuống 1.720,98 điểm, nằm sát hỗ trợ 1.716,85 và dưới đường MA200 (1.797,64), RSI 34 cho thấy đà yếu (Thời báo Tài chính Việt Nam; số liệu kỹ thuật hệ thống). Các nhận định tuần coi vùng 1.715-1.730 là hỗ trợ gần, mất 1.715 thì rủi ro điều chỉnh tăng (Điện tử Ứng dụng).",
-  "FPT": "FPT đóng cửa 57,10, giảm 13,2% trong 20 phiên, RSI 22 ở vùng quá bán nhưng giá vẫn thấp hơn nhiều so với MA200 (70,72). Không tìm thấy tin doanh nghiệp riêng trong 48 giờ qua; chỉ có thông tin dòng tiền ETF theo nâng hạng FTSE (Tạp chí Kinh tế Tài chính).",
-  "VCB": "VCB đi ngang ở 56,70, sát hỗ trợ 56,00 và dưới MA200 (60,67). Dòng tiền hôm 12/10 vẫn tìm đến nhóm ngân hàng (Thời báo Tài chính Việt Nam). Không tìm thấy tin riêng của VCB trong 48 giờ.",
-  "HPG": "HPG tăng 3,0% lên 20,70 trong phiên gần nhất, phù hợp với việc dòng tiền tìm đến nhóm thép (Thời báo Tài chính Việt Nam); giá vẫn dưới MA200 (23,22). Không tìm thấy tin doanh nghiệp riêng.",
-  "SHS": "SHS ở 11,70, giảm 13% trong 20 phiên, RSI 27 và thấp xa MA200 (16,55); biên độ dao động lịch sử lớn (tệ nhất từng giảm 46% trong một kỳ). Không tìm thấy tin riêng về SHS.",
-  "VIN": "VIN đóng cửa 16,90, trên MA200 (15,20) nhưng RSI 70 là vùng nóng và giá đang chạm kháng cự 16,90. Cổ phiếu nhóm Vingroup như VIC, VHM giảm mạnh phiên 12/10 (Thời báo Tài chính Việt Nam).",
-  "BTC-USD": "Bitcoin 82.254 USD, giảm 1,7% trong ngày, nằm giữa hỗ trợ 80.337 và kháng cự 87.265, trên MA200 (72.047). Dòng vốn ETF Mỹ đầu tháng 10 vẫn dương (KuCoin dẫn CoinDesk).",
-  "GOLD_USD": "Hợp đồng tương lai vàng (GC=F) ở 4.180,40 USD/ounce, giảm 0,85% trong ngày và dưới MA200 (4.546). Giá giao ngay thấp hơn ở mức 4.152,63 USD/ounce (Swissquote), nên dùng giá giao ngay khi so với báo chí.",
-  "GOLD_VND": "Vàng thế giới quy đổi ở mức khoảng 130,5 triệu đồng/lượng theo hợp đồng tương lai (khoảng 129,8 triệu theo giá giao ngay), dưới MA200 (143,56) và giảm 4,1% trong 20 phiên. Bối cảnh giữa tháng 9: lợi suất trái phiếu Mỹ cao và Fed tăng lãi suất gây áp lực lên vàng (Báo Quốc tế, Báo Lào Cai)."
+  "VNINDEX": "VN-Index đóng cửa 1,719.42 điểm (phiên 13/10), dưới đường MA200 ở 1,797.85, RSI 34 và giảm 5.1% trong 20 phiên. Không tìm thấy bài báo xác minh được về phiên này nên chưa gắn được với tin tức.",
+  "FPT": "FPT đóng cửa 56.30, giảm 14.8% trong 20 phiên, RSI 20 (vùng quá bán) và nằm dưới MA200 ở 70.58. Không tìm thấy tin doanh nghiệp đã xác minh trong 48 giờ.",
+  "VCB": "VCB đóng cửa 56.30, dưới MA200 (60.67), RSI 34; hỗ trợ gần nhất 56.00. Không tìm thấy tin doanh nghiệp đã xác minh trong 48 giờ.",
+  "HPG": "HPG đóng cửa 20.45, dưới MA200 (23.20), RSI 45; hỗ trợ 19.60, kháng cự 21.60. Không tìm thấy tin doanh nghiệp đã xác minh trong 48 giờ.",
+  "SHS": "SHS đóng cửa 11.70, giảm 14.2% trong 20 phiên, RSI 27 và dưới MA200 (16.51); mức sụt tệ nhất trong các lần tương tự từng tới -46.0%, rủi ro cao. Không tìm thấy tin đã xác minh.",
+  "VIN": "VIN đóng cửa 16.90 (phiên 12/10), trên MA200 (15.20), RSI 70 (vùng mua mạnh). Mức cắt lỗ tham khảo 16.77 chỉ cách giá 0.8%. Không tìm thấy tin đã xác minh.",
+  "BTC-USD": "Bitcoin ở 83,250 USD, trên MA200 (72,130), RSI 52, giảm 1.3% trong 20 ngày. Nguồn Bitcoin.com News ghi các quỹ ETF Bitcoin Mỹ thu về khoảng 4,6 tỷ USD từ 19/8, nhưng chưa có số liệu tháng 10.",
+  "GOLD_USD": "Hợp đồng tương lai vàng (GC=F) đóng cửa 4,168.80 USD, giảm 3.8% trong 20 ngày, dưới MA200 (4,544.77), RSI 40. Vàng giao ngay hiện ở 4,146.62 USD (Swissquote). Chưa tìm thấy tin về Fed hay lợi suất trái phiếu Mỹ đã xác minh.",
+  "GOLD_VND": "Vàng thế giới quy đổi theo hợp đồng tương lai ở 130.35 triệu đồng/lượng, dưới MA200 (143.50), RSI 38, giảm 4.0% trong 20 phiên. Theo giá giao ngay, quy đổi là 129.65 triệu đồng/lượng."
  },
- "recommendation": "Hôm nay không có mã nào có lợi thế thống kê đủ rõ: VN-Index, FPT, VCB, HPG, SHS, VIN, Bitcoin và vàng thế giới đều ở trạng thái Trung lập, độ tin cậy thấp, nên phương án khớp dữ liệu nhất là chờ. Vàng miếng SJC ở trạng thái Thận trọng vì giá bán cao hơn vàng thế giới quy đổi 10,5%, vượt ngưỡng cảnh báo 5%, và chênh mua-bán 2,1%; chênh lệch thu hẹp có thể kéo giá SJC giảm dù vàng thế giới đứng yên. Với VN-Index, mốc cần theo dõi là hỗ trợ 1.716,85 (đang rất sát) và kháng cự 1.841,20. Sự kiện theo dõi: các phiên kiểm định vùng 1.715 của VN-Index trong tuần 12-16/10 (Điện tử Ứng dụng) và lộ trình giải ngân vốn ETF theo nâng hạng FTSE (Tạp chí Kinh tế Tài chính).",
+ "recommendation": "Hôm nay không có cơ hội đủ điều kiện kiểm định; mọi mã theo dõi ở trạng thái Trung lập nên phương án khớp dữ liệu nhất là chờ. Với vàng, giá SJC cao hơn thế giới 10.5%, vượt ngưỡng cảnh báo 5%, nên rủi ro chênh lệch thu hẹp là đáng lưu ý. VN-Index cần theo dõi hỗ trợ 1,710.95 và kháng cự 1,841.20. Chưa tìm được sự kiện sắp tới có nguồn xác minh để nêu.",
  "stance_notes": {
-  "VNINDEX": "Nếu khối ngoại tiếp tục bán ròng và nhóm Vingroup yếu đi, chỉ số có thể thủng hỗ trợ 1.716,85 (Thời báo Tài chính Việt Nam, Điện tử Ứng dụng).",
-  "FPT": "Dòng tiền ETF từ đợt nâng hạng FTSE là yếu tố cần theo dõi; Fubon có thể mua khoảng 536 tỷ đồng FPT (Tạp chí Kinh tế Tài chính, tin tháng 9).",
-  "VCB": "Dòng tiền vào nhóm ngân hàng phiên 12/10 là điểm tích cực cần theo dõi (Thời báo Tài chính Việt Nam); chưa có tin riêng của VCB.",
-  "HPG": "Dòng tiền vào nhóm thép phiên 12/10 cần xem có duy trì không (Thời báo Tài chính Việt Nam); chưa có tin riêng của HPG.",
-  "SHS": "Không tìm thấy tin đáng chú ý về SHS; thanh khoản thấp và khối ngoại bán ròng toàn thị trường là rủi ro chung (Thời báo Tài chính Việt Nam).",
-  "VIN": "Nhóm Vingroup giảm mạnh phiên 12/10 trong khi RSI đang cao; các báo cáo mâu thuẫn về chiều dòng tiền ETF với VIC (Tạp chí Kinh tế Tài chính).",
-  "BTC-USD": "Dòng vốn ETF Bitcoin Mỹ đầu tháng 10 (321,4 triệu USD tính đến 6/10) cần được duy trì để giữ giá trên hỗ trợ 80.337 (KuCoin dẫn CoinDesk).",
-  "GOLD_VND": "Lợi suất trái phiếu Mỹ cao và Fed tăng lãi suất (tin giữa tháng 9) là áp lực lên vàng; chưa tìm thấy tin mới hơn về Fed (Báo Quốc tế, Báo Lào Cai).",
-  "SJC": "Chênh lệch SJC với thế giới gần 13 triệu đồng/lượng ngày 12/10 (Thanh Niên); chỉ khi chênh về dưới 5% bức tranh mới đổi."
+  "SJC": "Chênh lệch SJC so với vàng thế giới là 13.6 triệu đồng (10.5%), vượt ngưỡng cảnh báo 5%; giá bán 143.3, mua 140.3 (PNJ, cập nhật 08:40 14/10). Nếu chênh lệch thu hẹp, giá SJC có thể giảm.",
+  "VNINDEX": "Cần theo dõi: thủng hỗ trợ 1,710.95 hoặc vượt kháng cự 1,841.20. Không tìm thấy tin vĩ mô đã xác minh.",
+  "FPT": "Theo dõi mốc 56.10 (hỗ trợ) và 68.00 (kháng cự). Chưa tìm thấy tin doanh nghiệp.",
+  "VCB": "Theo dõi mốc 56.00 và 61.00. Chưa tìm thấy tin về lãi suất NHNN đã xác minh.",
+  "HPG": "Theo dõi mốc 19.60 và 21.60. Chưa tìm thấy tin đã xác minh.",
+  "SHS": "Biến động rất lớn; chưa tìm thấy tin đã xác minh.",
+  "VIN": "RSI cao, giá sát mức cắt lỗ; chưa tìm thấy tin đã xác minh.",
+  "BTC-USD": "Theo dõi dòng tiền ETF Bitcoin (Farside/SoSoValue) và mốc cắt lỗ 79,183.73.",
+  "GOLD_VND": "Chưa tìm thấy tin về Fed, lợi suất trái phiếu Mỹ hay USD đã xác minh ngày.",
+  "GOLD_USD": "Chưa tìm thấy tin đã xác minh ngày."
  },
  "swing_notes": {
-  "SSB": "Không tìm thấy tin đáng chú ý trong 7 ngày. Mức giá và điều kiện giữ nguyên theo bộ lọc; thanh khoản 72 tỷ/phiên.",
-  "VIC": "Cổ phiếu VIC giảm 2,88% phiên 12/10 cùng nhóm Vingroup (Thời báo Tài chính Việt Nam); các báo cáo mâu thuẫn về dòng tiền ETF (Tạp chí Kinh tế Tài chính). Rủi ro: áp lực bán của khối ngoại.",
-  "SBT": "Không tìm thấy tin đáng chú ý trong 7 ngày."
+  "FRT": "Không tìm thấy tin đáng chú ý trong 7 ngày (tìm kiếm không trả về nguồn xác minh được). Mã chưa đạt chuẩn kiểm định ngoài mẫu, chỉ để theo dõi.",
+  "DGW": "Không tìm thấy tin đáng chú ý trong 7 ngày (tìm kiếm không trả về nguồn xác minh được). Mã chưa đạt chuẩn kiểm định ngoài mẫu, chỉ để theo dõi.",
+  "TLG": "Không tìm thấy tin đáng chú ý trong 7 ngày (tìm kiếm không trả về nguồn xác minh được). Mã chưa đạt chuẩn kiểm định ngoài mẫu, chỉ để theo dõi.",
+  "HDB": "Không tìm thấy tin đáng chú ý trong 7 ngày (tìm kiếm không trả về nguồn xác minh được). Mã chưa đạt chuẩn kiểm định ngoài mẫu, chỉ để theo dõi."
  },
- "swing_summary": "Hôm nay có 3 mã nằm trong danh sách theo dõi (SSB, VIC, SBT) nhưng không mã nào đạt chuẩn. Cả ba chiến lược (bứt phá, điều chỉnh về MA20, quá bán RSI 2 phiên) đều không có lãi sau phí ở giai đoạn kiểm tra ngoài mẫu 2 năm gần nhất: tỷ lệ thắng 37%, 40% và 42%, lợi nhuận trung bình âm. Vì vậy không có cơ hội lướt sóng đủ điều kiện hôm nay.",
+ "swing_summary": "Hôm nay không có mã nào đạt chuẩn lướt sóng; 4 mã (FRT, DGW, TLG, HDB) chỉ nằm trong danh sách theo dõi. Cả ba chiến lược (bứt phá, điều chỉnh về MA20, RSI2) đều chưa hợp lệ vì ngoài mẫu 2 năm gần nhất có lãi trung bình âm (-0.7%, -0.7%, -0.4%/lệnh).",
  "errors": [
-  "Tìm kiếm không cho tin mới trong 48 giờ về FPT, VCB, HPG, SHS, SSB, SBT, Fed, lãi suất NHNN và tỷ giá; các nhận định về những nội dung này dùng bối cảnh cũ hơn hoặc ghi 'không tìm thấy'.",
-  "Nguồn VN-Index mâu thuẫn: Baomoi ghi đóng cửa 1.735,09, các báo đưa tin trực tiếp và dữ liệu hệ thống ghi 1.720,98; bản tin dùng 1.720,98.",
-  "SJC: niêm yết ngày 12/10 là 141,8-144,8 (Viettimes), sáng 13/10 PNJ ghi 140,5-143,5; bản tin dùng số liệu mới nhất.",
-  "Báo cáo về chiều dòng tiền ETF với VIC mâu thuẫn (hút hơn 2.000 tỷ đồng so với bán khoảng 829 tỷ đồng) (Tạp chí Kinh tế Tài chính)."
+  "Không tìm thấy tin tức đã xác minh ngày trong 48 giờ gần nhất qua tìm kiếm; nhận định dựa trên số liệu kỹ thuật.",
+  "Không xác minh được diễn biến VN-Index phiên 13/10, giá vàng thế giới, Fed, NHNN và khối ngoại từ kết quả tìm kiếm.",
+  "Giá vàng: hợp đồng tương lai GC=F (4,168.80 USD) và giao ngay Swissquote (4,146.62 USD) khác nhau, bài dùng giá giao ngay."
  ]
 }
