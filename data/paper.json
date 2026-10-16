@@ -213,7 +213,10 @@
    "type": "limit",
    "limit": 64100,
    "valid_date": "2026-10-16",
-   "status": "pending"
+   "status": "filled",
+   "fill_price": 64100,
+   "fill_time": "2026-10-16T02:49:58.767Z",
+   "fill_date": "2026-10-16"
   },
   {
    "id": "mvaditr3m7qp",
