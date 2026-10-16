@@ -1,60 +1,120 @@
 {
- "generated_at": "2026-10-15 08:55 (giờ VN)",
- "summary": "VN-Index đóng cửa phiên 14/10 ở 1,704.87 điểm, giảm 0.8% trong ngày và 5.8% trong 20 phiên, nằm dưới đường trung bình 200 phiên (1,797.85) với RSI 31, sát vùng hỗ trợ 1,699.23. FPT (RSI 26), VCB (RSI 34) và SHS (RSI 34) cùng dưới đường trung bình 200 phiên; VIN là mã duy nhất trên đường này, RSI 70. Vàng thế giới giao ngay 4,142 USD/ounce (Swissquote), quy đổi khoảng 129.4 triệu đồng/lượng, trong khi vàng miếng SJC bán ra 143.3 triệu đồng/lượng, cao hơn 13.9 triệu (10.7%). Bitcoin 81,682 USD, vẫn trên đường trung bình 200 ngày (72,206) nhưng RSI 47. Mọi mã đều ở quan điểm Trung lập (độ tin cậy thấp), riêng vàng miếng SJC ở mức Thận trọng. Tìm kiếm không cho ra bài báo xác minh được về phiên 14/10 hay giá vàng hôm nay, nên phần tin tức chỉ dựa trên dòng tiền quỹ ETF Bitcoin đầu tháng 10.",
+ "generated_at": "2026-10-16 08:49 (giờ VN)",
+ "summary": "VN-Index đóng cửa phiên 15/10 ở 1.698,35 điểm, mất mốc 1.700 và thấp hơn đường trung bình 200 phiên (1.797,59); khối ngoại bán ròng khoảng 686 tỷ đồng trên HOSE (index.vn, SGGP). Vàng thế giới giao ngay đang ở 4.154 USD/ounce, hồi phục khi lợi suất trái phiếu Mỹ giảm sau cú giảm mạnh do lạm phát Mỹ cao hơn dự báo (Sức khỏe & Đời sống). Vàng miếng SJC giữ nguyên 140,3–143,3 triệu đồng/lượng (VOV), cao hơn vàng thế giới quy đổi khoảng 10,6% (13,7 triệu đồng), vượt ngưỡng cảnh báo 5%. Bitcoin quanh 82.052 USD, giảm 2,4% trong 20 ngày. Cả 5 cổ phiếu theo dõi và VN-Index đều ở trạng thái Trung lập, độ tin cậy thấp, chỉ SJC ở mức Thận trọng. Hôm nay không có cơ hội nào đủ điều kiện nổi bật; thị trường đang chờ kết quả kinh doanh quý III và cuộc họp Fed 28/10.",
  "items": [
   {
-   "title": "Quỹ ETF Bitcoin giao ngay tại Mỹ hút ròng 134,4 triệu USD trong hai phiên đầu tháng 10",
-   "source": "IDN Financials",
-   "date": "",
-   "url": "https://www.idnfinancials.com/digital-asset/69849/bitcoin-etfs-absorb-us134-4-million-in-early-october",
-   "impact": "BTC: dòng tiền ETF đầu tháng 10 nghiêng về mua ròng"
+   "title": "Giá vàng thế giới tăng vọt sáng 16/10 do lãi suất trái phiếu Mỹ giảm",
+   "source": "Sức khỏe & Đời sống",
+   "date": "16/10/2026",
+   "url": "https://suckhoedoisong.vn/gia-vang-the-gioi-tang-vot-sang-16-10-do-lai-suat-trai-phieu-my-giam-169261016072924495.htm",
+   "impact": "Vàng thế giới: hồi phục khi lợi suất trái phiếu Mỹ 10 năm giảm khoảng 10 điểm cơ bản; thị trường vẫn lo Fed có thể tăng lãi suất ngày 28/10"
   },
   {
-   "title": "Quỹ ETF Bitcoin ghi nhận dòng vào ròng 118,8 triệu USD ngày 6/10/2026",
-   "source": "KuCoin News (dẫn dữ liệu CoinDesk)",
-   "date": "06/10/2026",
-   "url": "https://www.kucoin.com/news/flash/bitcoin-etfs-see-118-8m-net-inflow-on-october-6-2026",
-   "impact": "BTC: lũy kế dòng vào ròng đầu tháng đạt 321,4 triệu USD tính đến 6/10"
+   "title": "VN-Index giảm 6,52 điểm, lùi dưới mốc 1.700, BSR giảm 6,31%, PVT mất hơn 4%",
+   "source": "index.vn",
+   "date": "15/10/2026",
+   "url": "https://index.vn/tin-tuc/vn-index-15-10-giam-6-52-diem-lui-duoi-moc-1-700-diem-bsr-giam-6-31-pvt-mat-hon-4",
+   "impact": "VN-Index: mất mốc 1.700; khối ngoại bán ròng khoảng 686 tỷ đồng trên HOSE; ngân hàng và chứng khoán có dòng tiền vào, VIC/VHM kéo chỉ số giảm"
   },
   {
-   "title": "Các quỹ ETF Bitcoin rút ròng 484,9 triệu USD ngày 7/10 và 244,1 triệu USD ngày 8/10",
-   "source": "Analytics Insight",
-   "date": "",
-   "url": "https://www.analyticsinsight.net/cryptocurrency-analytics-insight/bitcoin-etf-inflows-hit-usd-3-billion-how-institutional-investment-is-reshaping-crypto-markets",
-   "impact": "BTC: dòng tiền ETF đảo chiều rút ròng giữa tuần trước, số liệu giữa các nguồn chưa khớp hoàn toàn"
+   "title": "VN-Index mất mốc 1.700 điểm",
+   "source": "VTV",
+   "date": "15/10/2026",
+   "url": "https://vtv.vn/vn-index-mat-moc-1700-diem-100261015165414014.htm",
+   "impact": "VN-Index: nhóm năng lượng giảm mạnh; khối ngoại bán ròng khoảng 714 tỷ đồng trên ba sàn"
+  },
+  {
+   "title": "Giá vàng hôm nay 16/10: giá vàng trong nước bất động ở 143,3 triệu đồng/lượng",
+   "source": "VOV",
+   "date": "16/10/2026",
+   "url": "http://vov.vn/thi-truong/gia-vang-hom-nay-1610-gia-vang-trong-nuoc-bat-dong-o-1433-trieu-dongluong-post1341664.vov",
+   "impact": "Vàng miếng SJC: không đổi dù vàng thế giới tăng, chênh lệch với thế giới vẫn rộng"
+  },
+  {
+   "title": "Bitcoin Spot ETFs ghi nhận dòng vốn ròng vào 21,13 triệu USD ngày 9/10",
+   "source": "KuCoin News",
+   "date": "09/10/2026",
+   "url": "https://www.kucoin.com/news/flash/bitcoin-spot-etfs-see-21-13m-net-inflow-on-october-9-2026",
+   "impact": "Bitcoin: dòng tiền ETF dương nhưng nhỏ; dữ liệu tổng hợp chưa đối chiếu nguồn chính thức"
+  },
+  {
+   "title": "Cổ phiếu Vinhomes chạm đáy 6 tháng",
+   "source": "Znews",
+   "date": "14/10/2026",
+   "url": "https://znews.vn/co-phieu-vinhomes-cham-day-6-thang-post1689613.html",
+   "impact": "VIN/nhóm Vingroup: VHM giảm hơn 5% xuống 61.000 đồng, khối ngoại bán mạnh VIC, VHM"
+  },
+  {
+   "title": "Nhiều điểm sáng trong bức tranh kết quả kinh doanh quý III/2026",
+   "source": "Thời báo Tài chính Việt Nam",
+   "date": "10/2026",
+   "url": "https://thoibaotaichinhvietnam.vn/nhieu-diem-sang-trong-buc-tranh-ket-qua-kinh-doanh-quy-iii-2026-204392.html",
+   "impact": "Cổ phiếu VN: kết quả quý III sẽ công bố dần, là chất xúc tác chính trong các tuần tới"
+  },
+  {
+   "title": "HPG: kỳ vọng lợi nhuận quý 3 đạt 5.600–6.500 tỷ",
+   "source": "Elibook",
+   "date": "20/09/2026",
+   "url": "https://elibook.vn/2026/09/20/hpg-ban-nhieu-hon-nhung-lai-moi-tan-mong-di-ky-vong-loi-nhuan-quy-3-dat-5600-6500-ty-ap-luc-vinmetal-van-chua-toi-cua/",
+   "impact": "HPG: lợi nhuận quý III kỳ vọng tăng nhưng lãi mỗi tấn mỏng đi"
+  },
+  {
+   "title": "VCB: định giá thu hẹp kỷ lục, lợi nhuận bình thường hóa",
+   "source": "Elibook",
+   "date": "23/09/2026",
+   "url": "https://elibook.vn/2026/09/23/vcb-dinh-gia-thu-hep-ky-luc-tro-luc-tu-ldr-va-buc-tranh-binh-thuong-hoa-loi-nhuan/",
+   "impact": "VCB: lợi nhuận trước thuế 9 tháng 42.628 tỷ đồng, tăng trưởng được kỳ vọng chậm lại từ quý III"
+  },
+  {
+   "title": "FPT: Khuyến nghị MUA, giá mục tiêu 103.800 đồng",
+   "source": "KBSV (Vietstock)",
+   "date": "06/2026",
+   "url": "https://finance.vietstock.vn/bao-cao-phan-tich/20690/fpt-khuyen-nghi-mua-voi-gia-muc-tieu-103800-dongco-phieu.htm",
+   "impact": "FPT: khuyến nghị cũ của CTCK, chưa có khuyến nghị mới trong tháng 10"
+  },
+  {
+   "title": "MBS dự báo KQKD quý 3/2026 ngành bán lẻ",
+   "source": "CafeF (MBS)",
+   "date": "27/09/2026",
+   "url": "https://cafef.vn/mbs-du-bao-kqkd-quy-3-2026-nganh-ban-le-the-gioi-di-dong-va-fpt-retail-tiep-tuc-but-pha-hai-ten-tuoi-tang-truong-dot-bien-3-chu-so-188260927223855678.chn",
+   "impact": "FRT, DGW: dự báo lợi nhuận quý III tăng mạnh (dự báo của CTCK, chưa phải kết quả thực)"
   }
  ],
  "commentary": {
-  "VNINDEX": "VN-Index đóng cửa 1,704.87 điểm, dưới đường trung bình 200 phiên ở 1,797.85, RSI 31 và đang nằm gần hỗ trợ 1,699.23. Không tìm thấy bài báo xác minh được về phiên 14/10 hay dòng tiền khối ngoại nên chưa gắn được với tin tức.",
-  "FPT": "FPT đóng cửa 57.10, giảm 14.9% trong 20 phiên, RSI 26 và dưới đường trung bình 200 phiên (70.44). Tin gần nhất tìm được là kết quả 6 tháng đầu năm: doanh thu 26,269 tỷ đồng (+12.6%), lợi nhuận trước thuế 5,714 tỷ đồng (+18.1%) (MBS, 31/07/2026), chưa có tin mới trong 48 giờ.",
-  "VCB": "VCB đóng cửa 56.30, giảm 5.1% trong 20 phiên, RSI 34, nằm sát hỗ trợ 56.00. Không tìm thấy tin doanh nghiệp mới trong 48 giờ.",
-  "HPG": "HPG đóng cửa 20.80, tăng 1.7% trong ngày, RSI 51, dưới đường trung bình 200 phiên (23.19). Không tìm thấy tin doanh nghiệp mới trong 48 giờ.",
-  "SHS": "SHS đóng cửa 12.00, giảm 10.7% trong 20 phiên, RSI 34, dưới đường trung bình 200 phiên (16.46) và gần hỗ trợ 10.80. Không tìm thấy tin doanh nghiệp mới trong 48 giờ.",
-  "VIN": "VIN đóng cửa 16.90, đúng mức kháng cự 20 phiên, trên đường trung bình 200 phiên (15.21), RSI 70 (vùng mua nhiều). Không tìm thấy tin doanh nghiệp mới trong 48 giờ.",
-  "BTC-USD": "Bitcoin ở 81,682 USD, giảm 1.7% trong ngày, trên đường trung bình 200 ngày (72,206) và sát hỗ trợ 80,337. Dòng tiền ETF đầu tháng 10 biến động: vào ròng ngày 6/10 nhưng rút ròng ngày 7 và 8/10 (IDN Financials, Analytics Insight).",
-  "GOLD_USD": "Hợp đồng tương lai vàng (GC=F) đóng cửa 4,161.8 USD/ounce, giảm 5.1% trong 20 phiên, dưới đường trung bình 200 phiên (4,542.9); giá giao ngay thấp hơn ở 4,142 USD/ounce (Swissquote). Không tìm thấy bài báo xác minh được về Fed hay lợi suất hôm nay.",
-  "GOLD_VND": "Vàng thế giới quy đổi (theo hợp đồng tương lai) ở 130.0 triệu đồng/lượng, dưới đường trung bình 200 phiên (143.4), RSI 37, gần hỗ trợ 128.2. Theo giá giao ngay, mức quy đổi là khoảng 129.4 triệu đồng/lượng. Không tìm thấy tin mới trong 48 giờ để giải thích nhịp giảm."
+  "VNINDEX": "VN-Index đóng cửa 1.698,35 điểm (giảm 0,4% trong ngày, giảm 6,8% trong 20 phiên), RSI 29 tức vùng quá bán nhưng giá vẫn dưới đường trung bình 200 phiên. Khối ngoại bán ròng khoảng 686 tỷ đồng và đã bán nhiều phiên liên tiếp (index.vn, BNEWS). Dữ liệu chưa cho lợi thế thống kê rõ ràng.",
+  "FPT": "FPT đóng cửa 58,00 (tăng 1,6% trong ngày, giảm 14,1% trong 20 phiên), RSI 32, dưới đường trung bình 200 phiên 70,31. Các CTCK như KBSV vẫn khuyến nghị mua với giá mục tiêu 103.800 đồng nhưng đó là báo cáo cũ (Vietstock); chưa có tin doanh nghiệp mới trong 48 giờ.",
+  "VCB": "VCB đóng cửa 56,50, RSI 37. Lợi nhuận trước thuế 9 tháng đạt 42.628 tỷ đồng, tăng 29%, nhưng tăng trưởng được kỳ vọng bình thường hóa từ quý III (Elibook). Nhóm ngân hàng có dòng tiền vào trong phiên 15/10 (index.vn).",
+  "HPG": "HPG đóng cửa 20,75, gần như đi ngang (RSI 50). Lợi nhuận quý III được CTCK dự báo 5.600–6.500 tỷ đồng (MBS, BSC), dao động tùy biên lợi nhuận gộp (Elibook). Kết quả chính thức thường công bố cuối tháng 10.",
+  "SHS": "SHS đóng cửa 12,20 (tăng 1,7% trong ngày, giảm 11,2% trong 20 phiên), dưới đường trung bình 200 phiên 16,4. Không tìm thấy tin doanh nghiệp riêng trong 48 giờ; nhóm chứng khoán có dòng tiền hồi phục (DNSE).",
+  "VIN": "VIN đóng cửa 16,90, RSI 70, đứng yên trong ngày. Nhóm Vingroup chịu áp lực bán của khối ngoại, VHM giảm về 61.000 đồng ngày 14/10 (Znews); ngày 15/10 VIC đóng cửa 219.800 đồng (Vietstock).",
+  "BTC-USD": "Bitcoin ở 82.052 USD, RSI 48, giảm 2,4% trong 20 ngày nhưng vẫn trên đường trung bình 200 phiên 72.285. Dòng tiền ETF giao ngay dương ngày 9/10 (21,13 triệu USD, KuCoin News), số liệu chưa đối chiếu nguồn chính thức.",
+  "GOLD_VND": "Vàng thế giới quy đổi 130,18 triệu đồng/lượng (theo hợp đồng tương lai), giảm 5,6% trong 20 phiên, RSI 41. Giá giao ngay 4.154 USD/ounce, hồi phục nhờ lợi suất trái phiếu Mỹ giảm (Sức khỏe & Đời sống).",
+  "SJC": "Vàng miếng SJC bán ra 143,3 triệu đồng/lượng, cao hơn vàng thế giới quy đổi 13,7 triệu (10,6%); chênh lệch mua–bán 2,1%. Giá trong nước không theo đà tăng quốc tế (VOV)."
  },
- "recommendation": "Hôm nay không có mã lướt sóng nào đạt chuẩn và mọi tài sản theo dõi đều ở quan điểm Trung lập với độ tin cậy thấp, nên phương án khớp dữ liệu nhất là chờ thêm tín hiệu. VN-Index đang sát hỗ trợ 1,699.23; thủng mức này hoặc vượt kháng cự 1,841.20 sẽ làm thay đổi bức tranh. Vàng miếng SJC ở quan điểm Thận trọng vì chênh lệch mua–bán 2.1% và giá cao hơn thế giới quy đổi 10.7%. Cần theo dõi cuộc họp chính sách tháng 10 của Fed và dòng tiền ETF Bitcoin (nguồn: IDN Financials, Analytics Insight); chưa tìm được lịch cụ thể từ nguồn xác minh.",
+ "recommendation": "Hôm nay không có mã nào đủ điều kiện nổi bật: VN-Index, 5 cổ phiếu, Bitcoin và vàng thế giới đều ở trạng thái Trung lập với độ tin cậy thấp, phương án khớp dữ liệu nhất là chờ. Vàng miếng SJC ở mức Thận trọng vì đắt hơn vàng thế giới quy đổi 10,6%, trên ngưỡng cảnh báo 5%; nếu chênh lệch thu hẹp, SJC có thể giảm dù vàng thế giới đi ngang. Cần theo dõi cuộc họp Fed ngày 28/10 (thị trường đang định giá khả năng tăng lãi suất, các nguồn nêu 29% đến 61%, theo CME FedWatch qua báo chí) và mùa báo cáo kết quả kinh doanh quý III cuối tháng 10 (Thời báo Tài chính Việt Nam). Khối ngoại bán ròng liên tiếp là rủi ro cho VN-Index.",
  "stance_notes": {
-  "VNINDEX": "Tin về khối ngoại và chính sách của NHNN có thể làm thay đổi bức tranh, nhưng chưa tìm thấy bài xác minh được trong 48 giờ.",
-  "FPT": "Kết quả kinh doanh quý III và đợt phát hành cổ phiếu thưởng hơn 171 triệu cổ phiếu (CafeF, 04/08/2026) là các yếu tố cần theo dõi.",
-  "VCB": "Không tìm thấy tin mới; theo dõi tin về lãi suất, tỷ giá và kết quả quý III của ngân hàng.",
-  "HPG": "Không tìm thấy tin mới; theo dõi giá thép và kết quả quý III.",
-  "SHS": "Không tìm thấy tin mới; theo dõi thanh khoản thị trường và kết quả kinh doanh quý III của các công ty chứng khoán.",
-  "VIN": "Không tìm thấy tin mới; giá đang chạm kháng cự 16.90 với RSI 70 nên cần theo dõi phản ứng tại mức này.",
-  "BTC-USD": "Dòng tiền ETF Bitcoin tại Mỹ đang biến động, vào ròng ngày 6/10 và rút ròng ngày 7–8/10 (KuCoin, Analytics Insight).",
-  "GOLD_VND": "Kỳ vọng về lãi suất Fed và USD là yếu tố chính; chưa tìm được nguồn xác minh cho hôm nay.",
-  "SJC": "Chênh lệch với giá thế giới quy đổi (10.7%) là yếu tố chính; thông tin từ NHNN về cung vàng miếng sẽ ảnh hưởng, chưa tìm thấy tin mới (PNJ, bảng giá 15/10)."
+  "VNINDEX": "Khối ngoại tiếp tục bán ròng khoảng 686 tỷ đồng ngày 15/10; nếu dòng bán dừng lại và giá vượt 1.841,20 thì bức tranh thay đổi (index.vn).",
+  "FPT": "Kết quả quý III và biên lợi nhuận gộp (quý II giảm còn 31,0%) là điểm cần theo dõi (Vietstock/CTCK).",
+  "VCB": "Kết quả quý III có thể cho thấy tăng trưởng bình thường hóa sau các khoản hoàn nhập dự phòng (Elibook).",
+  "HPG": "Lợi nhuận quý III khác biệt giữa MBS (khoảng 5.600 tỷ) và BSC (6.000–6.500 tỷ); biên lợi nhuận gộp và chi phí tài chính là biến số (Elibook).",
+  "SHS": "Không tìm thấy tin đáng chú ý riêng; mã phụ thuộc diễn biến thanh khoản chứng khoán chung.",
+  "VIN": "Khối ngoại bán mạnh VIC, VHM; mục tiêu lợi nhuận 2026 của Vingroup 35.000 tỷ đồng vẫn được ban lãnh đạo giữ (SSI, Znews).",
+  "BTC-USD": "Dòng tiền ETF và quyết định lãi suất của Fed 28/10 có thể tác động; tin ETF chưa đối chiếu nguồn chính thức (KuCoin News).",
+  "GOLD_VND": "Lợi suất trái phiếu Mỹ, USD và kỳ vọng Fed là động lực chính; căng thẳng Mỹ–Iran hỗ trợ nhu cầu trú ẩn (Sức khỏe & Đời sống).",
+  "SJC": "SJC đi ngang dù vàng thế giới tăng 55 USD sáng 16/10; chênh lệch với thế giới thu hẹp về dưới 5% mới giảm rủi ro (VOV, Báo Lào Cai)."
  },
  "swing_notes": {
-  "FRT": "Không tìm thấy tin đáng chú ý trong 7 ngày.",
-  "DGW": "Không tìm thấy tin đáng chú ý trong 7 ngày.",
-  "SSB": "Không tìm thấy tin đáng chú ý trong 7 ngày."
+  "PVT": "Cổ phiếu giảm hơn 4% ngày 15/10 theo nhóm năng lượng (index.vn); SSI dự báo lợi nhuận quý III tăng 71% (dự báo, chưa phải kết quả thực).",
+  "DGW": "MBS dự phóng lợi nhuận quý III tăng 190%, SSI chỉ tăng 37% (dự báo khác biệt lớn; CafeF, DNSE).",
+  "FRT": "NHSV khuyến nghị MUA với giá mục tiêu 170.000 đồng (Bnews 06/10); SSI dự báo lợi nhuận quý III tăng 99% (dự báo).",
+  "SBT": "Không tìm thấy tin đáng chú ý trong 7 ngày"
  },
- "swing_summary": "Hôm nay có 0 mã đạt chuẩn lướt sóng trong 100 mã VN100; 3 mã (FRT, DGW, SSB) chỉ ở danh sách theo dõi vì chiến lược chưa qua kiểm định. Cả 3 chiến lược (bứt phá, điều chỉnh về MA20, RSI 2 phiên) đều có lãi trung bình âm sau phí trong 2 năm gần nhất (-0.70%, -0.73% và -0.43% mỗi lệnh). Không khuyên mua các mã chưa đạt chuẩn.",
+ "swing_summary": "Bộ lọc lướt sóng hôm nay không có mã nào đạt chuẩn; 4 mã (PVT, DGW, FRT, SBT) chỉ ở diện theo dõi vì thiết lập chưa qua kiểm định. Cả 3 chiến lược (bứt phá, điều chỉnh về MA20, quá bán RSI 2 phiên) đều không có lãi sau phí trong 2 năm gần nhất ngoài mẫu: trung bình lần lượt -0,68%, -0,73% và -0,43% mỗi lệnh. Không khuyến nghị các mã chưa đạt chuẩn.",
  "errors": [
-  "Không tìm được bài báo xác minh trong 48 giờ về phiên VN-Index 14/10, khối ngoại, NHNN, giá vàng thế giới, Fed và tin doanh nghiệp từng mã; các phần này chỉ dựa trên số liệu.",
-  "Số liệu dòng tiền ETF Bitcoin giữa các nguồn (Farside, SoSoValue, CoinDesk) chưa khớp hoàn toàn."
+  "Giá trị đóng cửa VN-Index phiên 15/10 lệch giữa nguồn: 1.698,35 điểm (index.vn, Vietnam.vn) và 1.704,87 điểm (Nhân Dân, Vietstock); bài dùng số của hệ thống 1.698,35.",
+  "Giá trị khối ngoại bán ròng phiên 15/10 khác nhau: khoảng 686–688 tỷ (HOSE, index.vn, SGGP), 714 tỷ (ba sàn, VTV/BNEWS), 772,7 tỷ (Nhân Dân/Vietstock).",
+  "Xác suất Fed tăng lãi suất ngày 28/10 khác nhau: 60,9% và khoảng 29% tùy bài viết (CME FedWatch qua báo chí).",
+  "Không tìm thấy thông tin tỷ giá trung tâm và lãi suất điều hành NHNN trong 48 giờ gần nhất.",
+  "Không tìm thấy tin về SBT; chưa có khuyến nghị CTCK mới về FPT, VCB, SHS trong tháng 10."
  ]
 }
