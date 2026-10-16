@@ -187,6 +187,21 @@
    "valid_date": "2026-10-07",
    "status": "expired",
    "reason": "Hết hiệu lực cuối phiên, chưa khớp"
+  },
+  {
+   "id": "mvac6l44w6aw",
+   "time": "2026-10-16T02:16:26.980Z",
+   "vn_date": "2026-10-16",
+   "side": "sell",
+   "sym": "SBT",
+   "qty": 8500,
+   "type": "limit",
+   "limit": 22650,
+   "valid_date": "2026-10-16",
+   "status": "filled",
+   "fill_price": 22650,
+   "fill_time": "2026-10-16T02:16:26.980Z",
+   "fill_date": "2026-10-16"
   }
  ]
 }
