@@ -232,6 +232,21 @@
    "fill_price": 12400,
    "fill_time": "2026-10-16T02:53:57.663Z",
    "fill_date": "2026-10-16"
+  },
+  {
+   "id": "mveo8hrqkpx4",
+   "time": "2026-10-19T03:04:56.054Z",
+   "vn_date": "2026-10-19",
+   "side": "sell",
+   "sym": "VPI",
+   "qty": 3300,
+   "type": "limit",
+   "limit": 48300,
+   "valid_date": "2026-10-19",
+   "status": "filled",
+   "fill_price": 48300,
+   "fill_time": "2026-10-19T03:04:56.054Z",
+   "fill_date": "2026-10-19"
   }
  ]
 }
