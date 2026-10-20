@@ -247,6 +247,21 @@
    "fill_price": 48300,
    "fill_time": "2026-10-19T03:04:56.054Z",
    "fill_date": "2026-10-19"
+  },
+  {
+   "id": "mvg1rjtnhgqj",
+   "time": "2026-10-20T02:11:26.363Z",
+   "vn_date": "2026-10-20",
+   "side": "sell",
+   "sym": "SSB",
+   "qty": 10000,
+   "type": "limit",
+   "limit": 16000,
+   "valid_date": "2026-10-20",
+   "status": "filled",
+   "fill_price": 16000,
+   "fill_time": "2026-10-20T02:11:26.363Z",
+   "fill_date": "2026-10-20"
   }
  ]
 }
