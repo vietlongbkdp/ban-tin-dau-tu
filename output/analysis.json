@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21 08:29 (giờ VN)",
+ "generated_at": "2026-11-21 08:36 (giờ VN)",
  "run_kind": "manual",
  "watchlist": {
   "stocks": [
@@ -4462,16 +4462,16 @@
    "last_date": "2026-11-21",
    "first_date": "2016-11-21",
    "n_days": 3652,
-   "close": 58886.69921875,
-   "change_1d": -0.048708116797352874,
-   "change_20d": -0.2395313574493364,
-   "rsi": 17.570240436367868,
-   "sma20": 71007.8015625,
-   "sma50": 77625.7715625,
-   "sma200": 72532.0113671875,
-   "macd_hist": -1095.1242409279848,
-   "bb_up": 83871.02045189428,
-   "bb_lo": 58144.58267310572,
+   "close": 58813.87109375,
+   "change_1d": -0.04988462702972307,
+   "change_20d": -0.24047186703966883,
+   "rsi": 17.508307571166412,
+   "sma20": 71004.16015625,
+   "sma50": 77624.315,
+   "sma200": 72531.6472265625,
+   "macd_hist": -1099.7719617257058,
+   "bb_up": 83881.8598036044,
+   "bb_lo": 58126.4605088956,
    "atr": 2678.1501116071427,
    "support_20": 58790.23828125,
    "resist_20": 81079.7890625,
@@ -4507,7 +4507,7 @@
       "median": 0.0009651413170431722,
       "p10": -0.08517466381419003,
       "p90": 0.09037793817001616,
-      "avg_max_drawdown": -0.030681962308480738,
+      "avg_max_drawdown": -0.03068276692519377,
       "worst_drawdown": -0.44210845204401283,
       "base_prob_up": 0.5261020881670534,
       "base_median": 0.0025525438324751626
@@ -4518,7 +4518,7 @@
       "active_days": 117,
       "test_days": 250
      },
-     "stop_ref": 53530.39899553572,
+     "stop_ref": 53457.57087053572,
      "live": {
       "n": 16,
       "hit_rate": 0.25,
@@ -4549,7 +4549,7 @@
       "median": 0.009517057884164792,
       "p10": -0.1597147541009872,
       "p90": 0.25424595015165274,
-      "avg_max_drawdown": -0.07650600593702082,
+      "avg_max_drawdown": -0.07650627989845116,
       "worst_drawdown": -0.49914048465841376,
       "base_prob_up": 0.5333527526944364,
       "base_median": 0.009517057884164792
@@ -4560,7 +4560,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 53530.39899553572,
+     "stop_ref": 53457.57087053572,
      "live": {
       "n": 16,
       "hit_rate": 0.0625,
@@ -4591,7 +4591,7 @@
       "median": 0.034763598607659096,
       "p10": -0.25805507559095836,
       "p90": 0.5718879125642474,
-      "avg_max_drawdown": -0.13897765888632838,
+      "avg_max_drawdown": -0.13897790673281316,
       "worst_drawdown": -0.6432719295811571,
       "base_prob_up": 0.543177129384026,
       "base_median": 0.034763598607659096
@@ -4602,7 +4602,7 @@
       "active_days": 0,
       "test_days": 250
      },
-     "stop_ref": 53530.39899553572,
+     "stop_ref": 53457.57087053572,
      "live": {
       "n": 0
      },
@@ -4975,7 +4975,7 @@
      64893.95,
      62987.27,
      61901.82,
-     58886.7
+     58813.87
     ],
     "sma50": [
      76937.47,
@@ -5157,7 +5157,7 @@
      78990.84,
      78578.14,
      78145.1,
-     77625.77
+     77624.32
     ],
     "sma200": [
      80405.68,
@@ -5339,7 +5339,7 @@
      72798.25,
      72719.9,
      72636.72,
-     72532.01
+     72531.65
     ]
    },
    "name": "Crypto BTC (USD)",
@@ -7131,7 +7131,7 @@
  "gold_spot": {
   "price": 3534.415,
   "source": "Swissquote (giữa giá mua/bán)",
-  "at": "08:29 21/11"
+  "at": "08:36 21/11"
  },
  "sjc": {
   "buy": 128.5,
@@ -7370,11 +7370,11 @@
    "sign": 0,
    "confidence": "Thấp",
    "horizon": "1 tháng",
-   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 53,530.40. Đường MA200 hiện ở 72,532.01.",
+   "action": "Chưa có lợi thế rõ ràng. Chưa có vị thế thì nên chờ; đang nắm giữ thì theo dõi mức cắt lỗ 53,457.57. Đường MA200 hiện ở 72,531.65.",
    "reasons": [
     "Kiểm định 1 tháng: xác suất tăng 53% so với nền 53%; trung vị +1.0%, khoảng 10–90% từ -16.0% đến +25.4% (n=3433). Không có tín hiệu nào qua kiểm định, nên không nghiêng về phía nào.",
-    "Giá 58,886.70 đang dưới MA200 (72,532.01); RSI 18. Đây là mô tả trạng thái, không phải dự báo.",
-    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -7.7%, tệ nhất -49.9%. Mức cắt lỗ tham khảo 53,530.40 (-9.1%)."
+    "Giá 58,813.87 đang dưới MA200 (72,531.65); RSI 18. Đây là mô tả trạng thái, không phải dự báo.",
+    "Rủi ro: các lần tương tự, mức sụt tối đa trung bình trong kỳ là -7.7%, tệ nhất -49.9%. Mức cắt lỗ tham khảo 53,457.57 (-9.1%)."
    ],
    "change_if": "Xem lại khi giá đóng cửa vượt kháng cự 81,079.79 hoặc thủng hỗ trợ 58,790.24, hoặc khi có chỉ báo mới đạt ý nghĩa thống kê.",
    "edge": 0.0,
